@@ -83,6 +83,9 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 	if err != nil {
 		return float64(blocksProduced) / 5.0, nil
 	}
+	if resp.Error != nil {
+		return float64(blocksProduced) / 5.0, nil
+	}
 
 	var block struct {
 		Transactions []interface{} `json:"transactions"`
