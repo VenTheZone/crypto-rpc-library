@@ -28,6 +28,13 @@ func (d *RPCDetector) DetectRPCs(ctx context.Context, urls []string) ([]Detected
 	var detected []DetectedRPC
 
 	for _, u := range urls {
+		if u == "" {
+			continue
+		}
+		if !strings.HasPrefix(u, "http://") && !strings.HasPrefix(u, "https://") {
+			u = "https://" + u
+		}
+
 		chain, err := d.client.DetectChain(ctx, u)
 		if err != nil {
 			continue

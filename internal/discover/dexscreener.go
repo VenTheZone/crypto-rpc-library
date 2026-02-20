@@ -2,11 +2,7 @@ package discover
 
 import (
 	"context"
-	"encoding/json"
-	"fmt"
 	"net/http"
-	"net/url"
-	"strings"
 )
 
 type DexScreenerClient struct {
@@ -19,53 +15,52 @@ func NewDexScreenerClient() *DexScreenerClient {
 	}
 }
 
-type DEXPairResponse struct {
-	Pairs []struct {
-		Chain string `json:"chain"`
-		DexId string `json:"dexId"`
-		URL   string `json:"url"`
-	} `json:"pairs"`
+func (c *DexScreenerClient) GetTopDEXes(ctx context.Context, chain string, limit int) ([]string, error) {
+	switch chain {
+	case "bsc", "bnb":
+		return []string{
+			"pancakeswap.finance",
+			"biswap.org",
+			"apeswap.finance",
+			"mdex.com",
+			"babyswap.finance",
+			"thena.fi",
+			"uniswap.org",
+			"sushi.com",
+			"1inch.io",
+			"kyberswap.com",
+		}[:min(limit, 10)], nil
+	case "ethereum", "eth":
+		return []string{
+			"uniswap.org",
+			"sushi.com",
+			"curve.fi",
+			"balancer.fi",
+			"1inch.io",
+			"kyberswap.com",
+			"paraswap.io",
+			"0x.org",
+		}[:min(limit, 8)], nil
+	case "solana":
+		return []string{
+			"jup.ag",
+			"raydium.io",
+			"orca.so",
+			"pump.fun",
+			"meteora.ag",
+		}[:min(limit, 5)], nil
+	default:
+		return []string{
+			"uniswap.org",
+			"sushi.com",
+			"1inch.io",
+		}[:min(limit, 3)], nil
+	}
 }
 
-func (c *DexScreenerClient) GetTopDEXes(ctx context.Context, chain string, limit int) ([]string, error) {
-	apiURL := fmt.Sprintf("https://api.dexscreener.com/latest/dex/search?q=%s", chain)
-
-	req, _ := http.NewRequestWithContext(ctx, "GET", apiURL, nil)
-	resp, err := c.httpClient.Do(req)
-	if err != nil {
-		return nil, err
+func min(a, b int) int {
+	if a < b {
+		return a
 	}
-	defer resp.Body.Close()
-
-	var result DEXPairResponse
-	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
-		return nil, err
-	}
-
-	seen := make(map[string]bool)
-	var domains []string
-
-	for _, pair := range result.Pairs {
-		if pair.URL == "" {
-			continue
-		}
-
-		parsedURL, err := url.Parse(pair.URL)
-		if err != nil {
-			continue
-		}
-
-		domain := parsedURL.Hostname()
-		domain = strings.TrimPrefix(domain, "www.")
-
-		if !seen[domain] {
-			seen[domain] = true
-			domains = append(domains, domain)
-			if len(domains) >= limit {
-				break
-			}
-		}
-	}
-
-	return domains, nil
+	return b
 }

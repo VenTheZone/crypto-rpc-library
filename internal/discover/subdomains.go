@@ -2,7 +2,9 @@ package discover
 
 import (
 	"context"
+	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 )
 
@@ -12,10 +14,27 @@ func NewSubdomainFinder() *SubdomainFinder {
 	return &SubdomainFinder{}
 }
 
-func (f *SubdomainFinder) RunSubfinder(ctx context.Context, domains []string) ([]string, error) {
-	domainList := strings.Join(domains, ",")
+func findBinary(name string) string {
+	paths := []string{
+		filepath.Join(os.Getenv("HOME"), "go", "bin", name),
+		"/usr/local/go/bin/" + name,
+		"/usr/bin/" + name,
+	}
+	for _, p := range paths {
+		if _, err := os.Stat(p); err == nil {
+			return p
+		}
+	}
+	return name
+}
 
-	cmd := exec.CommandContext(ctx, "subfinder", "-dL", "-silent", "-d", domainList)
+func (f *SubdomainFinder) RunSubfinder(ctx context.Context, domains []string) ([]string, error) {
+	args := []string{"-silent", "-d"}
+	args = append(args, strings.Join(domains, ","))
+
+	binary := findBinary("subfinder")
+	cmd := exec.CommandContext(ctx, binary, args...)
+	cmd.Env = append(os.Environ(), "PATH="+os.Getenv("PATH")+":/usr/local/go/bin:"+os.Getenv("HOME")+"/go/bin")
 	output, err := cmd.Output()
 	if err != nil {
 		return nil, err
@@ -28,8 +47,10 @@ func (f *SubdomainFinder) RunSubfinder(ctx context.Context, domains []string) ([
 func (f *SubdomainFinder) RunHTTPX(ctx context.Context, hosts []string) ([]string, error) {
 	input := strings.Join(hosts, "\n")
 
-	cmd := exec.CommandContext(ctx, "httpx", "-silent", "-https", "-status-code", "-mc", "200,401,403")
+	binary := findBinary("httpx")
+	cmd := exec.CommandContext(ctx, binary, "-silent", "-sc", "-mc", "200,401,403,404,405,500")
 	cmd.Stdin = strings.NewReader(input)
+	cmd.Env = append(os.Environ(), "PATH="+os.Getenv("PATH")+":/usr/local/go/bin:"+os.Getenv("HOME")+"/go/bin")
 
 	output, err := cmd.Output()
 	if err != nil {
