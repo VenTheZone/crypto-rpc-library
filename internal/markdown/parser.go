@@ -98,12 +98,9 @@ func parseChainName(name string) types.ChainType {
 
 func parseTableRow(line string) types.RPC {
 	parts := strings.Split(line, "|")
-	if len(parts) < 8 {
-		return types.RPC{}
-	}
-
+	
 	clean := func(s string) string {
-		return strings.TrimSpace(strings.Trim(s, "`"))
+		return strings.TrimSpace(strings.Trim(strings.Trim(s, "`"), "*"))
 	}
 
 	authHeader := clean(parts[3])
@@ -114,7 +111,17 @@ func parseTableRow(line string) types.RPC {
 	rps, _ := strconv.ParseFloat(clean(parts[4]), 64)
 	tps, _ := strconv.ParseFloat(clean(parts[5]), 64)
 	mempool := clean(parts[6]) == "yes"
-	status := types.RPCStatus(clean(parts[7]))
+	
+	var safeTX bool
+	var status types.RPCStatus
+	
+	if len(parts) >= 10 {
+		safeTX = clean(parts[7]) == "yes"
+		status = types.RPCStatus(clean(parts[8]))
+	} else if len(parts) >= 9 {
+		status = types.RPCStatus(clean(parts[7]))
+	}
+	
 	if status == "" || status == "-" {
 		status = types.StatusUntested
 	}
@@ -126,6 +133,7 @@ func parseTableRow(line string) types.RPC {
 		RPS:        rps,
 		TPS:        tps,
 		Mempool:    mempool,
+		SafeTX:     safeTX,
 		Status:     status,
 	}
 }

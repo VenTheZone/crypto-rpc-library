@@ -65,9 +65,10 @@ func runTest(cmd *cobra.Command, args []string) error {
 
 		hasMempool, _ := mempoolTester.Test(ctx, rpc)
 		rpc.Mempool = hasMempool
+		rpc.SafeTX = !hasMempool
 
 		rpc.Status = types.StatusWorking
-		fmt.Printf("RPS=%.0f TPS=%.0f Mempool=%v\n", rps, tps, hasMempool)
+		fmt.Printf("RPS=%.0f TPS=%.0f Mempool=%v SafeTX=%v\n", rps, tps, hasMempool, !hasMempool)
 	}
 
 	output := markdown.WriteFile(list, "Tested RPCs")

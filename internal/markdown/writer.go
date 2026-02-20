@@ -11,8 +11,8 @@ func WriteFile(list *types.RPCList, title string) string {
 	var sb strings.Builder
 
 	sb.WriteString(fmt.Sprintf("# %s\n\n", title))
-	sb.WriteString("| Name | URL | Auth Header | RPS | TPS | Mempool | Status |\n")
-	sb.WriteString("| ---- | --- | ----------- | --- | --- | ------- | ------ |\n")
+	sb.WriteString("| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |\n")
+	sb.WriteString("| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |\n")
 
 	for _, rpc := range list.RPCs {
 		auth := rpc.AuthHeader
@@ -37,8 +37,13 @@ func WriteFile(list *types.RPCList, title string) string {
 			mempool = "yes"
 		}
 
-		sb.WriteString(fmt.Sprintf("| %s | %s | %s | %s | %s | %s | %s |\n",
-			rpc.Name, rpc.URL, auth, rps, tps, mempool, rpc.Status))
+		safeTX := "no"
+		if rpc.SafeTX {
+			safeTX = "**yes**"
+		}
+
+		sb.WriteString(fmt.Sprintf("| %s | %s | %s | %s | %s | %s | %s | %s |\n",
+			rpc.Name, rpc.URL, auth, rps, tps, mempool, safeTX, rpc.Status))
 	}
 
 	return sb.String()

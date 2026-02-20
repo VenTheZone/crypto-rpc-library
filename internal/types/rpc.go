@@ -27,6 +27,7 @@ type RPC struct {
 	RPS        float64   `json:"rps"`
 	TPS        float64   `json:"tps"`
 	Mempool    bool      `json:"mempool"`
+	SafeTX     bool      `json:"safe_tx"`
 	Status     RPCStatus `json:"status"`
 	Chain      ChainType `json:"chain"`
 }
