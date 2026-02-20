@@ -4,12 +4,14 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/kytusdevenn/crypto-rpc/internal/version"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "crypto-rpc",
-	Short: "Discover and test cryptocurrency RPC endpoints",
+	Use:     "crypto-rpc",
+	Short:   "Discover and test cryptocurrency RPC endpoints",
+	Version: version.Get(),
 }
 
 func main() {
