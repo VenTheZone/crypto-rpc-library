@@ -49,6 +49,14 @@ func (c *DexScreenerClient) GetTopDEXes(ctx context.Context, chain string, limit
 			"pump.fun",
 			"meteora.ag",
 		}[:min(limit, 5)], nil
+	case "fantom", "ftm":
+		return []string{
+			"spookyswap.finance",
+			"spiritswap.finance",
+			"beefy.finance",
+			"scream.sh",
+			"geist.finance",
+		}[:min(limit, 5)], nil
 	default:
 		return []string{
 			"uniswap.org",
