@@ -2,6 +2,7 @@ package markdown
 
 import (
 	"bufio"
+	"strconv"
 	"strings"
 
 	"github.com/kytusdevenn/crypto-rpc/internal/types"
@@ -50,6 +51,9 @@ func SetChain(list *types.RPCList) {
 	}
 	if list.Chain == "" || list.Chain == types.ChainUnknown {
 		list.Chain = types.ChainEVM
+		for i := range list.RPCs {
+			list.RPCs[i].Chain = types.ChainEVM
+		}
 	}
 }
 
@@ -94,7 +98,7 @@ func parseChainName(name string) types.ChainType {
 
 func parseTableRow(line string) types.RPC {
 	parts := strings.Split(line, "|")
-	if len(parts) < 7 {
+	if len(parts) < 8 {
 		return types.RPC{}
 	}
 
@@ -107,10 +111,21 @@ func parseTableRow(line string) types.RPC {
 		authHeader = ""
 	}
 
+	rps, _ := strconv.ParseFloat(clean(parts[4]), 64)
+	tps, _ := strconv.ParseFloat(clean(parts[5]), 64)
+	mempool := clean(parts[6]) == "yes"
+	status := types.RPCStatus(clean(parts[7]))
+	if status == "" || status == "-" {
+		status = types.StatusUntested
+	}
+
 	return types.RPC{
 		Name:       clean(parts[1]),
 		URL:        clean(parts[2]),
 		AuthHeader: authHeader,
-		Status:     types.StatusUntested,
+		RPS:        rps,
+		TPS:        tps,
+		Mempool:    mempool,
+		Status:     status,
 	}
 }
