@@ -45,6 +45,7 @@ func runTest(cmd *cobra.Command, args []string) error {
 
 	ctx := context.Background()
 	rpsTester := test.NewRPSTester(testConcurrency)
+	tpsTester := test.NewTPSTester()
 	mempoolTester := test.NewMempoolTester()
 
 	for i := range list.RPCs {
@@ -59,11 +60,14 @@ func runTest(cmd *cobra.Command, args []string) error {
 		}
 		rpc.RPS = rps
 
+		tps, _ := tpsTester.Test(ctx, rpc)
+		rpc.TPS = tps
+
 		hasMempool, _ := mempoolTester.Test(ctx, rpc)
 		rpc.Mempool = hasMempool
 
 		rpc.Status = types.StatusWorking
-		fmt.Printf("RPS=%.0f Mempool=%v\n", rps, hasMempool)
+		fmt.Printf("RPS=%.0f TPS=%.0f Mempool=%v\n", rps, tps, hasMempool)
 	}
 
 	output := markdown.WriteFile(list, "Tested RPCs")

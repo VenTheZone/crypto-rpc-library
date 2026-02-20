@@ -38,22 +38,58 @@ func ParseFile(content string) (*types.RPCList, error) {
 		}
 	}
 
+	SetChain(list)
 	return list, nil
 }
 
-func parseChainName(name string) types.ChainType {
-	switch strings.ToLower(name) {
-	case "ethereum", "bnb", "polygon", "arbitrum", "optimism", "base", "fantom", "avalanche", "evm":
-		return types.ChainEVM
-	case "solana":
-		return types.ChainSolana
-	case "sui":
-		return types.ChainSui
-	case "aptos":
-		return types.ChainAptos
-	default:
-		return types.ChainUnknown
+func SetChain(list *types.RPCList) {
+	for i := range list.RPCs {
+		if list.RPCs[i].Chain == types.ChainUnknown || list.RPCs[i].Chain == "" {
+			list.RPCs[i].Chain = list.Chain
+		}
 	}
+	if list.Chain == "" || list.Chain == types.ChainUnknown {
+		list.Chain = types.ChainEVM
+	}
+}
+
+func parseChainName(name string) types.ChainType {
+	name = strings.ToLower(name)
+
+	if strings.Contains(name, "ethereum") || strings.Contains(name, "eth") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "bnb") || strings.Contains(name, "bsc") || strings.Contains(name, "binance") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "polygon") || strings.Contains(name, "matic") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "arbitrum") || strings.Contains(name, "arb") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "optimism") || strings.Contains(name, "op ") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "base") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "fantom") || strings.Contains(name, "ftm") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "avalanche") || strings.Contains(name, "avax") {
+		return types.ChainEVM
+	}
+	if strings.Contains(name, "solana") || strings.Contains(name, "sol") {
+		return types.ChainSolana
+	}
+	if strings.Contains(name, "sui") {
+		return types.ChainSui
+	}
+	if strings.Contains(name, "aptos") {
+		return types.ChainAptos
+	}
+	return types.ChainUnknown
 }
 
 func parseTableRow(line string) types.RPC {
