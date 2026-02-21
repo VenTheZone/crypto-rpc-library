@@ -40,7 +40,14 @@ func (c *DexScreenerClient) GetTopDEXes(ctx context.Context, chain string, limit
 			"kyberswap.com",
 			"paraswap.io",
 			"0x.org",
-		}[:min(limit, 8)], nil
+			"pancakeswap.finance",
+			"traderjoexyz.com",
+			"cryptex.finance",
+			"lido.fi",
+			"aave.com",
+			"compound.finance",
+			"makerdao.com",
+		}[:min(limit, 15)], nil
 	case "solana":
 		return []string{
 			"jup.ag",
@@ -56,7 +63,17 @@ func (c *DexScreenerClient) GetTopDEXes(ctx context.Context, chain string, limit
 			"beefy.finance",
 			"scream.sh",
 			"geist.finance",
-		}[:min(limit, 5)], nil
+			"tarot.to",
+			"fuzz.finance",
+			"picklerick.finance",
+		}[:min(limit, 8)], nil
+	case "base":
+		return []string{
+			"aerodrome.finance",
+			"baseswap.fi",
+			"unicly.finance",
+			"moonbase.finance",
+		}[:min(limit, 4)], nil
 	default:
 		return []string{
 			"uniswap.org",
