@@ -36,6 +36,11 @@ func (t *RPSTester) Test(ctx context.Context, r *types.RPC) (float64, error) {
 				setHeadersFromAuth(client, r.AuthHeader)
 			}
 
+			// For Solana, also try with Origin headers
+			if r.Chain == types.ChainSolana {
+				client.SetHeader("Origin", "https://solana.com")
+			}
+
 			resp, err := client.Call(ctx, r.URL, t.getBlockMethod(r.Chain), nil)
 			if err == nil && (resp.Error == nil || resp.Error.Code != -32601) {
 				mu.Lock()
@@ -58,7 +63,7 @@ func (t *RPSTester) Test(ctx context.Context, r *types.RPC) (float64, error) {
 func (t *RPSTester) getBlockMethod(chain types.ChainType) string {
 	switch chain {
 	case types.ChainSolana:
-		return "getSlot"
+		return "getHealth"
 	case types.ChainSui:
 		return "sui_getLatestCheckpointSequenceNumber"
 	default:

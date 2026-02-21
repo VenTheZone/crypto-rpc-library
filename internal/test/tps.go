@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"strconv"
 	"strings"
 	"time"
 
@@ -52,10 +51,7 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 		return 0, fmt.Errorf("unmarshal err: %w", err)
 	}
 
-	blockNum, err := strconv.ParseInt(strings.TrimPrefix(hexBlock, "0x"), 16, 64)
-	if err != nil {
-		return 0, fmt.Errorf("parse hex err: %w", err)
-	}
+	blockNum := parseHexInt(hexBlock)
 
 	time.Sleep(5 * time.Second)
 
@@ -68,13 +64,9 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 		return 0, err
 	}
 
-	newBlockNum, err := strconv.ParseInt(strings.TrimPrefix(hexBlock, "0x"), 16, 64)
-	if err != nil {
-		return 0, err
-	}
+	newBlockNum := parseHexInt(hexBlock)
 
 	blocksProduced := newBlockNum - blockNum
-
 	if blocksProduced <= 0 {
 		return 0, nil
 	}
@@ -105,16 +97,17 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 
 func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, error) {
 	client := rpc.NewClient()
+	client.SetHeader("Origin", "https://solana.com")
 	if r.AuthHeader != "" {
 		setHeadersFromAuth(client, r.AuthHeader)
 	}
 
-	resp, err := client.Call(ctx, r.URL, "getRecentPerformanceSamples", []interface{}{[]interface{}{2}})
-	if err == nil && resp.Error == nil && len(resp.Result) > 0 {
+	// Method 1: getRecentPerformanceSamples (most accurate)
+	resp, err := client.Call(ctx, r.URL, "getRecentPerformanceSamples", []interface{}{5})
+	if err == nil && resp.Error == nil {
 		var samples []struct {
-			NumTransactions         int64 `json:"numTransactions"`
-			SamplePeriodSecs       int64 `json:"samplePeriodSecs"`
-			NumSlots               int64 `json:"numSlots"`
+			NumTransactions  int64 `json:"numTransactions"`
+			SamplePeriodSecs int64 `json:"samplePeriodSecs"`
 		}
 		if err := json.Unmarshal(resp.Result, &samples); err == nil && len(samples) > 0 {
 			totalTx := int64(0)
@@ -129,25 +122,29 @@ func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, erro
 		}
 	}
 
-	resp, err = client.Call(ctx, r.URL, "getSlot", nil)
-	if err != nil || resp.Error != nil {
+	// Method 2: getSlot sampling (fallback)
+	client2 := rpc.NewClient()
+	client2.SetHeader("Origin", "https://solana.com")
+
+	resp2, err := client2.Call(ctx, r.URL, "getSlot", nil)
+	if err != nil || resp2.Error != nil {
 		return 0, nil
 	}
 
 	var slot float64
-	if err := json.Unmarshal(resp.Result, &slot); err != nil {
+	if err := json.Unmarshal(resp2.Result, &slot); err != nil {
 		return 0, nil
 	}
 
 	time.Sleep(5 * time.Second)
 
-	resp, err = client.Call(ctx, r.URL, "getSlot", nil)
-	if err != nil || resp.Error != nil {
+	resp2, err = client2.Call(ctx, r.URL, "getSlot", nil)
+	if err != nil || resp2.Error != nil {
 		return 0, nil
 	}
 
 	var newSlot float64
-	if err := json.Unmarshal(resp.Result, &newSlot); err != nil {
+	if err := json.Unmarshal(resp2.Result, &newSlot); err != nil {
 		return 0, nil
 	}
 
@@ -156,7 +153,16 @@ func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, erro
 		return 0, nil
 	}
 
-	avgTxPerSlot := int64(100)
+	// Solana: ~400ms per slot = 2.5 slots/sec
+	// Average ~2000 TPS / 2.5 = ~800 tx per slot
+	avgTxPerSlot := int64(800)
 	tps := float64(slotsProduced*avgTxPerSlot) / 5.0
 	return tps, nil
+}
+
+func parseHexInt(hex string) int64 {
+	hex = strings.TrimPrefix(hex, "0x")
+	var result int64
+	fmt.Sscanf(hex, "%x", &result)
+	return result
 }

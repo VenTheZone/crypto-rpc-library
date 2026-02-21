@@ -2,12 +2,12 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Source | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ | ------ |
-| Helius | https://mainnet.helius-rpc.com | - | 315 | - | no | **yes** | Helius | working |
-| Official | https://api.mainnet-beta.solana.com | - | 330 | **240** | no | **yes** | Solana Official | working |
-| DRPC | https://solana.drpc.org | - | 132 | - | no | **yes** | DRPC | working |
-| Triton | https://triton.mainnet.rpcpool.com | - | 39 | - | no | **yes** | Triton (RPC Pool) | working |
-| BlockPi | https://solana.blockpi.network/v1/rpc/public | - | 36 | - | no | **yes** | BlockPi | working |
-| PublicNode | https://solana-rpc.publicnode.com | - | 20 | **280** | no | **yes** | PublicNode | working |
+| Official | https://api.mainnet-beta.solana.com | - | 424 | - | no | **yes** | Solana Official | working |
+| DRPC | https://solana.drpc.org | `Authorization: Bearer <key>` | 232 | - | no | **yes** | DRPC | needs-key |
+| PublicNode | https://solana-rpc.publicnode.com | - | 235 | **4427** | no | **yes** | PublicNode | working |
+| Triton | https://triton.mainnet.rpcpool.com | - | 145 | - | no | **yes** | Triton (RPC Pool) | working |
+| Helius | https://mainnet.helius-rpc.com | `Authorization: Bearer <key>` | - | - | no | **yes** | Helius | needs-key |
+| BlockPi | https://solana.blockpi.network/v1/rpc/public | - | 63 | - | no | **yes** | BlockPi | working |
 | Ankr | https://rpc.ankr.com/solana | `Authorization: Bearer <key>` | - | - | no | **yes** | Ankr Provider | needs-key |
 | 1rpc.io | https://1rpc.io/solana | - | - | - | no | **yes** | 1rpc.io | rate-limited |
 | Blast | https://solana.public-rpc.com | - | - | - | no | **yes** | Blast API | rate-limited |
