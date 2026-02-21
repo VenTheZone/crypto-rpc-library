@@ -104,5 +104,59 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 }
 
 func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, error) {
-	return 0, nil
+	client := rpc.NewClient()
+	if r.AuthHeader != "" {
+		setHeadersFromAuth(client, r.AuthHeader)
+	}
+
+	resp, err := client.Call(ctx, r.URL, "getRecentPerformanceSamples", []interface{}{[]interface{}{2}})
+	if err == nil && resp.Error == nil && len(resp.Result) > 0 {
+		var samples []struct {
+			NumTransactions         int64 `json:"numTransactions"`
+			SamplePeriodSecs       int64 `json:"samplePeriodSecs"`
+			NumSlots               int64 `json:"numSlots"`
+		}
+		if err := json.Unmarshal(resp.Result, &samples); err == nil && len(samples) > 0 {
+			totalTx := int64(0)
+			totalSecs := int64(0)
+			for _, s := range samples {
+				totalTx += s.NumTransactions
+				totalSecs += s.SamplePeriodSecs
+			}
+			if totalSecs > 0 {
+				return float64(totalTx) / float64(totalSecs), nil
+			}
+		}
+	}
+
+	resp, err = client.Call(ctx, r.URL, "getSlot", nil)
+	if err != nil || resp.Error != nil {
+		return 0, nil
+	}
+
+	var slot float64
+	if err := json.Unmarshal(resp.Result, &slot); err != nil {
+		return 0, nil
+	}
+
+	time.Sleep(5 * time.Second)
+
+	resp, err = client.Call(ctx, r.URL, "getSlot", nil)
+	if err != nil || resp.Error != nil {
+		return 0, nil
+	}
+
+	var newSlot float64
+	if err := json.Unmarshal(resp.Result, &newSlot); err != nil {
+		return 0, nil
+	}
+
+	slotsProduced := int64(newSlot - slot)
+	if slotsProduced <= 0 {
+		return 0, nil
+	}
+
+	avgTxPerSlot := int64(100)
+	tps := float64(slotsProduced*avgTxPerSlot) / 5.0
+	return tps, nil
 }
