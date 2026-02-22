@@ -1,55 +1,36 @@
 const { chromium } = require('playwright');
 
-const RPC_DOMAINS = [
-  'rpc', 'node', 'endpoint', 'mainnet', '.chain', 'blockchain',
-  'infura', 'alchemy', 'ankr', 'quicknode', 'drpc', 'publicnode',
-  'blastapi', 'nodereal', 'tenderly', 'twnodes', 'onfinality',
-  'blockpi', 'getblock', 'cloudflare', 'pokt', 'gateway',
-  'polygon-rpc', 'bsc-rpc', 'avalanche-rpc', 'fantom-rpc'
+const DEX_LIST = [
+  // Solana DEXs
+  'jup.ag',
+  'raydium.io', 
+  'orca.so',
+  'pump.fun',
+  'meteora.ag',
+  'phoenix.fi',
+  'lifinity.io',
+  'fluxbeam.xyz',
+  'drift.trade',
+  'solend.fi',
+  'marginfi.com',
+  'kamino.lend',
+  'port.finance',
+  'friktion.fi',
+  'goosefx.com',
+  'aldrin.com',
+  'serum DEX', // deprecated but check
+  'saber.so',
+  'curve.fi',
+  'venus.io',
+  'ratio.exchange',
 ];
 
-const EXCLUDE_PATTERNS = [
-  'localhost', '127.0.0.1', '.css', '.jpg', '.png', '.svg', '.ico',
-  'fonts.', 'cloudflare.com', 'googleapis', 'githubusercontent',
-  'walletconnect', 'opensea', 'moonpay', 'defi',
-  'statsig', 'sentry', 'datadog', 'segment', 'beacon',
-  'challenges.cloudflare', 'vercel', 'ipfs', 'cloudfunctions',
-  'inter', 'interfont', 'cdn', 'static', 'assets', 'images'
-];
-
-function isRPCURL(url) {
-  if (!url || url.length < 10) return false;
-  
-  const lower = url.toLowerCase();
-  
-  // Must start with http
-  if (!lower.startsWith('http://') && !lower.startsWith('https://')) {
-    return false;
-  }
-  
-  // Check exclude patterns first
-  for (const pattern of EXCLUDE_PATTERNS) {
-    if (lower.includes(pattern)) return false;
-  }
-  
-  // Must contain RPC-related keyword
-  const hasRPCKeyword = RPC_DOMAINS.some(d => lower.includes(d));
-  return hasRPCKeyword;
-}
-
-function extractURLs(text) {
-  const urlRegex = /https?:\/\/[^\s"'<>()]+/gi;
-  const matches = text.match(urlRegex) || [];
-  return [...new Set(matches)];
-}
-
-async function extractRPCsAndKeys(url) {
+async function analyzeDEX(url) {
   const results = {
     url: url,
-    rpcs: [],
+    rpcEndpoints: [],
     apiKeys: [],
-    origins: [],
-    chains: []
+    origins: []
   };
 
   const browser = await chromium.launch({ headless: true });
@@ -59,63 +40,80 @@ async function extractRPCsAndKeys(url) {
   
   const page = await context.newPage();
   
-  try {
-    await page.goto(url, { timeout: 20000, waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(5000);
+  // Capture all requests
+  page.on('request', request => {
+    const url = request.url();
+    const method = request.method();
+    const postData = request.postData();
     
-    // Get all JavaScript and text content
-    const allContent = await page.evaluate(() => {
-      let content = '';
+    // Look for RPC endpoints (Solana & EVM)
+    if (url.includes('rpc') || url.includes('.solana') || 
+        url.includes('helius') || url.includes('quicknode') ||
+        url.includes('alchemy') || url.includes('infura') ||
+        url.includes('ankr') || url.includes('drpc') ||
+        url.includes('publicnode') || url.includes('blockpi') ||
+        url.includes('getblock') || url.includes('tenderly')) {
       
-      // Get all script tags
-      document.querySelectorAll('script').forEach(s => {
-        content += s.textContent + '\n';
+      // Extract origin from headers if present
+      const headers = request.headers();
+      
+      results.rpcEndpoints.push({
+        url: url,
+        method: method,
+        origin: headers.origin || headers.referer || '',
+        hasPostData: !!postData
       });
-      
-      // Get all inline scripts
-      document.querySelectorAll('script:not([src])').forEach(s => {
-        content += s.textContent + '\n';
-      });
-      
-      // Also get the full HTML for URL patterns
-      content += document.documentElement.outerHTML;
-      
-      return content;
+    }
+  });
+
+  try {
+    console.error(`Analyzing: ${url}`);
+    await page.goto(url, { timeout: 30000, waitUntil: 'networkidle' });
+    
+    // Wait for the page to fully load and make dynamic requests
+    await page.waitForTimeout(8000);
+    
+    // Try clicking common elements to trigger more requests
+    try {
+      await page.click('button', { timeout: 5000 }).catch(() => {});
+      await page.waitForTimeout(2000);
+    } catch (e) {}
+    
+    // Also extract from JavaScript files
+    const jsUrls = await page.evaluate(() => {
+      const scripts = Array.from(document.querySelectorAll('script[src]'));
+      return scripts.map(s => s.src);
     });
     
-    // Extract all URLs
-    const urls = extractURLs(allContent);
-    
-    // Filter for RPC URLs
-    for (const url of urls) {
-      if (isRPCURL(url) && !results.rpcs.includes(url)) {
-        results.rpcs.push(url);
-      }
-    }
-    
-    // Try to detect chains from the content
-    const chains = ['ethereum', 'bsc', 'polygon', 'arbitrum', 'optimism', 'base', 'avalanche', 'fantom', 'solana', 'celo', 'linea', 'zksync', 'scroll', 'mantle'];
-    for (const chain of chains) {
-      if (allContent.toLowerCase().includes(chain) || allContent.toLowerCase().includes(chain.toUpperCase())) {
-        results.chains.push(chain);
-      }
-    }
-    
-    // Try to extract API keys from common patterns
-    const keyPatterns = [
-      /["'](?:RPC|API)[_"']?(?:KEY|TOKEN)?["']\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
-      /(?:apiKey|apikey|api_key)\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
-    ];
-    
-    for (const pattern of keyPatterns) {
-      const matches = allContent.match(pattern);
-      if (matches) {
-        for (const match of matches) {
-          const key = match.match(/[a-zA-Z0-9_-]{20,}/);
-          if (key && !results.apiKeys.includes(key[0])) {
-            results.apiKeys.push(key[0].substring(0, 40) + '...'); // Truncate for safety
+    // Fetch and analyze main JS bundles
+    for (const jsUrl of jsUrls.slice(0, 10)) {
+      if (jsUrl.includes('rpc') || jsUrl.includes('config') || jsUrl.includes('wallet')) {
+        try {
+          const response = await page.request.get(jsUrl);
+          const text = await response.text();
+          
+          // Look for API keys (Helius, QuickNode, Alchemy, etc.)
+          const keyPatterns = [
+            /helius[_-]?key["']?\s*[:=]\s*["']([a-z0-9-]{20,})/gi,
+            /alchemy[_-]?key["']?\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
+            /quicknode[_-]?key["']?\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
+            /infura[_-]?key["']?\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
+            /ankr[_-]?key["']?\s*[:=]\s*["']([a-zA-Z0-9_-]{20,})/gi,
+            /["']([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})["']/gi, // UUIDs
+          ];
+          
+          for (const pattern of keyPatterns) {
+            const matches = text.match(pattern);
+            if (matches) {
+              for (const match of matches) {
+                const key = match.match(/[a-zA-Z0-9_-]{20,}|[a-f0-9-]{36}/);
+                if (key && !results.apiKeys.includes(key[0])) {
+                  results.apiKeys.push(key[0]);
+                }
+              }
+            }
           }
-        }
+        } catch (e) {}
       }
     }
     
@@ -131,11 +129,23 @@ async function extractRPCsAndKeys(url) {
 async function main() {
   const dexes = process.argv.slice(2);
   
+  console.error('=== DEX RPC & API Key Scanner ===');
+  
   for (const dex of dexes) {
     const url = dex.startsWith('http') ? dex : `https://${dex}`;
-    console.error(`Scanning: ${url}`);
+    const results = await analyzeDEX(url);
     
-    const results = await extractRPCsAndKeys(url);
+    // Deduplicate
+    const uniqueRPCs = [];
+    const seen = new Set();
+    for (const rpc of results.rpcEndpoints) {
+      if (!seen.has(rpc.url)) {
+        seen.add(rpc.url);
+        uniqueRPCs.push(rpc);
+      }
+    }
+    results.rpcEndpoints = uniqueRPCs;
+    
     console.log(JSON.stringify(results));
   }
 }
