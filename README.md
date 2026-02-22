@@ -2,6 +2,30 @@
 
 Discover and test cryptocurrency RPC endpoints.
 
+## Chains with Mempool (NOT Safe for Bundles)
+
+These chains have visible mempool - your transactions are visible to MEV bots:
+
+| Chain | RPC Provider | RPS | URL |
+| ----- | ----------- | --- | ----- |
+| Ethereum | DRPC | 594 | https://eth.drpc.org |
+| Ethereum | PublicNode | 45 | https://ethereum-rpc.publicnode.com |
+| Ethereum | 1rpc.io | 51 | https://1rpc.io/eth |
+| BNB Chain | DRPC | 400 | https://bsc.drpc.org |
+| BNB Chain | PublicNode | 51 | https://bsc-rpc.publicnode.com |
+| BNB Chain | Binance | 28 | https://bsc-dataseed.binance.org |
+| Avalanche | DRPC | 430 | https://avalanche.drpc.org |
+| Avalanche | PublicNode | 103 | https://avalanche-c-chain-rpc.publicnode.com |
+| Fantom | 1rpc.io | 15 | https://1rpc.io/ftm |
+| Fantom | Fantom | 10 | https://rpc.fantom.network |
+| Optimism | PublicNode | 99 | https://optimism-rpc.publicnode.com |
+| Base | DRPC | 175 | https://base.drpc.org |
+| Base | PublicNode | 45 | https://base-rpc.publicnode.com |
+| Ethereum Classic | Etc | 22 | https://etc.etcdesktop.com |
+| RSK | RSK | 23 | https://public-node.rsk.co |
+| Syscoin | Syscoin | 19 | https://rpc.syscoin.org |
+| Taiko | Taiko | 65 | https://rpc.taiko.xyz |
+
 ## Installation
 
 ```bash
