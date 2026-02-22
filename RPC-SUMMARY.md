@@ -59,6 +59,8 @@
 | **Moonriver** | Moonriver | 32 | - | no | yes | |
 | **KCC** | - | 0 | - | - | - | No working RPCs found |
 | **RSK** | RSK | 23 | - | yes | no | Has mempool |
+| **Ronin** | Ronin | 36 | 1 | no | yes | Axie Infinity |
+| **Taiko** | Taiko | 65 | - | yes | no | Has mempool |
 
 ## Quick Reference
 
