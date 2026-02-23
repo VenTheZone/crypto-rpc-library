@@ -3,12 +3,10 @@
 ## Quick Links
 
 ### Solana
-- [DEX RPCs (Discovered)](networks/solana/dex/discovered.md) - RPCs found from DEX frontends
 - [DEX RPCs (Manual)](networks/solana/dex/rpcs.md) - Manually tested DEX RPCs
 - [All Tested RPCs](networks/solana/solana-tested.md)
 
 ### EVM Chains
-- [DEX RPCs (Discovered)](networks/evm/dex/discovered.md) - RPCs found from DEX frontends
 - [Ethereum](networks/evm/eth-tested.md)
 - [BNB Chain](networks/evm/bnb-tested.md)
 - [Polygon](networks/evm/polygon/polygon-tested.md)
