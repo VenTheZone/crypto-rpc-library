@@ -211,8 +211,8 @@ async function main() {
   });
   
   console.log(`Testing ${rpcs.length} RPCs total\n`);
-  console.log('| Name | URL | RPS | TPS | Mempool | Safe TX | Status |');
-  console.log('|------|-----|-----|-----|---------|---------|--------|');
+  console.log('| Name | URL | RPS | TPS | Mempool | Safe TX | Found On | Status |');
+  console.log('|------|-----|-----|-----|---------|---------|----------|--------|');
   
   const results = [];
   
@@ -225,14 +225,14 @@ async function main() {
       const chainTest = await rpcCall(rpc.url, 'eth_chainId', [], 10000);
       if (chainTest.error) {
         console.log(`ERROR: ${chainTest.error.message?.substring(0, 30)}`);
-        console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | - | - | - | - | error |`);
+        console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | - | - | - | - | - | error |`);
         continue;
       }
       
       const chainId = parseInt(chainTest.result, 16);
       if (chainId !== CHAIN_ID) {
         console.log(`WRONG CHAIN: ${chainId}`);
-        console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | - | - | - | - | wrong-chain |`);
+        console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | - | - | - | - | - | wrong-chain |`);
         continue;
       }
       
@@ -257,7 +257,8 @@ async function main() {
       const safeTxStr = safeTx ? '**yes**' : 'no';
       const tpsStr = tpsResult.tps > 0 ? tpsResult.tps.toFixed(0) : (tpsResult.estimated ? '~' : '0');
       
-      console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | ${rpsResult.rps.toFixed(0)} | ${tpsStr} | ${mempoolStr} | ${safeTxStr} | ${status} |`);
+      const foundOn = rpc.dex || rpc.source || rpc.name || 'unknown';
+      console.log(`| ${name} | ${rpc.url.substring(0, 50)}... | ${rpsResult.rps.toFixed(0)} | ${tpsStr} | ${mempoolStr} | ${safeTxStr} | ${foundOn} | ${status} |`);
       
       results.push({ ...rpc, name, rps: rpsResult.rps, tps: tpsResult.tps, mempool: mempoolResult, safeTx, status });
       
