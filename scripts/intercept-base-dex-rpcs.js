@@ -1,16 +1,37 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 
-// Base DEXs to scan - ordered by volume
+// Base DEXs to scan - COMPLETE LIST (20+ DEXs)
 const DEX_SITES = [
+  // === TOP BY VOLUME ===
   { name: 'Aerodrome', url: 'https://aerodrome.finance/swap' },
   { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=base' },
   { name: 'PancakeSwap', url: 'https://pancakeswap.finance/swap?chain=base' },
+  
+  // === BASE-NATIVE DEXs ===
   { name: 'BaseSwap', url: 'https://baseswap.fi/swap' },
+  { name: 'RocketSwap', url: 'https://rocketswap.exchange' },
+  { name: 'Equalizer', url: 'https://equalizer.exchange' },
+  
+  // === MULTI-CHAIN DEXs ===
   { name: 'Sushi', url: 'https://www.sushi.com/swap?chainIds=8453' },
   { name: 'DodoEx', url: 'https://app.dodoex.io/swap?network=base' },
   { name: 'KyberSwap', url: 'https://kyberswap.com/swap/base' },
-  { name: 'Maverick', url: 'https://app.mav.xyz/swap' },
+  { name: 'Maverick', url: 'https://app.mav.xyz' },
+  { name: 'Curve', url: 'https://curve.fi/base/swap' },
+  
+  // === AGGREGATORS (often have more RPC keys) ===
+  { name: 'Matcha', url: 'https://matcha.xyz/?chain=base' },
+  { name: '1inch', url: 'https://app.1inch.io/8453/swap' },
+  { name: 'Paraswap', url: 'https://app.paraswap.io?network=base' },
+  { name: 'Odos', url: 'https://app.odos.xyz?chain=base' },
+  { name: 'OpenOcean', url: 'https://app.openocean.finance?network=Base' },
+  { name: 'Jumper', url: 'https://jumper.exchange?fromChain=base' },
+  { name: 'LI.FI', url: 'https://li.fi?chain=base' },
+  
+  // === PERPS / OTHER ===
+  { name: 'SynFutures', url: 'https://app.synfutures.com' },
+  { name: 'HyperSwag', url: 'https://hyperswag.io' },
 ];
 
 // Base chainId = 8453 (0x2105)

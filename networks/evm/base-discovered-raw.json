@@ -4,10 +4,22 @@
     "Uniswap",
     "PancakeSwap",
     "BaseSwap",
+    "RocketSwap",
+    "Equalizer",
     "Sushi",
     "DodoEx",
     "KyberSwap",
-    "Maverick"
+    "Maverick",
+    "Curve",
+    "Matcha",
+    "1inch",
+    "Paraswap",
+    "Odos",
+    "OpenOcean",
+    "Jumper",
+    "LI.FI",
+    "SynFutures",
+    "HyperSwag"
   ],
   "discovered": [
     {
@@ -347,17 +359,6 @@
       "source": "https://aerodrome.finance/assets/index-BqXrnDXT.js"
     },
     {
-      "url": "https://lb.drpc.live/base/Avibgvi26EjPsw76UtdwmsQzlkwrEmsR8b2u-uF7NYYO",
-      "dex": "Aerodrome",
-      "methods": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    {
       "url": "https://rpc.walletconnect.org/v1",
       "dex": "Aerodrome",
       "methods": [
@@ -372,6 +373,17 @@
         "found_in_js"
       ],
       "source": "https://aerodrome.finance/assets/index.es-D0HbeNxo.js"
+    },
+    {
+      "url": "https://lb.drpc.live/base/Avibgvi26EjPsw76UtdwmsQzlkwrEmsR8b2u-uF7NYYO",
+      "dex": "Aerodrome",
+      "methods": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "url": "https://rpc.walletconnect.org",
@@ -428,14 +440,6 @@
         "found_in_js"
       ],
       "source": "https://aerodrome.finance/assets/index-Dwdf-2Ii.js"
-    },
-    {
-      "url": "https://bscrpc.pancakeswap.finance",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://pancakeswap.finance/_next/static/chunks/86026-b1fe6d0f03bdeb77.js"
     },
     {
       "url": "https://eth.llamarpc.com",
@@ -575,6 +579,14 @@
         "found_in_js"
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/37739-af0f4ca97981151f.js"
+    },
+    {
+      "url": "https://bscrpc.pancakeswap.finance",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/86026-b1fe6d0f03bdeb77.js"
     },
     {
       "url": "https://nodes.pancakeswap.info/",
@@ -737,8 +749,12 @@
       "methods": [
         "eth_chainId",
         "eth_blockNumber",
+        "eth_call",
         "eth_chainId",
-        "eth_chainId"
+        "eth_chainId",
+        "eth_call",
+        "eth_getBlockByNumber",
+        "eth_call"
       ]
     },
     {
@@ -755,11 +771,8 @@
       "dex": "PancakeSwap",
       "methods": [
         "eth_chainId",
-        "eth_call",
-        "eth_call",
         "eth_chainId",
-        "eth_chainId",
-        "eth_getBlockByNumber"
+        "eth_chainId"
       ]
     },
     {
@@ -1702,174 +1715,6 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/quote-worker.ccddafbe15c4d75d.js"
     },
     {
-      "url": "https://evm-rpc.sei-apis.com/",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/1107-ee5fe0c21187a6a4.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://mainnet.storyrpc.io",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/1107-ee5fe0c21187a6a4.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://11155111.rpc.thirdweb.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://dream-rpc.somnia.network",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.immutable.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.curtis.apechain.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc-gel-sepolia.inkonchain.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://mainnet-rpc.b3.fun/http",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://carrot.megaeth.com/rpc",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.blast.io",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.berachain.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.dev.gblend.xyz",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.apechain.com/http",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://saigon-testnet.roninchain.com/rpc",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://artio.rpc.berachain.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://api.roninchain.com/rpc",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://ethereum-holesky-rpc.publicnode.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://worldchain-mainnet.g.alchemy.com/public",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://worldchain-mainnet.explorer.alchemy.com",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
-      "url": "https://worldchain-mainnet.explorer.alchemy.com/api",
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    {
       "url": "https://rpc.mainnet.ms",
       "dex": "PancakeSwap",
       "methods": [
@@ -1879,6 +1724,14 @@
     },
     {
       "url": "https://rpc.gobob.xyz",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://mainnet-rpc.b3.fun/http",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -1927,6 +1780,14 @@
     },
     {
       "url": "https://testnet-rpc.lumoz.org",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://rpc.immutable.com",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -2039,6 +1900,14 @@
     },
     {
       "url": "https://testnet-rpc.hychain.com/http",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://ethereum-holesky-rpc.publicnode.com",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -2310,6 +2179,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://evm-rpc.sei-apis.com/",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://rpc-proxima.swanchain.io",
       "dex": "PancakeSwap",
       "methods": [
@@ -2462,6 +2339,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://rpc-gel-sepolia.inkonchain.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://rpc.polynomial.fi",
       "dex": "PancakeSwap",
       "methods": [
@@ -2511,6 +2396,14 @@
     },
     {
       "url": "https://rpc.genesys.network",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://rpc.dev.gblend.xyz",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -3062,6 +2955,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://rpc.blast.io",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://rpc.testnet.mantle.xyz",
       "dex": "PancakeSwap",
       "methods": [
@@ -3167,6 +3068,14 @@
     },
     {
       "url": "https://rpc-mainnet-1.bevm.io",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://rpc.apechain.com/http",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -3286,6 +3195,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://mainnet.storyrpc.io",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://rpc.arena-z.gg",
       "dex": "PancakeSwap",
       "methods": [
@@ -3311,6 +3228,14 @@
     },
     {
       "url": "https://250.rpc.thirdweb.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://api.roninchain.com/rpc",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -3471,6 +3396,14 @@
     },
     {
       "url": "https://api.shasta.trongrid.io/jsonrpc",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://carrot.megaeth.com/rpc",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -3710,6 +3643,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://rpc.berachain.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://rpc.ancient8.gg",
       "dex": "PancakeSwap",
       "methods": [
@@ -3919,6 +3860,14 @@
     },
     {
       "url": "https://rpc.premiumblock.org",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -4438,6 +4387,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://saigon-testnet.roninchain.com/rpc",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://testnet-rpc.plume.org",
       "dex": "PancakeSwap",
       "methods": [
@@ -4526,6 +4483,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://rpc.curtis.apechain.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://zetachain-evm.blockpi.network/v1/rpc/public",
       "dex": "PancakeSwap",
       "methods": [
@@ -4567,6 +4532,14 @@
     },
     {
       "url": "https://rpc.plume.org",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://dream-rpc.somnia.network",
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -5022,6 +4995,14 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://artio.rpc.berachain.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://public-01.mainnet.bifrostnetwork.com/rpc",
       "dex": "PancakeSwap",
       "methods": [
@@ -5126,6 +5107,30 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     {
+      "url": "https://worldchain-mainnet.g.alchemy.com/public",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://worldchain-mainnet.explorer.alchemy.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://worldchain-mainnet.explorer.alchemy.com/api",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
       "url": "https://geist-polter.g.alchemy.com/public",
       "dex": "PancakeSwap",
       "methods": [
@@ -5148,6 +5153,14 @@
         "found_in_js"
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    {
+      "url": "https://11155111.rpc.thirdweb.com",
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
     },
     {
       "url": "https://hyperevm-testnet.rpc.privy.systems",
@@ -5510,6 +5523,110 @@
       "source": "https://auth.privy.io/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
     },
     {
+      "url": "https://zap-api.kyberswap.com/base/api/v1/in/",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://baseswap.fi/images/tokens/0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9.png",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/base/brand-kit/refs/heads/main/logo/TheSquare/Digital/Base_square_blue.png",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/base/49e8f39a9a4ec3f43b5ae964dfd6aa83b36e19dbb270a73f9121a9e593d85ad2",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://www.reddit.com/r/BaseswapFi/",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://twitter.com/BaseSwapDex",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://t.me/BaseswapFi",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://medium.com/@BaseSwap",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://docs.baseswap.fi/baseswap/",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://perps.baseswap.fi/",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://automated.baseswap.fi",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/baseswapfi/default-token-list/main/images/SMDLOGO.png",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
+      "url": "https://rpc.minato.soneium.org/",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    {
       "url": "https://apps.apple.com/us/app/coinbase-wallet-store-crypto/id1278383455",
       "dex": "BaseSwap",
       "methods": [
@@ -5558,20 +5675,28 @@
       "source": "https://baseswap.fi/_next/static/chunks/4e88bc13-9a769155d3bdb4da.js"
     },
     {
-      "url": "http://some-random-base.com/",
+      "url": "https://automated.baseswap.fi/all-strategies",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/8399-11b867775d2ef471.js"
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
     },
     {
-      "url": "https://rpc.minato.soneium.org/",
+      "url": "https://app.across.to/bridge?to=8453&integrator=baseswap&integrator_id=0049",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/4391-7687a713e1959226.js"
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
+    },
+    {
+      "url": "https://www.alchemy.com/faucets/soneium-minato",
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
     },
     {
       "url": "https://arbitrum.public-rpc.com",
@@ -5662,140 +5787,60 @@
       "source": "https://baseswap.fi/_next/static/chunks/4391-7687a713e1959226.js"
     },
     {
-      "url": "https://baseswapbackend-889ed7530fd7.herokuapp.com/graphql",
+      "url": "http://some-random-base.com/",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/8399-11b867775d2ef471.js"
     },
     {
-      "url": "https://www.baseswap.fi",
+      "url": "https://evm-rpc.sei-apis.com",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
-      "url": "https://automated.baseswap.fi/all-strategies",
+      "url": "https://scroll-rpc.publicnode.com",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
-      "url": "https://app.across.to/bridge?to=8453&integrator=baseswap&integrator_id=0049",
+      "url": "https://rpc.zkevm.cronos.org",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
-      "url": "https://perps.baseswap.fi/",
+      "url": "https://rpcman.orbs.network/rpc?chainId=${e}&appId=twap-ui`)})};let",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
-      "url": "https://www.alchemy.com/faucets/soneium-minato",
+      "url": "https://peaq-rpc.publicnode.com",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
-      "url": "https://zap-api.kyberswap.com/base/api/v1/in/",
+      "url": "https://peaq-rpc.dwellir.com",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://baseswap.fi/images/tokens/0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9.png",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/base/brand-kit/refs/heads/main/logo/TheSquare/Digital/Base_square_blue.png",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://rpc.ankr.com/base/49e8f39a9a4ec3f43b5ae964dfd6aa83b36e19dbb270a73f9121a9e593d85ad2",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://www.reddit.com/r/BaseswapFi/",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://twitter.com/BaseSwapDex",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://t.me/BaseswapFi",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://medium.com/@BaseSwap",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://docs.baseswap.fi/baseswap/",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://automated.baseswap.fi",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/baseswapfi/default-token-list/main/images/SMDLOGO.png",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     {
       "url": "https://rpc.ankr.com/eth_goerli",
@@ -5886,52 +5931,20 @@
       "source": "https://baseswap.fi/_next/static/chunks/8979-a95b418352df8d60.js"
     },
     {
-      "url": "https://evm-rpc.sei-apis.com",
+      "url": "https://baseswapbackend-889ed7530fd7.herokuapp.com/graphql",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
+      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
     },
     {
-      "url": "https://scroll-rpc.publicnode.com",
+      "url": "https://www.baseswap.fi",
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    {
-      "url": "https://rpc.zkevm.cronos.org",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    {
-      "url": "https://rpcman.orbs.network/rpc?chainId=${e}&appId=twap-ui`)})};let",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    {
-      "url": "https://peaq-rpc.publicnode.com",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    {
-      "url": "https://peaq-rpc.dwellir.com",
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
+      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
     },
     {
       "url": "https://base.drpc.org/",
@@ -5941,6 +5954,134 @@
         "eth_call",
         "eth_call"
       ]
+    },
+    {
+      "url": "https://open-api.openocean.finance/v4/base/swap",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/7066-56a1da1916032e17.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://open-api.openocean.finance/v4/base/gasPrice",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/7066-56a1da1916032e17.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://sonic.drpc.org",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://base.blockpi.network/v1/rpc/public",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://base-rpc.publicnode.com",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://base.gateway.tenderly.co",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://rpc.ankr.com/base",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://rpcapi.fantom.network",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://rpc.fantom.network",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://rpc2.fantom.network",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://fantom.blockpi.network/v1/rpc/public",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://1rpc.io/sonic",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://sonic-rpc.publicnode.com",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://base.equalizer.exchange",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://rpc.ankr.com/fantom",
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    {
+      "url": "https://cca-lite.coinbase.com/*",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/main-app-a303137c6dca2b9c.js"
     },
     {
       "url": "https://rpc.katanarpc.com",
@@ -5967,20 +6108,12 @@
       "source": "https://www.sushi.com/_next/static/chunks/80079-6c719d2473afb88b.js"
     },
     {
-      "url": "https://mainnet.helius-rpc.com/?api-key=2f1f30b2-0307-4a4f-b310-dd2470256e2a",
-      "dex": "Sushi",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://www.sushi.com/_next/static/chunks/83354-bd48a10093192568.js"
-    },
-    {
       "url": "https://lb.drpc.live/ogrpc?network=arbitrum-nova&dkey=",
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=arbitrum&dkey=",
@@ -5988,7 +6121,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=avalanche&dkey=",
@@ -5996,7 +6129,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=boba-eth&dkey=",
@@ -6004,7 +6137,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=boba-bnb&dkey=",
@@ -6012,7 +6145,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=bsc&dkey=",
@@ -6020,7 +6153,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=celo&dkey=",
@@ -6028,7 +6161,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=ethereum&dkey=",
@@ -6036,7 +6169,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=fantom&dkey=",
@@ -6044,7 +6177,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=gnosis&dkey=",
@@ -6052,7 +6185,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=harmony-0&dkey=",
@@ -6060,7 +6193,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=kava&dkey=",
@@ -6068,7 +6201,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=metis&dkey=",
@@ -6076,7 +6209,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=optimism&dkey=",
@@ -6084,7 +6217,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=polygon&dkey=",
@@ -6092,7 +6225,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=polygon-zkevm&dkey=",
@@ -6100,7 +6233,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=thundercore&dkey=",
@@ -6108,7 +6241,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=haqq&dkey=",
@@ -6116,7 +6249,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=core&dkey=",
@@ -6124,7 +6257,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=zksync&dkey=",
@@ -6132,7 +6265,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=linea&dkey=",
@@ -6140,7 +6273,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=base&dkey=",
@@ -6148,7 +6281,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=scroll&dkey=",
@@ -6156,7 +6289,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=zeta-chain&dkey=",
@@ -6164,7 +6297,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=cronos&dkey=",
@@ -6172,7 +6305,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=blast&dkey=",
@@ -6180,7 +6313,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=rootstock&dkey=",
@@ -6188,7 +6321,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=mantle&dkey=",
@@ -6196,7 +6329,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=manta-pacific&dkey=",
@@ -6204,7 +6337,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=mode&dkey=",
@@ -6212,7 +6345,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=taiko&dkey=",
@@ -6220,7 +6353,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=apechain&dkey=",
@@ -6228,7 +6361,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=sonic&dkey=",
@@ -6236,7 +6369,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=hemi&dkey=",
@@ -6244,7 +6377,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=katana&dkey=",
@@ -6252,7 +6385,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=hyperliquid&dkey=",
@@ -6260,7 +6393,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=berachain&dkey=",
@@ -6268,7 +6401,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=plasma&dkey=",
@@ -6276,7 +6409,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=fuse&dkey=",
@@ -6284,7 +6417,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=monad-mainnet&dkey=",
@@ -6292,7 +6425,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=megaeth&dkey=",
@@ -6300,7 +6433,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://lb.drpc.live/ogrpc?network=xlayer&dkey=",
@@ -6308,7 +6441,7 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
       "url": "https://sepolia.drpc.live",
@@ -6316,23 +6449,15 @@
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     {
-      "url": "https://lb.drpc.live/",
+      "url": "https://mainnet.helius-rpc.com/?api-key=2f1f30b2-0307-4a4f-b310-dd2470256e2a",
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
-    },
-    {
-      "url": "https://cca-lite.coinbase.com/*",
-      "dex": "Sushi",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://www.sushi.com/_next/static/chunks/main-app-a303137c6dca2b9c.js"
+      "source": "https://www.sushi.com/_next/static/chunks/83354-bd48a10093192568.js"
     },
     {
       "url": "https://rpc.ankr.com/stellar_soroban/e6ef92f5420048573bc2887637ca25e41a472789ba54014c6a74c52c7f1af408",
@@ -6357,6 +6482,14 @@
         "found_in_js"
       ],
       "source": "https://www.sushi.com/_next/static/chunks/33161-51709c2295826c20.js"
+    },
+    {
+      "url": "https://lb.drpc.live/",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
     },
     {
       "url": "https://wallet.coinbase.com",
@@ -6632,14 +6765,6 @@
     },
     {
       "url": "https://evmtestnet.confluxrpc.org",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/pages/_app-621aaac716157255.js"
-    },
-    {
-      "url": "https://rpc.ankr.com/fantom",
       "dex": "DodoEx",
       "methods": [
         "found_in_js"
@@ -6927,7 +7052,7 @@
       "source": "https://app.dodoex.io/_next/static/chunks/pages/_app-621aaac716157255.js"
     },
     {
-      "url": "https://api.dodoex.io/frontend-rpc/8453?useCache=true&x_api_secret=JfPZkD%2FvhaGMAC7dRpwUWg%3D%3D&apikey=f1bd784016655422ee&x_api_key=BBDA8083BF3A7D51EFB1A0947C4A4F9B",
+      "url": "https://api.dodoex.io/frontend-rpc/8453?useCache=true&x_api_secret=oUaKMoEb%2B0hwQ%2FHDHNagLg%3D%3D&apikey=f1bd784016655422ee&x_api_key=BBDA8083BF3A7D51EFB1A0947C4A4F9B",
       "dex": "DodoEx",
       "methods": [
         "eth_blockNumber"
@@ -6940,94 +7065,6 @@
         "found_in_js"
       ],
       "source": "https://app.dodoex.io/_next/static/chunks/5685-ff9b00e8154850f4.js"
-    },
-    {
-      "url": "https://mainnet.infura.io/v3/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://rinkeby.infura.io/v3/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://goerli.infura.io/v3/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mainnet.infura.io/v3/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mumbai.infura.io/v3/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://goerli.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mumbai.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mainnet.g.alchemy.com/v2/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    {
-      "url": "https://polygon-mumbai.g.alchemy.com/v2/",
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
     },
     {
       "url": "https://rpc.particle.network/evm-chain?chainId=${t}&projectUuid=${n}&projectKey=${r}`}((t",
@@ -7430,6 +7467,94 @@
       "source": "https://app.dodoex.io/_next/static/chunks/96b89bf6.25713e56722f8d2e.js"
     },
     {
+      "url": "https://mainnet.infura.io/v3/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://rinkeby.infura.io/v3/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://goerli.infura.io/v3/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mainnet.infura.io/v3/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mumbai.infura.io/v3/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://goerli.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mumbai.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mainnet.g.alchemy.com/v2/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
+      "url": "https://polygon-mumbai.g.alchemy.com/v2/",
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    {
       "url": "https://eth-rpc.gateway.pokt.network",
       "dex": "DodoEx",
       "methods": [
@@ -7567,14 +7692,6 @@
     },
     {
       "url": "https://ethereum-rpc.kyberswap.com",
-      "dex": "KyberSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://kyberswap.com/assets/index-744c92f4.js?country=singapore"
-    },
-    {
-      "url": "https://rpc.fantom.network",
       "dex": "KyberSwap",
       "methods": [
         "found_in_js"
@@ -8043,7 +8160,6 @@
       "methods": [
         "eth_blockNumber",
         "eth_call",
-        "eth_call",
         "eth_blockNumber",
         "eth_call",
         "eth_blockNumber",
@@ -8185,6 +8301,922 @@
         "found_in_js"
       ],
       "source": "https://app.mav.xyz/assets/index-4QiZWYd0.js"
+    },
+    {
+      "url": "https://eth.drpc.org",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://1rpc.io/arb",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/corn_maizenet",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://mainnet.corn-rpc.com",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/taiko",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://taiko.drpc.org",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://ink.drpc.org",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc.hypurrscan.io",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc1.xinfin.network",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://turin.rpc.tac.build",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc0-testnet.expchain.ai",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://zksync.drpc.org",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://optimism.drpc.org",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://rpc.ftm.tools/",
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    {
+      "url": "https://api-sepolia.basescan.org",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://polygon-rpc.com/",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://rpc-amoy.polygon.technology/",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://eth.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://eth-sepolia.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://eth-holesky.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://etc.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://arbitrum.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://base.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://base-sepolia.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://polygon.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://optimism.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://optimism-sepolia.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://gnosis.blockscout.com/api/eth-rpc",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://${Yv.url}`]",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    {
+      "url": "https://api.dev.innerworks.me/api/v1x22",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk-cdn.prod.innerworks.me/bundle-1.0.15.js"
+    },
+    {
+      "url": "https://cdn.velora.xyz/network/base.svg",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/52704/paraswap-subgraph-base/v0.0.1",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://rpc.paraswap.io",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://unichain.drpc.org",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://firebaseinstallations.googleapis.com/v1",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/27313/thumb/mbase.png?1696526362",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/19926/thumb/kbase_logo.jpg?1696519345",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/55602/thumb/Ticker_COIN__Company_Name_Coinbase__size_200x200_2x.png?1746858187",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/55781/thumb/Ticker_COIN__Company_Name_Coinbase__size_200x200_2x.png?1747331475",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/19550/thumb/615635338527975b0314223a_Altbase_app_icon.png?1696518983",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://assets.coingecko.com/coins/images/27663/thumb/openx_BASE.png?1710472693",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://dynamic-assets.coinbase.com/55517c7b84cff054d0bf84f6d82680b5368915854f855ec4fe0178478a637b18a985ec85b87387beb2ae2a1b276fcb320ac7451c358302ceebb179c58934ff65/asset_icons/93aa525880c2df46f3d5404cff1844a42f1a5d1fc812128ae3f70f2ce4a882e1.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://basescan.org/token/images/cbbtc_32.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://basescan.org/token/images/imgnlabs_64.svg",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://basescan.org/token/images/centre-usdc_28.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://basescan.org/token/images/aerodrome_32.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://coin-images.coingecko.com/coins/images/66268/large/Coinbase_Wrapped_Doge_%28cbDOGE%29.png?1749023465",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://coin-images.coingecko.com/coins/images/66267/large/Coinbase_Wrapped_XPR_%28cbXRP%29.png?1749023398",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://basescan.org/token/images/seamless_32.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://dynamic-assets.coinbase.com/30320a63f6038b944c9c0202fcb2392e6a1bd333814f74b4674774dd87f2d06d64fdd74c2f1ab4639917c75b749c323450408bec7a2737af8ae0c17871aa90de/asset_icons/98d278cda11639ed7449a0a3086cd2c83937ce71baf4ee43bb5b777423c00a75.png",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://ropsten.infura.io/v3/{{VITE_INFURA_KEY}}",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    {
+      "url": "https://1rpc.io/matic",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/Home-BVWHDudi.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3/5e38ed450b044233a99bdd1e464a4976",
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/Home-BVWHDudi.js"
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "dex": "Paraswap",
+      "methods": [
+        "eth_chainId",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_call",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId"
+      ]
+    },
+    {
+      "url": "https://optimism-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://bsc-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://bsc.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://unichain-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://polygon-bor-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://polygon.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://sonic-rpc.publicnode.com:443",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://fraxtal-rpc.publicnode.com:443",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://fraxtal.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/zksync_era",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://mantle-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://mantle.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://basescan.org/tx/",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://arbitrum-one-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://arbitrum.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://avalanche-c-chain-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://avalanche.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://linea-rpc.publicnode.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://linea.drpc.org",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://odos-eth.rpc.blxrbdn.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://odos-bnb.rpc.blxrbdn.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://odos-polygon.rpc.blxrbdn.com",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    {
+      "url": "https://base.org/favicon.ico",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://eips.ethereum.org/EIPS/eip-1193#message`}",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://celo-alfajores.infura.io/v3/${n}`};e.options.readonlyRPCMap?e.options.readonlyRPCMap=Object.assign(Object.assign({}",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://goerli.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://sepolia.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://linea-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://linea-goerli.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://polygon-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://polygon-mumbai.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://optimism-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://optimism-goerli.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://arbitrum-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://arbitrum-goerli.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://palm-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://palm-testnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://avalanche-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://avalanche-fuji.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://aurora-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://aurora-testnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://starknet-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://starknet-goerli.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://starknet-goerli2.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3/${n}`",
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    {
+      "url": "https://lifi-mainc49-4c2b.mainnet.rpcpool.com/",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    {
+      "url": "https://dacey-pp61jd-fast-mainnet.helius-rpc.com/",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    {
+      "url": "https://consensys-zkevm-goerli-prealpha.infura.io/v3/faf4bc4ea7344e5da5e56c55de087480",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    {
+      "url": "https://lifinance.github.io/types/src/assets/icons/wallets/coinbase.svg",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/f0ff84e9de851cfa.js"
+    },
+    {
+      "url": "https://lifinance.github.io/types/src/assets/icons/wallets/baseAccount.svg",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/f0ff84e9de851cfa.js"
+    },
+    {
+      "url": "https://lb.drpc.org/ogrpc?network=optimism&dkey=${r.default.NEXT_PUBLIC_DKEY}`",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    {
+      "url": "https://optimism.meowrpc.com",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    {
+      "url": "https://lb.drpc.org/ogrpc?network=arbitrum&dkey=${r.default.NEXT_PUBLIC_DKEY}`",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    {
+      "url": "https://arbitrum.meowrpc.com",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    {
+      "url": "https://lb.drpc.org/ogrpc?network=base&dkey=${r.default.NEXT_PUBLIC_DKEY}`",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    {
+      "url": "https://base-pokt.nodies.app",
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
     }
   ],
   "allRpcs": {
@@ -8482,16 +9514,6 @@
       ],
       "source": "https://aerodrome.finance/assets/index-BqXrnDXT.js"
     },
-    "https://lb.drpc.live/base/Avibgvi26EjPsw76UtdwmsQzlkwrEmsR8b2u-uF7NYYO": {
-      "dex": "Aerodrome",
-      "methods": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
     "https://rpc.walletconnect.org/v1": {
       "dex": "Aerodrome",
       "methods": [
@@ -8505,6 +9527,16 @@
         "found_in_js"
       ],
       "source": "https://aerodrome.finance/assets/index.es-D0HbeNxo.js"
+    },
+    "https://lb.drpc.live/base/Avibgvi26EjPsw76UtdwmsQzlkwrEmsR8b2u-uF7NYYO": {
+      "dex": "Aerodrome",
+      "methods": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
     },
     "https://rpc.walletconnect.org": {
       "dex": "Aerodrome",
@@ -8562,13 +9594,6 @@
         null,
         null
       ]
-    },
-    "https://bscrpc.pancakeswap.finance": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://pancakeswap.finance/_next/static/chunks/86026-b1fe6d0f03bdeb77.js"
     },
     "https://eth.llamarpc.com": {
       "dex": "PancakeSwap",
@@ -8691,6 +9716,13 @@
         "found_in_js"
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/37739-af0f4ca97981151f.js"
+    },
+    "https://bscrpc.pancakeswap.finance": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/86026-b1fe6d0f03bdeb77.js"
     },
     "https://nodes.pancakeswap.info/": {
       "dex": "PancakeSwap",
@@ -8835,8 +9867,12 @@
       "methods": [
         "eth_chainId",
         "eth_blockNumber",
+        "eth_call",
         "eth_chainId",
-        "eth_chainId"
+        "eth_chainId",
+        "eth_call",
+        "eth_getBlockByNumber",
+        "eth_call"
       ]
     },
     "https://lb.nodies.app/v1/0abc2c55fd444b198a6b2f72b17529bb": {
@@ -8851,11 +9887,8 @@
       "dex": "PancakeSwap",
       "methods": [
         "eth_chainId",
-        "eth_call",
-        "eth_call",
         "eth_chainId",
-        "eth_chainId",
-        "eth_getBlockByNumber"
+        "eth_chainId"
       ]
     },
     "https://base.meowrpc.com/": {
@@ -9670,24 +10703,28 @@
     "https://rpc.ankr.com/bsc": {
       "dex": "PancakeSwap",
       "methods": [
+        "eth_call",
         "eth_call"
       ]
     },
     "https://binance.nodereal.io/": {
       "dex": "PancakeSwap",
       "methods": [
+        "eth_call",
         "eth_call"
       ]
     },
     "https://bscrpc.com/": {
       "dex": "PancakeSwap",
       "methods": [
+        "eth_call",
         "eth_call"
       ]
     },
     "https://bsc-dataseed2.ninicoin.io/": {
       "dex": "PancakeSwap",
       "methods": [
+        "eth_call",
         "eth_call"
       ]
     },
@@ -9705,153 +10742,6 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/quote-worker.ccddafbe15c4d75d.js"
     },
-    "https://evm-rpc.sei-apis.com/": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/1107-ee5fe0c21187a6a4.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://mainnet.storyrpc.io": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/1107-ee5fe0c21187a6a4.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://11155111.rpc.thirdweb.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://dream-rpc.somnia.network": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.immutable.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.curtis.apechain.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc-gel-sepolia.inkonchain.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://mainnet-rpc.b3.fun/http": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://carrot.megaeth.com/rpc": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.blast.io": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.berachain.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.dev.gblend.xyz": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.apechain.com/http": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://saigon-testnet.roninchain.com/rpc": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://artio.rpc.berachain.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://api.roninchain.com/rpc": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://ethereum-holesky-rpc.publicnode.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://worldchain-mainnet.g.alchemy.com/public": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://worldchain-mainnet.explorer.alchemy.com": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
-    "https://worldchain-mainnet.explorer.alchemy.com/api": {
-      "dex": "PancakeSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
-    },
     "https://rpc.mainnet.ms": {
       "dex": "PancakeSwap",
       "methods": [
@@ -9860,6 +10750,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://rpc.gobob.xyz": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://mainnet-rpc.b3.fun/http": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -9902,6 +10799,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://testnet-rpc.lumoz.org": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://rpc.immutable.com": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -10000,6 +10904,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://testnet-rpc.hychain.com/http": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://ethereum-holesky-rpc.publicnode.com": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -10237,6 +11148,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://evm-rpc.sei-apis.com/": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://rpc-proxima.swanchain.io": {
       "dex": "PancakeSwap",
       "methods": [
@@ -10370,6 +11288,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://rpc-gel-sepolia.inkonchain.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://rpc.polynomial.fi": {
       "dex": "PancakeSwap",
       "methods": [
@@ -10413,6 +11338,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://rpc.genesys.network": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://rpc.dev.gblend.xyz": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -10895,6 +11827,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://rpc.blast.io": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://rpc.testnet.mantle.xyz": {
       "dex": "PancakeSwap",
       "methods": [
@@ -10987,6 +11926,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://rpc-mainnet-1.bevm.io": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://rpc.apechain.com/http": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -11091,6 +12037,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://mainnet.storyrpc.io": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://rpc.arena-z.gg": {
       "dex": "PancakeSwap",
       "methods": [
@@ -11113,6 +12066,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://250.rpc.thirdweb.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://api.roninchain.com/rpc": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -11253,6 +12213,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://api.shasta.trongrid.io/jsonrpc": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://carrot.megaeth.com/rpc": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -11462,6 +12429,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://rpc.berachain.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://rpc.ancient8.gg": {
       "dex": "PancakeSwap",
       "methods": [
@@ -11645,6 +12619,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://rpc.premiumblock.org": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -12099,6 +13080,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://saigon-testnet.roninchain.com/rpc": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://testnet-rpc.plume.org": {
       "dex": "PancakeSwap",
       "methods": [
@@ -12176,6 +13164,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://rpc.curtis.apechain.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://zetachain-evm.blockpi.network/v1/rpc/public": {
       "dex": "PancakeSwap",
       "methods": [
@@ -12212,6 +13207,13 @@
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
     "https://rpc.plume.org": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://dream-rpc.somnia.network": {
       "dex": "PancakeSwap",
       "methods": [
         "found_in_js"
@@ -12610,6 +13612,13 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://artio.rpc.berachain.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://public-01.mainnet.bifrostnetwork.com/rpc": {
       "dex": "PancakeSwap",
       "methods": [
@@ -12701,6 +13710,27 @@
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
     },
+    "https://worldchain-mainnet.g.alchemy.com/public": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://worldchain-mainnet.explorer.alchemy.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://worldchain-mainnet.explorer.alchemy.com/api": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
     "https://geist-polter.g.alchemy.com/public": {
       "dex": "PancakeSwap",
       "methods": [
@@ -12721,6 +13751,13 @@
         "found_in_js"
       ],
       "source": "https://pancakeswap.finance/_next/static/chunks/worker-chunks.9e54dfedc7578496.js"
+    },
+    "https://11155111.rpc.thirdweb.com": {
+      "dex": "PancakeSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://auth.privy.io/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
     },
     "https://hyperevm-testnet.rpc.privy.systems": {
       "dex": "PancakeSwap",
@@ -13037,6 +14074,97 @@
       ],
       "source": "https://auth.privy.io/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
     },
+    "https://zap-api.kyberswap.com/base/api/v1/in/": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://baseswap.fi/images/tokens/0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9.png": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://raw.githubusercontent.com/base/brand-kit/refs/heads/main/logo/TheSquare/Digital/Base_square_blue.png": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://rpc.ankr.com/base/49e8f39a9a4ec3f43b5ae964dfd6aa83b36e19dbb270a73f9121a9e593d85ad2": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://www.reddit.com/r/BaseswapFi/": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://twitter.com/BaseSwapDex": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://t.me/BaseswapFi": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://medium.com/@BaseSwap": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://docs.baseswap.fi/baseswap/": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://perps.baseswap.fi/": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://automated.baseswap.fi": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://raw.githubusercontent.com/baseswapfi/default-token-list/main/images/SMDLOGO.png": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
+    "https://rpc.minato.soneium.org/": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+    },
     "https://apps.apple.com/us/app/coinbase-wallet-store-crypto/id1278383455": {
       "dex": "BaseSwap",
       "methods": [
@@ -13079,19 +14207,26 @@
       ],
       "source": "https://baseswap.fi/_next/static/chunks/4e88bc13-9a769155d3bdb4da.js"
     },
-    "http://some-random-base.com/": {
+    "https://automated.baseswap.fi/all-strategies": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/8399-11b867775d2ef471.js"
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
     },
-    "https://rpc.minato.soneium.org/": {
+    "https://app.across.to/bridge?to=8453&integrator=baseswap&integrator_id=0049": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/4391-7687a713e1959226.js"
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
+    },
+    "https://www.alchemy.com/faucets/soneium-minato": {
+      "dex": "BaseSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://baseswap.fi/_next/static/chunks/5623-be0438157897983f.js"
     },
     "https://arbitrum.public-rpc.com": {
       "dex": "BaseSwap",
@@ -13170,124 +14305,54 @@
       ],
       "source": "https://baseswap.fi/_next/static/chunks/4391-7687a713e1959226.js"
     },
-    "https://baseswapbackend-889ed7530fd7.herokuapp.com/graphql": {
+    "http://some-random-base.com/": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/8399-11b867775d2ef471.js"
     },
-    "https://www.baseswap.fi": {
+    "https://evm-rpc.sei-apis.com": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
-    "https://automated.baseswap.fi/all-strategies": {
+    "https://scroll-rpc.publicnode.com": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
-    "https://app.across.to/bridge?to=8453&integrator=baseswap&integrator_id=0049": {
+    "https://rpc.zkevm.cronos.org": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
-    "https://perps.baseswap.fi/": {
+    "https://rpcman.orbs.network/rpc?chainId=${e}&appId=twap-ui`)})};let": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
-    "https://www.alchemy.com/faucets/soneium-minato": {
+    "https://peaq-rpc.publicnode.com": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
-    "https://zap-api.kyberswap.com/base/api/v1/in/": {
+    "https://peaq-rpc.dwellir.com": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://baseswap.fi/images/tokens/0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9.png": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://raw.githubusercontent.com/base/brand-kit/refs/heads/main/logo/TheSquare/Digital/Base_square_blue.png": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://rpc.ankr.com/base/49e8f39a9a4ec3f43b5ae964dfd6aa83b36e19dbb270a73f9121a9e593d85ad2": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://www.reddit.com/r/BaseswapFi/": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://twitter.com/BaseSwapDex": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://t.me/BaseswapFi": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://medium.com/@BaseSwap": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://docs.baseswap.fi/baseswap/": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://automated.baseswap.fi": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
-    },
-    "https://raw.githubusercontent.com/baseswapfi/default-token-list/main/images/SMDLOGO.png": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/5308-52858e2ffb043600.js"
+      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
     },
     "https://rpc.ankr.com/eth_goerli": {
       "dex": "BaseSwap",
@@ -13366,47 +14431,19 @@
       ],
       "source": "https://baseswap.fi/_next/static/chunks/8979-a95b418352df8d60.js"
     },
-    "https://evm-rpc.sei-apis.com": {
+    "https://baseswapbackend-889ed7530fd7.herokuapp.com/graphql": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
+      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
     },
-    "https://scroll-rpc.publicnode.com": {
+    "https://www.baseswap.fi": {
       "dex": "BaseSwap",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    "https://rpc.zkevm.cronos.org": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    "https://rpcman.orbs.network/rpc?chainId=${e}&appId=twap-ui`)})};let": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    "https://peaq-rpc.publicnode.com": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
-    },
-    "https://peaq-rpc.dwellir.com": {
-      "dex": "BaseSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://baseswap.fi/_next/static/chunks/2422-7eb6abed95ddee65.js"
+      "source": "https://baseswap.fi/_next/static/chunks/app/layout-c9fed0e406d1fad9.js"
     },
     "https://base.drpc.org/": {
       "dex": "BaseSwap",
@@ -13415,6 +14452,118 @@
         "eth_call",
         "eth_call"
       ]
+    },
+    "https://open-api.openocean.finance/v4/base/swap": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/7066-56a1da1916032e17.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://open-api.openocean.finance/v4/base/gasPrice": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/7066-56a1da1916032e17.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://sonic.drpc.org": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://base.blockpi.network/v1/rpc/public": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://base-rpc.publicnode.com": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://base.gateway.tenderly.co": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://rpc.ankr.com/base": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://rpcapi.fantom.network": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://rpc.fantom.network": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://rpc2.fantom.network": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://fantom.blockpi.network/v1/rpc/public": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://1rpc.io/sonic": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://sonic-rpc.publicnode.com": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://base.equalizer.exchange": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://rpc.ankr.com/fantom": {
+      "dex": "Equalizer",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://equalizer.exchange/_next/static/chunks/pages/_app-12f722314356ec59.js?dpl=dpl_CE1WTwWyA1bKy6Z21dCF3dyPQPAc"
+    },
+    "https://cca-lite.coinbase.com/*": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/main-app-a303137c6dca2b9c.js"
     },
     "https://rpc.katanarpc.com": {
       "dex": "Sushi",
@@ -13437,327 +14586,313 @@
       ],
       "source": "https://www.sushi.com/_next/static/chunks/80079-6c719d2473afb88b.js"
     },
-    "https://mainnet.helius-rpc.com/?api-key=2f1f30b2-0307-4a4f-b310-dd2470256e2a": {
-      "dex": "Sushi",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://www.sushi.com/_next/static/chunks/83354-bd48a10093192568.js"
-    },
     "https://lb.drpc.live/ogrpc?network=arbitrum-nova&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=arbitrum&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=avalanche&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=boba-eth&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=boba-bnb&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=bsc&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=celo&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=ethereum&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=fantom&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=gnosis&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=harmony-0&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=kava&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=metis&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=optimism&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=polygon&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=polygon-zkevm&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=thundercore&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=haqq&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=core&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=zksync&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=linea&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=base&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=scroll&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=zeta-chain&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=cronos&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=blast&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=rootstock&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=mantle&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=manta-pacific&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=mode&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=taiko&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=apechain&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=sonic&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=hemi&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=katana&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=hyperliquid&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=berachain&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=plasma&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=fuse&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=monad-mainnet&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=megaeth&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://lb.drpc.live/ogrpc?network=xlayer&dkey=": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
     "https://sepolia.drpc.live": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
     },
-    "https://lb.drpc.live/": {
+    "https://mainnet.helius-rpc.com/?api-key=2f1f30b2-0307-4a4f-b310-dd2470256e2a": {
       "dex": "Sushi",
       "methods": [
         "found_in_js"
       ],
-      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
-    },
-    "https://cca-lite.coinbase.com/*": {
-      "dex": "Sushi",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://www.sushi.com/_next/static/chunks/main-app-a303137c6dca2b9c.js"
+      "source": "https://www.sushi.com/_next/static/chunks/83354-bd48a10093192568.js"
     },
     "https://rpc.ankr.com/stellar_soroban/e6ef92f5420048573bc2887637ca25e41a472789ba54014c6a74c52c7f1af408": {
       "dex": "Sushi",
@@ -13779,6 +14914,13 @@
         "found_in_js"
       ],
       "source": "https://www.sushi.com/_next/static/chunks/33161-51709c2295826c20.js"
+    },
+    "https://lb.drpc.live/": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/app/(networks)/layout-368dace161fd1f88.js"
     },
     "https://wallet.coinbase.com": {
       "dex": "Sushi",
@@ -14031,13 +15173,6 @@
       ],
       "source": "https://app.dodoex.io/_next/static/chunks/pages/_app-621aaac716157255.js"
     },
-    "https://rpc.ankr.com/fantom": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/pages/_app-621aaac716157255.js"
-    },
     "https://rpc.ankr.com/harmony": {
       "dex": "DodoEx",
       "methods": [
@@ -14283,7 +15418,7 @@
       ],
       "source": "https://app.dodoex.io/_next/static/chunks/pages/_app-621aaac716157255.js"
     },
-    "https://api.dodoex.io/frontend-rpc/8453?useCache=true&x_api_secret=JfPZkD%2FvhaGMAC7dRpwUWg%3D%3D&apikey=f1bd784016655422ee&x_api_key=BBDA8083BF3A7D51EFB1A0947C4A4F9B": {
+    "https://api.dodoex.io/frontend-rpc/8453?useCache=true&x_api_secret=oUaKMoEb%2B0hwQ%2FHDHNagLg%3D%3D&apikey=f1bd784016655422ee&x_api_key=BBDA8083BF3A7D51EFB1A0947C4A4F9B": {
       "dex": "DodoEx",
       "methods": [
         "eth_blockNumber"
@@ -14295,83 +15430,6 @@
         "found_in_js"
       ],
       "source": "https://app.dodoex.io/_next/static/chunks/5685-ff9b00e8154850f4.js"
-    },
-    "https://mainnet.infura.io/v3/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://rinkeby.infura.io/v3/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://goerli.infura.io/v3/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mainnet.infura.io/v3/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mumbai.infura.io/v3/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://goerli.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mumbai.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mainnet.g.alchemy.com/v2/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
-    },
-    "https://polygon-mumbai.g.alchemy.com/v2/": {
-      "dex": "DodoEx",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
     },
     "https://rpc.particle.network/evm-chain?chainId=${t}&projectUuid=${n}&projectKey=${r}`}((t": {
       "dex": "DodoEx",
@@ -14723,6 +15781,83 @@
       ],
       "source": "https://app.dodoex.io/_next/static/chunks/96b89bf6.25713e56722f8d2e.js"
     },
+    "https://mainnet.infura.io/v3/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://rinkeby.infura.io/v3/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://goerli.infura.io/v3/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mainnet.infura.io/v3/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mumbai.infura.io/v3/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://goerli.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mainnet.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mumbai.infura.io/v3/c4bb906ed6904c42b19c95825fe55f39": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mainnet.g.alchemy.com/v2/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
+    "https://polygon-mumbai.g.alchemy.com/v2/": {
+      "dex": "DodoEx",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.dodoex.io/_next/static/chunks/389aef0f.0fa80561665d2abd.js"
+    },
     "https://eth-rpc.gateway.pokt.network": {
       "dex": "DodoEx",
       "methods": [
@@ -14849,13 +15984,6 @@
       ],
       "source": "https://kyberswap.com/assets/index-744c92f4.js?country=singapore"
     },
-    "https://rpc.fantom.network": {
-      "dex": "KyberSwap",
-      "methods": [
-        "found_in_js"
-      ],
-      "source": "https://kyberswap.com/assets/index-744c92f4.js?country=singapore"
-    },
     "https://polygon-amoy.drpc.org": {
       "dex": "KyberSwap",
       "methods": [
@@ -14940,6 +16068,13 @@
       ],
       "source": "https://kyberswap.com/assets/index-744c92f4.js?country=singapore"
     },
+    "https://ethereum-rpc.kyberswap.com/": {
+      "dex": "KyberSwap",
+      "methods": [
+        "eth_blockNumber",
+        "eth_blockNumber"
+      ]
+    },
     "https://rpc.porto.sh": {
       "dex": "KyberSwap",
       "methods": [
@@ -14953,13 +16088,6 @@
         "found_in_js"
       ],
       "source": "https://kyberswap.com/assets/Porto-c959af12.js?country=singapore"
-    },
-    "https://ethereum-rpc.kyberswap.com/": {
-      "dex": "KyberSwap",
-      "methods": [
-        "eth_blockNumber",
-        "eth_blockNumber"
-      ]
     },
     "https://rpc.testnet.arc.network": {
       "dex": "KyberSwap",
@@ -15274,7 +16402,6 @@
       "methods": [
         "eth_blockNumber",
         "eth_call",
-        "eth_call",
         "eth_blockNumber",
         "eth_call",
         "eth_blockNumber",
@@ -15405,6 +16532,810 @@
         "found_in_js"
       ],
       "source": "https://app.mav.xyz/assets/index-4QiZWYd0.js"
+    },
+    "https://eth.drpc.org": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://1rpc.io/arb": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc.ankr.com/corn_maizenet": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://mainnet.corn-rpc.com": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc.ankr.com/taiko": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://taiko.drpc.org": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://ink.drpc.org": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc.hypurrscan.io": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc1.xinfin.network": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://turin.rpc.tac.build": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc0-testnet.expchain.ai": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://zksync.drpc.org": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://optimism.drpc.org": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://rpc.ftm.tools/": {
+      "dex": "Curve",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-CR4ikKZ3.js"
+    },
+    "https://api-sepolia.basescan.org": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://polygon-rpc.com/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://rpc-amoy.polygon.technology/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://eth.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://eth-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://eth-holesky.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://etc.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://arbitrum.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://base.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://base-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://polygon.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://optimism.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://optimism-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://gnosis.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://${Yv.url}`]": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://api.dev.innerworks.me/api/v1x22": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk-cdn.prod.innerworks.me/bundle-1.0.15.js"
+    },
+    "https://cdn.velora.xyz/network/base.svg": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://api.studio.thegraph.com/query/52704/paraswap-subgraph-base/v0.0.1": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://rpc.paraswap.io": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://ethereum-rpc.publicnode.com": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://unichain.drpc.org": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://firebaseinstallations.googleapis.com/v1": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/27313/thumb/mbase.png?1696526362": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/19926/thumb/kbase_logo.jpg?1696519345": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/55602/thumb/Ticker_COIN__Company_Name_Coinbase__size_200x200_2x.png?1746858187": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/55781/thumb/Ticker_COIN__Company_Name_Coinbase__size_200x200_2x.png?1747331475": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/19550/thumb/615635338527975b0314223a_Altbase_app_icon.png?1696518983": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://assets.coingecko.com/coins/images/27663/thumb/openx_BASE.png?1710472693": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://dynamic-assets.coinbase.com/55517c7b84cff054d0bf84f6d82680b5368915854f855ec4fe0178478a637b18a985ec85b87387beb2ae2a1b276fcb320ac7451c358302ceebb179c58934ff65/asset_icons/93aa525880c2df46f3d5404cff1844a42f1a5d1fc812128ae3f70f2ce4a882e1.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://basescan.org/token/images/cbbtc_32.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://basescan.org/token/images/imgnlabs_64.svg": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://basescan.org/token/images/centre-usdc_28.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://basescan.org/token/images/aerodrome_32.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://coin-images.coingecko.com/coins/images/66268/large/Coinbase_Wrapped_Doge_%28cbDOGE%29.png?1749023465": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://coin-images.coingecko.com/coins/images/66267/large/Coinbase_Wrapped_XPR_%28cbXRP%29.png?1749023398": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://basescan.org/token/images/seamless_32.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://dynamic-assets.coinbase.com/30320a63f6038b944c9c0202fcb2392e6a1bd333814f74b4674774dd87f2d06d64fdd74c2f1ab4639917c75b749c323450408bec7a2737af8ae0c17871aa90de/asset_icons/98d278cda11639ed7449a0a3086cd2c83937ce71baf4ee43bb5b777423c00a75.png": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://ropsten.infura.io/v3/{{VITE_INFURA_KEY}}": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/index-obbbJD1d.js"
+    },
+    "https://1rpc.io/matic": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/Home-BVWHDudi.js"
+    },
+    "https://mainnet.infura.io/v3/5e38ed450b044233a99bdd1e464a4976": {
+      "dex": "Paraswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.velora.xyz/assets/Home-BVWHDudi.js"
+    },
+    "https://ethereum-rpc.publicnode.com/": {
+      "dex": "Paraswap",
+      "methods": [
+        "eth_chainId",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_call",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId",
+        "eth_blockNumber",
+        "eth_chainId"
+      ]
+    },
+    "https://optimism-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://bsc-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://bsc.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://unichain-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://polygon-bor-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://polygon.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://sonic-rpc.publicnode.com:443": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://fraxtal-rpc.publicnode.com:443": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://fraxtal.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://rpc.ankr.com/zksync_era": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://mantle-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://mantle.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://basescan.org/tx/": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://arbitrum-one-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://arbitrum.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://avalanche-c-chain-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://avalanche.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://linea-rpc.publicnode.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://linea.drpc.org": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://odos-eth.rpc.blxrbdn.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://odos-bnb.rpc.blxrbdn.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://odos-polygon.rpc.blxrbdn.com": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/index-D9HjZhLn.js"
+    },
+    "https://base.org/favicon.ico": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://eips.ethereum.org/EIPS/eip-1193#message`}": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://celo-alfajores.infura.io/v3/${n}`};e.options.readonlyRPCMap?e.options.readonlyRPCMap=Object.assign(Object.assign({}": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://goerli.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://sepolia.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://linea-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://linea-goerli.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://polygon-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://polygon-mumbai.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://optimism-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://optimism-goerli.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://arbitrum-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://arbitrum-goerli.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://palm-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://palm-testnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://avalanche-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://avalanche-fuji.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://aurora-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://aurora-testnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://starknet-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://starknet-goerli.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://starknet-goerli2.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://celo-mainnet.infura.io/v3/${n}`": {
+      "dex": "Odos",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.odos.xyz/assets/dynamic-CqNEcOYT.js"
+    },
+    "https://lifi-mainc49-4c2b.mainnet.rpcpool.com/": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    "https://dacey-pp61jd-fast-mainnet.helius-rpc.com/": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    "https://consensys-zkevm-goerli-prealpha.infura.io/v3/faf4bc4ea7344e5da5e56c55de087480": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/api/env-config.js"
+    },
+    "https://lifinance.github.io/types/src/assets/icons/wallets/coinbase.svg": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/f0ff84e9de851cfa.js"
+    },
+    "https://lifinance.github.io/types/src/assets/icons/wallets/baseAccount.svg": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/f0ff84e9de851cfa.js"
+    },
+    "https://lb.drpc.org/ogrpc?network=optimism&dkey=${r.default.NEXT_PUBLIC_DKEY}`": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    "https://optimism.meowrpc.com": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    "https://lb.drpc.org/ogrpc?network=arbitrum&dkey=${r.default.NEXT_PUBLIC_DKEY}`": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    "https://arbitrum.meowrpc.com": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    "https://lb.drpc.org/ogrpc?network=base&dkey=${r.default.NEXT_PUBLIC_DKEY}`": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
+    },
+    "https://base-pokt.nodies.app": {
+      "dex": "Jumper",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jumper.exchange/_next/static/chunks/6473c39603fb166b.js"
     }
   }
 }
