@@ -18,7 +18,12 @@ go build -o bin/crypto-rpc ./cmd/crypto-rpc
 
 ## Documentation
 
-See [DOCS.md](DOCS.md) for full documentation.
+See [docs/INDEX.md](docs/INDEX.md) for full documentation.
+
+### Quick Links
+- [RPC Summary](docs/reference/rpc-summary.md) - Best RPCs by chain
+- [DEX Findings](docs/reference/findings.md) - RPCs from DEX frontends
+- [Discovery Guide](docs/guides/rpc-discovery.md) - How to discover RPCs
 
 ## Features
 
