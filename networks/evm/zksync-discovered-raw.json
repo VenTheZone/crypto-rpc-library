@@ -1,0 +1,62 @@
+{
+  "chain": "zkSync Era",
+  "chainId": 324,
+  "rpcs": [
+    {
+      "url": "https://mainnet.era.zksync.io",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://zksync.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://api.goldsky.com/api/public/project_clmtie4nnezuh2nw6hhjg6mo7/subgraphs/mute_switch/v0.0.7/gn",
+      "dex": "Mute",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://koi.finance/_next/static/chunks/pages/index-e4246af9323cdd47.js"
+    },
+    {
+      "url": "https://api.goldsky.com/api/public/project_clmtie4nnezuh2nw6hhjg6mo7/subgraphs/koi-finance-v3/v0.0.2/gn",
+      "dex": "Mute",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://koi.finance/_next/static/chunks/pages/index-e4246af9323cdd47.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/",
+      "dex": "Mute",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://koi.finance/_next/static/chunks/main-40c5d4c68f4ff72c.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css",
+      "dex": "Mute",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://koi.finance/_next/static/chunks/main-40c5d4c68f4ff72c.js"
+    },
+    {
+      "url": "https://www.storyblok.com/docs/api/content-delivery#topics/authentication",
+      "dex": "Mute",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://koi.finance/_next/static/chunks/pages/_app-c018dd275fe96974.js"
+    }
+  ]
+}
