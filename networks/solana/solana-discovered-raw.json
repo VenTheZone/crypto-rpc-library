@@ -1,0 +1,1255 @@
+{
+  "chain": "solana",
+  "scanned": [
+    "Jupiter",
+    "Raydium",
+    "Orca",
+    "Meteora",
+    "Drift",
+    "Zeta",
+    "Kamino",
+    "MarginFi",
+    "Solend",
+    "Phoenix",
+    "Tensor",
+    "Pump.fun",
+    "Moonshot",
+    "1inch Solana",
+    "OpenOcean"
+  ],
+  "httpRpcs": {
+    "https://grateful-jerrie-fast-mainnet.helius-rpc.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/pages/_app-32f62ffc090dcadd.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://orb.helius.dev/": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/pages/_app-32f62ffc090dcadd.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.devnet.solana.com/": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/pages/_app-32f62ffc090dcadd.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://alien-newest-vineyard.solana-mainnet.quiknode.pro/ebe5e35661d7edb7a5e48ab84bd9d477e472a40b/": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "http://api.mainnet-beta.solana.com/": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.mainnet-beta.solana.com/": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.mainnet-beta.solana.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://block-explorer-api.mainnet.zksync.io/api": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.mainnet.abs.xyz": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://babel-api.mainnet.iotex.io": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://quicknode1.peaq.xyz": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://quicknode2.peaq.xyz": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://quicknode3.peaq.xyz": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://arb-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://eth-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://opt-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://polygon-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://eth-sepolia.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://rpc.ankr.com/bsc": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://56.rpc.thirdweb.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://berachain-artio.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://bsc-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://sepolia.rpc.zora.energy": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://testnet.rpc.zora.energy": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://arbitrum-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://arbitrum-sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://base-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://base-sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://optimism-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://optimism-sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://polygon-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://polygon-amoy.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.wallet.coinbase.com/rpc/v2/desktop/chrome": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.developer.coinbase.com/rpc/v1/base-sepolia/S-fOd2n2Oi4fl4e1Crm83XeDXZ7tkg8O": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.developer.coinbase.com/rpc/v1/base/S-fOd2n2Oi4fl4e1Crm83XeDXZ7tkg8O": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.avax.network/ext/bc/C/rpc": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.node.glif.io/rpc/v1": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.calibration.node.glif.io/rpc/v1": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://api.avax-test.network/ext/bc/C/rpc": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "https://mercuria-fronten-1cd8.mainnet.rpcpool.com/": {
+      "dex": "Jupiter",
+      "methods": [
+        "getSlot"
+      ],
+      "source": "network"
+    },
+    "https://worldchain-mainnet.g.alchemy.com/public": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://worldchain-mainnet.explorer.alchemy.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://worldchain-mainnet.explorer.alchemy.com/api": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://11155111.rpc.thirdweb.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://80001.rpc.thirdweb.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://5.rpc.thirdweb.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://artio.rpc.berachain.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://api.explorer.execution.mainnet.lukso.network/api": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://api.roninchain.com/rpc": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://edge-mainnet.g.alchemy.com/v2/p7XZ9PmQlUFoTRxwIeB38": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://edge-mainnet.explorer.alchemy.com": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://hyperevm-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://abs.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://abs-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://apechain-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://apechain-curtis.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://avalanche-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://b3-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://b3-sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://berachain-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://blast-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://flow-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://fluent-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://gunz-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://immutable-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://ink-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://ink-sepolia.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://megaeth-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://megaeth-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://monad-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://neura-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://ronin-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://ronin-saigon.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://sei-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://shape-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://somnia-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://somnia-testnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://soneium-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://unichain-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://zora-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://hyperevm-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://monad-mainnet.rpc.privy.systems": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://testnet.rpc.neuraprotocol.io": {
+      "dex": "Jupiter",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "https://orb.helius.dev": {
+      "dex": "Raydium",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://raydium.io/_next/static/chunks/pages/_app-f90b2d2102d025dd.js"
+    },
+    "https://api.solana.fm/v0": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/1139-4610763a9e8dce13.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://api.mainnet.orca.so/v1": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://pools-api.mainnet.orca.so/": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://stats-api.mainnet.orca.so/": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://wavebreak-api.mainnet-staging.orca.so": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://rpc.ironforge.network/mainnet?apiKey=01JAFT602BNDP8R07TP105VNXP": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://rpc.ironforge.network/devnet?apiKey=01JAFT602BNDP8R07TP105VNXP": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://rpc.ironforge.network/mainnet?apiKey=01JAFT6YB7SJS7N3N85PKEZ5MF": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://api.orca.so/v2/solana/": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://api.orca.so/v2/solana/wavebreak": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://api.devnet.orca.so/v2/solana/": {
+      "dex": "Orca",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.orca.so/_next/static/chunks/8145-deba6618fb2ebc0b.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "https://xray.helius.xyz/": {
+      "dex": "Meteora",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.meteora.ag/_next/static/chunks/pages/_app-6729ea8ba2790111.js"
+    },
+    "https://jupiter-frontend.rpcpool.com/": {
+      "dex": "Meteora",
+      "methods": [
+        "getAccountInfo"
+      ],
+      "source": "network"
+    },
+    "https://rpc.walletconnect.org/v1/?chainId=eip155:${e}&projectId=${t||this.rpc.projectId}`}async": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/walletconnect-594128aacaa2404c.js"
+    },
+    "https://detailed-sharleen-fast-devnet.helius-rpc.com": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "https://kora-8cwrc2-fast-mainnet.helius-rpc.com/": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "https://xray.helius.xyz/account/": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "https://xray.helius.xyz/tx/": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "https://cold-hanni-fast-mainnet.helius-rpc.com/": {
+      "dex": "Drift",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "https://drift-drift_ma-39b5.mainnet.rpcpool.com/": {
+      "dex": "Drift",
+      "methods": [
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getSlot",
+        "getAccountInfo"
+      ],
+      "source": "network"
+    },
+    "https://api.mainnet-beta.solana.com`)?uh:/bdevnetb/i.test(e)?dh:/btestnetb/i.test(e)?fh:/blocalhostb/i.test(e)||/b127.0.0.1b/.test(e)?Jde:uh}function": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://api.mainnet-beta.solana.com`": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://56.rpc.thirdweb.com`]}}": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://arb1.arbitrum.io/rpc`]}}": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://mainnet.base.org`]}}": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://rpc.linea.build`]": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "https://api.wallet.coinbase.com/rpc/v2/desktop/chrome`": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "http://api.mainnet-beta.solana.com/`}": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "https://api.mainnet-beta.solana.com/`}}": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "http://api.devnet.solana.com`": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "https://api.orca.so/v2/solana`}getWhirlpoolProgramId(){return": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "https://api.hubbleprotocol.io/strategies/${t.address.toString()}/metrics?env=mainnet-beta`": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "https://helius-rpc.kamino.com/02996efe-bbc3-405f-8d87-845794261033`": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/app-common.1772119439.js"
+    },
+    "https://api.kamino.finance/limo/makers/${e}/transactions?env=mainnet-beta`).then(e=>e.json())": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://kamino.com/assets/app-common.1772119439.js"
+    },
+    "https://xray.helius.xyz/${{transaction:": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://embedded-wallet.phantom.app/assets/main-Bqs19KG0.js"
+    },
+    "https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ?advancedTxSubmission=true": {
+      "dex": "Kamino",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://embedded-wallet.phantom.app/assets/phantomRpc-roQOrxiJ.js"
+    },
+    "https://kamino.mainnet.rpcpool.com/": {
+      "dex": "Kamino",
+      "methods": [
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo",
+        "getAccountInfo"
+      ],
+      "source": "network"
+    },
+    "https://rpc.ironforge.network/mainnet?apiKey=01JTPF9HNNCBJ3ZF028K2JA3T3": {
+      "dex": "MarginFi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.marginfi.com/_next/static/chunks/pages/_app-5629db7b14b8106c.js"
+    },
+    "https://rpc.ankr.com/solana": {
+      "dex": "MarginFi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.marginfi.com/_next/static/chunks/pages/_app-5629db7b14b8106c.js"
+    },
+    "https://solana-mainnet.g.alchemy.com/v2/ZT3c4pYf1inIrB0GVDNR7nx4LwyED5Ci": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://rpc.helius.xyz/?api-key=96d88c32-e147-4ef8-88b0-18c758ca69df": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://devnet.helius-rpc.com/?api-key=96d88c32-e147-4ef8-88b0-18c758ca69df": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/mainnet/jsonrpc": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/ropsten/jsonrpc": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/rinkeby/jsonrpc": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/goerli/jsonrpc": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/kovan/jsonrpc": {
+      "dex": "Solend",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "https://solendf-solendf-67c7.rpcpool.com/": {
+      "dex": "Solend",
+      "methods": [
+        "getAccountInfo"
+      ],
+      "source": "network"
+    },
+    "https://xray.helius.xyz/${": {
+      "dex": "Tensor",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.tensor.trade/_next/static/chunks/pages/_app-5067f4933637222e.js"
+    },
+    "https://lauraine-qytyxk-fast-mainnet.helius-rpc.com": {
+      "dex": "Tensor",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.tensor.trade/_next/static/chunks/pages/_app-5067f4933637222e.js"
+    },
+    "https://pump-fe.helius-rpc.com?api-key=1b8db865-a5a1-4535-9aec-01061440523b": {
+      "dex": "Pump.fun",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://pump.fun/_next/static/chunks/48bd47cedebea843.js?dpl=dpl_E5y4kwmhojgNuzfs9c8UXDMrKKX4"
+    },
+    "https://pump-fe.helius-rpc.com/?api-key=1b8db865-a5a1-4535-9aec-01061440523b": {
+      "dex": "Pump.fun",
+      "methods": [
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash",
+        "getLatestBlockhash"
+      ],
+      "source": "network"
+    },
+    "https://bartio.rpc.berachain.com": {
+      "dex": "Moonshot",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://dexscreener.com/assets/chunks/wallets-adapter-CW-Nff7c.js"
+    },
+    "https://eth.drpc.org": {
+      "dex": "1inch Solana",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    }
+  },
+  "websockets": {
+    "wss://jupiter-frontend.rpcpool.com": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/pages/_app-32f62ffc090dcadd.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "ws://localhost:${i}/solana-wallet`,l=(()=>{let": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://rpc.zora.energy": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://mainnet.era.zksync.io/ws": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://rpc.linea.build": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://rpc.goerli.linea.build": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://ws-rpc.mainnet.lukso.network": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://sepolia.rpc.zora.energy": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://testnet.rpc.zora.energy": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://arb-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://arbitrum-mainnet.infura.io/ws/v3": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://eth-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://mainnet.infura.io/ws/v3": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://opt-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://optimism-mainnet.infura.io/ws/v3": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://polygon-mainnet.g.alchemy.com/v2": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://polygon-mainnet.infura.io/ws/v3": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://api.mainnet.abs.xyz/ws": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://babel-api.mainnet.iotex.io": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://api.devnet.solana.com": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://api.mainnet-beta.solana.com": {
+      "dex": "Jupiter",
+      "source": "https://jup.ag/_next/static/chunks/lib-0038bb21891c8f07.js?dpl=dpl_2EiTr3yC4pkQCRkEL1CE4Dq78oQ6"
+    },
+    "wss://rpc-gel.inkonchain.com": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://rpc-qnd.inkonchain.com": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://rpc.apechain.com/ws": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9368-8b2499bde76b0b57.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://rpc-animechain-39xf6m45e3.t.conduit.xyz": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://rpc-animechain-testnet-i8yja6a1a0.t.conduit.xyz": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://mainnet.megaeth.com/ws": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://testnet.rpc.neuraprotocol.io": {
+      "dex": "Jupiter",
+      "source": "https://privy.jup.ag/_next/static/chunks/9681-a682eada4b00aeec.js?dpl=dpl_Cw1St1Zaqq42oufEmanjxK4poy9D"
+    },
+    "wss://rpc.gnosischain.com/wss": {
+      "dex": "Raydium",
+      "source": "https://raydium.io/_next/static/chunks/pages/_app-f90b2d2102d025dd.js"
+    },
+    "ws://localhost:${s}/solana-wallet`,d=(()=>{let": {
+      "dex": "Orca",
+      "source": "https://www.orca.so/_next/static/chunks/7673-45d09ea4e061b872.js?dpl=dpl_8Bwgn5W2c48XoHUHpZm7SGUrD8i9"
+    },
+    "ws://localhost:${i}/solana-wallet`,a=(()=>{let": {
+      "dex": "Meteora",
+      "source": "https://www.meteora.ag/_next/static/chunks/pages/_app-6729ea8ba2790111.js"
+    },
+    "wss://detailed-sharleen-fast-devnet.helius-rpc.com": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "wss://drift-drift-a827.devnet.rpcpool.com/3639271b-6f0e-47c6-a643-1aaa0e498f58/whirligig": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "wss://drift-drift_ma-39b5.mainnet.rpcpool.com/whirligig": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "wss://kora-8cwrc2-fast-mainnet.helius-rpc.com/": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/common-eb78a725b7e3db5d.js"
+    },
+    "ws://localhost:${a}/solana-wallet`,s=(()=>{let": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/vendors-24926209ec4edc47.js"
+    },
+    "ws://localhost:${a}/solana-wallet`,c=(()=>{let": {
+      "dex": "Drift",
+      "source": "https://app.drift.trade/_next/static/chunks/vendors-24926209ec4edc47.js"
+    },
+    "wss://rpc.gnosischain.com/wss`]}},blockExplorers:{default:{name:`Gnosisscan`,url:`https://gnosisscan.io`,apiUrl:`https://api.gnosisscan.io/api`}},contracts:{multicall3:{address:`0xca11bde05977b3631167028862be2a173976ca11`,blockCreated:21022491}}});async": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://rpc.linea.build`]}},blockExplorers:{default:{name:`Etherscan`,url:`https://lineascan.build`,apiUrl:`https://api.lineascan.build/api`}},contracts:{multicall3:{address:`0xcA11bde05977b3631167028862bE2a173976CA11`,blockCreated:42},ensRegistry:{address:`0x50130b669B28C339991d8676FA73CF122a121267`,blockCreated:6682888},ensUniversalResolver:{address:`0x4D41762915F83c76EcaF6776d9b08076aA32b492`,blockCreated:22222151}},ensTlds:[`.linea.eth`],testnet:!1}),dDe=X_({id:1,name:`Ethereum`,nativeCurrency:{name:`Ether`,symbol:`ETH`,decimals:18},blockTime:12e3,rpcUrls:{default:{http:[`https://eth.merkle.io`]}},blockExplorers:{default:{name:`Etherscan`,url:`https://etherscan.io`,apiUrl:`https://api.etherscan.io/api`}},contracts:{ensUniversalResolver:{address:`0xeeeeeeee14d718c2b47d9923deab1335e144eeee`,blockCreated:23085558},multicall3:{address:`0xca11bde05977b3631167028862be2a173976ca11`,blockCreated:14353601}}}),fDe=X_({id:245022934,network:`neonMainnet`,name:`Neon": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://mainnet.era.zksync.io/ws`]}},blockExplorers:{default:{name:`Etherscan`,url:`https://era.zksync.network/`,apiUrl:`https://api-era.zksync.network/api`},native:{name:`ZKsync": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://rpc.zora.energy`]}},blockExplorers:{default:{name:`Explorer`,url:`https://explorer.zora.energy`,apiUrl:`https://explorer.zora.energy/api`}},contracts:{...Uv.contracts,l2OutputOracle:{[qv]:{address:`0x9E6204F750cD866b299594e2aC9eA824E2e5f95c`}},multicall3:{address:`0xcA11bde05977b3631167028862bE2a173976CA11`,blockCreated:5882},portal:{[qv]:{address:`0x1a0ad011913A150f69f6A19DF447A0CfD9551054`}},l1StandardBridge:{[qv]:{address:`0x3e2Ea9B92B7E48A52296fD261dc26fd995284631`}}},sourceId:qv});var": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://relay.walletconnect.org`,C1t=`wc@2:universal_provider:`,w1t=`https://rpc.walletconnect.org/v1/`,MB=`generic`,T1t=`${w1t}bundler`,NB={DEFAULT_CHAIN_CHANGED:`default_chain_changed`},PB=typeof": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://relay.walletconnect.org`,aW=`wc@2:universal_provider:`,Ycn=`https://rpc.walletconnect.org/v1/`,oW=`generic`,Xcn=`${Ycn}bundler`,sW={DEFAULT_CHAIN_CHANGED:`default_chain_changed`};function": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://relay.walletconnect.org`,b0=`wc@2:universal_provider:`,oWn=`https://rpc.walletconnect.org/v1/`,x0=`generic`,sWn=`${oWn}bundler`,S0={DEFAULT_CHAIN_CHANGED:`default_chain_changed`};function": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "wss://relay.walletconnect.org`,Omr=`wc@2:universal_provider:`,kmr=`https://rpc.walletconnect.org/v1/`,j9=`generic`,Amr=`${kmr}bundler`,M9={DEFAULT_CHAIN_CHANGED:`default_chain_changed`};function": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor.1772119439.js"
+    },
+    "ws://localhost:8080`,{autoconnect:n=!0,reconnect:r=!0,reconnect_interval:i=1e3,max_reconnects:a=5,...o}={},s,c){super(),this.webSocketFactory=e,this.queue={},this.rpc_id=0,this.address=t,this.autoconnect=n,this.ready=!1,this.reconnect=r,this.reconnect_timer_id=void": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/vendor-klend.1772119439.js"
+    },
+    "wss://kamino.mainnet.rpcpool.com/whirligig`,chainID:101,displayName:`Mainnet": {
+      "dex": "Kamino",
+      "source": "https://kamino.com/assets/app-common.1772119439.js"
+    },
+    "ws://localhost:${o}/solana-wallet`,s=(()=>{let": {
+      "dex": "MarginFi",
+      "source": "https://app.marginfi.com/_next/static/chunks/pages/_app-5629db7b14b8106c.js"
+    },
+    "ws://localhost:${r}/solana-wallet`;let": {
+      "dex": "Solend",
+      "source": "https://solend.fi/static/js/main.ca7107e1.js"
+    },
+    "wss://base-mainnet.blastapi.io": {
+      "dex": "Phoenix",
+      "source": "https://www.phoenix.trade/_next/static/chunks/5828-9f14f335ef42792a.js?dpl=dpl_6yCKFdWAtJgR6ZDAUN89KYs6x1VH"
+    },
+    "ws://localhost:${n}/solana-wallet`,o=(r=[...t8],()=>r.length>1?r.shift():r[0]),c=1,l=0,h={__type:": {
+      "dex": "Pump.fun",
+      "source": "https://pump.fun/_next/static/chunks/48bd47cedebea843.js?dpl=dpl_E5y4kwmhojgNuzfs9c8UXDMrKKX4"
+    },
+    "wss://rpc.monad.xyz": {
+      "dex": "Moonshot",
+      "source": "https://dexscreener.com/assets/chunks/wallets-adapter-CW-Nff7c.js"
+    },
+    "wss://rpc1.monad.xyz": {
+      "dex": "Moonshot",
+      "source": "https://dexscreener.com/assets/chunks/wallets-adapter-CW-Nff7c.js"
+    }
+  },
+  "timestamp": "2026-02-27T05:32:17.566Z"
+}
