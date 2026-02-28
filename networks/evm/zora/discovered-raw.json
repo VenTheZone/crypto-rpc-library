@@ -1,0 +1,31 @@
+{
+  "chain": "Zora",
+  "chainId": 7777777,
+  "chainKey": "zora",
+  "rpcs": [
+    {
+      "url": "https://zora.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://zora-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.zora.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    }
+  ]
+}

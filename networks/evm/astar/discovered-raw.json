@@ -1,0 +1,31 @@
+{
+  "chain": "Astar",
+  "chainId": 592,
+  "chainKey": "astar",
+  "rpcs": [
+    {
+      "url": "https://astar.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://astar-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.astar.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    }
+  ]
+}

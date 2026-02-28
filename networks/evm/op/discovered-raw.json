@@ -1,0 +1,31 @@
+{
+  "chain": "Optimism (OP)",
+  "chainId": 11155420,
+  "chainKey": "op",
+  "rpcs": [
+    {
+      "url": "https://op.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://op-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.op.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    }
+  ]
+}

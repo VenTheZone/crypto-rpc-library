@@ -1,0 +1,47 @@
+{
+  "chain": "Celo",
+  "chainId": 42220,
+  "chainKey": "celo",
+  "rpcs": [
+    {
+      "url": "https://celo.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://celo-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.celo.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://api.celoscan.io/api",
+      "dex": "Sushi Celo",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=celo&dkey=",
+      "dex": "Sushi Celo",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "chain": "Gnosis Chain (xDai)",
+  "chainId": 100,
+  "chainKey": "gnosis",
+  "rpcs": [
+    {
+      "url": "https://gnosis.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://gnosis-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.gnosis.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "dex": "Sushi Gnosis",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://api.gnosisscan.io/api",
+      "dex": "Sushi Gnosis",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=gnosis&dkey=",
+      "dex": "Sushi Gnosis",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    },
+    {
+      "url": "https://21000000.rpc.thirdweb.com",
+      "dex": "Curve Gnosis",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api",
+      "dex": "Curve Gnosis",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    }
+  ]
+}

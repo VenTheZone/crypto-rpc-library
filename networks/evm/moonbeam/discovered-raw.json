@@ -1,0 +1,100 @@
+{
+  "chain": "Moonbeam",
+  "chainId": 1284,
+  "chainKey": "moonbeam",
+  "rpcs": [
+    {
+      "url": "https://moonbeam.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://moonbeam-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.moonbeam.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.api.moonbase.moonbeam.network",
+      "dex": "Beamswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://moonbeam-rpc.publicnode.com",
+      "dex": "Beamswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://api.beamex.exchange/moonbeam/prices",
+      "dex": "Beamswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://moonbeam-rpc.publicnode.com/",
+      "dex": "Beamswap",
+      "methods": [
+        null,
+        null,
+        null,
+        "net_listening",
+        "net_listening",
+        "net_listening"
+      ],
+      "source": "network"
+    },
+    {
+      "url": "https://rpc.api.moonbeam.network",
+      "dex": "StellaSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://moonbeam.public.blastapi.io",
+      "dex": "StellaSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "dex": "StellaSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/88584/moonbeam-v-2-stellaswap/version/latest",
+      "dex": "StellaSwap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.stellaswap.com/_next/static/chunks/6709-44677c3d86ae4360.js"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chain": "Fraxtal",
+  "chainId": 4242,
+  "chainKey": "fraxtal",
+  "rpcs": [
+    {
+      "url": "https://fraxtal.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://fraxtal-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.fraxtal.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "chain": "Aurora (Near)",
+  "chainId": 1313161554,
+  "chainKey": "aurora",
+  "rpcs": [
+    {
+      "url": "https://aurora.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://aurora-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.aurora.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc-0x4e45415f.aurora-cloud.dev/",
+      "dex": "Trisolaris",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.trisolaris.io/static/js/main.fa011958.js"
+    },
+    {
+      "url": "https://rpc-0x4e45415f.aurora-cloud.dev",
+      "dex": "Trisolaris",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.trisolaris.io/static/js/main.fa011958.js"
+    },
+    {
+      "url": "https://rpc-0x4e454165.aurora-cloud.dev",
+      "dex": "Trisolaris",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.trisolaris.io/static/js/main.fa011958.js"
+    },
+    {
+      "url": "https://rpc-0x4e454171.aurora-cloud.dev",
+      "dex": "Trisolaris",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.trisolaris.io/static/js/main.fa011958.js"
+    },
+    {
+      "url": "https://rpc-0x4e454173.aurora-cloud.dev",
+      "dex": "Trisolaris",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.trisolaris.io/static/js/main.fa011958.js"
+    },
+    {
+      "url": "https://mainnet.aurora.dev/",
+      "dex": "Trisolaris",
+      "methods": [
+        "eth_chainId",
+        "eth_chainId"
+      ],
+      "source": "network"
+    }
+  ]
+}

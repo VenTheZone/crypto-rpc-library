@@ -1,0 +1,64 @@
+{
+  "chain": "Cronos",
+  "chainId": 25,
+  "chainKey": "cronos",
+  "rpcs": [
+    {
+      "url": "https://cronos.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://cronos-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.cronos.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://api.wolfswap.app/launcher?networkId=25&graduated=true&sort=-progress&limit=100&page=0",
+      "dex": "VVS",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://explorer-api.cronos.org/mainnet/api",
+      "dex": "VVS",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://250.rpc.thirdweb.com",
+      "dex": "VVS",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://mainnet.cronoslabs.com/v1/55e37d8975113ae7a44603ef8ce460aa",
+      "dex": "VVS",
+      "methods": [
+        null,
+        null
+      ],
+      "source": "network"
+    }
+  ]
+}

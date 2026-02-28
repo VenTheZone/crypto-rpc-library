@@ -1,0 +1,31 @@
+{
+  "chain": "Fuse",
+  "chainId": 122,
+  "chainKey": "fuse",
+  "rpcs": [
+    {
+      "url": "https://fuse.drpc.org",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://fuse-evm-rpc.publicnode.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    },
+    {
+      "url": "https://rpc.fuse.com",
+      "dex": "known",
+      "methods": [
+        "public"
+      ],
+      "source": "public list"
+    }
+  ]
+}
