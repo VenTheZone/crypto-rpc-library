@@ -1,0 +1,76 @@
+{
+  "chain": "Cronos",
+  "chainId": 25,
+  "rpcs": [
+    {
+      "url": "https://api.wolfswap.app/launcher?networkId=25&graduated=true&sort=-progress&limit=100&page=0",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://api.celoscan.io/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://celo-alfajores.blockscout.com/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://celo-sepolia.blockscout.com/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://explorer-api.cronos.org/mainnet/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://250.rpc.thirdweb.com",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://api.gnosisscan.io/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://api-cypress.klaytnscope.com/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://rpc.api.moonbase.moonbeam.network",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://moonbeam.public.blastapi.io",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/index-C6xhB2pz.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/privy-C9-LVqdq.js"
+    },
+    {
+      "url": "https://celo-alfajores.infura.io/v3",
+      "dex": "VVS",
+      "source": "https://vvs.finance/assets/privy-C9-LVqdq.js"
+    }
+  ]
+}

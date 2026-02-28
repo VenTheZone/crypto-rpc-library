@@ -1,0 +1,146 @@
+{
+  "chain": "Polygon zkEVM",
+  "chainId": 1101,
+  "rpcs": [
+    {
+      "url": "https://rpc.ankr.com/gnosis",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://api.baobab.klaytn.net:8651",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://rpc.api.moonbeam.network",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://rpc.api.moonriver.moonbeam.network",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://rpc.api.moonbase.moonbeam.network",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/celo",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://moonbeam.public.blastapi.io",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://celo-alfajores.infura.io/v3",
+      "dex": "Agni",
+      "source": "https://agni.finance/_next/static/chunks/pages/_app-9e7d79d3ffa0011c.js"
+    },
+    {
+      "url": "https://gnosis-mainnet.public.blastapi.io",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/7960-2d978c879878dd7f.js"
+    },
+    {
+      "url": "https://gnosis-rpc.publicnode.com",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/7960-2d978c879878dd7f.js"
+    },
+    {
+      "url": "https://1rpc.io/gnosis",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/7960-2d978c879878dd7f.js"
+    },
+    {
+      "url": "https://1rpc.io/celo",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/7960-2d978c879878dd7f.js"
+    },
+    {
+      "url": "https://klaytn.drpc.org",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/7960-2d978c879878dd7f.js"
+    },
+    {
+      "url": "https://1rpc.io/matic",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://rpc-mainnet.matic.quiknode.pro",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://rpc-mumbai.maticvigil.com",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://rpc.chiado.gnosis.gateway.fm",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://gnosis-chiado.publicnode.com",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://cronos-evm.publicnode.com",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/6702-44efa46f2be6f91d.js"
+    },
+    {
+      "url": "https://api.gnosisscan.io/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://celo-alfajores.blockscout.com/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://api.celoscan.io/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://celo-sepolia.blockscout.com/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://api-cypress.klaytnscope.com/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    },
+    {
+      "url": "https://explorer-api.cronos.org/mainnet/api",
+      "dex": "Stargate",
+      "source": "https://stargate.finance/_next/static/chunks/3462-c71c2115fbcf0f3f.js"
+    }
+  ]
+}

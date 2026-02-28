@@ -1,0 +1,166 @@
+{
+  "chain": "Moonbeam",
+  "chainId": 1284,
+  "rpcs": [
+    {
+      "url": "https://rpc.api.moonbase.moonbeam.network",
+      "dex": "Beamswap",
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://moonbeam-rpc.publicnode.com",
+      "dex": "Beamswap",
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://api.beamex.exchange/moonbeam/prices",
+      "dex": "Beamswap",
+      "source": "https://app.beamswap.io/_next/static/chunks/pages/_app-83d6eb12aed58667.js"
+    },
+    {
+      "url": "https://rpc.api.moonbeam.network",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://moonbeam.public.blastapi.io",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/pages/_app-5b6a4a972989fc89.js"
+    },
+    {
+      "url": "https://celo-alfajores.infura.io/v3/${n}`};e.options.readonlyRPCMap?e.options.readonlyRPCMap=Object.assign(Object.assign({}",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/5f0ba54a.155ae80a21c4df14.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3/${n}`",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/5f0ba54a.155ae80a21c4df14.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/88584/celo-v1-ubeswap/version/latest",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/6709-44677c3d86ae4360.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/88584/celo-v1/version/latest",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/6709-44677c3d86ae4360.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/88584/celo-v-3-velodrome/version/latest",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/6709-44677c3d86ae4360.js"
+    },
+    {
+      "url": "https://api.studio.thegraph.com/query/88584/moonbeam-v-2-stellaswap/version/latest",
+      "dex": "StellaSwap",
+      "source": "https://app.stellaswap.com/_next/static/chunks/6709-44677c3d86ae4360.js"
+    },
+    {
+      "url": "https://moonbeam-alpha.api.onfinality.io/public",
+      "dex": "Solarbeam",
+      "source": "https://app.solarbeam.io/_next/static/chunks/pages/_app-ce4afb0cdddab5ba.js"
+    },
+    {
+      "url": "https://moonbeam.api.onfinality.io/public",
+      "dex": "Solarbeam",
+      "source": "https://app.solarbeam.io/_next/static/chunks/pages/_app-ce4afb0cdddab5ba.js"
+    },
+    {
+      "url": "https://rpc.api.moonriver.moonbeam.network",
+      "dex": "Solarbeam",
+      "source": "https://app.solarbeam.io/_next/static/chunks/pages/_app-ce4afb0cdddab5ba.js"
+    },
+    {
+      "url": "https://rpc.moonriver.moonbeam.network",
+      "dex": "Solarbeam",
+      "source": "https://app.solarbeam.io/_next/static/chunks/5178-e9b0a8e4e254c1e4.js"
+    },
+    {
+      "url": "https://api.celoscan.io/api",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://api.gnosisscan.io/api",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/gnosis",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://gnosischain-rpc.gateway.pokt.network",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://gnosis-mainnet.public.blastapi.io",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc-mainnet.matic.network",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc-mainnet.maticvigil.com",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc-mainnet.matic.quiknode.pro",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://matic-mainnet-full-rpc.bwarelabs.com",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://api.baobab.klaytn.net:8651",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc.api.moonrock.moonbeam.network",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://public-node-api.klaytnapi.com/v1/cypress",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc-mumbai.maticvigil.com",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://matic-testnet-archive-rpc.bwarelabs.com",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    },
+    {
+      "url": "https://rpc-chiado.gnosistestnet.com",
+      "dex": "Zenlink",
+      "source": "https://app.zenlink.pro/swap/_next/static/chunks/pages/_app-16320ad965622241.js"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "chain": "Celo",
+  "chainId": 42220,
+  "rpcs": [
+    {
+      "url": "https://api.celoscan.io/api",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://explorer-api.cronos.org/mainnet/api",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://api.gnosisscan.io/api",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/36816-888f3b8ee5893e53.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=celo&dkey=",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=gnosis&dkey=",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=polygon-zkevm&dkey=",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=cronos&dkey=",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/29172-632dbb714e02ef06.js"
+    },
+    {
+      "url": "https://rpc.zkevm.cronos.org",
+      "dex": "Sushi",
+      "source": "https://www.sushi.com/_next/static/chunks/25362-a5387bd59daa2c36.js"
+    },
+    {
+      "url": "https://rpc.api.moonbeam.network",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://moonbeam.public.blastapi.io",
+      "dex": "Curve",
+      "source": "https://www.curve.finance/assets/index-Dhwx5g6Z.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/celo",
+      "dex": "Ubeswap",
+      "source": "https://app.ubeswap.org/static/js/main.589acc4d.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3/${a}`]",
+      "dex": "Ubeswap",
+      "source": "https://app.ubeswap.org/static/js/main.589acc4d.js"
+    }
+  ]
+}
