@@ -31,3 +31,4 @@ See [docs/INDEX.md](docs/INDEX.md) for full documentation.
 - **Performance Testing**: Measure RPS (requests per second) and TPS (transactions per second)
 - **Security Checks**: Detect mempool visibility (safe for bundles vs not)
 - **Multi-chain**: Support for Solana and EVM chains
+- **Origin Header Support**: Specify custom Origin headers for RPCs that require it (e.g., Helius Jupiter)

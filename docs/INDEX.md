@@ -72,6 +72,26 @@ docs/
 ./bin/crypto-rpc test -i <input.md> -o <output.md>
 ```
 
+### Input File Format
+
+RPC test input files are markdown tables with the following columns:
+
+| Column | Required | Description |
+|--------|----------|-------------|
+| Name | Yes | RPC name/identifier |
+| URL | Yes | RPC endpoint URL |
+| Auth | No | Authentication header (e.g., `Bearer xxx`) |
+| Origin | No | Custom Origin header (e.g., `https://jup.ag`) |
+
+Example:
+```markdown
+| Name | URL | Auth | Origin |
+| ---- | --- | ---- | ------ |
+| Helius Jupiter | https://rpc.helius.xyz/?api-key=XXX | - | https://jup.ag |
+```
+
+> **Note:** Some RPC providers (like Helius) require specific Origin headers to work correctly. Use the Origin column to specify the expected origin domain.
+
 ---
 
 ## Best RPCs by Category
