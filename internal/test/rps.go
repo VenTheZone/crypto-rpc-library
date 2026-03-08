@@ -11,6 +11,7 @@ import (
 
 type RPSTester struct {
 	concurrency int
+	origin      string
 }
 
 func NewRPSTester(concurrency int) *RPSTester {
@@ -19,12 +20,22 @@ func NewRPSTester(concurrency int) *RPSTester {
 	}
 }
 
+func (t *RPSTester) SetOrigin(origin string) {
+	t.origin = origin
+}
+
 func (t *RPSTester) Test(ctx context.Context, r *types.RPC) (float64, error) {
 	start := time.Now()
 
 	var wg sync.WaitGroup
 	successCount := 0
 	var mu sync.Mutex
+
+	// Determine origin: use custom origin if set, otherwise default to https://solana.com for Solana
+	origin := t.origin
+	if origin == "" && r.Chain == types.ChainSolana {
+		origin = "https://solana.com"
+	}
 
 	for i := 0; i < t.concurrency; i++ {
 		wg.Add(1)
@@ -36,9 +47,9 @@ func (t *RPSTester) Test(ctx context.Context, r *types.RPC) (float64, error) {
 				setHeadersFromAuth(client, r.AuthHeader)
 			}
 
-			// For Solana, also try with Origin headers
-			if r.Chain == types.ChainSolana {
-				client.SetHeader("Origin", "https://solana.com")
+			// Set origin header if specified
+			if origin != "" {
+				client.SetHeader("Origin", origin)
 			}
 
 			resp, err := client.Call(ctx, r.URL, t.getBlockMethod(r.Chain), nil)

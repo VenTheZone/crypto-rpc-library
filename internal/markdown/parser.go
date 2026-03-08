@@ -108,18 +108,40 @@ func parseTableRow(line string) types.RPC {
 		authHeader = ""
 	}
 
-	rps, _ := strconv.ParseFloat(clean(parts[4]), 64)
-	tps, _ := strconv.ParseFloat(clean(parts[5]), 64)
-	mempool := clean(parts[6]) == "yes"
+	origin := ""
+	if len(parts) >= 9 {
+		origin = clean(parts[4])
+		if origin == "-" {
+			origin = ""
+		}
+	}
+
+	rpsIdx := 5
+	tpsIdx := 6
+	mempoolIdx := 7
+	safeTXIdx := 8
+	statusIdx := 9
+
+	if len(parts) < 10 {
+		rpsIdx = 4
+		tpsIdx = 5
+		mempoolIdx = 6
+		safeTXIdx = 7
+		statusIdx = 8
+	}
+
+	rps, _ := strconv.ParseFloat(clean(parts[rpsIdx]), 64)
+	tps, _ := strconv.ParseFloat(clean(parts[tpsIdx]), 64)
+	mempool := clean(parts[mempoolIdx]) == "yes"
 	
 	var safeTX bool
 	var status types.RPCStatus
 	
 	if len(parts) >= 10 {
-		safeTX = clean(parts[7]) == "yes"
-		status = types.RPCStatus(clean(parts[8]))
+		safeTX = clean(parts[safeTXIdx]) == "yes"
+		status = types.RPCStatus(clean(parts[statusIdx]))
 	} else if len(parts) >= 9 {
-		status = types.RPCStatus(clean(parts[7]))
+		status = types.RPCStatus(clean(parts[safeTXIdx]))
 	}
 	
 	if status == "" || status == "-" {
@@ -130,6 +152,7 @@ func parseTableRow(line string) types.RPC {
 		Name:       clean(parts[1]),
 		URL:        clean(parts[2]),
 		AuthHeader: authHeader,
+		Origin:     origin,
 		RPS:        rps,
 		TPS:        tps,
 		Mempool:    mempool,

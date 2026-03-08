@@ -24,6 +24,7 @@ type RPC struct {
 	Name       string    `json:"name"`
 	URL        string    `json:"url"`
 	AuthHeader string    `json:"auth_header"`
+	Origin     string    `json:"origin"`
 	RPS        float64   `json:"rps"`
 	TPS        float64   `json:"tps"`
 	Mempool    bool      `json:"mempool"`

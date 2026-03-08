@@ -13,12 +13,17 @@ import (
 
 type TPSTester struct {
 	client *rpc.Client
+	origin string
 }
 
 func NewTPSTester() *TPSTester {
 	return &TPSTester{
 		client: rpc.NewClient(),
 	}
+}
+
+func (t *TPSTester) SetOrigin(origin string) {
+	t.origin = origin
 }
 
 func (t *TPSTester) Test(ctx context.Context, r *types.RPC) (float64, error) {
@@ -97,7 +102,12 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 
 func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, error) {
 	client := rpc.NewClient()
-	client.SetHeader("Origin", "https://solana.com")
+	// Use custom origin if set, otherwise default to https://solana.com
+	origin := t.origin
+	if origin == "" {
+		origin = "https://solana.com"
+	}
+	client.SetHeader("Origin", origin)
 	if r.AuthHeader != "" {
 		setHeadersFromAuth(client, r.AuthHeader)
 	}
@@ -124,7 +134,7 @@ func (t *TPSTester) testSolana(ctx context.Context, r *types.RPC) (float64, erro
 
 	// Method 2: getSlot sampling (fallback)
 	client2 := rpc.NewClient()
-	client2.SetHeader("Origin", "https://solana.com")
+	client2.SetHeader("Origin", origin)
 
 	resp2, err := client2.Call(ctx, r.URL, "getSlot", nil)
 	if err != nil || resp2.Error != nil {

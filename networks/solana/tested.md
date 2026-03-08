@@ -50,6 +50,7 @@
 | Helius Pump | `https://pump-fe.helius-rpc.com/?api-key=1b8db865-a5a1-4535-9aec-01061440523b` | 93 | - | **yes** | Found on Pump.fun |
 | Helius Tensor | `https://lauraine-qytyxk-fast-mainnet.helius-rpc.com` | 56 | 3010 | **yes** | Found on Tensor |
 | Phantom | `https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ` | 45 | - | **yes** | Found on Phantom |
+| Helius Jupiter | `https://grateful-jerrie-fast-mainnet.helius-rpc.com` | 77 | 3183 | **yes** | Found on Jupiter (needs `Origin: https://jup.ag`) |
 
 ---
 
@@ -58,7 +59,6 @@
 | Name | URL | Error | Found On |
 | ---- | --- | ----- | -------- |
 | Alchemy | `https://solana-mainnet.g.alchemy.com/v2/ZT3c4pYf1inIrB0GVDNR7nx4LwyED5Ci` | App inactive | Jupiter |
-| Helius Jupiter | `https://grateful-jerrie-fast-mainnet.helius-rpc.com` | Unavailable | Jupiter |
 
 ---
 
