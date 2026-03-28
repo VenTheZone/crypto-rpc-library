@@ -45,6 +45,14 @@ All Solana gRPC providers require paid access:
 - Found Jito block-engine in Tensor's frontend
 - Most DEX-dedicated endpoints are JSON-RPC only, no gRPC
 
+## DEX Discovery Scanning
+
+### Prerequisites
+- **Playwright must be installed** for the `discover-dex` command to work
+- Run: `npm install playwright` before using DEX discovery
+- Without Playwright, `./bin/crypto-rpc discover-dex solana` returns 0 results
+- Scripts in `scripts/` directory also require Playwright
+
 ## EVM Chains
 (To be documented after testing)
 
