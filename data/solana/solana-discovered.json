@@ -1035,6 +1035,38 @@
         "found_in_js"
       ],
       "source": "https://1inch.com/chunk-HS2BU7F2.js"
+    },
+    "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767": {
+      "dex": "scan-solana-b",
+      "methods": [
+        "discovered"
+      ],
+      "source": "scan-solana-b.js, scan-solana-dex3.js",
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    "https://larix.rpcpool.com/": {
+      "dex": "scan-solana-b",
+      "methods": [
+        "discovered"
+      ],
+      "source": "scan-solana-b.js, scan-solana-dex3.js",
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    "https://stableswap.rpcpool.com/": {
+      "dex": "scan-solana-b",
+      "methods": [
+        "discovered"
+      ],
+      "source": "scan-solana-b.js, scan-solana-dex3.js",
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    "https://raydium-frontend.rpcpool.com/": {
+      "dex": "scan-solana-d",
+      "methods": [
+        "discovered"
+      ],
+      "source": "scan-solana-d.js",
+      "discovered": "2026-04-11T02:48:37.571Z"
     }
   },
   "websockets": {

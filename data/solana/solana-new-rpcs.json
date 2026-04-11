@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-04-11T02:54:25.896Z",
+  "newCount": 4,
+  "newRPCs": [
+    {
+      "url": "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767",
+      "sources": [
+        "scan-solana-b.js",
+        "scan-solana-dex3.js"
+      ],
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    {
+      "url": "https://larix.rpcpool.com/",
+      "sources": [
+        "scan-solana-b.js",
+        "scan-solana-dex3.js"
+      ],
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    {
+      "url": "https://stableswap.rpcpool.com/",
+      "sources": [
+        "scan-solana-b.js",
+        "scan-solana-dex3.js"
+      ],
+      "discovered": "2026-04-11T02:47:04.666Z"
+    },
+    {
+      "url": "https://raydium-frontend.rpcpool.com/",
+      "sources": [
+        "scan-solana-d.js"
+      ],
+      "discovered": "2026-04-11T02:48:37.571Z"
+    }
+  ]
+}
