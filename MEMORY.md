@@ -54,7 +54,18 @@ All Solana gRPC providers require paid access:
 - Scripts in `scripts/` directory also require Playwright
 
 ## EVM Chains
-(To be documented after testing)
+
+### Base RPCs (Apr 2026)
+- QuickNode keys still work but RPS dropped ~85% (2498→358)
+- DRPC Aerodrome key DEACTIVATED (was top MEV RPC at 1441 RPS)
+- Ankr public endpoint now requires auth
+- BlastAPI discontinued for Base
+- Tenderly improved dramatically: 68→281 RPS (+313%)
+- PublicNode now has mempool access (24k+ pending tx visible)
+- 1rpc.io also has mempool (smaller queue)
+- New: `mainnet-preconf.base.org` (124 RPS, safe TX)
+- New: `base-rpc.publicnode.com` (chainlist, 137 RPS, has mempool)
+- Base chain mempool RPCs: PublicNode, 1rpc.io only
 
 ## Testing Methodology
 
