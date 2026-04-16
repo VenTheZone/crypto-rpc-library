@@ -22,87 +22,179 @@ go build -o bin/crypto-rpc ./cmd/crypto-rpc
 ./bin/crypto-rpc test -i input.md -o output.md
 ```
 
-## How to Search for RPCs
+## Workflow: Search → Collect → Test
 
-### Method 1: DEX Frontend Interception
+Full workflow goes in 3 steps:
 
-Scan DEX websites to extract RPC endpoints from their frontend code.
+```
+1. SEARCH (find RPCs) → 2. COLLECT (make input.md) → 3. TEST (run analysis)
+```
+
+Once you have tested results, commit them to `networks/<chain>/tested.md`.
+
+---
+
+## Step 1: Search for RPCs
+
+### What search does
+
+Discovery scripts visit DEX frontends, capture network traffic, and extract RPC endpoints plus embedded API keys from JavaScript bundles.
+
+**Output:** JSON file with discovered RPCs in `data/<chain>-discovered.json`
+
+### Search methods
+
+| Method | Command | Best for |
+|--------|---------|----------|
+| **DEX Interception** | `node scripts/intercept-evm-rpcs.js <chain> <chain_id>` | EVM chains (Base, Arbitrum, ETH) |
+| **Solana Built-in** | `./bin/crypto-rpc discover-dex solana` | Solana DEXs (Raydium, Jupiter, etc.) |
+| **Manual** | DevTools Network tab | One-off RPCs from any site |
+
+### DEX Interception (EVM chains)
 
 ```bash
-# EVM chains (requires Node.js and Playwright)
-node scripts/intercept-evm-rpcs.js <chain_name> <chain_id>
-
-# Examples
+# Run interception
 node scripts/intercept-evm-rpcs.js base 8453
-node scripts/intercept-evm-rpcs.js arbitrum 42161
-node scripts/intercept-evm-rpcs.js ethereum 1
+
+# Output saved to:
+# data/evm/base-discovered.json
 ```
 
 This captures:
-- JSON-RPC calls in network traffic
-- API keys embedded in JS bundles
+- JSON-RPC calls from DEX frontends
+- API keys in JS bundles (QuickNode, Alchemy, etc.)
 - WebSocket endpoints
 
-**Patterns found in DEX code:**
-- `*.quiknode.pro/*` — QuickNode endpoints
-- `*.drpc.org/*` — DRPC endpoints
-- `rpc.ankr.com/*` — Ankr
-- `*.infura.io/*` — Infura
-- `*.alchemy.com/*` — Alchemy
+**Common API key patterns:**
+| Provider | Pattern in code |
+|----------|-----------------|
+| QuickNode | `*.quiknode.pro/<40-char-key>` |
+| Alchemy | `*.alchemy.com/v2/<32-char-key>` |
+| Infura | `*.infura.io/v3/<32-char-key>` |
+| Ankr | `rpc.ankr.com/<chain>/<64-char-key>` |
+| DRPC | `lb.drpc.live/<chain>/<40-char-key>` |
 
-### Method 2: Public Lists
+### Manual discovery
 
-See [docs/reference/rpc-summary.md](docs/reference/rpc-summary.md) for pre-tested RPCs by chain.
+1. Open DEX in browser
+2. DevTools → Network tab → filter by `rpc` or `jsonrpc`
+3. Look for `eth_chainId`, `eth_getBlock` calls
+4. Copy Request URL → this is the RPC endpoint
 
-### Method 3: Manual Discovery
+---
 
-Check DEX frontends directly:
-1. Open browser DevTools → Network tab
-2. Filter by "rpc" or "jsonrpc"
-3. Look for `eth_chainId`, `getBlock` calls
-4. Copy the endpoint URL
+## Step 2: Create input.md
 
-## How to Test RPCs
+The test command expects a markdown table with RPCs to analyze.
 
-### Test with the CLI
-
-Create an input file with RPCs:
+### Input format
 
 ```markdown
-| RPC | Chain | Type | Origin |
-|-----|-------|------|--------|
-| https://rpc.example.com | base | public | |
+| Name | URL | Auth | Origin |
+|------|-----|------|--------|
+| QuickNode Base | https://xxx.quiknode.pro/xxx | - | - |
+| Helius Jupiter | https://rpc.helius.xyz | - | https://jup.ag |
+| Alchemy ETH | https://eth.llamarpc.com | Bearer XXX | - |
 ```
 
-Run tests:
+**Columns:**
+- `Name` — Label for this RPC (appears in results)
+- `URL` — Full endpoint URL
+- `Auth` — API key/header if needed (`-` if public)
+- `Origin` — Custom Origin header for RPCs that require it (`-` if not needed)
+
+### Where input.md comes from
+
+**From discovery output:**
+```bash
+# 1. Run discovery
+node scripts/intercept-evm-rpcs.js base 8453
+
+# 2. Manually copy promising URLs from output into input.md
+# (Discovery outputs raw JSON — cherry pick the good ones)
+```
+
+**From pre-tested lists:**
+```bash
+# Copy from existing tested results
+cat networks/evm/base/tested.md | grep -E "^\|.*http" > input.md
+```
+
+**Hand-crafted:**
+Paste RPCs you found via DevTools or documentation.
+
+---
+
+## Step 3: Test RPCs
+
+### What test does
+
+The CLI runs performance and security checks against each RPC in your input file.
+
+**Input:** `input.md` (markdown table with RPCs)  
+**Output:** `results.md` (markdown table with test results)
+
+### Run the test
 
 ```bash
 ./bin/crypto-rpc test -i input.md -o results.md
 ```
 
-Tests include:
-- **RPS** — Requests per second (12 concurrent, 2.5s burst)
-- **TPS** — Transactions per second (block production rate)
-- **Mempool** — `txpool_content` or `txpool_status` availability
-- **Latency** — Response time measurements
+### What gets measured
 
-### Test with Node.js Scripts
+| Test | What it does | Why it matters |
+|------|--------------|----------------|
+| **RPS** | 12 concurrent requests for 2.5s | Your throughput under load |
+| **TPS** | Transactions per block over 5s | Chain capacity |
+| **Mempool** | Tries `txpool_content`, `txpool_status` | Can you see pending TXs? |
+| **Latency** | Single request round-trip | Speed of execution |
+| **Safe TX** | Mempool NOT visible | Private RPC = safe for bundles |
 
-```bash
-# Full RPS/TPS/Mempool test for EVM chains
-node scripts/test-evm-full.js base
+### Output format
 
-# Uses intercept output or manual RPC list
+```markdown
+| Name | URL | RPS | TPS | Mempool | Safe TX | Status |
+|------|-----|----:|----:|:-------:|:-------:|--------|
+| QuickNode | https://... | 358 | 80 | no | ✅ | working |
+| PublicNode | https://... | 144 | 68 | yes | ❌ | working |
 ```
 
-### What tests measure
+**Reading the results:**
+- **RPS** — Higher = faster for submitting bundles
+- **Mempool = yes** — RPC exposes pending transactions (MEV risk)
+- **Safe TX = ✅** — RPC has no mempool visibility (safe for bundles)
+- **Status = working** — RPC responded to tests
 
-| Metric | Meaning | Why it matters |
-|--------|---------|----------------|
-| RPS | Throughput under load | Bundle submission speed |
-| TPS | Network block capacity | Chain congestion |
-| Mempool | `txpool_*` available | Private mempool hunting |
-| Latency | Round-trip time | Speed of execution |
+### Full workflow example
+
+```bash
+# 1. SEARCH — Find RPCs from PancakeSwap
+node scripts/intercept-evm-rpcs.js base 8453
+
+# 2. COLLECT — Create input.md from discovery
+cat > input.md << 'EOF'
+| Name | URL | Auth | Origin |
+|------|-----|------|--------|
+| QuickNode 1 | https://warmhearted...quiknode.pro/... | - | - |
+| PublicNode | https://base.publicnode.com | - | - |
+EOF
+
+# 3. TEST — Run analysis
+./bin/crypto-rpc test -i input.md -o results.md
+
+# 4. COMMIT — Save results
+cp results.md networks/evm/base/tested.md
+git add networks/evm/base/tested.md && git commit -m "test(base): add new RPCs from PancakeSwap"
+```
+
+### Alternative: Node.js test script
+
+```bash
+# For EVM chains — does same tests, outputs JSON
+node scripts/test-evm-full.js base
+```
+
+Use this when you want raw JSON output instead of markdown tables.
 
 ## Features
 
