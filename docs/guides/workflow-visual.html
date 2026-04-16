@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto-RPC Workflow Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --surface-raised: #334155;
+            --border: rgba(148, 163, 184, 0.15);
+            --text: #f1f5f9;
+            --text-dim: #94a3b8;
+            --accent-1: #0ea5e9;
+            --accent-2: #10b981;
+            --accent-3: #f59e0b;
+            --accent-4: #ec4899;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        /* Workflow Diagram */
+        .workflow {
+            display: flex;
+            align-items: stretch;
+            gap: 1rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 280px;
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .step::after {
+            content: "→";
+            position: absolute;
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-1);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .step:last-child::after {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            .step::after {
+                content: "↓";
+                right: 50%;
+                top: 100%;
+                transform: translateX(50%);
+            }
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .step-1 .step-num { background: var(--accent-1); color: var(--bg); }
+        .step-2 .step-num { background: var(--accent-3); color: var(--bg); }
+        .step-3 .step-num { background: var(--accent-2); color: var(--bg); }
+        .step-4 .step-num { background: var(--accent-4); color: var(--bg); }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .step-desc {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-details {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .detail-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .detail-label {
+            color: var(--text-dim);
+            min-width: 60px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .detail-value {
+            color: var(--text);
+        }
+
+        pre {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 0.5rem 0;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+
+        /* Input/Output table */
+        .io-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+        }
+
+        .io-table th,
+        .io-table td {
+            text-align: left;
+            padding: 0.4rem 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .io-table th {
+            color: var(--text-dim);
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+        }
+
+        .io-table td {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Legend */
+        .legend {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: var(--surface);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .legend h3 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-top: 0.4rem;
+            flex-shrink: 0;
+        }
+
+        .legend-content h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .legend-content p {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto-RPC Workflow</h1>
+            <p class="subtitle">From discovery to tested results</p>
+        </header>
+
+        <div class="workflow">
+            <!-- Step 1: SEARCH -->
+            <div class="step step-1">
+                <div class="step-header">
+                    <div class="step-num">1</div>
+                    <div class="step-title">SEARCH</div>
+                </div>
+                <p class="step-desc">Find RPC endpoints by scanning DEX frontends</p>
+                <div class="step-details">
+                    <div class="detail-row">
+                        <span class="detail-label">EVM:</span>
+                        <div class="detail-value">
+                            <pre>node scripts/intercept-evm-rpcs.js base 8453</pre>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Solana:</span>
+                        <div class="detail-value">
+                            <pre>./bin/crypto-rpc discover-dex solana</pre>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Output:</span>
+                        <span class="detail-value"><code>data/evm/base-discovered.json</code></span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Finds:</span>
+                        <span class="detail-value">RPC URLs, API keys in JS bundles</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: COLLECT -->
+            <div class="step step-2">
+                <div class="step-header">
+                    <div class="step-num">2</div>
+                    <div class="step-title">COLLECT</div>
+                </div>
+                <p class="step-desc">Create input.md for testing</p>
+                <div class="step-details">
+                    <div style="margin-bottom: 0.75rem; font-size: 0.8rem; color: var(--text-dim);">Format:</div>
+                    <table class="io-table">
+                        <tr><th>Name</th><th>URL</th><th>Auth</th><th>Origin</th></tr>
+                        <tr><td>QuickNode</td><td>https://...</td><td>-</td><td>-</td></tr>
+                        <tr><td>Helius</td><td>https://...</td><td>-</td><td>https://jup.ag</td></tr>
+                    </table>
+                    <div class="detail-row" style="margin-top: 0.75rem;">
+                        <span class="detail-label">Source:</span>
+                        <span class="detail-value">Discovery JSON, pre-tested lists, or manual</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: TEST -->
+            <div class="step step-3">
+                <div class="step-header">
+                    <div class="step-num">3</div>
+                    <div class="step-title">TEST</div>
+                </div>
+                <p class="step-desc">Run performance & security analysis</p>
+                <div class="step-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Command:</span>
+                        <div class="detail-value">
+                            <pre>./bin/crypto-rpc test -i input.md -o results.md</pre>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 0.5rem; font-size: 0.8rem; color: var(--text-dim);">Measures:</div>
+                    <div style="font-size: 0.8rem; line-height: 1.8;">
+                        <code style="background: var(--accent-1); color: var(--bg); padding: 0.15rem 0.4rem;">RPS</code> — Requests/sec (throughput)<br/>
+                        <code style="background: var(--accent-2); color: var(--bg); padding: 0.15rem 0.4rem;">TPS</code> — Transactions/sec (chain capacity)<br/>
+                        <code style="background: var(--accent-3); color: var(--bg); padding: 0.15rem 0.4rem;">Mempool</code> — Pending TX visibility<br/>
+                        <code style="background: var(--accent-4); color: var(--bg); padding: 0.15rem 0.4rem;">Safe TX</code> — No mempool = private
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: COMMIT -->
+            <div class="step step-4">
+                <div class="step-header">
+                    <div class="step-num">4</div>
+                    <div class="step-title">COMMIT</div>
+                </div>
+                <p class="step-desc">Save results to project</p>
+                <div class="step-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Copy:</span>
+                        <div class="detail-value">
+                            <pre>cp results.md networks/evm/base/tested.md</pre>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Commit:</span>
+                        <div class="detail-value">
+                            <pre>git add networks/evm/base && git commit</pre>
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-dim);">
+                        Results preserved for future reference
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Key Concepts</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--accent-1);"></div>
+                    <div class="legend-content">
+                        <h4>Discovery Scripts</h4>
+                        <p>Automated scanners that visit DEX frontends and capture network traffic</p>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--accent-3);"></div>
+                    <div class="legend-content">
+                        <h4>input.md</h4>
+                        <p>Markdown table with RPCs to test — you create this from discovery results</p>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--accent-2);"></div>
+                    <div class="legend-content">
+                        <h4>Test Metrics</h4>
+                        <p>RPS = throughput, TPS = chain speed, Mempool = TX visibility</p>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--accent-4);"></div>
+                    <div class="legend-content">
+                        <h4>Safe TX</h4>
+                        <p>RPCs without mempool are safe for bundle submission (MEV protected)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
