@@ -1,0 +1,2432 @@
+{
+  "chain": "berachain",
+  "chainId": "80094",
+  "scanned": [
+    "Uniswap",
+    "1inch",
+    "CowSwap",
+    "Curve",
+    "Sushi"
+  ],
+  "discovered": [
+    {
+      "url": "https://sepolia.drpc.org",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/eth",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/optimism",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://berachain-artio.rpc.privy.systems",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://arbitrum-mainnet.infura.io/v3/${Zo.infuraKey}`",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://avalanche-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://base-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://blast-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3/${Zo.infuraKey}`",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://sepolia.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://optimism-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://polygon-mainnet.infura.io/v3/${Zo.infuraKey}`]}}",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://arbitrum-mainnet.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://celo-mainnet.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://celo-alfajores.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://linea-goerli.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://optimism-mainnet.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://optimism-sepolia.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://polygon-mainnet.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://polygon-amoy.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://sepolia.infura.io/v3",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://worldchain-mainnet.g.alchemy.com/public",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://arb-mainnet.g.alchemy.com/v2",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://eth-mainnet.g.alchemy.com/v2",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://opt-mainnet.g.alchemy.com/v2",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://polygon-mainnet.g.alchemy.com/v2",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://eth-sepolia.g.alchemy.com/v2",
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    {
+      "url": "https://mainnet.infura.io/v3/099fc58e0de9451d80b18d7c74caa7c1",
+      "dex": "Uniswap",
+      "methods": [
+        "eth_blockNumber",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId"
+      ],
+      "source": "network"
+    },
+    {
+      "url": "https://eth.drpc.org",
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    {
+      "url": "https://rpc.berachain.com",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    {
+      "url": "https://lb.drpc.live/solana/Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/023niryr~9gw9.js"
+    },
+    {
+      "url": "https://lb.drpc.live/",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/050hlv9idp9~e.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=arbitrum-nova&dkey=${o}`)",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=celo&dkey=${o}`)",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=zeta-chain&dkey=${o}`)",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=rootstock&dkey=${o}`)",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=apechain&dkey=${o}`)",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://sepolia.drpc.live",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    {
+      "url": "https://rpc.ankr.com/stellar_soroban/e6ef92f5420048573bc2887637ca25e41a472789ba54014c6a74c52c7f1af408",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0g-vueb-j399_.js"
+    },
+    {
+      "url": "https://lb.drpc.live/ogrpc?network=ethereum&dkey=Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh",
+      "dex": "Sushi",
+      "methods": [
+        "eth_gasPrice"
+      ],
+      "source": "network"
+    },
+    {
+      "url": "https://rpc.ankr.com/blast",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    {
+      "url": "https://zircuit-mainnet.drpc.org",
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    }
+  ],
+  "allRpcs": {
+    "https://api2.amplitude.com/2/httpapi": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.eu.amplitude.com/2/httpapi": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api2.amplitude.com/batch": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.eu.amplitude.com/batch": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://entry-gateway.backend-dev.api.uniswap.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://entry-gateway.backend-staging.api.uniswap.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://entry-gateway.backend-prod.api.uniswap.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://entry-gateway.backend-prod.api.uniswap.org/jupiter": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.statsigcdn.com/v1": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://statsigapi.net/v1/sdk_exception": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://liquidity.backend-prod.api.uniswap.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://docs.ethers.io/api-keys/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.etherscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-goerli.etherscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-sepolia.etherscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.polygonscan.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-testnet.polygonscan.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.arbiscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-goerli.arbiscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-optimistic.etherscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-goerli-optimistic.etherscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/mainnet/jsonrpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/ropsten/jsonrpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/rinkeby/jsonrpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/goerli/jsonrpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum.api.nodesmith.io/v1/kovan/jsonrpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.mainnet.abs.xyz": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.testnet.abs.xyz": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arb1.arbitrum.io/rpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.arbiscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.avax.network/ext/bc/C/rpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.snowtrace.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.avax-test.network/ext/bc/C/rpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-testnet.snowtrace.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.basescan.org/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-sepolia.basescan.org/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.blast.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.blastscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://56.rpc.thirdweb.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.bscscan.com/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.celoscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.edu-chain.raas.gelato.cloud": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://babel-api.mainnet.iotex.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://babel-api.testnet.iotex.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.linea.build": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.lineascan.build/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.etherscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-optimistic.etherscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://peaq-rpc.publicnode.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://peaq.api.onfinality.io/public": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://peaq-rpc.dwellir.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-rpc.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.polygonscan.com/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc-amoy.polygon.technology": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-amoy.polygonscan.com/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://evm-rpc.sei-apis.com/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://seitrace.com/pacific-1/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://evm-rpc-testnet.sei-apis.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia.drpc.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-sepolia.etherscan.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.soneium.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://soneium.blockscout.com/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://mainnet.storyrpc.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://storyscan.xyz/api/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-sepolia.uniscan.xyz/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.xlayer.tech": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://www.oklink.com/api/v5/explorer/xlayer/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api-era.zksync.network/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://block-explorer-api.mainnet.zksync.io/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.zora.energy": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://explorer.zora.energy/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arbitrum.public-rpc.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.snowscan.xyz": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.basescan.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://1rpc.io/base": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://base.meowrpc.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.blastscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.blast.io/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.bscscan.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.celoscan.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.mevblocker.io/?referrer=uniswapwallet": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.ankr.com/eth": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://eth-mainnet.public.blastapi.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum-sepolia-rpc.publicnode.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.sepolia.org/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.sepolia.online/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://www.sepoliarpc.space/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc-sepolia.rockx.com/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.bordel.wtf/sepolia": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.ankr.com/optimism": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-rpc.com/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.tempo.xyz": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://block-explorer-api.mainnet.zksync.io": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.zora.energy/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.explorer.solana.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://connectrpc.com/docs/web/getting-started": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.flashbots.net/fast?originId=uniswapwallet": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.privy.io/v1/key_quorums/${o.keyQuorumId}`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.mainnet-beta.solana.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://fonts.googleapis.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://fonts.googleapis.com/css2?family=Inter+Tight:ital": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.walletconnect.org/v1": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.walletconnect.org/v1/": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arbitrum-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arbitrum-sepolia.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia-rollup.arbitrum.io/rpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://base-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://base-sepolia.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://berachain-artio.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://bsc-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.node.glif.io/rpc/v1": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.calibration.node.glif.io/rpc/v1": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.garnetchain.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://gunz-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.gunzchain.io/ext/bc/2M47TxWHGnhNtq6pM5zPXdATBtuqubxn5EPFgFmEawCQr9WFML/rpc": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://immutable-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.immutable.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.goerli.linea.build": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.mainnet.lukso.network": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://optimism-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://optimism-sepolia.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-amoy.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.redstonechain.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.sepolia.org": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://soneium-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://unichain-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://zora-mainnet.rpc.privy.systems": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia.rpc.zora.energy": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://testnet.rpc.zora.energy": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.moonpay.com/v1": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://explorer-api.walletconnect.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://rpc.wallet.coinbase.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://base-sepolia-testnet-explorer.skalenodes.com/api": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://api.devnet.solana.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ads-api.x.com/${XMo}/measurement/conversions/${JMo}`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ads-api.reddit.com/api/v2.0/conversions/events/${eDo}`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://googleads.googleapis.com/v21/customers/${nte}:uploadClickConversions`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://ethereum-holesky.publicnode.com": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arbitrum-mainnet.infura.io/v3/${Zo.infuraKey}`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://avalanche-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://base-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://blast-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://celo-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://mainnet.infura.io/v3/${Zo.infuraKey}`": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://optimism-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-mainnet.infura.io/v3/${Zo.infuraKey}`]}}": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arbitrum-mainnet.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://celo-mainnet.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://celo-alfajores.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://linea-goerli.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://mainnet.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://optimism-mainnet.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://optimism-sepolia.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-mainnet.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-amoy.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://sepolia.infura.io/v3": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://worldchain-mainnet.g.alchemy.com/public": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://arb-mainnet.g.alchemy.com/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://eth-mainnet.g.alchemy.com/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://opt-mainnet.g.alchemy.com/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://polygon-mainnet.g.alchemy.com/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://eth-sepolia.g.alchemy.com/v2": {
+      "dex": "Uniswap",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://app.uniswap.org/assets/index-C_Lzr8xi.js"
+    },
+    "https://mainnet.infura.io/v3/099fc58e0de9451d80b18d7c74caa7c1": {
+      "dex": "Uniswap",
+      "methods": [
+        "eth_blockNumber",
+        "eth_call",
+        "eth_blockNumber",
+        "eth_chainId"
+      ],
+      "source": "network"
+    },
+    "https://app.uniswap.org/config/rgstr?k=client-1rY92WZGidd2hgW4x1lsZ7afqm1Qfr3sJfH3A5b8eJa&st=javascript-client-react&sv=3.12.2&t=1776465537104&sid=085b1a6b-7eb8-497c-bcac-fa21f722aa9a&ec=31": {
+      "dex": "Uniswap",
+      "methods": [
+        null
+      ],
+      "source": "network"
+    },
+    "https://app.uniswap.org/config/rgstr?k=client-1rY92WZGidd2hgW4x1lsZ7afqm1Qfr3sJfH3A5b8eJa&st=javascript-client-react&sv=3.12.2&t=1776465537618&sid=085b1a6b-7eb8-497c-bcac-fa21f722aa9a&ec=89": {
+      "dex": "Uniswap",
+      "methods": [
+        null
+      ],
+      "source": "network"
+    },
+    "https://api.lever.co/v0/postings/1inch?mode=json": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-A2YJD5V4.js"
+    },
+    "https://unleash-edge.1inch.io/api/frontend": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-J3GN6ERB.js"
+    },
+    "https://api-eu.mixpanel.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-J3GN6ERB.js"
+    },
+    "http://api.devnet.solana.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-KO4EBJEP.js"
+    },
+    "http://api.testnet.solana.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-KO4EBJEP.js"
+    },
+    "http://api.mainnet-beta.solana.com/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-KO4EBJEP.js"
+    },
+    "https://api.testnet.solana.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-KO4EBJEP.js"
+    },
+    "https://api.mainnet-beta.solana.com/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-KO4EBJEP.js"
+    },
+    "https://docs.ethers.org/api-keys/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api-holesky.etherscan.io": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api-sepolia.basescan.org": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api-testnet.bscscan.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api-amoy.polygonscan.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api.etherscan.io/v2/api?chainid=${this.network.chainId}&module=${e}${n}`}getPostUrl(){return`https://api.etherscan.io/v2/api?chainid=${this.network.chainId}`}getPostData(e": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://rpc-amoy.polygon.technology/": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://eth.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://eth-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://eth-holesky.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://etc.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://arbitrum.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://base.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://base-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://polygon.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://optimism.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://optimism-sepolia.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://gnosis.blockscout.com/api/eth-rpc": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-BS4Q5NYL.js"
+    },
+    "https://api.apr.dev/api/v0/program/${t.toString()}/latest?limit=${r}`": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    "https://eth.drpc.org": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    "https://rpc.gnosischain.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    "https://rpc.soniclabs.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    "https://ethereum.publicnode.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-LHYXTVFA.js"
+    },
+    "https://api.rudderstack.com": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://1inch.com/chunk-THUD6RNJ.js"
+    },
+    "https://api.prod.innerworks.me/api/v1": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk.prod.innerworks.me/main.js?775387551af2d1a6071c"
+    },
+    "https://api.dev.innerworks.me/api/v1": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk.prod.innerworks.me/main.js?775387551af2d1a6071c"
+    },
+    "https://api.qa.innerworks.me/api/v1": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk.prod.innerworks.me/main.js?775387551af2d1a6071c"
+    },
+    "https://api.dev.innerworks.me/api/v1x22": {
+      "dex": "1inch",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://sdk-cdn.prod.innerworks.me/bundle-1.1.0.js"
+    },
+    "https://nextjs.org/docs/app/api-reference/functions/use-search-params#updating-searchparams": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0ao_gq360cz~k.js"
+    },
+    "https://nextjs.org/docs/messages/next-dynamic-api-wrong-context`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0ao_gq360cz~k.js"
+    },
+    "https://api-sepolia.arbiscan.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    "https://rpc.berachain.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    "https://api.gnosisscan.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    "https://api.etherscan.io/v2/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    "https://11155111.rpc.thirdweb.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0-8xidioaor9q.js"
+    },
+    "https://lb.drpc.live/solana/Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/023niryr~9gw9.js"
+    },
+    "https://rpc.apechain.com/http": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.apescan.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://nova.arbitrum.io/rpc": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api-nova.arbiscan.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.bittorrentchain.io": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.bttcscan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.coredao.org": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://explorer-api.cronos.org/mainnet/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://250.rpc.thirdweb.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.ftmscan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.fuse.io": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://explorer.fuse.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.eth.haqq.network": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://explorer.haqq.network/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://1666600000.rpc.thirdweb.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.hemi.network/rpc": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://kavascan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://pacific-rpc.manta.network/http": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://pacific-explorer.manta.network/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.mantle.xyz": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.mantlescan.xyz/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://metis.rpc.hypersync.xyz": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.blockeden.xyz/metis/67nCBdZQSH9z3YqDDjdm": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://metis-andromeda.rpc.thirdweb.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://metis.api.onfinality.io/public": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://metis-mainnet.public.blastapi.io": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://zkevm-rpc.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api-zkevm.polygonscan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.scroll.io": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.scrollscan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.mainnet.taiko.xyz": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://mainnet-rpc.thundercore.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://zetachain-evm.blockpi.network/v1/rpc/public": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.zklink.io": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.katanarpc.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.katanascan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.hyperliquid.xyz/evm": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.hyperevmscan.io/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.plasma.to": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.monad.xyz": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://mainnet.megaeth.com/rpc": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc.tatara.katanarpc.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://explorer.tatara.katana.network/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://rpc-bokuto.katanarpc.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api-bokuto.katanascan.com/api": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://metis-pokt.nodies.app": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0uyrj_~dk6gox.js"
+    },
+    "https://api.sushi.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/04.ydp-fu0kq..js"
+    },
+    "https://lb.drpc.live/": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/050hlv9idp9~e.js"
+    },
+    "https://nextjs.org/docs/app/api-reference/functions/cookies#options": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0c.d_r3r~yrxc.js"
+    },
+    "https://nextjs.org/docs/app/api-reference/functions/headers": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0c.d_r3r~yrxc.js"
+    },
+    "https://nextjs.org/docs/messages/sync-dynamic-apis`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0c.d_r3r~yrxc.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=arbitrum-nova&dkey=${o}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=celo&dkey=${o}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=zeta-chain&dkey=${o}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=rootstock&dkey=${o}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=apechain&dkey=${o}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://sepolia.drpc.live": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0lsr3g99s6l1y.js"
+    },
+    "https://blade-api.sushi.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0g6eri3hwl1qz.js"
+    },
+    "https://api.trmlabs.com/public/v1/sanctions/screening": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0g6eri3hwl1qz.js"
+    },
+    "https://buy.onramper.com?themeName=sushi&apiKey=pk_prod_01GTYEN8CHRVPKES7HK2S9JXDJ&defaultCrypto=${l}`;return": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/1740u5w1vs~la.js"
+    },
+    "https://api.merkl.xyz/v4/users/${a}/rewards`);return": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.merkl.xyz/v4/campaigns": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.merkl.xyz/v4/tokens/reward/${e}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.coingecko.com/api/v3/coins/${p[e.chainId]}/contract/${e.address}`)": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.gopluslabs.io/api/v1/token_security/${e.chainId}`);a.searchParams.set(": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.gopluslabs.io/api/v1/solana/token_security": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/10~oe20_9os1c.js"
+    },
+    "https://api.stellar.expert/explorer/public/asset-list/top50": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/11mcwtipyayji.js"
+    },
+    "https://rpc.ankr.com/stellar_soroban/e6ef92f5420048573bc2887637ca25e41a472789ba54014c6a74c52c7f1af408": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0g-vueb-j399_.js"
+    },
+    "https://lb.drpc.live/ogrpc?network=ethereum&dkey=Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh": {
+      "dex": "Sushi",
+      "methods": [
+        "eth_gasPrice"
+      ],
+      "source": "network"
+    },
+    "https://eth.llamarpc.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://evm-rpc.sei-apis.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://rpc.ftm.tools": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://rpc.ankr.com/blast": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://scroll-rpc.publicnode.com": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://zircuit-mainnet.drpc.org": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://rpc.zkevm.cronos.org": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://rpc.katana.network": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    },
+    "https://hub.orbs.network/api/apikey/subgraphs/id": {
+      "dex": "Sushi",
+      "methods": [
+        "found_in_js"
+      ],
+      "source": "https://www.sushi.com/_next/static/chunks/0hhvhsz1e_1xb.js"
+    }
+  },
+  "timestamp": "2026-04-17T22:39:14.272Z"
+}
