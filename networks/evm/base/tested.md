@@ -1,84 +1,112 @@
-# Base Mainnet RPCs — Tested 2026-04-12
+# Base Mainnet RPCs — Tested 2026-04-18
 
-**RPS** = your request throughput | **TPS** = chain throughput | **Mempool** = TX visible pre-confirmation | **Safe TX** = no mempool = private
+> Chain ID: 8453
 
-## ⚡ Tier 1 — 300+ RPS
+## MEV-Safe RPCs (Recommended)
 
-| Name | URL | RPS | TPS | Mempool | Safe | Latency | Source |
-|------|-----|----:|----:|:-------:|:----:|--------:|--------|
-| QuickNode 3 | `https://warmhearted-falling-shape.base-mainnet.quiknode.pro/b1beacf9cbff295f07eba00f88985c08ed136559` | 358 | 80 | no | ✅ | 32ms | PancakeSwap |
-| QuickNode 2 | `https://fittest-wild-frog.base-mainnet.quiknode.pro/3474cf7682996021cbed75bfb11ec811dfed6ac2` | 355 | 88 | no | ✅ | 33ms | PancakeSwap |
-| QuickNode 1 | `https://thrumming-thrumming-pool.base-mainnet.quiknode.pro/afc8a0038cd744f30fd210e6f8c6b59ed5817bd7` | 340 | 163 | no | ✅ | 34ms | PancakeSwap |
+| Name | URL | RPS | Latency | Mempool | Safe | Tier |
+|------|-----|----:|--------:|:-------:|:----:|------|
+| **Tenderly** | `https://base.gateway.tenderly.co` | 111 | 79ms | no | ✅ | ⭐ Fastest safe |
+| Nodies | `https://lb.nodies.app/v1/0abc2c55fd444b198a6b2f72b17529bb` | 50 | 211ms | no | ✅ | Free |
+| Nodies POKT | `https://base-pokt.nodies.app` | 32 | 329ms | no | ✅ | Free |
 
-> ⚠️ Down from 2500+ RPS in Feb. Keys still work but rate-limited.
+## Working RPCs (Mempool Exposed)
 
-## 🚀 Tier 2 — 150-300 RPS
+| Name | URL | RPS | Latency | Mempool | Pending/Queued | Tier |
+|------|-----|----:|--------:|:-------:|---------------:|------|
+| Aerodrome dRPC | `https://lb.drpc.live/base/...` | 124 | 62ms | yes | 124/10018 | Fast |
+| DRPC | `https://base.drpc.org` | 80 | 95ms | yes | 110/10065 | Fast |
+| QuickNode 3 | `https://warmhearted-falling-shape.base...` | 76 | 130ms | no | - | Tier 1 |
+| QuickNode 2 | `https://fittest-wild-frog.base...` | 73 | 133ms | no | - | Tier 1 |
+| QuickNode 1 | `https://thrumming-thrumming-pool.base...` | 69 | 132ms | no | - | Tier 1 |
+| Base Official | `https://mainnet.base.org` | 69 | 137ms | no | - | Official |
+| Base Preconf | `https://mainnet-preconf.base.org` | 68 | 124ms | no | - | Preconf |
+| Ankr Pro | `https://rpc.ankr.com/base/...` | 75 | 140ms | yes | 0/0 | Needs key |
+| 1rpc.io | `https://1rpc.io/base` | 59 | 169ms | yes | 0/0 | ⚠️ Empty pool |
+| PublicNode | `https://base.publicnode.com` | 54 | 159ms | yes | **26429/10** | ⚠️ Massive exposure |
+| Dev Access | `https://developer-access-mainnet.base.org` | 40 | 132ms | no | - | Dev |
+| Coinbase CDP | `https://api.developer.coinbase.com/...` | 47 | 134ms | no | - | CDP |
+| LlamaRPC | `https://base.llamarpc.com` | 47 | 220ms | yes | 0/0 | Slow |
+| MeowRPC | `https://base.meowrpc.com` | - | 204ms | no | - | Free |
 
-| Name | URL | RPS | TPS | Mempool | Safe | Latency | Source |
-|------|-----|----:|----:|:-------:|:----:|--------:|--------|
-| Tenderly | `https://base.gateway.tenderly.co` | 281 | - | no | ✅ | 34ms | PancakeSwap |
-| DRPC | `https://base.drpc.org` | 281 | - | no | ✅ | 38ms | BaseSwap |
-| MeowRPC | `https://base.meowrpc.com` | 193 | - | no | ✅ | 35ms | PancakeSwap |
-| 1rpc.io | `https://1rpc.io/base` | 192 | 94 | ⚠️ yes | ❌ | 57ms | 1rpc.io |
-| Ankr Pro | `https://rpc.ankr.com/base/49e8f39a9a4ec3f43b5ae964dfd6aa83b36e19dbb270a73f9121a9e593d85ad2` | 191 | 87 | no | ✅ | 40ms | PancakeSwap |
-| PublicNode | `https://base.publicnode.com` | 144 | 68 | ⚠️ yes | ❌ | 69ms | PublicNode |
-| PublicNode alt | `https://base-rpc.publicnode.com` | 137 | - | ⚠️ yes | ❌ | 70ms | Chainlist |
+## Failed RPCs
 
-## ✅ Tier 3 — 50-150 RPS
-
-| Name | URL | RPS | TPS | Mempool | Safe | Latency | Source |
-|------|-----|----:|----:|:-------:|:----:|--------:|--------|
-| Base Preconf | `https://mainnet-preconf.base.org` | 124 | 77 | no | ✅ | 73ms | Base |
-| Dev Access | `https://developer-access-mainnet.base.org` | 122 | - | no | ✅ | 72ms | Base |
-| Base Official | `https://mainnet.base.org` | 72 | - | no | ✅ | 125ms | Base |
-| Nodies | `https://lb.nodies.app/v1/0abc2c55fd444b198a6b2f72b17529bb` | 72 | 82 | no | ✅ | 157ms | PancakeSwap |
-| Nodies POKT | `https://base-pokt.nodies.app` | 68 | 93 | no | ✅ | 163ms | PancakeSwap |
-| Coinbase CDP | `https://api.developer.coinbase.com/rpc/v1/base/pE-_rU5q_IliJGUVkVI-82ZoyiCeCSFx` | 48 | 56 | no | ✅ | 135ms | Coinbase |
-
-## 🐌 Tier 4 — Under 50 RPS
-
-| Name | URL | RPS | TPS | Mempool | Safe | Latency | Source |
-|------|-----|----:|----:|:-------:|:----:|--------:|--------|
-| LlamaRPC | `https://base.llamarpc.com` | 43 | - | no | ✅ | 163ms | LlamaRPC |
-| Thirdweb | `https://8453.rpc.thirdweb.com` | 0 | 0 | no | ✅ | - | Thirdweb |
-
-## ⚠️ Mempool-Only (MEV)
-
-| Name | URL | RPS | Pending | Queued |
-|------|-----|----:|-------:|-------:|
-| 1rpc.io | `https://1rpc.io/base` | 192 | 0 | 3 |
-| PublicNode | `https://base.publicnode.com` | 144 | 24182 | 0 |
-| PublicNode alt | `https://base-rpc.publicnode.com` | 137 | ~24k | 0 |
-
-## ❌ Dead
-
-| Name | URL | Reason |
-|------|-----|--------|
-| DRPC Aerodrome | `https://lb.drpc.live/base/Avibgvi26EjPsw76UtdwmsQzlkwrEmsR8b2u-uF7NYYO` | Key deactivated |
-| Ankr Public | `https://rpc.ankr.com/base` | Auth required |
-| BlastAPI | `https://base-mainnet.blastapi.io` | Discontinued |
-| Coinbase Wallet | `https://rpc.wallet.coinbase.com` | Not JSON-RPC |
-| BlockPi | `https://base.blockpi.network/v1/rpc/public` | 521 / auth |
-| DodoEx | `https://api.dodoex.io/frontend-rpc/8453?...` | Returns HTML |
-| KyberSwap | `https://base-rpc.kyberswap.com` | Returns HTML |
-| Chainstack | `https://base-mainnet.core.chainstack.com` | Auth required |
-| Grove | `https://base.rpc.grove.city/v1` | ENOTFOUND |
-| Privy | `https://base-mainnet.rpc.privy.systems` | Wrong chain |
+| Name | URL | Error |
+|------|-----|-------|
+| Wallet Coinbase | `https://rpc.wallet.coinbase.com` | Connection error |
+| Privy Base | `https://base-mainnet.rpc.privy.systems` | 404 |
 
 ## Quick Pick
 
-| Need | URL | RPS |
-|------|-----|----:|
-| Speed + Safe | `https://warmhearted-falling-shape.base-mainnet.quiknode.pro/b1beacf9cbff295f07eba00f88985c08ed136559` | 358 |
-| Free + Safe | `https://base.meowrpc.com` | 193 |
-| MEV / Mempool | `https://base.publicnode.com` | 144 |
-| Best Latency | `https://base.gateway.tenderly.co` | 281 |
-| Reliable | `https://mainnet.base.org` | 72 |
+| Need | RPC | RPS | Safe? |
+|------|-----|----:|-------|
+| **Speed + Safe** | Tenderly | 111 | ✅ |
+| **Free + Safe** | Nodies | 50 | ✅ |
+| Max speed | Aerodrome dRPC | 124 | ❌ (mempool exposed) |
+| Low latency | Tenderly | 79ms | ✅ |
+| Official | Base Official | 69 | No (but no mempool) |
 
-## Mempool Test
+## Security Analysis
+
+### MEV-Safe (No Mempool Access)
+- **Tenderly**: Fastest safe option (111 RPS, 79ms)
+- **Nodies**: Free, reliable, but slower (50 RPS)
+- **Nodies POKT**: Backup option (32 RPS)
+
+### Mempool Exposed (MEV Risk)
+| Provider | Notes |
+|----------|-------|
+| **PublicNode** | ⚠️ **26,429 pending tx visible** - highest risk |
+| **DRPC / Aerodrome** | 10k+ queued, actively used |
+| **1rpc.io / Ankr** | Empty pools but method exists |
+
+### No Mempool Method (Safe-ish)
+- QuickNode instances
+- Base Official / Preconf / Dev Access
+- MeowRPC
+
+These return "method not found" for `txpool_content`, meaning they don't expose the mempool even if the method technically exists.
+
+## Test Script
 
 ```bash
-curl -X POST $URL -H "Content-Type: application/json" \
+# Run the full test suite
+cd networks/evm/base
+node test-rpcs.js
+
+# Quick mempool check
+curl -X POST https://base.gateway.tenderly.co \
+  -H "Content-Type: application/json" \
   -d '{"jsonrpc":"2.0","id":1,"method":"txpool_content","params":[]}'
-# -32601 = no mempool (safe) | pending/queued = mempool exposed
+# Returns: {"jsonrpc":"2.0","id":1,"error":{"code":-32601,...}}
+# -32601 = method not found = safe
 ```
+
+## How to Use
+
+### For MEV Protection (Bundles, large trades)
+```javascript
+const SAFE_RPC = 'https://base.gateway.tenderly.co';
+```
+
+### For Speed ( accepts mempool exposure)
+```javascript
+const FAST_RPC = 'https://lb.drpc.live/base/YOUR_KEY';
+```
+
+### For Free Tier
+```javascript
+const FREE_SAFE = 'https://lb.nodies.app/v1/0abc2c55fd444b198a6b2f72b17529bb';
+const FREE_FAST = 'https://base.meowrpc.com';
+```
+
+## Comparison with Berachain
+
+| Feature | Base | Berachain |
+|---------|------|-----------|
+| **MEV-Safe RPCs** | 3 (Tenderly, Nodies) | 0 |
+| **Fastest Safe** | 111 RPS (Tenderly) | N/A |
+| **Ecosystem** | Mature (Flashbots/dRPC support) | Early (no private mempool) |
+| **Paid options** | Many | Ankr, BlockPI |
+
+Base has mature MEV protection infrastructure. Berachain is still early - no public Flashbots/dRPC Protect endpoints yet.
