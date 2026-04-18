@@ -32,6 +32,8 @@ Full workflow goes in 3 steps:
 
 Once you have tested results, commit them to `networks/<chain>/tested.md`.
 
+**New to the library?** Read [docs/HOW-TO.md](docs/HOW-TO.md) for detailed usage instructions.
+
 ---
 
 ## Step 1: Search for RPCs
