@@ -1,0 +1,12 @@
+{
+  "chain": "avalanche",
+  "chainId": "43114",
+  "scanned": [
+    "Trader Joe",
+    "Uniswap",
+    "Curve"
+  ],
+  "discovered": [],
+  "allRpcs": {},
+  "timestamp": "2026-04-18T00:45:15.079Z"
+}
