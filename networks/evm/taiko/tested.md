@@ -2,4 +2,4 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Taiko | https://rpc.taiko.xyz | - | 195 | 1 | yes | no | working |
+| Taiko | https://rpc.taiko.xyz | - | 182 | 1 | yes | no | working |
