@@ -1,0 +1,5 @@
+Discovering bnb DEXes...
+Found 10 domains for bnb
+Warning: subfinder failed: exec: "subfinder": executable file not found in $PATH
+
+Discovered 0 RPCs, written to data/bnb-discovered-raw.md

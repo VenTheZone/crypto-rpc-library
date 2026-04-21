@@ -1,0 +1,17 @@
+panic: runtime error: index out of range [5] with length 5
+
+goroutine 1 [running]:
+github.com/kytusdevenn/crypto-rpc/internal/markdown.parseTableRow({0xc0000f61e0?, 0x0?})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/markdown/parser.go:134 +0x4ca
+github.com/kytusdevenn/crypto-rpc/internal/markdown.ParseFile({0xc000103300, 0x10b5})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/markdown/parser.go:34 +0x21d
+main.runTest(0xc0000dc500?, {0x70bb32?, 0x4?, 0x70bb36?})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/cmd/crypto-rpc/test.go:41 +0x93
+github.com/spf13/cobra.(*Command).execute(0x965ce0, {0xc0000b23c0, 0x6, 0x6})
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1015 +0xa9c
+github.com/spf13/cobra.(*Command).ExecuteC(0x965720)
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1148 +0x40c
+github.com/spf13/cobra.(*Command).Execute(...)
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1071
+main.main()
+	/mnt/kimaki-projects/projects/crypto-rpc-library/cmd/crypto-rpc/main.go:18 +0x1a

@@ -1,0 +1,4 @@
+Testing Cronos... RPS=96 TPS=3 Mempool=false SafeTX=true
+Testing Ankr... RPS=0 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/cronos/tested.md

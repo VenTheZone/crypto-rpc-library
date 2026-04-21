@@ -130,3 +130,4 @@ data/
 └── solana/
     └── solana-discovered.json
 ```
+- [LLM Wiki (Karpathy)](llm-wiki.md) - Comprehensive guide to training and understanding large language models.

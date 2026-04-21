@@ -1,0 +1,4 @@
+Testing Klaytn... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Ankr... RPS=27 TPS=1 Mempool=false SafeTX=true
+
+Results written to networks/evm/klaytn/tested.md

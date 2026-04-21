@@ -1,0 +1,12 @@
+Testing Polygon... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing MaticVigil... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Ankr... RPS=144 TPS=0 Mempool=false SafeTX=true
+Testing BlockPi... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing PublicNode... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing QuickNode... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Alchemy... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Infura... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing DRPC... RPS=135 TPS=86 Mempool=false SafeTX=true
+Testing Blast... RPS=188 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/polygon/tested.md
