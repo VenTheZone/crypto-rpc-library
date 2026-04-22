@@ -1,14 +1,11 @@
-# Dead RPCs - OPTIMISM Chain
+# Dead RPCs - GNOSIS Chain
 
 > **Last Updated:** 2026-04-23
 > These RPCs failed the health check and are marked as dead/non-responsive
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error Message |
 |------|-----|---------------|---------------------|---------------|
-| BlockPi | `https://optimism.blockpi.network/v1/rpc/public` | 0 | 2026-04-23 | No response/RPS=0 |
-| QuickNode | `https://api.quiknode.pro` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
-| Alchemy | `https://opt-mainnet.g.alchemy.com/v2/demo` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
-| Infura | `https://optimism-mainnet.infura.io/v3/demo` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
+| BlockPi | `https://gnosis.blockpi.network/v1/rpc/public` | 0 | 2026-04-23 | No response/RPS=0 |
 
 ## Notes
 

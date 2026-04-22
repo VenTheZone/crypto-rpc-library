@@ -1,23 +1,26 @@
-# Dead RPCs - ETHEREUM
+# Dead RPCs - ETHEREUM Chain
 
-> Last Updated: 2026-04-21
-> These RPCs are confirmed dead (RPS=0 or connection errors)
+> **Last Updated:** 2026-04-23
+> These RPCs failed the health check and are marked as dead/non-responsive
 
-| Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-|------|-----|----------------|---------------------|-------|
-| Alchemy | `https://eth-mainnet.g.alchemy.com/v2/demo` | 0 | 2026-04-21 | Requires API key |
-| Infura | `https://mainnet.infura.io/v3/` | 0 | 2026-04-21 | Requires API key |
-| QuickNode | `https://*.quiknode.pro/` | 0 | 2026-04-21 | Requires API key |
-| NodeReal | `https://eth-mainnet.nodereal.io/v1/` | 0 | 2026-04-21 | Requires API key |
-| BlockPi | `https://ethereum.blockpi.network/v1/rpc/public` | 0 | 2026-04-21 | Rate limited |
-| GetBlock | `https://eth.getblock.io/` | 0 | 2026-04-21 | Requires API key |
-| Pocket | `https://eth-rpc.gateway.pokt.network` | 0 | 2026-04-21 | Requires API key |
+| Name | URL | Last Known RPS | Date Confirmed Dead | Error Message |
+|------|-----|---------------|---------------------|---------------|
+| Alchemy | `https://eth-mainnet.g.alchemy.com/v2/demo` | 0 | 2026-04-23 | No response/RPS=0 - likely requires valid API key |
+| Infura | `https://mainnet.infura.io/v3/demo` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
+| QuickNode | `https://api.quiknode.pro` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
+| NodeReal | `https://eth-native.nodereal.io` | 0 | 2026-04-23 | No response/RPS=0 |
+| BlockPi | `https://ethereum.blockpi.network/v1/rpc/public` | 0 | 2026-04-23 | No response/RPS=0 |
+| GetBlock | `https://eth.getblock.io/mainnet` | 0 | 2026-04-23 | No response/RPS=0 - requires API key |
+| Pocket | `https://eth-rpc.gateway.pokt.network` | 0 | 2026-04-23 | No response/RPS=0 |
 
 ## Notes
 
-These RPCs failed during live testing on 2026-04-21. Some may require:
-- API keys (Alchemy, Infura, QuickNode, NodeReal, GetBlock, Pocket)
-- Rate limit adjustments (BlockPi)
-- Network connectivity fixes
+- These endpoints returned RPS=0 or connection errors during testing
+- Some may require valid API keys (marked accordingly)
+- Retest periodically as infrastructure status changes
+- Consider removing from main tested.md after 30 days of no recovery
 
-Consider removing from tested.md if consistently dead across multiple audits.
+## Recovery Checklist
+
+- [ ] Last full retest: 2026-04-23
+- [ ] Next scheduled retest: 2026-04-30

@@ -2,13 +2,13 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Arbitrum | https://arb1.arbitrum.io/rpc | - | 135 | 32 | no | **yes** | working |
-| PublicNode | https://arbitrum-one-rpc.publicnode.com | - | 116 | 8 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/arbitrum | - | 122 | - | no | **yes** | working |
+| Arbitrum | https://arb1.arbitrum.io/rpc | - | 142 | 32 | no | **yes** | working |
+| PublicNode | https://arbitrum-one-rpc.publicnode.com | - | 123 | 13 | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/arbitrum | - | 183 | - | no | **yes** | working |
 | BlockPi | https://arbitrum.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
 | QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
 | Alchemy | https://arb-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | working |
-| Infura | https://arbitrum-mainnet.infura.io/v3/ | `````Authorization: Bearer <key>````` | - | - | no | **yes** | working |
-| DRPC | https://arbitrum.drpc.org | - | 172 | 4 | no | **yes** | working |
+| Infura | https://arbitrum-mainnet.infura.io/v3/ | ``````Authorization: Bearer <key>`````` | - | - | no | **yes** | working |
+| DRPC | https://arbitrum.drpc.org | - | 180 | 4 | no | **yes** | working |
 | Blast | https://arbitrum-mainnet.public.blastapi.io | - | - | - | no | **yes** | working |
 | Offchain | https://arb1.offchain.cc | - | - | - | no | **yes** | working |

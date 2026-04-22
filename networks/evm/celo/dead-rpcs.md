@@ -1,16 +1,12 @@
-# Dead RPCs - ARBITRUM Chain
+# Dead RPCs - CELO Chain
 
 > **Last Updated:** 2026-04-23
 > These RPCs failed the health check and are marked as dead/non-responsive
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error Message |
 |------|-----|---------------|---------------------|---------------|
-| BlockPi | `https://arbitrum.blockpi.network/v1/rpc/public` | 0 | 2026-04-23 | No response/RPS=0 |
 | QuickNode | `https://api.quiknode.pro` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
-| Alchemy | `https://arb-mainnet.g.alchemy.com/v2/demo` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
-| Infura | `https://arbitrum-mainnet.infura.io/v3/demo` | 0 | 2026-04-23 | No response/RPS=0 - requires valid API key |
-| Blast | `https://arbitrum-one.blastapi.io` | 0 | 2026-04-23 | No response/RPS=0 |
-| Offchain | `https://arb1.arbitrum.io/rpc` | 0 | 2026-04-23 | No response/RPS=0 - connection failure |
+| Blast | `https://celo-mainnet.blastapi.io` | 0 | 2026-04-23 | No response/RPS=0 |
 
 ## Notes
 
