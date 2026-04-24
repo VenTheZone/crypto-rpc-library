@@ -1,23 +1,15 @@
-# Dead RPCs - POLYGON
+# Dead RPCs - Polygon
 
-> Last Updated: 2026-04-21
-> These RPCs are confirmed dead (RPS=0 or connection errors)
+> Last Updated: 2026-04-25
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-|------|-----|----------------|---------------------|-------|
-| Polygon | `https://polygon-rpc.com` | 0 | 2026-04-21 | Connection error |
-| MaticVigil | `https://rpc-mainnet.maticvigil.com` | 0 | 2026-04-21 | Connection error |
-| BlockPi | `https://polygon.blockpi.network/v1/rpc/public` | 0 | 2026-04-21 | Rate limited |
-| PublicNode | `https://polygon-rpc.publicnode.com` | 0 | 2026-04-21 | Connection error |
-| QuickNode | `https://*.quiknode.pro/` | 0 | 2026-04-21 | Requires API key |
-| Alchemy | `https://polygon-mainnet.g.alchemy.com/v2/demo` | 0 | 2026-04-21 | Requires API key |
-| Infura | `https://polygon-mainnet.infura.io/v3/` | 0 | 2026-04-21 | Requires API key |
+|------|-----|--------------|---------------------|-------|
+| MaticVigil | https://rpc-mainnet.maticvigil.com | 0 | 2026-04-25 | Connection refused / returned RPS=0 |
+| Polygon Official | https://polygon-rpc.com | 0 | 2026-04-25 | Connection refused / returned RPS=0 |
+| BlockPi | https://polygon.blockpi.network/v1/rpc/public | 0 | 2026-04-25 | Connection refused / returned RPS=0 |
+| PublicNode | https://polygon-rpc.publicnode.com | 0 | 2026-04-25 | Connection refused / returned RPS=0 |
 
 ## Notes
-
-These RPCs failed during live testing on 2026-04-21. Some may require:
-- API keys (Alchemy, Infura, QuickNode, NodeReal, GetBlock, Pocket)
-- Rate limit adjustments (BlockPi)
-- Network connectivity fixes
-
-Consider removing from tested.md if consistently dead across multiple audits.
+- MaticVigil: Previously working, now completely unreachable
+- Polygon Official: The mainnet endpoint may be rate-limited or migrated
+- PublicNode: Network issues or endpoint migration
