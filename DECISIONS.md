@@ -304,5 +304,87 @@ Updated with fresh RPS/TPS values from live tests:
 
 ---
 
-*Audit completed: 2026-04-25*
+# RPC Library Audit - 2026-04-26
+
+## Summary
+- Chains audited: 12 (8 priority + 8 secondary for day 26)
+- Total RPCs tested: 85
+- Working: 49 | Needs-auth/No-response: 36
+- Health Score: 57.6%
+
+## Per-Chain Results
+
+| Chain | Total | Working | Dead/Key | Health | Top Performer | RPS | MEV-Safe |
+|-------|-------|---------|--------|--------|---------------|-----|----------|
+| bnb | 6 | 6 | 0 | **100%** | Ankr | 167 | ✅ |
+| fantom | 5 | 5 | 0 | **100%** | Ankr | 139 | ✅ |
+| zksync | 5 | 3 | 2 | 60% | zkSync | 284 | ✅ |
+| optimism | 9 | 5 | 4 | 56% | DRPC | 167 | ✅ |
+| gnosis | 3 | 2 | 1 | 67% | Ankr | 201 | ✅ |
+| ethereum | 20 | 13 | 7 | 65% | OmniTrade | 343 | ✅ |
+| arbitrum | 10 | 4 | 6 | 40% | DRPC | 192 | ✅ |
+| polygon | 10 | 3 | 7 | 30% | Ankr | 190 | ✅ |
+| celo | 4 | 2 | 2 | 50% | Celo | 70 | ✅ |
+| scroll | 4 | 2 | 2 | 50% | Scroll | 108 | ✅ |
+| linea | 5 | 2 | 3 | 40% | Blast | 186 | ✅ |
+| mantle | 4 | 2 | 2 | 50% | BlockPi | 34 | ✅ |
+
+## Top Performers (by RPS)
+1. **OmniTrade (Ethereum)**: 343 RPS (MEV-safe)
+2. **zkSync**: 284 RPS (MEV-safe)
+3. **Tenderly (Ethereum)**: 282 RPS (MEV-safe)
+4. **Ankr (Gnosis)**: 201 RPS (MEV-safe)
+5. **DRPC (Arbitrum)**: 192 RPS (MEV-safe)
+
+## Changes Made
+
+### Files Updated (12 tested.md files)
+Updated with fresh RPS/TPS values from live tests:
+- networks/evm/bnb/tested.md (6 RPCs updated)
+- networks/evm/ethereum/tested.md (13/20 working updated)
+- networks/evm/arbitrum/tested.md (4/10 working updated)
+- networks/evm/polygon/tested.md (3/10 working updated)
+- networks/evm/optimism/tested.md (5/9 working updated)
+- networks/evm/fantom/tested.md (5/5 working updated)
+- networks/evm/celo/tested.md (2/4 working updated)
+- networks/evm/scroll/tested.md (2/4 working updated)
+- networks/evm/linea/tested.md (2/5 working updated)
+- networks/evm/mantle/tested.md (2/4 working updated)
+- networks/evm/gnosis/tested.md (2/3 working updated)
+- networks/evm/zksync/tested.md (3/5 working updated)
+
+### Discovery Results
+- DEX discovery (BNB, Ethereum): 0 new endpoints found
+- Solana DEX discovery: 0 new endpoints found
+- No new RPCs added today
+
+## Parser Issues
+
+The following chains use custom table formats and cannot be auto-updated:
+- networks/solana/tested.md (evm format mismatch)
+- networks/evm/base/tested.md (custom sections)
+- networks/evm/avalanche/tested.md (alt path format)
+- networks/evm/berachain/tested.md (extra Origin column)
+
+## Recommendations
+
+### For TheBigSandwich (BNB MEV Bot)
+- **Primary**: Ankr (167 RPS, MEV-safe) - Updated RPS
+- **Backup**: PancakeSwap Alpha (99 RPS, MEV-safe) - Updated RPS
+- **Avoid**: PublicNode, Binance (mempool exposed)
+- All 6 BNB RPCs working - healthy chain
+
+### For Ethereum MEV
+- **Best**: OmniTrade (343 RPS) - MEV-safe, fastest public
+- **Fast**: Tenderly (282 RPS)
+- **Alternative**: Kukus (247 RPS), DRPC (171 RPS)
+
+### Chains Requiring Attention
+- **Polygon**: Only 30% working - many need API keys
+- **Arbitrum**: Only 40% working - many need API keys
+- **Celo/Scroll/Mantle**: 50% working - secondary providers need keys
+
+---
+
+*Audit completed: 2026-04-26*
 *Auditor: Hermes Agent (crypto-rpc-library librarian)*
