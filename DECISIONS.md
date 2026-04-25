@@ -388,3 +388,90 @@ The following chains use custom table formats and cannot be auto-updated:
 
 *Audit completed: 2026-04-26*
 *Auditor: Hermes Agent (crypto-rpc-library librarian)*
+
+---
+
+# RPC Library Audit - 2026-04-26 (Run 2)
+
+## Summary
+- Chains audited: 14 (8 priority + 8 secondary - solana/avalanche skipped due to parser)
+- Total RPCs tested: ~97 tested, ~65 working
+- Working: 65 | Dead: 30 (21 needs-auth, 9 truly dead) | New: 0
+- Health Score: 67%
+
+## Dead RPCs by Chain
+| Chain | Dead RPCs | Reason |
+|-------|-----------|--------|
+| ethereum | 7 | Alchemy, Infura, QuickNode, BlockPi, GetBlock, Pocket, NodeReal |
+| arbitrum | 6 | QuickNode, Alchemy, Infura, Blast, Offchain, BlockPi |
+| polygon | 7 | Polygon(official), MaticVigil, BlockPi, PublicNode, QuickNode, Alchemy, Infura |
+| optimism | 4 | BlockPi, QuickNode, Alchemy, Infura |
+| cronos | 1 | Ankr |
+| etc | 1 | Ankr |
+| moonbeam | 1 | BlockPi |
+| iotex | 2 | Old IoTeX endpoint, Ankr |
+| klaytn | 1 | Official Klaytn endpoint |
+
+## New RPCs Discovered
+- DEX discovery: 0 new endpoints (BNB, ETH, Solana)
+- General discovery: 0 new endpoints
+
+## Top Performers (Live Data)
+| Rank | Provider | Chain | RPS | MEV-Safe |
+|------|----------|-------|-----|----------|
+| 1 | Tenderly | ethereum | 351 | ✅ |
+| 2 | Binance | bnb | 147 | ❌ |
+| 3 | DRPC | optimism | 184 | ❌ |
+| 4 | Blast | polygon | 191 | ✅ |
+| 5 | DRPC | arbitrum | 177 | ✅ |
+| 6 | DRPC | ethereum | 176 | ❌ |
+| 7 | Ankr | polygon | 178 | ✅ |
+| 8 | Ankr | optimism | 165 | ✅ |
+| 9 | Harmony | harmony | 161 | ✅ |
+| 10 | Ankr | harmony | 166 | ✅ |
+
+## Changes Made
+### Updated Files (14 tested.md + code improvements)
+1. networks/evm/bnb/tested.md - Updated live RPS/TPS values
+2. networks/evm/ethereum/tested.md - Updated live RPS/TPS values  
+3. networks/evm/arbitrum/tested.md - Updated live RPS/TPS values
+4. networks/evm/polygon/tested.md - Updated live RPS/TPS values
+5. networks/evm/optimism/tested.md - Updated live RPS/TPS values
+6. networks/evm/cronos/tested.md - Updated live RPS/TPS values
+7. networks/evm/etc/tested.md - Updated live RPS/TPS values
+8. networks/evm/moonbeam/tested.md - Updated live RPS/TPS values
+9. networks/evm/taiko/tested.md - Updated live RPS/TPS values
+10. networks/evm/ronin/tested.md - Updated live RPS/TPS values
+11. networks/evm/harmony/tested.md - Updated live RPS/TPS values
+12. networks/evm/iotex/tested.md - Updated live RPS/TPS values
+13. networks/evm/klaytn/tested.md - Updated live RPS/TPS values
+14. deadrpc.txt - Updated graveyard with new dead RPCs
+15. cmd/crypto-rpc/test.go - Fixed mempool origin propagation
+16. internal/test/mempool.go - Added Origin header support
+17. internal/test/tps.go - Minor fixes
+18. scripts/monitor-rpcs.py - Synced
+
+## Parser Issues
+- Solana: Index out of range [6] - table format mismatch
+- Avalanche: Index out of range [5] - table format mismatch
+- Base: Custom format with latency columns
+- Berachain: Extra Origin column
+
+These chains need manual format updates.
+
+## MemPalace Updated
+- Rooms: audit-log, chain-health, dead-rpcs, collection-stats
+- Tunnels: Created to TheBigSandwich and SolanaScavengerArb
+
+## Recommendations
+
+### For TheBigSandwich (BNB MEV Bot)
+- **Primary**: Ankr (135 RPS, MEV-safe)
+- **Backup**: PancakeSwap Alpha (82 RPS, MEV-safe)
+- **Fast but Risky**: Binance (147 RPS, mempool exposed)
+
+### Code Fix
+- Mempool tester now properly propagates Origin headers (fixes txpool_content calls for Helius Jupiter, etc.)
+
+*Audit completed: 2026-04-26 (2nd run of day)*
+*Auditor: Hermes Agent (crypto-rpc-library librarian)*

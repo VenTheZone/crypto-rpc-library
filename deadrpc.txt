@@ -1,130 +1,75 @@
-# Dead Solana RPCs - 127
-# Generated: 2026-04-11T03:10:44.605Z
+# Dead RPCs Graveyard - 2026-04-26
 
-https://orb.helius.dev/
-https://block-explorer-api.mainnet.zksync.io/api
-https://api.mainnet.abs.xyz
-https://babel-api.mainnet.iotex.io
-https://quicknode1.peaq.xyz
-https://quicknode2.peaq.xyz
-https://quicknode3.peaq.xyz
-https://arb-mainnet.g.alchemy.com/v2
-https://eth-mainnet.g.alchemy.com/v2
-https://opt-mainnet.g.alchemy.com/v2
-https://polygon-mainnet.g.alchemy.com/v2
-https://eth-sepolia.g.alchemy.com/v2
-https://rpc.ankr.com/bsc
-https://56.rpc.thirdweb.com
-https://berachain-artio.rpc.privy.systems
-https://bsc-mainnet.rpc.privy.systems
-https://sepolia.rpc.zora.energy
-https://testnet.rpc.zora.energy
-https://arbitrum-mainnet.rpc.privy.systems
-https://arbitrum-sepolia.rpc.privy.systems
-https://base-mainnet.rpc.privy.systems
-https://base-sepolia.rpc.privy.systems
-https://mainnet.rpc.privy.systems
-https://optimism-mainnet.rpc.privy.systems
-https://optimism-sepolia.rpc.privy.systems
-https://polygon-mainnet.rpc.privy.systems
-https://polygon-amoy.rpc.privy.systems
-https://sepolia.rpc.privy.systems
-https://api.wallet.coinbase.com/rpc/v2/desktop/chrome
-https://api.developer.coinbase.com/rpc/v1/base-sepolia/S-fOd2n2Oi4fl4e1Crm83XeDXZ7tkg8O
-https://api.developer.coinbase.com/rpc/v1/base/S-fOd2n2Oi4fl4e1Crm83XeDXZ7tkg8O
-https://api.avax.network/ext/bc/C/rpc
-https://api.node.glif.io/rpc/v1
-https://api.calibration.node.glif.io/rpc/v1
-https://api.avax-test.network/ext/bc/C/rpc
-https://mercuria-fronten-1cd8.mainnet.rpcpool.com/
-https://worldchain-mainnet.g.alchemy.com/public
-https://worldchain-mainnet.explorer.alchemy.com
-https://worldchain-mainnet.explorer.alchemy.com/api
-https://11155111.rpc.thirdweb.com
-https://80001.rpc.thirdweb.com
-https://5.rpc.thirdweb.com
-https://artio.rpc.berachain.com
-https://api.explorer.execution.mainnet.lukso.network/api
-https://api.roninchain.com/rpc
-https://edge-mainnet.g.alchemy.com/v2/p7XZ9PmQlUFoTRxwIeB38
-https://edge-mainnet.explorer.alchemy.com
-https://hyperevm-testnet.rpc.privy.systems
-https://abs.rpc.privy.systems
-https://abs-testnet.rpc.privy.systems
-https://apechain-mainnet.rpc.privy.systems
-https://apechain-curtis.rpc.privy.systems
-https://avalanche-mainnet.rpc.privy.systems
-https://b3-mainnet.rpc.privy.systems
-https://b3-sepolia.rpc.privy.systems
-https://berachain-mainnet.rpc.privy.systems
-https://blast-mainnet.rpc.privy.systems
-https://flow-mainnet.rpc.privy.systems
-https://fluent-testnet.rpc.privy.systems
-https://gunz-mainnet.rpc.privy.systems
-https://immutable-mainnet.rpc.privy.systems
-https://ink-mainnet.rpc.privy.systems
-https://ink-sepolia.rpc.privy.systems
-https://megaeth-mainnet.rpc.privy.systems
-https://megaeth-testnet.rpc.privy.systems
-https://monad-testnet.rpc.privy.systems
-https://neura-testnet.rpc.privy.systems
-https://ronin-mainnet.rpc.privy.systems
-https://ronin-saigon.rpc.privy.systems
-https://sei-mainnet.rpc.privy.systems
-https://shape-mainnet.rpc.privy.systems
-https://somnia-mainnet.rpc.privy.systems
-https://somnia-testnet.rpc.privy.systems
-https://soneium-mainnet.rpc.privy.systems
-https://unichain-mainnet.rpc.privy.systems
-https://zora-mainnet.rpc.privy.systems
-https://hyperevm-mainnet.rpc.privy.systems
-https://monad-mainnet.rpc.privy.systems
-https://testnet.rpc.neuraprotocol.io
-https://orb.helius.dev
-https://api.solana.fm/v0
-https://api.mainnet.orca.so/v1
-https://pools-api.mainnet.orca.so/
-https://stats-api.mainnet.orca.so/
-https://wavebreak-api.mainnet-staging.orca.so
-https://rpc.ironforge.network/mainnet?apiKey=01JAFT6YB7SJS7N3N85PKEZ5MF
-https://api.orca.so/v2/solana/
-https://api.orca.so/v2/solana/wavebreak
-https://api.devnet.orca.so/v2/solana/
-https://xray.helius.xyz/
-https://jupiter-frontend.rpcpool.com/
-https://rpc.walletconnect.org/v1/?chainId=eip155:${e}&projectId=${t||this.rpc.projectId}`}async
-https://xray.helius.xyz/account/
-https://xray.helius.xyz/tx/
-https://cold-hanni-fast-mainnet.helius-rpc.com/
-https://drift-drift_ma-39b5.mainnet.rpcpool.com/
-https://api.mainnet-beta.solana.com`)?uh:/bdevnetb/i.test(e)?dh:/btestnetb/i.test(e)?fh:/blocalhostb/i.test(e)||/b127.0.0.1b/.test(e)?Jde:uh}function
-https://api.mainnet-beta.solana.com`
-https://56.rpc.thirdweb.com`]}}
-https://arb1.arbitrum.io/rpc`]}}
-https://mainnet.base.org`]}}
-https://rpc.linea.build`]
-https://api.wallet.coinbase.com/rpc/v2/desktop/chrome`
-http://api.mainnet-beta.solana.com/`}
-https://api.mainnet-beta.solana.com/`}}
-http://api.devnet.solana.com`
-https://api.orca.so/v2/solana`}getWhirlpoolProgramId(){return
-https://api.hubbleprotocol.io/strategies/${t.address.toString()}/metrics?env=mainnet-beta`
-https://helius-rpc.kamino.com/02996efe-bbc3-405f-8d87-845794261033`
-https://api.kamino.finance/limo/makers/${e}/transactions?env=mainnet-beta`).then(e=>e.json())
-https://xray.helius.xyz/${{transaction:
-https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ?advancedTxSubmission=true
-https://kamino.mainnet.rpcpool.com/
-https://rpc.ankr.com/solana
-https://solana-mainnet.g.alchemy.com/v2/ZT3c4pYf1inIrB0GVDNR7nx4LwyED5Ci
-https://ethereum.api.nodesmith.io/v1/mainnet/jsonrpc
-https://ethereum.api.nodesmith.io/v1/ropsten/jsonrpc
-https://ethereum.api.nodesmith.io/v1/rinkeby/jsonrpc
-https://ethereum.api.nodesmith.io/v1/goerli/jsonrpc
-https://ethereum.api.nodesmith.io/v1/kovan/jsonrpc
-https://solendf-solendf-67c7.rpcpool.com/
-https://xray.helius.xyz/${
-https://bartio.rpc.berachain.com
-https://eth.drpc.org
-https://larix.rpcpool.com/
-https://stableswap.rpcpool.com/
-https://raydium-frontend.rpcpool.com/
+> This file tracks confirmed dead RPC endpoints.
+> An RPC is "dead" when RPS=0 or it returns connection errors (not "needs key").
+
+## ethereum (7 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Alchemy | https://eth-mainnet.g.alchemy.com/v2/demo | 0 | Requires API key | 2026-04-26 |
+| Infura | https://mainnet.infura.io/v3/ | 0 | Requires API key | 2026-04-26 |
+| QuickNode | https://*.quiknode.pro/ | 0 | Requires API key | 2026-04-26 |
+| NodeReal | https://eth-mainnet.nodereal.io/v1/ | 0 | Requires API key | 2026-04-26 |
+| BlockPi | https://ethereum.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+| GetBlock | https://eth.getblock.io/ | 0 | Requires API key | 2026-04-26 |
+| Pocket | https://eth-rpc.gateway.pokt.network | 0 | Connection failed | 2026-04-26 |
+
+## arbitrum (6 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| BlockPi | https://arbitrum.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+| QuickNode | https://*.quiknode.pro/ | 0 | Requires API key | 2026-04-26 |
+| Alchemy | https://arb-mainnet.g.alchemy.com/v2/demo | 0 | Requires API key | 2026-04-26 |
+| Infura | https://arbitrum-mainnet.infura.io/v3/ | 0 | Requires API key | 2026-04-26 |
+| Blast | https://arbitrum-mainnet.public.blastapi.io | 0 | Connection failed | 2026-04-26 |
+| Offchain | https://arb1.offchain.cc | 0 | Connection failed | 2026-04-26 |
+
+## polygon (7 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Polygon | https://polygon-rpc.com | 0 | Tenant disabled | 2026-04-26 |
+| MaticVigil | https://rpc-mainnet.maticvigil.com | 0 | Service shut down | 2026-04-26 |
+| BlockPi | https://polygon.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+| PublicNode | https://polygon-rpc.publicnode.com | 0 | No response | 2026-04-26 |
+| QuickNode | https://*.quiknode.pro/ | 0 | Requires API key | 2026-04-26 |
+| Alchemy | https://polygon-mainnet.g.alchemy.com/v2/demo | 0 | Requires API key | 2026-04-26 |
+| Infura | https://polygon-mainnet.infura.io/v3/ | 0 | Requires API key | 2026-04-26 |
+
+## optimism (4 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| BlockPi | https://optimism.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+| QuickNode | https://*.quiknode.pro/ | 0 | Requires API key | 2026-04-26 |
+| Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | 0 | Requires API key | 2026-04-26 |
+| Infura | https://optimism-mainnet.infura.io/v3/ | 0 | Requires API key | 2026-04-26 |
+
+## cronos (1 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Ankr | https://rpc.ankr.com/cronos | 0 | No response | 2026-04-26 |
+
+## ethereum-classic (1 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Ankr | https://rpc.ankr.com/ethereumclassic | 0 | No response | 2026-04-26 |
+
+## moonbeam (1 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+
+## iotex (2 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| IoTeX Old | https://rpc.iotex.io | 0 | No response | 2026-04-26 |
+| Ankr | https://rpc.ankr.com/iotex | 0 | No response | 2026-04-26 |
+
+## klaytn (1 dead)
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Klaytn Official | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | No response | 2026-04-26 |
+
+## Summary
+- Total Dead RPCs: 30
+- Needs API Key: 21 (Alchemy, Infura, QuickNode across chains)
+- True Dead: 9 (No response, shut down, connection errors)

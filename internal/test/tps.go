@@ -42,6 +42,10 @@ func (t *TPSTester) testEVM(ctx context.Context, r *types.RPC) (float64, error) 
 	if r.AuthHeader != "" {
 		setHeadersFromAuth(client, r.AuthHeader)
 	}
+	// Apply custom Origin header if specified
+	if t.origin != "" {
+		client.SetHeader("Origin", t.origin)
+	}
 
 	resp, err := client.Call(ctx, r.URL, "eth_blockNumber", nil)
 	if err != nil {

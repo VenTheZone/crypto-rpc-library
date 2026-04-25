@@ -8,10 +8,16 @@ import (
 	"github.com/kytusdevenn/crypto-rpc/internal/types"
 )
 
-type MempoolTester struct{}
+type MempoolTester struct {
+	origin string
+}
 
 func NewMempoolTester() *MempoolTester {
 	return &MempoolTester{}
+}
+
+func (t *MempoolTester) SetOrigin(origin string) {
+	t.origin = origin
 }
 
 func (t *MempoolTester) Test(ctx context.Context, r *types.RPC) (bool, error) {
@@ -29,6 +35,10 @@ func (t *MempoolTester) testEVM(ctx context.Context, r *types.RPC) (bool, error)
 	client := rpc.NewClient()
 	if r.AuthHeader != "" {
 		setHeadersFromAuth(client, r.AuthHeader)
+	}
+	// Apply custom Origin header if specified
+	if t.origin != "" {
+		client.SetHeader("Origin", t.origin)
 	}
 
 	resp, err := client.Call(ctx, r.URL, "txpool_content", nil)

@@ -52,11 +52,12 @@ func runTest(cmd *cobra.Command, args []string) error {
 		rpc := &list.RPCs[i]
 		fmt.Printf("Testing %s... ", rpc.Name)
 
-		// Set custom origin if specified
-		if rpc.Origin != "" {
-			rpsTester.SetOrigin(rpc.Origin)
-			tpsTester.SetOrigin(rpc.Origin)
-		}
+	// Set custom origin if specified
+	if rpc.Origin != "" {
+		rpsTester.SetOrigin(rpc.Origin)
+		tpsTester.SetOrigin(rpc.Origin)
+		mempoolTester.SetOrigin(rpc.Origin)
+	}
 
 		rps, err := rpsTester.Test(ctx, rpc)
 		if err != nil {
