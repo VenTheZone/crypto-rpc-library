@@ -2,13 +2,9 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Arbitrum | https://arb1.arbitrum.io/rpc | - | 148 | 24 | no | **yes** | working |
-| PublicNode | https://arbitrum-one-rpc.publicnode.com | - | 8 | 8 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/arbitrum | - | 124 | - | no | **yes** | working |
-| BlockPi | https://arbitrum.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
-| Alchemy | https://arb-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | working |
-| Infura | https://arbitrum-mainnet.infura.io/v3/ | ```````````Authorization: Bearer <key>``````````` | - | - | no | **yes** | working |
-| DRPC | https://arbitrum.drpc.org | - | 179 | 20 | no | **yes** | working |
-| Blast | https://arbitrum-mainnet.public.blastapi.io | - | - | - | no | **yes** | working |
-| Offchain | https://arb1.offchain.cc | - | - | - | no | **yes** | working |
+| QuickNode | https://warmhearted-falling-shape.arbitrum-mainnet.quiknode.pro/b1beacf9cbff295f07eba00f88985c08ed136559 | - | 152 | 16 | no | **yes** | working |
+| DRPC | https://arbitrum.drpc.org | - | 80 | 19 | no | **yes** | working |
+| PublicNode | https://arbitrum-one-rpc.publicnode.com | - | 120 | 25 | no | **yes** | working |
+| Arbitrum Official | https://arb1.arbitrum.io/rpc | - | 143 | 28 | no | **yes** | working |
+| BlastAPI | https://arbitrum-one.public.blastapi.io | - | 138 | 20 | no | **yes** | working |
+| Nova Official | https://nova.arbitrum.io/rpc | - | 138 | - | no | **yes** | working |

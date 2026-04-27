@@ -1,4 +1,41 @@
-# RPC Library Audit Decisions
+# RPC Library Audit - 2026-04-28
+
+## Summary
+
+| Metric | Value |
+|--------|-------|
+| Chains audited | 16 |
+| Total RPCs tested | 109 |
+| Working | 75 |
+| Dead | 34 |
+| Collection health | 68.8% |
+
+## Dead RPCs Marked
+
+| Chain | Name | URL | Last RPS | Error |
+|-------|------|-----|----------|-------|
+| Cronos | Ankr | https://rpc.ankr.com/cronos | 0 | Connection error |
+| ETC | Ankr | https://rpc.ankr.com/etc | 0 | Connection error |
+| Moonbeam | BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | Timeout |
+| IoTeX | IoTeX Old | https://api.iotex.one | 0 | Deprecated |
+
+## New RPCs Added
+
+| Chain | URL | RPS | Source | Mempool |
+|-------|-----|-----|--------|---------|
+| None | - | - | - | - |
+
+## Changes Made
+
+- Fixed table format in arbitrum, avalanche, base, solana tested.md files
+- Updated all tested.md files with live RPS/TPS/ Mempool data
+- Tested 16 chains total (8 priority + 8 secondary rotation)
+- Created graveyard files for confirmed dead RPCs
+- Regenerated NETWORKS.md report
+
+---
+
+# Previous RPC Library Audit Decisions
 
 ## 2026-04-27 - Daily Health Check
 

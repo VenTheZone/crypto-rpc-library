@@ -1,17 +1,16 @@
-# Dead RPCs - MOONBEAM
+# Dead RPCs Graveyard - MOONBEAM
 
-> Last Updated: 2026-04-21
-> These RPCs are confirmed dead (RPS=0 or connection errors)
+> **Chain:** moonbeam  
+> **Last Updated:** 2026-04-28  
+> **Total Dead:** 1 RPC
 
-| Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-|------|-----|----------------|---------------------|-------|
-| BlockPi | `https://moonbeam.blockpi.network/v1/rpc/public` | 0 | 2026-04-21 | Rate limited |
+## Confirmed Dead Endpoints
+
+| Name | URL | Last Known RPS | Date Confirmed Dead | Error Message |
+|------|-----|----------------|---------------------|---------------|
+| BlockPi | `https://moonbeam.blockpi.network/v1/rpc/public` | 0 | 2026-04-28 | Timeout |
 
 ## Notes
 
-These RPCs failed during live testing on 2026-04-21. Some may require:
-- API keys (Alchemy, Infura, QuickNode, NodeReal, GetBlock, Pocket)
-- Rate limit adjustments (BlockPi)
-- Network connectivity fixes
-
-Consider removing from tested.md if consistently dead across multiple audits.
+- Dead confirmed via live RPS testing
+- RPCs returning 0 RPS or connection errors

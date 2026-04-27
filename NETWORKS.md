@@ -1,165 +1,140 @@
-# Crypto-RPC Library — Network Registry
+# Network RPC Collection Report
 
-> **Last Updated:** 2026-04-24
-> Auto-generated from live RPC health checks
+> **Last Updated:** 2026-04-28
+> **Generated:** 2026-04-28 05:30:00 UTC
 
-## 📊 Collection Overview
+---
+
+## Collection Overview
 
 | Metric | Value |
 |--------|-------|
-| **Chains Covered** | 16 |
-| **Total RPCs** | ~150 |
-| **Working** | 89 |
-| **Dead** | ~46 |
-| **Health Score** | 66% |
+| **Total Chains Audited** | 16 |
+| **Total RPCs Tested** | 109 |
+| **Working RPCs** | 75 |
+| **Dead RPCs** | 34 |
+| **Collection Health** | 68.8% |
 
 ---
 
-## 🔗 Chain Summary
+## Per-Chain Summary
 
-| Chain | Total | Working | Dead | Health | Top Performer | RPS | MEV-Safe |
-|-------|-------|---------|------|--------|---------------|-----|----------|
-| arbitrum | 10 | 3 | 7 | 30% | Ankr | 202 | ✅ yes |
-| avalanche | 9 | 7 | 2 | 78% | Ankr | 399 | ✅ yes |
-| base | 16 | 10 | 2 | 63% | Tenderly | 111 | ✅ yes |
-| berachain | 4 | 2 | 2 | 50% | Berachain | 89 | ❌ no |
-| bnb | 6 | 6 | 0 | 100% | Ankr | 205 | ✅ yes |
-| celo | 4 | 3 | 1 | 75% | Celo | 107 | ✅ yes |
-| ethereum | 20 | 13 | 10 | 65% | Tenderly | 374 | ✅ yes |
-| fantom | 5 | 5 | 0 | 100% | DRPC | 140 | ✅ yes |
-| gnosis | 3 | 3 | 0 | 100% | Ankr | 180 | ✅ yes |
-| linea | 5 | 3 | 2 | 60% | Blast | 189 | ✅ yes |
-| mantle | 4 | 3 | 1 | 75% | BlockPi | 65 | ✅ yes |
-| optimism | 9 | 7 | 2 | 78% | Ankr | 208 | ✅ yes |
-| polygon | 10 | 6 | 4 | 60% | Ankr | 200 | ✅ yes |
-| scroll | 4 | 2 | 2 | 50% | Scroll | 128 | ✅ yes |
-| solana | 14 | ~14 | 0 | 100% | Solana Official | 672 | ✅ yes |
-| zksync | 5 | 5 | 0 | 100% | zkSync | 195 | ✅ yes |
-
----
-
-## ⚠️ Critical Findings
-
-### Perfect Health Chains (100% working)
-- **bnb**: 6/6 working - Ankr (205 RPS), Binance (151 RPS), PancakeSwap variants
-- **fantom**: 5/5 working - DRPC (140 RPS), Ankr (140 RPS), 1rpc.io (123 RPS)
-- **gnosis**: 3/3 working - Ankr (180 RPS), Gnosis Official (56 RPS)
-- **solana**: All endpoints responding - Solana Official (672 RPS), DRPC (552 RPS)
-- **zksync**: 5/5 working - zkSync Official (195 RPS), Blast (190 RPS)
-
-### Chains with Parsing Issues (tested via alternative format)
-- **base**: Uses custom header format with latency/mempool exposure data
-- **avalanche**: Uses separate path (networks/avalanche/ vs networks/evm/avalanche/)
-
-### Provider Performance Summary
-
-#### Top Performers by RPS
-1. **Avalanche - Ankr**: 399 RPS (MEV-safe)
-2. **Optimism - Ankr**: 208 RPS (MEV-safe)
-3. **BNB - Ankr**: 205 RPS (MEV-safe)
-4. **Polygon - Ankr**: 200 RPS (MEV-safe)
-5. **zkSync - zkSync**: 195 RPS (MEV-safe)
-6. **Linea - Blast**: 189 RPS (MEV-safe)
-7. **Gnosis - Ankr**: 180 RPS (MEV-safe)
-8. **Ethereum - Tenderly**: 374 RPS (MEV-safe)
-9. **Arbitrum - Ankr**: 202 RPS (MEV-safe)
-10. **Solana - Solana Official**: 672 RPS (MEV-safe)
-
-#### Mempool Safety Analysis
-- **Fully MEV-Safe**: Ankr, 1rpc.io, Blast, Cloudflare, Tenderly, Official RPCs
-- **Mempool Exposed**: PublicNode (most chains), DRPC (some chains), Fantom RPCs
-
-### Problematic Providers
-| Provider | Issue | Chains Affected |
-|----------|-------|-----------------|
-| QuickNode | Requires valid API key | All chains (0 RPS in tests) |
-| Alchemy | Requires valid API key | All chains (0 RPS in tests) |
-| Infura | Requires valid API key | All chains (0 RPS in tests) |
-| BlockPi | Mixed results - some chains 0 RPS | Scroll, Linea, Arbitrum |
-| Blast | Intermittent failures | Arbitrum, Celo, Linea |
+| Chain | Total RPCs | Working | Dead | Top Performer | Top RPS |
+|-------|------------|---------|------|---------------|---------|
+| Ethereum | 20 | 11 | 9 | Tenderly | 403 |
+| Solana | 20 | 12 | 8 | Ironforge 2 | 223 |
+| Base | 17 | 14 | 3 | Tenderly | 201 |
+| Polygon | 10 | 5 | 5 | Blast | 170 |
+| Optimism | 9 | 6 | 3 | Blast | 173 |
+| Arbitrum | 6 | 6 | 0 | QuickNode | 152 |
+| Avalanche | 4 | 4 | 0 | DRPC | 142 |
+| IoTeX | 4 | 2 | 2 | OnFinality | 157 |
+| BNB | 6 | 6 | 0 | Binance | 130 |
+| Moonbeam | 3 | 2 | 1 | Ankr | 199 |
+| Cronos | 2 | 1 | 1 | Cronos | 37 |
+| ETC | 2 | 1 | 1 | Ethereum Classic | 39 |
+| Harmony | 2 | 2 | 0 | Ankr | 150 |
+| Taiko | 1 | 1 | 0 | Taiko | 124 |
+| Ronin | 1 | 1 | 0 | Ronin | 36 |
+| Klaytn | 2 | 1 | 1 | Ankr | 36 |
 
 ---
 
-## 📁 Directory Structure
+## Priority Chains Status
+
+### Tier 1 Chains (MEV-Critical)
+
+| Chain | Working RPCs | MEV-Safe RPCs | Top Safe RPC | Top RPS |
+|-------|--------------|---------------|--------------|---------|
+| **BNB** | 6 | 3 | Ankr | 134 |
+| **Ethereum** | 11 | 11 | Tenderly | 403 |
+| **Solana** | 12 | 12 | Ironforge 2 | 223 |
+| **Arbitrum** | 6 | 6 | QuickNode | 152 |
+| **Base** | 14 | 10 | Tenderly | 201 |
+| **Polygon** | 5 | 5 | Blast | 170 |
+| **Avalanche** | 4 | 2 | Avalanche Official | 66 |
+| **Optimism** | 6 | 5 | Blast | 173 |
+
+---
+
+## Dead RPCs by Chain
+
+| Chain | RPCs Confirmed Dead |
+|-------|---------------------|
+| Solana | 9 RPCs marked dead (low RPS) |
+| Ethereum | 7 RPCs (needs-key endpoints) |
+| Polygon | 5 RPCs (timeout/needs-key) |
+| Base | 5 RPCs (connection errors) |
+| Optimism | 3 RPCs (needs-key) |
+| IoTeX | 2 RPCs (deprecated/connection) |
+| Cronos | 1 RPC (Ankr - connection) |
+| ETC | 1 RPC (Ankr - connection) |
+| Moonbeam | 1 RPC (BlockPi - timeout) |
+| Klaytn | 1 RPC (Ankr - connection) |
+
+---
+
+## Directory Structure
 
 ```
 networks/
 ├── evm/
-│   ├── bnb/              # BNB Chain (6 working, 0 dead)
-│   ├── ethereum/         # Ethereum Mainnet (13 working, 7 dead)
-│   ├── arbitrum/         # Arbitrum One (3 working, 7 dead)
-│   ├── base/             # Base (10 working, 2 dead)
-│   ├── berachain/        # Berachain (2 working, 2 dead)
-│   ├── polygon/          # Polygon PoS (6 working, 4 dead)
-│   ├── avalanche/        # Avalanche C-Chain (7 working, 2 dead)
-│   ├── optimism/         # Optimism (7 working, 2 dead)
-│   ├── fantom/           # Fantom (5 working, 0 dead)
-│   ├── celo/             # Celo (3 working, 1 dead)
-│   ├── scroll/           # Scroll (2 working, 2 dead)
-│   ├── linea/            # Linea (3 working, 2 dead)
-│   ├── mantle/           # Mantle (3 working, 1 dead)
-│   ├── gnosis/           # Gnosis Chain (3 working, 0 dead)
-│   ├── zksync/           # zkSync Era (5 working, 0 dead)
-│   └── ...               # More chains
-├── solana/               # Solana Mainnet (14 working)
-└── avalanche/            # Duplicate - needs consolidation
+│   ├── bnb/tested.md          (6 RPCs)
+│   ├── ethereum/tested.md     (20 RPCs)
+│   ├── arbitrum/tested.md      (6 RPCs)
+│   ├── base/tested.md          (17 RPCs)
+│   ├── polygon/tested.md       (10 RPCs)
+│   ├── avalanche/tested.md     (4 RPCs)
+│   ├── optimism/tested.md      (9 RPCs)
+│   └── ... (other chains)
+├── solana/tested.md            (20 RPCs)
+└── ... (other non-EVM chains)
 ```
 
 ---
 
-## 🔧 Dead RPC Graveyard
+## Recommended RPCs by Use Case
 
-Dead RPCs tracked per chain:
+### Maximum Speed (MEV-Safe)
+1. **Tenderly** (Ethereum) - 403 RPS
+2. **Tenderly** (Base) - 201 RPS
+3. **Ankr** (Moonbeam) - 199 RPS
+4. **Blast** (Optimism) - 173 RPS
+5. **Blast** (Polygon) - 170 RPS
 
-| Chain | Dead RPCs File |
-|-------|------------------|
-| arbitrum | [dead-rpcs.md](networks/evm/arbitrum/dead-rpcs.md) |
-| avalanche | [dead-rpcs.md](networks/evm/avalanche/dead-rpcs.md) |
-| base | [dead-rpcs.md](networks/evm/base/dead-rpcs.md) |
-| berachain | [dead-rpcs.md](networks/evm/berachain/dead-rpcs.md) |
-| celo | [dead-rpcs.md](networks/evm/celo/dead-rpcs.md) |
-| ethereum | [dead-rpcs.md](networks/evm/ethereum/dead-rpcs.md) |
-| gnosis | [dead-rpcs.md](networks/evm/gnosis/dead-rpcs.md) |
-| klaytn | [dead-rpcs.md](networks/evm/klaytn/dead-rpcs.md) |
-| linea | [dead-rpcs.md](networks/evm/linea/dead-rpcs.md) |
-| mantle | [dead-rpcs.md](networks/evm/mantle/dead-rpcs.md) |
-| optimism | [dead-rpcs.md](networks/evm/optimism/dead-rpcs.md) |
-| polygon | [dead-rpcs.md](networks/evm/polygon/dead-rpcs.md) |
-| scroll | [dead-rpcs.md](networks/evm/scroll/dead-rpcs.md) |
-| zksync | [dead-rpcs.md](networks/evm/zksync/dead-rpcs.md) |
+### Mempool Access (MEV Operations)
+1. **Binance** (BNB) - 130 RPS, Mempool: YES
+2. **PublicNode** (Optimism) - 123 RPS, Mempool: YES
+3. **OnFinality** (IoTeX) - 157 RPS, Mempool: YES
+4. **PublicNode** (Avalanche) - 113 RPS, Mempool: YES
+5. **PublicNode** (BNB) - 117 RPS, Mempool: YES
 
----
-
-## 📝 Testing Methodology
-
-- **RPS**: Requests per second (25 concurrent requests, `-c 25`)
-- **TPS**: Transactions per second (network throughput)
-- **Mempool**: Whether `txpool_content` returns pending transactions
-- **Safe TX**: Mempool-safe (no MEV exposure risk via txpool)
-- **Test Frequency**: Priority chains daily, secondary chains rotated
-- **Priority Chains**: bnb, ethereum, solana, arbitrum, base, polygon, avalanche, optimism
+### Free Tier (No API Key Required)
+1. **DRPC** (Multiple chains) - 80-552 RPS
+2. **PublicNode** (Multiple chains) - 50-123 RPS
+3. **BlastAPI** (Multiple chains) - 40-170 RPS
 
 ---
 
-## 🎯 Recommendations
+## Recent Changes
 
-### Best RPCs by Use Case
-
-| Use Case | Recommended RPC | Chain | RPS | Safe? |
-|----------|-----------------|-------|-----|-------|
-| **High Speed** | Ankr | Avalanche | 399 | ✅ |
-| **MEV Protection** | 1rpc.io | Any EVM | ~100-140 | ✅ |
-| **Low Latency** | Tenderly | Ethereum | 374 | ✅ |
-| **Official/Gov** | Official RPCs | All | Varies | Usually ✅ |
-| **Free Tier** | PublicNode | Most | ~50-150 | ❌ (exposed) |
-| **Solana Degen** | Solana Official | Solana | 672 | ✅ |
-
-### Chains Needing Attention
-- **Arbitrum**: 70% failure rate - BlockPi, DRPC, Blast failing
-- **Base**: Some parsing issues - verify table format
-- **Berachain**: All public RPCs expose mempool (MEV risk)
+### 2026-04-28
+- Tested all priority chains and secondary rotation
+- Fixed malformed tested.md files (arbitrum, base, avalanche, solana)
+- Created graveyard files for dead RPCs (cronos, etc, moonbeam)
+- Collection health: 68.8% (75/109 working)
 
 ---
 
-*Generated by crypto-rpc-library auditor — 2026-04-24*
-*Audit: 16 chains tested, 89 working RPCs confirmed*
+## Quick Reference
+
+```bash
+# Test a specific chain
+./bin/crypto-rpc test -i networks/evm/bnb/tested.md -o networks/evm/bnb/tested.md -c 25
+
+# Generate report
+./bin/crypto-rpc report -i networks/ -o NETWORKS.md
+
+# Discover new RPCs from DEXs
+./bin/crypto-rpc discover-dex bnb -o data/bnb-new-discovered.md
+```
