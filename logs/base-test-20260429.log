@@ -1,0 +1,19 @@
+Testing Tenderly... RPS=288 TPS=82 Mempool=false SafeTX=true
+Testing Nodies... RPS=63 TPS=49 Mempool=false SafeTX=true
+Testing Nodies POKT... RPS=67 TPS=50 Mempool=false SafeTX=true
+Testing Aerodrome dRPC... RPS=191 TPS=0 Mempool=false SafeTX=true
+Testing DRPC... RPS=178 TPS=50 Mempool=true SafeTX=false
+Testing QuickNode 3... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing QuickNode 2... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing QuickNode 1... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Base Official... RPS=84 TPS=66 Mempool=false SafeTX=true
+Testing Base Preconf... RPS=71 TPS=57 Mempool=false SafeTX=true
+Testing Ankr Pro... RPS=151 TPS=0 Mempool=false SafeTX=true
+Testing 1rpc.io... RPS=61 TPS=79 Mempool=false SafeTX=true
+Testing PublicNode... RPS=124 TPS=58 Mempool=true SafeTX=false
+Testing Dev Access... RPS=95 TPS=86 Mempool=false SafeTX=true
+Testing Coinbase CDP... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing LlamaRPC... RPS=71 TPS=0 Mempool=false SafeTX=true
+Testing MeowRPC... RPS=0 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/base/tested.md

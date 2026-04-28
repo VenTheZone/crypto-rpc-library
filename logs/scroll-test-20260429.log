@@ -1,0 +1,6 @@
+Testing Scroll... RPS=56 TPS=0 Mempool=false SafeTX=true
+Testing Ankr... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing BlockPi... RPS=74 TPS=0 Mempool=false SafeTX=true
+Testing QuickNode... RPS=0 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/scroll/tested.md

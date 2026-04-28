@@ -1,0 +1,29 @@
+panic: runtime error: index out of range [6] with length 6
+
+goroutine 1 [running]:
+github.com/kytusdevenn/crypto-rpc/internal/markdown.parseTableRow({0xc0000c4180?, 0x0?})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/markdown/parser.go:135 +0x4c5
+github.com/kytusdevenn/crypto-rpc/internal/markdown.ParseFile({0xc000104c00, 0xb7a})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/markdown/parser.go:34 +0x21d
+github.com/kytusdevenn/crypto-rpc/internal/report.(*Aggregator).AggregateFromDir.func1({0xc0000de0e0, 0x1b}, {0x79be00?, 0xc0000a71e0?}, {0x0?, 0x0?})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/report/aggregator.go:43 +0xe5
+path/filepath.walk({0xc0000de0e0, 0x1b}, {0x79be00, 0xc0000a71e0}, 0xc000060a88)
+	/usr/local/go/src/path/filepath/path.go:477 +0xff
+path/filepath.walk({0xc0000ce210, 0x11}, {0x79be00, 0xc0000a7110}, 0xc00010fa88)
+	/usr/local/go/src/path/filepath/path.go:501 +0x257
+path/filepath.walk({0x7fff8c6c632d, 0x9}, {0x79be00, 0xc0000a7040}, 0xc00010fa88)
+	/usr/local/go/src/path/filepath/path.go:501 +0x257
+path/filepath.Walk({0x7fff8c6c632d, 0x9}, 0xc000060a88)
+	/usr/local/go/src/path/filepath/path.go:572 +0x66
+github.com/kytusdevenn/crypto-rpc/internal/report.(*Aggregator).AggregateFromDir(0x0?, {0x7fff8c6c632d, 0x9})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/internal/report/aggregator.go:29 +0x96
+main.runReport(0xc0000da400?, {0x70bb32?, 0x4?, 0x70bb36?})
+	/mnt/kimaki-projects/projects/crypto-rpc-library/cmd/crypto-rpc/report.go:33 +0x36
+github.com/spf13/cobra.(*Command).execute(0x965a00, {0xc0000e22c0, 0x4, 0x4})
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1015 +0xa9c
+github.com/spf13/cobra.(*Command).ExecuteC(0x965720)
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1148 +0x40c
+github.com/spf13/cobra.(*Command).Execute(...)
+	/home/kytusdevenn/go/pkg/mod/github.com/spf13/cobra@v1.10.2/command.go:1071
+main.main()
+	/mnt/kimaki-projects/projects/crypto-rpc-library/cmd/crypto-rpc/main.go:18 +0x1a

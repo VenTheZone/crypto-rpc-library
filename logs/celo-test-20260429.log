@@ -1,0 +1,6 @@
+Testing Celo... RPS=59 TPS=14 Mempool=false SafeTX=true
+Testing Ankr... RPS=54 TPS=8 Mempool=false SafeTX=true
+Testing QuickNode... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Blast... RPS=0 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/celo/tested.md

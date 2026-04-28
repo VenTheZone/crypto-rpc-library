@@ -1,0 +1,22 @@
+Testing Ankr... RPS=152 TPS=0 Mempool=false SafeTX=true
+Testing DRPC... RPS=148 TPS=0 Mempool=true SafeTX=false
+Testing Blast... RPS=157 TPS=81 Mempool=false SafeTX=true
+Testing Cloudflare... RPS=109 TPS=0 Mempool=false SafeTX=true
+Testing Rei... RPS=36 TPS=10 Mempool=false SafeTX=true
+Testing OnFinality... RPS=128 TPS=0 Mempool=false SafeTX=true
+Testing Vanry... RPS=128 TPS=87 Mempool=true SafeTX=false
+Testing 1rpc.io/eth... RPS=92 TPS=0 Mempool=true SafeTX=false
+Testing Tenderly... RPS=216 TPS=0 Mempool=false SafeTX=true
+Testing PublicNode... RPS=140 TPS=76 Mempool=true SafeTX=false
+Testing OmniTrade... RPS=309 TPS=0 Mempool=false SafeTX=true
+Testing Kukus... RPS=258 TPS=0 Mempool=false SafeTX=true
+Testing LLamaRPC... RPS=73 TPS=0 Mempool=false SafeTX=true
+Testing Alchemy... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Infura... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing QuickNode... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing NodeReal... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing BlockPi... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing GetBlock... RPS=0 TPS=0 Mempool=false SafeTX=true
+Testing Pocket... RPS=0 TPS=0 Mempool=false SafeTX=true
+
+Results written to networks/evm/ethereum/tested.md
