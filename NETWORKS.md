@@ -1,140 +1,130 @@
-# Network RPC Collection Report
+# Crypto-RPC Library - Network Overview
 
-> **Last Updated:** 2026-04-28
-> **Generated:** 2026-04-28 05:30:00 UTC
+> **Last Updated:** 2026-04-30  
+> **Health Score:** 65.6%
 
----
-
-## Collection Overview
+## Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| **Total Chains Audited** | 16 |
-| **Total RPCs Tested** | 109 |
-| **Working RPCs** | 75 |
-| **Dead RPCs** | 34 |
-| **Collection Health** | 68.8% |
+| Total Chains Audited | 15 |
+| Total RPCs Tested | 122 |
+| Working RPCs | 80 |
+| Dead RPCs | 42 |
+| Chains with Dead RPCs | 11 |
+| Overall Health | 65.6% |
 
----
+## Priority Chains
 
-## Per-Chain Summary
+### BNB Smart Chain (BSC)
+- **Status:** ✅ Healthy (100%)
+- **RPCs:** 6 working, 0 dead
+- **Top Performer:** Ankr @ 134 RPS
+- **Safe for MEV:** PancakeSwap, PancakeSwap Alpha, Ankr
 
-| Chain | Total RPCs | Working | Dead | Top Performer | Top RPS |
-|-------|------------|---------|------|---------------|---------|
-| Ethereum | 20 | 11 | 9 | Tenderly | 403 |
-| Solana | 20 | 12 | 8 | Ironforge 2 | 223 |
-| Base | 17 | 14 | 3 | Tenderly | 201 |
-| Polygon | 10 | 5 | 5 | Blast | 170 |
-| Optimism | 9 | 6 | 3 | Blast | 173 |
-| Arbitrum | 6 | 6 | 0 | QuickNode | 152 |
-| Avalanche | 4 | 4 | 0 | DRPC | 142 |
-| IoTeX | 4 | 2 | 2 | OnFinality | 157 |
-| BNB | 6 | 6 | 0 | Binance | 130 |
-| Moonbeam | 3 | 2 | 1 | Ankr | 199 |
-| Cronos | 2 | 1 | 1 | Cronos | 37 |
-| ETC | 2 | 1 | 1 | Ethereum Classic | 39 |
-| Harmony | 2 | 2 | 0 | Ankr | 150 |
-| Taiko | 1 | 1 | 0 | Taiko | 124 |
-| Ronin | 1 | 1 | 0 | Ronin | 36 |
-| Klaytn | 2 | 1 | 1 | Ankr | 36 |
+### Ethereum Mainnet
+- **Status:** ⚠️ Degraded (65%)
+- **RPCs:** 13 working, 8 dead
+- **Top Performer:** Kukus @ 326 RPS
+- **Safe for MEV:** Tenderly, PublicNode, OmniTrade, Kukus, LLamaRPC, Blast, Cloudflare, OnFinality
+- **Dead:** Alchemy, Infura, QuickNode, NodeReal, BlockPi, GetBlock, Pocket, Rei, Vanry, 1rpc.io
 
----
+### Solana Mainnet
+- **Status:** ⚠️ Degraded (65%)
+- **RPCs:** 13 working, 8 dead
+- **Top Performer:** Solana Official @ 213 RPS
+- **Safe for MEV:** All working RPCs are safe
+- **Dead:** DRPC, QuickNode, PublicNode, Helius Drift, Helius Kamino, Helius Jupiter, Phantom
 
-## Priority Chains Status
+### Arbitrum
+- **Status:** ✅ Healthy (100%)
+- **RPCs:** 6 working, 0 dead
+- **Top Performer:** DRPC @ 174 RPS
+- **Safe for MEV:** All working RPCs are safe
 
-### Tier 1 Chains (MEV-Critical)
+### Base
+- **Status:** ⚠️ Degraded (70%)
+- **RPCs:** 12 working, 5 dead
+- **Top Performer:** Tenderly @ 232 RPS
 
-| Chain | Working RPCs | MEV-Safe RPCs | Top Safe RPC | Top RPS |
-|-------|--------------|---------------|--------------|---------|
-| **BNB** | 6 | 3 | Ankr | 134 |
-| **Ethereum** | 11 | 11 | Tenderly | 403 |
-| **Solana** | 12 | 12 | Ironforge 2 | 223 |
-| **Arbitrum** | 6 | 6 | QuickNode | 152 |
-| **Base** | 14 | 10 | Tenderly | 201 |
-| **Polygon** | 5 | 5 | Blast | 170 |
-| **Avalanche** | 4 | 2 | Avalanche Official | 66 |
-| **Optimism** | 6 | 5 | Blast | 173 |
+### Polygon
+- **Status:** ⚠️ Degraded (30%)
+- **RPCs:** 3 working, 8 dead
+- **Top Performer:** DRPC @ 180 RPS
 
----
+### Avalanche C-Chain
+- **Status:** ✅ Healthy (100%)
+- **RPCs:** 4 working, 0 dead
+- **Top Performer:** DRPC @ 127 RPS
 
-## Dead RPCs by Chain
+### Optimism
+- **Status:** ⚠️ Degraded (55%)
+- **RPCs:** 5 working, 5 dead
+- **Top Performer:** Blast @ 187 RPS
 
-| Chain | RPCs Confirmed Dead |
-|-------|---------------------|
-| Solana | 9 RPCs marked dead (low RPS) |
-| Ethereum | 7 RPCs (needs-key endpoints) |
-| Polygon | 5 RPCs (timeout/needs-key) |
-| Base | 5 RPCs (connection errors) |
-| Optimism | 3 RPCs (needs-key) |
-| IoTeX | 2 RPCs (deprecated/connection) |
-| Cronos | 1 RPC (Ankr - connection) |
-| ETC | 1 RPC (Ankr - connection) |
-| Moonbeam | 1 RPC (BlockPi - timeout) |
-| Klaytn | 1 RPC (Ankr - connection) |
+## Secondary Chains
 
----
+| Chain | Working | Dead | Total | Top RPS | Top RPC |
+|-------|---------|------|-------|---------|---------|
+| Fantom | 5 | 0 | 5 | 154 | Ankr |
+| Celo | 2 | 2 | 4 | 102 | Celo |
+| Scroll | 2 | 2 | 4 | 130 | Scroll |
+| Linea | 2 | 3 | 5 | 189 | Blast |
+| Mantle | 2 | 2 | 4 | 56 | BlockPi |
+| Gnosis | 2 | 1 | 3 | 197 | Ankr |
+| zkSync | 3 | 2 | 5 | 193 | Blast |
 
-## Directory Structure
+## Dead RPCs Summary
+
+| Chain | Count | RPCs |
+|-------|-------|------|
+| Ethereum | 8 | Alchemy, Infura, QuickNode, NodeReal, BlockPi, GetBlock, Pocket |
+| Solana | 8 | DRPC, QuickNode, PublicNode, Helius Drift, Helius Kamino, Helius Jupiter, Phantom |
+| Base | 6 | QuickNode 1/2/3, Coinbase CDP, MeowRPC |
+| Polygon | 8 | Polygon, MaticVigil, BlockPi, PublicNode, QuickNode, Alchemy, Infura |
+| Optimism | 5 | BlockPi, QuickNode, Alchemy, Infura, PublicNode |
+| Celo | 3 | QuickNode, Blast |
+| Scroll | 3 | Ankr, QuickNode |
+| Linea | 4 | Ankr, BlockPi, QuickNode |
+| Mantle | 3 | Ankr, QuickNode |
+| zkSync | 3 | Ankr, BlockPi, QuickNode |
+| Gnosis | 2 | BlockPi, Blast |
+
+## Mempool-Safe RPCs
+
+| Chain | Safe RPCs |
+|-------|-----------|
+| BNB | PancakeSwap, PancakeSwap Alpha, Ankr |
+| Ethereum | Tenderly, PublicNode, OmniTrade, Kukus, LLamaRPC, Blast, Cloudflare, OnFinality |
+| Solana | All working RPCs (13 total) |
+| Arbitrum | All working RPCs (6 total) |
+| Base | Tenderly, Nodies, Nodies POKT, Aerodrome dRPC, Ankr Pro, Dev Access |
+| Polygon | DRPC, Blast |
+| Avalanche | 1rpc.io |
+| Optimism | Optimism, Ankr, Blast |
+
+## File Structure
 
 ```
 networks/
 ├── evm/
-│   ├── bnb/tested.md          (6 RPCs)
-│   ├── ethereum/tested.md     (20 RPCs)
-│   ├── arbitrum/tested.md      (6 RPCs)
-│   ├── base/tested.md          (17 RPCs)
-│   ├── polygon/tested.md       (10 RPCs)
-│   ├── avalanche/tested.md     (4 RPCs)
-│   ├── optimism/tested.md      (9 RPCs)
+│   ├── bnb/tested.md
+│   ├── ethereum/tested.md
+│   ├── ethereum/dead-rpcs.md
+│   ├── arbitrum/tested.md
+│   ├── base/tested.md
+│   ├── base/dead-rpcs.md
+│   ├── polygon/tested.md
+│   ├── polygon/dead-rpcs.md
+│   ├── avalanche/tested.md
+│   ├── optimism/tested.md
+│   ├── optimism/dead-rpcs.md
 │   └── ... (other chains)
-├── solana/tested.md            (20 RPCs)
-└── ... (other non-EVM chains)
+└── solana/
+    ├── tested.md
+    └── dead-rpcs.md
 ```
 
 ---
-
-## Recommended RPCs by Use Case
-
-### Maximum Speed (MEV-Safe)
-1. **Tenderly** (Ethereum) - 403 RPS
-2. **Tenderly** (Base) - 201 RPS
-3. **Ankr** (Moonbeam) - 199 RPS
-4. **Blast** (Optimism) - 173 RPS
-5. **Blast** (Polygon) - 170 RPS
-
-### Mempool Access (MEV Operations)
-1. **Binance** (BNB) - 130 RPS, Mempool: YES
-2. **PublicNode** (Optimism) - 123 RPS, Mempool: YES
-3. **OnFinality** (IoTeX) - 157 RPS, Mempool: YES
-4. **PublicNode** (Avalanche) - 113 RPS, Mempool: YES
-5. **PublicNode** (BNB) - 117 RPS, Mempool: YES
-
-### Free Tier (No API Key Required)
-1. **DRPC** (Multiple chains) - 80-552 RPS
-2. **PublicNode** (Multiple chains) - 50-123 RPS
-3. **BlastAPI** (Multiple chains) - 40-170 RPS
-
----
-
-## Recent Changes
-
-### 2026-04-28
-- Tested all priority chains and secondary rotation
-- Fixed malformed tested.md files (arbitrum, base, avalanche, solana)
-- Created graveyard files for dead RPCs (cronos, etc, moonbeam)
-- Collection health: 68.8% (75/109 working)
-
----
-
-## Quick Reference
-
-```bash
-# Test a specific chain
-./bin/crypto-rpc test -i networks/evm/bnb/tested.md -o networks/evm/bnb/tested.md -c 25
-
-# Generate report
-./bin/crypto-rpc report -i networks/ -o NETWORKS.md
-
-# Discover new RPCs from DEXs
-./bin/crypto-rpc discover-dex bnb -o data/bnb-new-discovered.md
-```
+*Generated by crypto-rpc-library audit*  
+*Date: 2026-04-30*

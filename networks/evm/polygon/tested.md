@@ -4,11 +4,11 @@
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
 | Polygon | https://polygon-rpc.com | - | - | - | no | **yes** | working |
 | MaticVigil | https://rpc-mainnet.maticvigil.com | - | - | - | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/polygon | - | 195 | - | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/polygon | - | 150 | - | no | **yes** | working |
 | BlockPi | https://polygon.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
 | PublicNode | https://polygon-rpc.publicnode.com | - | - | - | no | **yes** | working |
 | QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
 | Alchemy | https://polygon-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | working |
-| Infura | https://polygon-mainnet.infura.io/v3/ | `````````````Authorization: Bearer <key>````````````` | - | - | no | **yes** | working |
-| DRPC | https://polygon.drpc.org | - | 196 | 73 | no | **yes** | working |
-| Blast | https://polygon-mainnet.public.blastapi.io | - | 189 | - | no | **yes** | working |
+| Infura | https://polygon-mainnet.infura.io/v3/ | ``````````````Authorization: Bearer <key>`````````````` | - | - | no | **yes** | working |
+| DRPC | https://polygon.drpc.org | - | 180 | 131 | no | **yes** | working |
+| Blast | https://polygon-mainnet.public.blastapi.io | - | 97 | - | no | **yes** | working |

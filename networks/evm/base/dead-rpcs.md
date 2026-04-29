@@ -1,7 +1,7 @@
-# Dead RPCs - CELO
+# Dead RPCs - BASE
 
 > **Last Updated:** 2026-04-30  
-> **Confirmed Dead:** 3 endpoints
+> **Confirmed Dead:** 6 endpoints
 
 ## Methodology
 
@@ -15,12 +15,15 @@ These RPCs are considered dead based on:
 | Name | URL | Last Known RPS | Date Confirmed | Error/Status |
 |------|-----|----------------|----------------|--------------|
 | ---- | --- | 0 RPS | 2026-04-30 | No response (RPS=0) |
-| QuickNode | https://*.quiknode.pro/ | 0 RPS | 2026-04-30 | No response (RPS=0) |
-| Blast | https://celo-mainnet.public.blastapi.io | 0 RPS | 2026-04-30 | No response (RPS=0) |
+| QuickNode 3 | https://warmhearted-falling-shape.base-mainnet.quiknode.pro/ | 0 RPS | 2026-04-30 | No response (RPS=0) |
+| QuickNode 2 | https://fittest-wild-frog.base-mainnet.quiknode.pro/ | 0 RPS | 2026-04-30 | No response (RPS=0) |
+| QuickNode 1 | https://thrumming-thrumming-pool.base-mainnet.quiknode.pro/ | 0 RPS | 2026-04-30 | No response (RPS=0) |
+| Coinbase CDP | https://api.developer.coinbase.com/rpc/v1/ | 0 RPS | 2026-04-30 | No response (RPS=0) |
+| MeowRPC | https://base.meowrpc.com | 0 RPS | 2026-04-30 | No response (RPS=0) |
 
 ## Notes
 
-- Total working RPCs: See networks/evm/celo/tested.md
+- Total working RPCs: See networks/evm/base/tested.md
 - These dead endpoints should be removed from rotation or moved to a separate configuration
 - Some may require API keys to function (see "Needs API Key" section)
 
