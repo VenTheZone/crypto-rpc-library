@@ -1,24 +1,26 @@
 # Tested RPCs
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/eth | `````````````Authorization: Bearer <key>````````````` | 137 | - | no | **yes** | working |
-| DRPC | https://eth.drpc.org | - | 177 | 11 | yes | no | working |
-| Blast | https://eth-mainnet.public.blastapi.io | - | 156 | - | no | **yes** | working |
-| Cloudflare | https://cloudflare-eth.com | - | 102 | - | no | **yes** | working |
-| Rei | https://rpc.rei.network | - | 40 | 20 | no | **yes** | working |
-| OnFinality | https://eth.api.onfinality.io/public | - | 139 | - | no | **yes** | working |
-| Vanry | https://ethereum.publicnode.com | - | 129 | - | yes | no | working |
-| 1rpc.io/eth | https://1rpc.io/eth | - | 131 | - | yes | no | working |
-| Tenderly | https://mainnet.gateway.tenderly.co | - | 156 | 64 | no | **yes** | working |
-| PublicNode | https://ethereum-rpc.publicnode.com | - | 162 | - | no | **yes** | working |
-| OmniTrade | https://eth-mainnet.public.blastapi.io | - | 299 | - | no | **yes** | working |
-| Kukus | https://eth-mainnet.public.blastapi.io | - | 326 | - | no | **yes** | working |
-| LLamaRPC | https://eth.llamarpc.com | - | 95 | - | no | **yes** | working |
-| Alchemy | https://eth-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | working |
-| Infura | https://mainnet.infura.io/v3/ | `````````````Authorization: Bearer <key>````````````` | - | - | no | **yes** | working |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
-| NodeReal | https://eth-mainnet.nodereal.io/v1/ | `````````````Authorization: Bearer <key>````````````` | - | - | no | **yes** | working |
-| BlockPi | https://ethereum.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
-| GetBlock | https://eth.getblock.io/ | - | - | - | no | **yes** | working |
-| Pocket | https://eth-rpc.gateway.pokt.network | - | - | - | no | **yes** | working |
+> Last Updated: 2026-05-04
+
+| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Source | Status |
+| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ | ------ |
+| OmniTrade | https://eth-mainnet.public.blastapi.io | - | 298 | 45 | no | **yes** | blastapi | working |
+| Tenderly | https://mainnet.gateway.tenderly.co | - | 284 | - | no | **yes** | tenderly | working |
+| Kukus | https://eth-mainnet.public.blastapi.io | - | 230 | - | no | **yes** | blastapi | working |
+| Flashbots | https://rpc.flashbots.net | - | 172 | 48 | no | **yes** | manual-discovery | working |
+| PublicNode | https://ethereum-rpc.publicnode.com | - | 161 | 67 | yes | no | publicnode | working |
+| Ankr | https://rpc.ankr.com/eth | ````Authorization: Bearer <key>```` | 147 | - | no | **yes** | ankr | working |
+| DRPC | https://eth.drpc.org | - | 146 | - | yes | no | drpc | working |
+| Cloudflare | https://cloudflare-eth.com | - | 141 | - | no | **yes** | cloudflare | working |
+| OnFinality | https://eth.api.onfinality.io/public | - | 126 | - | no | **yes** | onfinality | working |
+| Vanry | https://ethereum.publicnode.com | - | 125 | - | yes | no | publicnode | working |
+| 1rpc.io/eth | https://1rpc.io/eth | - | 124 | 51 | yes | no | 1rpc | working |
+| BloXroute | https://eth.rpc.blxrbdn.com | - | 100 | 0 | no | **yes** | manual-discovery | working |
+| Blast | https://eth-mainnet.public.blastapi.io | - | 86 | - | no | **yes** | blastapi | working |
+| LLamaRPC | https://eth.llamarpc.com | - | 61 | - | no | **yes** | llamarpc | working |
+| Rei | https://rpc.rei.network | - | 37 | 10 | no | **yes** | rei | working |
+| Alchemy | https://eth-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | alchemy | needs-key |
+| Infura | https://mainnet.infura.io/v3/ | ````Authorization: Bearer <key>```` | - | - | no | **yes** | infura | needs-key |
+| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | quicknode | needs-key |
+| NodeReal | https://eth-mainnet.nodereal.io/v1/ | ````Authorization: Bearer <key>```` | - | - | no | **yes** | nodereal | needs-key |
+| GetBlock | https://eth.getblock.io/ | - | - | - | no | **yes** | getblock | needs-key |

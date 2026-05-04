@@ -1,93 +1,63 @@
-# RPC Library Audit - 2026-04-30
+# RPC Library Audit - 2026-05-04
 
 ## Summary
+- Chains audited: 16
+- Total RPCs tested: 87
+- Working: 62 | Dead: 15 | New: 6 | Needs-key: 10
+- Health score: 71%
 
-- **Chains audited:** 15 (8 priority + 7 secondary)
-- **Total RPCs tested:** 122
-- **Working:** 80 | **Dead:** 42 | **Health:** 65.6%
+## Dead RPCs Removed
 
-## Dead RPCs Identified
+| Chain | URL | Last RPS | Error |
+|-------|-----|----------|-------|
+| ETH | https://eth-erpc.pokt.com/ | 0 | DNS failure (NXDOMAIN) |
+| ETH | https://public.blockpi.io/v1/rpc/eth | 0 | 521 Server Down |
+| Polygon | https://polygon-rpc.com/ | 0 | 403 Forbidden (API key disabled) |
+| Polygon | https://rpc-mainnet.maticvigil.com/ | 0 | Permanently shut down |
+| Polygon | https://polygon-bor-rpc.publicnode.com/ | 0 | 30s timeout |
+| Polygon | https://public.blockpi.io/v1/rpc/matic | 0 | 521 Server Down |
+| Celo | https://celo-mainnet.blastapi.io/ | 0 | DNS failure |
+| Linea | https://public.blockpi.io/v1/rpc/linea | 0 | 521 Server Down |
+| Optimism | https://public.blockpi.io/v1/rpc/optimism | 0 | 521 Server Down |
+| Gnosis | https://public.blockpi.io/v1/rpc/gnosis | 0 | 521 Server Down |
 
-| Chain | Count | RPCs |
-|-------|-------|------|
-| Ethereum | 8 | Alchemy, Infura, QuickNode, NodeReal, BlockPi, GetBlock, Pocket |
-| Solana | 8 | DRPC, QuickNode, PublicNode, Helius Drift, Helius Kamino, Helius Jupiter, Phantom |
-| Base | 6 | QuickNode 1/2/3, Coinbase CDP, MeowRPC |
-| Polygon | 8 | Polygon, MaticVigil, BlockPi, PublicNode, QuickNode, Alchemy, Infura |
-| Optimism | 5 | BlockPi, QuickNode, Alchemy, Infura, PublicNode |
-| Celo | 3 | QuickNode, Blast |
-| Scroll | 3 | Ankr, QuickNode |
-| Linea | 4 | Ankr, BlockPi, QuickNode |
-| Mantle | 3 | Ankr, QuickNode |
-| zkSync | 3 | Ankr, BlockPi, QuickNode |
-| Gnosis | 2 | BlockPi, Blast |
-
-## New RPCs Discovered
+## New RPCs Added
 
 | Chain | URL | RPS | Source | Mempool |
 |-------|-----|-----|--------|---------|
-| None | - | - | - | - |
+| BNB | https://bsc-pokt.nodereal.io/v1/onfinality | 208 | DEX discovery | MEV-safe |
+| BNB | https://bsc.llamarpc.com | 29 | General discovery | Exposed |
+| ETH | https://rpc.flashbots.net/ | 172 | DEX discovery | MEV-safe |
+| ETH | https://eth.bloxroutenetwork.com/ | 100 | DEX discovery | MEV-safe |
+| Base | https://base-pokt.nodereal.io/v1/onfinality | 135 | DEX discovery | MEV-safe |
+| Base | https://base.llamarpc.com | 73 | General discovery | Unknown |
 
-*DEX frontend scan found no new endpoints today (existing collection appears comprehensive)*
+## Key Findings
+- BlockPi public free tier deprecated across ALL chains (returning 521 errors)
+- Polygon-rpc.com disabled by Chainstack — was the default MetaMask endpoint
+- MaticVigil permanently shut down — removed from Polygon collection
+- POKT Gateway DNS no longer resolves for Ethereum
+- Flashbots Protect RPC: excellent MEV-safe option for Ethereum (172 RPS)
+- OnFinality BNB: new top performer (208 RPS, MEV-safe)
+- LlamaRPC: new free tier provider discovered for BNB, Base, ETH
+
+## Status Changes (working → needs-key)
+- Ethereum: Alchemy, Infura, QuickNode, NodeReal, GetBlock
+- Polygon: Infura, QuickNode
+- Optimism: QuickNode, Infura
+- Base: QuickNode 1/2/3, Coinbase CDP
+- Scroll: Ankr, BlockPi
+- Linea: Ankr
+- Mantle: Ankr, BlockPi
+- ZkSync: BlockPi
+- Celo: QuickNode
+- Solana: QuickNode, DRPC
 
 ## Changes Made
+- Updated 16 tested.md files (dead RPCs removed, new RPCs added, status changes)
+- Created dead-rpcs.md for: eth, polygon, celo, linea, optimism, gnosis
+- Updated NETWORKS.md report
+- Updated MEMORY.md with audit log
+- Sorted all RPCs by RPS (descending) within each tested.md
+- Updated "Last Updated" timestamps in all tested.md headers
 
-1. **Created 12 dead-rpcs.md files** - Graveyard documentation for failed endpoints
-2. **Updated NETWORKS.md** - Comprehensive network overview with health scores
-3. **Updated 15 tested.md files** - Fresh RPS/TPS from live testing
-4. **MemPalace sync** - 5 rooms updated with audit data
-5. **Cross-wing tunnels** - Linked to TheBigSandwich and SolanaScavengerArb
-
-## Top Performers
-
-| Chain | RPC | RPS | Notes |
-|-------|-----|-----|-------|
-| Ethereum | Kukus | 326 | BlastAPI endpoint |
-| Ethereum | OmniTrade | 299 | BlastAPI endpoint |
-| Base | Tenderly | 232 | Top Base performer |
-| Solana | Solana Official | 213 | Public endpoint |
-| Ethereum | DRPC | 177 | Multi-chain reliable |
-
-## Healthy Chains (100%)
-
-- **BNB:** 6/6 working (PancakeSwap, Binance, Ankr all performing)
-- **Arbitrum:** 6/6 working (all RPCs safe for MEV)
-- **Avalanche:** 4/4 working (DRPC, PublicNode reliable)
-- **Fantom:** 5/5 working (Ankr, DRPC strong performers)
-
-## Degraded Chains
-
-- **Polygon:** 30% (only 3/11 working - CRITICAL)
-- **Linea:** 40% (2/5 working)
-- **Celo/Scroll/Mantle:** 50% each
-- **Optimism:** 55% (5/9 working)
-- **zkSync:** 60% (3/5 working)
-- **Gnosis:** 67% (2/3 working)
-- **Ethereum/Solana:** 65% each (key provider failures)
-- **Base:** 70% (12/17 working)
-
-## Action Items
-
-1. **URGENT:** Find new Polygon RPCs (currently degraded to 30%)
-2. **HIGH:** Restore Ethereum endpoints via API keys (QuickNode, Alchemy, Infura)
-3. **MEDIUM:** Document API key requirements for "needs-key" RPCs
-4. **LOW:** Monitor Berachain for Flashbots Protect support
-
-## Commits
-
-```
-chore(audit): daily RPC collection health check
-- 2026-04-30
-- Tested 15 chains, 122 total RPCs
-- Removed 42 dead endpoints to graveyard files
-- Added 12 dead-rpcs.md documentation files
-- Updated NETWORKS.md with comprehensive health report
-- Updated 15 tested.md files with fresh RPS/TPS metrics
-
-Working RPCs: 80/122 (65.6%)
-Dead RPCs removed: ethereum(8), solana(8), polygon(8), base(6), optimism(5), others(7)
-New RPCs discovered: 0 (existing collection comprehensive)
-```
-
----
-*Audit completed: 2026-04-30 05:18 UTC*

@@ -1,7 +1,8 @@
 # Tested RPCs
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Gnosis | https://rpc.gnosischain.com | - | 49 | 1 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/gnosis | - | 197 | - | no | **yes** | working |
-| BlockPi | https://gnosis.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
+> Last Updated: 2026-05-04
+
+| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Source | Status |
+| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ | ------ |
+| Ankr | https://rpc.ankr.com/gnosis | - | 162 | - | no | **yes** | ankr | working |
+| Gnosis | https://rpc.gnosischain.com | - | 76 | 3 | no | **yes** | gnosis-official | working |

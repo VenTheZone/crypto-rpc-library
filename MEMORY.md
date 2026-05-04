@@ -82,3 +82,51 @@ All Solana gRPC providers require paid access:
 ### Mempool Detection
 - Solana: No mempool (all RPCs safe)
 - EVM: Check `txpool_content` method
+
+
+## Audit Log — 2025-05-05
+
+### Chains Tested (16)
+Priority: bnb, ethereum, solana, arbitrum, base, polygon, avalanche, optimism
+Secondary (rotation 0): fantom, celo, scroll, linea, mantle, berachain, gnosis, zksync
+
+### Dead RPCs Removed (10)
+- ETH: Pocket (POKT) — DNS failure
+- ETH: BlockPi — 521 Server Down
+- Polygon: Polygon Official — API key disabled (403)
+- Polygon: MaticVigil — permanently shut down
+- Polygon: PublicNode — 30s timeout
+- Polygon: BlockPi — 521 Server Down
+- Celo: Blast — DNS failure
+- Linea: BlockPi — 521 Server Down
+- Optimism: BlockPi — 521 Server Down
+- Gnosis: BlockPi — 521 Server Down
+
+### New RPCs Added (6)
+- BNB: OnFinality (RPS=208, MEV-safe)
+- BNB: LlamaRPC (RPS=29, mempool exposed, slow)
+- ETH: Flashbots Protect (RPS=172, MEV-safe)
+- ETH: BloXroute (RPS=100, MEV-safe)
+- Base: OnFinality (RPS=135, MEV-safe)
+- Base: LlamaRPC (RPS=73)
+
+### Key Findings
+- BlockPi public free tier deprecated across chains (521 errors)
+- Polygon-rpc.com disabled by Chainstack
+- MaticVigil permanently shut down
+- POKT Gateway DNS no longer resolves
+- Flashbots Protect RPC: excellent MEV-safe option for Ethereum
+- OnFinality BNB: new top performer (208 RPS, MEV-safe)
+
+### Status Changes
+- Ethereum: Alchemy, Infura, QuickNode, NodeReal, GetBlock → needs-key
+- Polygon: Infura, QuickNode → needs-key
+- Optimism: QuickNode, Infura → needs-key
+- Base: QuickNode 1/2/3, Coinbase CDP → needs-key
+- Scroll: Ankr, BlockPi → needs-key
+- Linea: Ankr → needs-key
+- Mantle: Ankr, BlockPi → needs-key
+- ZkSync: BlockPi → needs-key
+- Celo: QuickNode → needs-key
+- Solana: QuickNode, DRPC → needs-key
+

@@ -1,13 +1,14 @@
 # Tested RPCs
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Optimism | https://mainnet.optimism.io | - | 66 | 16 | no | **yes** | working |
-| PublicNode | https://optimism-rpc.publicnode.com | - | 116 | 10 | yes | no | working |
-| Ankr | https://rpc.ankr.com/optimism | - | 140 | - | no | **yes** | working |
-| BlockPi | https://optimism.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
-| Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | working |
-| Infura | https://optimism-mainnet.infura.io/v3/ | ``````````````Authorization: Bearer <key>`````````````` | - | - | no | **yes** | working |
-| DRPC | https://optimism.drpc.org | - | 172 | 17 | yes | no | working |
-| Blast | https://optimism-mainnet.public.blastapi.io | - | 187 | - | no | **yes** | working |
+> Last Updated: 2026-05-04
+
+| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Source | Status |
+| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ | ------ |
+| Blast | https://optimism-mainnet.public.blastapi.io | - | 200 | - | no | **yes** | blastapi | working |
+| DRPC | https://optimism.drpc.org | - | 177 | 15 | yes | no | drpc | working |
+| Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | - | 150 | 22 | no | **yes** | alchemy | working |
+| Ankr | https://rpc.ankr.com/optimism | - | 147 | - | no | **yes** | ankr | working |
+| PublicNode | https://optimism-rpc.publicnode.com | - | 119 | 12 | yes | no | publicnode | working |
+| Optimism | https://mainnet.optimism.io | - | 81 | 16 | no | **yes** | optimism-official | working |
+| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | quicknode | needs-key |
+| Infura | https://optimism-mainnet.infura.io/v3/ | ````Authorization: Bearer <key>```` | - | - | no | **yes** | infura | needs-key |

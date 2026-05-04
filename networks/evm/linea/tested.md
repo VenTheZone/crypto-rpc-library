@@ -1,9 +1,10 @@
 # Tested RPCs
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Linea | https://rpc.linea.build | - | 103 | 0 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/linea | - | - | - | no | **yes** | working |
-| BlockPi | https://linea.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | working |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | working |
-| Blast | https://linea-mainnet.public.blastapi.io | - | 189 | - | no | **yes** | working |
+> Last Updated: 2026-05-04
+
+| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Source | Status |
+| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ | ------ |
+| Blast | https://linea-mainnet.public.blastapi.io | - | 215 | - | no | **yes** | blastapi | working |
+| Linea | https://rpc.linea.build | - | 106 | - | no | **yes** | linea-official | working |
+| Ankr | https://rpc.ankr.com/linea | - | - | - | no | **yes** | ankr | needs-key |
+| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | quicknode | needs-key |
