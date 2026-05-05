@@ -1,63 +1,30 @@
-# RPC Library Audit - 2026-05-04
+# RPC Library Audit - 2026-05-06
 
 ## Summary
-- Chains audited: 16
-- Total RPCs tested: 87
-- Working: 62 | Dead: 15 | New: 6 | Needs-key: 10
-- Health score: 71%
+- Chains audited: 41
+- Total RPCs tested: 164
+- Working: 132 | Dead: 2 | Slow: 1 | Needs-key: 29
 
-## Dead RPCs Removed
+## Dead RPCs
 
 | Chain | URL | Last RPS | Error |
 |-------|-----|----------|-------|
-| ETH | https://eth-erpc.pokt.com/ | 0 | DNS failure (NXDOMAIN) |
-| ETH | https://public.blockpi.io/v1/rpc/eth | 0 | 521 Server Down |
-| Polygon | https://polygon-rpc.com/ | 0 | 403 Forbidden (API key disabled) |
-| Polygon | https://rpc-mainnet.maticvigil.com/ | 0 | Permanently shut down |
-| Polygon | https://polygon-bor-rpc.publicnode.com/ | 0 | 30s timeout |
-| Polygon | https://public.blockpi.io/v1/rpc/matic | 0 | 521 Server Down |
-| Celo | https://celo-mainnet.blastapi.io/ | 0 | DNS failure |
-| Linea | https://public.blockpi.io/v1/rpc/linea | 0 | 521 Server Down |
-| Optimism | https://public.blockpi.io/v1/rpc/optimism | 0 | 521 Server Down |
-| Gnosis | https://public.blockpi.io/v1/rpc/gnosis | 0 | 521 Server Down |
+| berachain | (see networks/evm/berachain/dead-rpcs.md) | 0 | dead |
+| zksync | (see networks/evm/zksync/dead-rpcs.md) | 0 | dead |
 
 ## New RPCs Added
-
-| Chain | URL | RPS | Source | Mempool |
-|-------|-----|-----|--------|---------|
-| BNB | https://bsc-pokt.nodereal.io/v1/onfinality | 208 | DEX discovery | MEV-safe |
-| BNB | https://bsc.llamarpc.com | 29 | General discovery | Exposed |
-| ETH | https://rpc.flashbots.net/ | 172 | DEX discovery | MEV-safe |
-| ETH | https://eth.bloxroutenetwork.com/ | 100 | DEX discovery | MEV-safe |
-| Base | https://base-pokt.nodereal.io/v1/onfinality | 135 | DEX discovery | MEV-safe |
-| Base | https://base.llamarpc.com | 73 | General discovery | Unknown |
-
-## Key Findings
-- BlockPi public free tier deprecated across ALL chains (returning 521 errors)
-- Polygon-rpc.com disabled by Chainstack — was the default MetaMask endpoint
-- MaticVigil permanently shut down — removed from Polygon collection
-- POKT Gateway DNS no longer resolves for Ethereum
-- Flashbots Protect RPC: excellent MEV-safe option for Ethereum (172 RPS)
-- OnFinality BNB: new top performer (208 RPS, MEV-safe)
-- LlamaRPC: new free tier provider discovered for BNB, Base, ETH
-
-## Status Changes (working → needs-key)
-- Ethereum: Alchemy, Infura, QuickNode, NodeReal, GetBlock
-- Polygon: Infura, QuickNode
-- Optimism: QuickNode, Infura
-- Base: QuickNode 1/2/3, Coinbase CDP
-- Scroll: Ankr, BlockPi
-- Linea: Ankr
-- Mantle: Ankr, BlockPi
-- ZkSync: BlockPi
-- Celo: QuickNode
-- Solana: QuickNode, DRPC
+- None discovered this audit cycle (discovery commands not run due to binary parser issues)
 
 ## Changes Made
-- Updated 16 tested.md files (dead RPCs removed, new RPCs added, status changes)
-- Created dead-rpcs.md for: eth, polygon, celo, linea, optimism, gnosis
-- Updated NETWORKS.md report
-- Updated MEMORY.md with audit log
-- Sorted all RPCs by RPS (descending) within each tested.md
-- Updated "Last Updated" timestamps in all tested.md headers
+- Sorted all 41 tested.md files by RPS (descending)
+- Updated "Last Updated" timestamps to 2026-05-06
+- Generated NETWORKS.md report manually (binary `crypto-rpc report` crashes on non-standard table formats)
+- Removed stale duplicate directories: networks/arbitrum/, networks/avalanche/ (outside evm/, contained outdated data)
+- Restored 21 dead-rpcs.md files from .bak
+- Created AUDIT-LOG.md for persistent audit tracking
 
+## Technical Issues
+- `crypto-rpc report` binary panics: parseTableRow index out of range [6] with length 6
+  - Root cause: non-standard table formats in dex/tested-dex.md (7 cols), backup files (2-5 cols)
+  - Workaround: manually generated NETWORKS.md from parsed tested.md data
+  - Fix needed: parser should handle variable column counts or skip non-conforming files
