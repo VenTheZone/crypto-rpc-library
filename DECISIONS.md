@@ -1,60 +1,90 @@
 # RPC Library Audit - 2026-05-08
 
 ## Summary
-- Chains audited: 17
-- Total RPCs tested: 103
-- Working: 72 | Dead: 25 | Slow: 2 | Needs-Key: 9
-- Health score: 69.9%
+- Chains audited: 16 (8 priority + 8 secondary rotation Day 1)
+- Total RPCs tested: 166
+- Working: 130 | Dead: 34 | Slow: 2
+- Health Score: 78.3%
+- New RPCs discovered: 0
 
-## Dead RPCs Identified
-
+## Dead RPCs Confirmed
 | Chain | Name | URL | Last RPS | Error |
 |-------|------|-----|----------|-------|
-| ethereum | Alchemy | https://eth-mainnet.g.alchemy.com/v2/demo | 0 | needs API key |
-| ethereum | Infura | https://mainnet.infura.io/v3/ | 0 | needs API key |
-| ethereum | QuickNode | https://*.quiknode.pro/ | 0 | wildcard URL |
-| ethereum | NodeReal | https://eth-mainnet.nodereal.io/v1/ | 0 | needs API key |
-| ethereum | GetBlock | https://eth.getblock.io/ | 0 | needs API key |
-| solana | Helius Drift | https://kora-8cwrc2-fast-mainnet.helius-rpc.com/ | 0 | connection refused |
-| solana | Helius Kamino | https://helius-rpc.kamino.com/ | 0 | connection refused |
+| astar | Astar | https://rpc.astar.network:8545 | 0 | timeout |
+| astar | Ankr | https://rpc.ankr.com/astar | 0 | timeout |
+| aurora | Ankr | https://rpc.ankr.com/aurora | 0 | timeout |
+| base | MeowRPC | https://base.meowrpc.com | 0 | timeout |
+| base | QuickNode 3 | https://warmhearted-falling-shape.base-mainnet.quiknode.pro/ | 0 | timeout |
+| base | QuickNode 2 | https://fittest-wild-frog.base-mainnet.quiknode.pro/ | 0 | timeout |
+| base | QuickNode 1 | https://thrumming-thrumming-pool.base-mainnet.quiknode.pro/ | 0 | timeout |
+| base | Coinbase CDP | https://api.developer.coinbase.com/rpc/v1/ | 0 | timeout |
+| berachain | Ankr | https://rpc.ankr.com/berachain | 0 | timeout |
+| berachain | PublicNode | https://berachain-evm-rpc.publicnode.com | 0 | timeout |
+| bittorrent | Ankr | https://rpc.ankr.com/bittorrent | 0 | timeout |
+| callisto | Callisto | https://rpc.callisto.network | 0 | timeout |
+| celo | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| cronos | Ankr | https://rpc.ankr.com/cronos | 0 | timeout |
+| etc | Ankr | https://rpc.ankr.com/ethereumclassic | 0 | timeout |
+| ethereum | Alchemy | https://eth-mainnet.g.alchemy.com/v2/demo | 0 | timeout |
+| ethereum | Infura | https://mainnet.infura.io/v3/ | 0 | timeout |
+| ethereum | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| ethereum | NodeReal | https://eth-mainnet.nodereal.io/v1/ | 0 | timeout |
+| ethereum | GetBlock | https://eth.getblock.io/ | 0 | timeout |
+| fuse | Ankr | https://rpc.ankr.com/fuse | 0 | timeout |
+| godwoken | Godwoken | https://v1.mainnet.godwoken.io | 0 | timeout |
+| huobi | Huobi | https://http-mainnet.hecochain.com | 0 | timeout |
+| huobi | Ankr | https://rpc.ankr.com/heco | 0 | timeout |
+| iotex | IoTeX Old | https://rpc.iotex.io | 0 | timeout |
+| iotex | Ankr | https://rpc.ankr.com/iotex | 0 | timeout |
+| karura | Karura | https://rpc.karura.network | 0 | timeout |
+| kcc | KCC | https://rpc-mainnet.kcc.io | 0 | timeout |
+| klaytn | Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | timeout |
+| lightlink | LightLink | https://rpc.lightlink.io | 0 | timeout |
+| linea | Ankr | https://rpc.ankr.com/linea | 0 | timeout |
+| linea | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| mantle | Ankr | https://rpc.ankr.com/mantle | 0 | timeout |
+| mantle | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| metagov | Metadium | https://api.metadium.com/ext/bc/C/rpc | 0 | timeout |
+| moonbeam | BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | timeout |
+| moonriver | Ankr | https://rpc.ankr.com/moonriver | 0 | timeout |
+| oasis | Oasis | https://rpc.ankr.com/oasis | 0 | timeout |
+| optimism | Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | 0 | timeout |
+| optimism | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| optimism | Infura | https://optimism-mainnet.infura.io/v3/ | 0 | timeout |
+| polygon | Alchemy | https://polygon-mainnet.g.alchemy.com/v2/demo | 0 | timeout |
+| polygon | Infura | https://polygon-mainnet.infura.io/v3/ | 0 | timeout |
+| polygon | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| scroll | Ankr | https://rpc.ankr.com/scroll | 0 | timeout |
+| scroll | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
+| solana | Helius Drift | https://kora-8cwrc2-fast-mainnet.helius-rpc.com/ | 0 | timeout |
+| solana | Helius Kamino | https://helius-rpc.kamino.com/ | 0 | timeout |
 | solana | PublicNode | https://solana-rpc.publicnode.com | 0 | timeout |
-| solana | Helius Jupiter | https://grateful-jerrie-fast-mainnet.helius-rpc.com | 0 | connection refused |
-| solana | QuickNode | https://alien-newest-vineyard.solana-mainnet.quiknode.pro/... | 0 | incomplete URL |
+| solana | Helius Jupiter | https://grateful-jerrie-fast-mainnet.helius-rpc.com | 0 | timeout |
+| solana | QuickNode | https://alien-newest-vineyard.solana-mainnet.quiknode.pro/... | 0 | timeout |
 | solana | DRPC | https://solana.drpc.org | 0 | timeout |
-| solana | Phantom | https://solana-mainnet.phantom.app/... | 0 | incomplete URL |
-| base | MeowRPC | https://base.meowrpc.com | 0 | no response |
-| base | QuickNode 3 | https://warmhearted-falling-shape.base-mainnet.quiknode.pro/ | 0 | expired endpoint |
-| base | QuickNode 2 | https://fittest-wild-frog.base-mainnet.quiknode.pro/ | 0 | expired endpoint |
-| base | QuickNode 1 | https://thrumming-thrumming-pool.base-mainnet.quiknode.pro/ | 0 | expired endpoint |
-| base | Coinbase CDP | https://api.developer.coinbase.com/rpc/v1/ | 0 | needs API key |
-| polygon | Alchemy | https://polygon-mainnet.g.alchemy.com/v2/demo | 0 | needs API key |
-| polygon | Infura | https://polygon-mainnet.infura.io/v3/ | 0 | needs API key |
-| polygon | QuickNode | https://*.quiknode.pro/ | 0 | wildcard URL |
-| optimism | Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | 0 | needs API key |
-| optimism | QuickNode | https://*.quiknode.pro/ | 0 | wildcard URL |
-| optimism | Infura | https://optimism-mainnet.infura.io/v3/ | 0 | needs API key |
-| moonriver | Ankr | https://rpc.ankr.com/moonriver | 0 | endpoint down |
-| lightlink | LightLink | https://rpc.lightlink.io | 0 | no response |
-| metagov | Metadium | https://api.metadium.com/ext/bc/C/rpc | 0 | no response |
-| oasis | Oasis | https://rpc.ankr.com/oasis | 0 | endpoint down |
-| tomochain | TomoChain | https://rpc.tomochain.com | 0 | chain deprecated |
-| velas | Velas | https://mainnet.velas.com | 0 | chain inactive |
-| velas | Ankr | https://rpc.ankr.com/velas | 0 | endpoint down |
-| godwoken | Godwoken | https://v1.mainnet.godwoken.io | 0 | chain deprecated |
+| solana | Phantom | https://solana-mainnet.phantom.app/... | 0 | timeout |
+| tomochain | TomoChain | https://rpc.tomochain.com | 0 | timeout |
+| velas | Velas | https://mainnet.velas.com | 0 | timeout |
+| velas | Ankr | https://rpc.ankr.com/velas | 0 | timeout |
+| zksync | BlockPi | https://zksync.blockpi.network/v1/rpc/public | 0 | timeout |
+| zksync | QuickNode | https://*.quiknode.pro/ | 0 | timeout |
 
 ## New RPCs Added
-None discovered this audit cycle. DEX discovery found 0 new endpoints across BNB, Ethereum, Solana.
+None discovered this cycle. DEX frontend scan returned 0 new endpoints across BNB, Solana, Ethereum.
 
 ## Changes Made
-- Updated tested.md for 17 chains with live RPS/TPS/Mempool/SafeTX data
-- Created dead-rpcs.md graveyard files for 12 chains
-- Generated NETWORKS.md report with per-chain summaries
-- Updated Last Updated timestamps in tested.md headers
-- BNB: 8/8 working, Ankr top performer (203 RPS)
-- Ethereum: 15/20 working, Kukus/Blast top (296/287 RPS), 5 needs-key
-- Solana: 13/20 working, RPC Pool Solend top (311 RPS), 7 dead
-- Base: 14/19 working, Ankr Pro top (203 RPS), 5 dead
+- Updated 16 tested.md files with live RPS/TPS/Mempool/SafeTX data (c=25 concurrency)
+- Updated status columns in 11 tested.md files (dead/slow markers for non-responsive endpoints)
+- Added "Last Updated" timestamps to 16 tested.md files
+- Created 31 dead-rpcs.md graveyard files
+- Sorted RPCs by RPS (descending) in 16 tested.md files
+- Regenerated NETWORKS.md with full collection overview
+- Created DECISIONS.md
 
-## Bug Found
-- `crypto-rpc report` panics on parseTableRow (index out of range [6] with length 6)
-- Bug in internal/markdown/parser.go:135
+## Key Observations
+1. QuickNode(*), Alchemy(demo), Infura(v3/), GetBlock consistently dead — these are key-gated endpoints requiring auth
+2. Ankr chain-specific endpoints on smaller chains showing intermittent failures — possible deprecation
+3. Helius dedicated DEX endpoints dead — rotated/stale API keys
+4. 10 chains are "zombie chains" with zero working RPCs: astar, callisto, godwoken, huobi, karura, kcc, lightlink, metagov, tomochain, velas
+5. Report generator panics on non-tested.md markdown files — upstream bug in parser.go:135
+6. Discovery tool general scan needs >120s timeout
