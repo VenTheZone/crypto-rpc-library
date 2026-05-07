@@ -1,7 +1,7 @@
-# Dead RPCs - moonbeam
+# Dead RPCs - karura
 
 > Confirmed dead on 2026-05-08
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error |
 | ---- | --- | -------------- | ------------------- | ----- |
-| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | 2026-05-08 | timeout/no-response |
+| Karura | https://rpc.karura.network | 0 | 2026-05-08 | timeout/no-response |

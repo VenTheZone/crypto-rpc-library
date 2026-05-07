@@ -2,5 +2,5 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Syscoin | https://rpc.syscoin.org | - | 19 | - | yes | no | working |
-| Ankr | https://rpc.ankr.com/syscoin | - | 427 | - | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/syscoin | - | 162 | - | no | **yes** | working |
+| Syscoin | https://rpc.syscoin.org | - | 33 | - | yes | no | working |

@@ -1,20 +1,11 @@
-# Dead RPCs — Optimism
+# Dead RPCs - Optimism
 
-> Last updated: 2026-05-04
+Last updated: 2026-05-08
 
-| Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-| ---- | --- | -------------- | -------------------- | ----- |
-| BlockPi | https://optimism.blockpi.network/v1/rpc/public | 0 | 2026-05-04 | 521 Server Down (Cloudflare) |
+| Name | URL | Last RPS | Error | Date Confirmed Dead |
+| ---- | --- | -------- | ----- | ------------------- |
+| Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | 0 | RPS=0, needs API key | 2026-05-08 |
+| QuickNode | https://*.quiknode.pro/ | 0 | RPS=0, wildcard URL | 2026-05-08 |
+| Infura | https://optimism-mainnet.infura.io/v3/ | 0 | RPS=0, needs API key | 2026-05-08 |
 
-## Summary
-
-- **Total dead RPCs**: 1
-- **Confirmed dead on**: 2026-05-04
-
-## Notes
-
-- BlockPi public endpoints across multiple chains returning 521 (server down) — service may have discontinued free tier
-- Polygon-rpc.com disabled (tenant disabled) — Polygon team may have moved to paid-only
-- MaticVigil permanently shut down after 4 years of service
-- POKT Gateway DNS failure — host no longer resolves
-- BlastAPI Celo DNS failure — endpoint removed
+Total dead: 3

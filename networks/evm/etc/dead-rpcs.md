@@ -1,16 +1,7 @@
-# Dead RPCs Graveyard - ETC
+# Dead RPCs - etc
 
-> **Chain:** etc  
-> **Last Updated:** 2026-04-28  
-> **Total Dead:** 1 RPC
+> Confirmed dead on 2026-05-08
 
-## Confirmed Dead Endpoints
-
-| Name | URL | Last Known RPS | Date Confirmed Dead | Error Message |
-|------|-----|----------------|---------------------|---------------|
-| Ankr | `https://rpc.ankr.com/etc` | 0 | 2026-04-28 | Connection error |
-
-## Notes
-
-- Dead confirmed via live RPS testing
-- RPCs returning 0 RPS or connection errors
+| Name | URL | Last Known RPS | Date Confirmed Dead | Error |
+| ---- | --- | -------------- | ------------------- | ----- |
+| Ankr | https://rpc.ankr.com/ethereumclassic | 0 | 2026-05-08 | timeout/no-response |

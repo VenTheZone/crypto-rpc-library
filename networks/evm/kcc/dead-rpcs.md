@@ -1,7 +1,7 @@
-# Dead RPCs - moonbeam
+# Dead RPCs - kcc
 
 > Confirmed dead on 2026-05-08
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error |
 | ---- | --- | -------------- | ------------------- | ----- |
-| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | 2026-05-08 | timeout/no-response |
+| KCC | https://rpc-mainnet.kcc.io | 0 | 2026-05-08 | timeout/no-response |

@@ -1,12 +1,7 @@
-# Dead RPCs - Callisto
+# Dead RPCs - callisto
 
-> Last Updated: 2026-04-25
+> Confirmed dead on 2026-05-08
 
 | Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-|------|-----|--------------|---------------------|-------|
-| Callisto | unknown | 0 | 2026-04-25 | No working endpoints found |
-
-## Notes
-- All Callisto RPC tests returned RPS=0
-- Network may require specific infrastructure or node setup
-- Consider removing from priority testing until viable endpoints found
+| ---- | --- | -------------- | ------------------- | ----- |
+| Callisto | https://rpc.callisto.network | 0 | 2026-05-08 | timeout/no-response |
