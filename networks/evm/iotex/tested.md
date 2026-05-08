@@ -2,7 +2,7 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| OnFinality | https://iotex.api.onfinality.io/public | - | 157 | - | no | **yes** | working |
-| IoTeX Official | https://babel-api.mainnet.iotex.io | - | 52 | 2 | no | **yes** | working |
-| ~~IoTeX Old~~ | ~~https://rpc.iotex.io~~ | - | - | - | no | **yes** | working |
-| ~~Ankr~~ | ~~https://rpc.ankr.com/iotex~~ | - | - | - | no | **yes** | working |
+| OnFinality | https://iotex.api.onfinality.io/public | - | 131 | - | no | **yes** | working |
+| IoTeX Official | https://iotexrpc.com | - | 55 | 1 | no | **yes** | working |
+| ~~Ankr~~ | ~~https://rpc.ankr.com/iotex~~ | - | - | - | no | **yes** | needs-key |
+| ~~IoTeX Old~~ | ~~https://rpc.iotex.io~~ | - | - | - | no | **yes** | dead |

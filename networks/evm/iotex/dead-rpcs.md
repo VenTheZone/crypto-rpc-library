@@ -1,8 +1,10 @@
-# Dead RPCs - iotex
+# Dead RPCs - IoTeX
 
-> Confirmed dead on 2026-05-08
+Last updated: 2026-05-09
 
-| Name | URL | Last Known RPS | Date Confirmed Dead | Error |
-| ---- | --- | -------------- | ------------------- | ----- |
-| IoTeX Old | https://rpc.iotex.io | 0 | 2026-05-08 | timeout/no-response |
-| Ankr | https://rpc.ankr.com/iotex | 0 | 2026-05-08 | timeout/no-response |
+| Name | URL | Last RPS | Error | Date Confirmed Dead |
+| ---- | --- | -------- | ----- | ------------------- |
+| ~~IoTeX Old~~ | ~~https://rpc.iotex.io~~ | 0 | Cloudflare error 1016, DNS issues | 2026-05-09 |
+| ~~Ankr~~ | ~~https://rpc.ankr.com/iotex~~ | 0 | API key required, no longer public | 2026-05-09 |
+
+Total dead: 2

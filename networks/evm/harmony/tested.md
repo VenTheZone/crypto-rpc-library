@@ -2,5 +2,5 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/harmony | - | 150 | - | no | **yes** | working |
-| Harmony | https://api.harmony.one | - | 95 | 30 | no | **yes** | working |
+| Harmony | https://api.harmony.one | - | 151 | 2 | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/harmony | - | 115 | - | no | **yes** | working |

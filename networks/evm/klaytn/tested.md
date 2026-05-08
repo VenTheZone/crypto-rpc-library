@@ -2,5 +2,5 @@
 
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/klaytn | - | 36 | 1 | no | **yes** | working |
-| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | - | - | - | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/klaytn | - | 40 | 2 | no | **yes** | working |
+| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | - | - | - | no | **yes** | dead |
