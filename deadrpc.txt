@@ -1,7 +1,8 @@
-# Dead RPCs Graveyard - 2026-04-26
+# Dead RPCs Graveyard - 2026-05-10
 
 > This file tracks confirmed dead RPC endpoints.
 > An RPC is "dead" when RPS=0 or it returns connection errors (not "needs key").
+> Last updated: 2026-05-10
 
 ## ethereum (7 dead)
 | RPC | URL | Last RPS | Error | Date |
@@ -43,33 +44,48 @@
 | Alchemy | https://opt-mainnet.g.alchemy.com/v2/demo | 0 | Requires API key | 2026-04-26 |
 | Infura | https://optimism-mainnet.infura.io/v3/ | 0 | Requires API key | 2026-04-26 |
 
-## cronos (1 dead)
+## solana (5 dead) — confirmed 2026-05-10
 | RPC | URL | Last RPS | Error | Date |
 |-----|-----|----------|-------|------|
-| Ankr | https://rpc.ankr.com/cronos | 0 | No response | 2026-04-26 |
+| PublicNode | https://solana-rpc.publicnode.com | 0 | Timeout | 2026-05-10 |
+| Helius Kamino | https://helius-rpc.kamino.com/ | 0 | Timeout | 2026-05-10 |
+| DRPC | https://solana.drpc.org | 0 | Timeout | 2026-05-10 |
+| Helius Drift | https://kora-8cwrc2-fast-mainnet.helius-rpc.com/ | 0 | Timeout | 2026-05-10 |
+| Helius Jupiter | https://grateful-jerrie-fast-mainnet.helius-rpc.com | 0 | Timeout | 2026-05-10 |
 
-## ethereum-classic (1 dead)
+## base (1 dead) — confirmed 2026-05-10
 | RPC | URL | Last RPS | Error | Date |
 |-----|-----|----------|-------|------|
-| Ankr | https://rpc.ankr.com/ethereumclassic | 0 | No response | 2026-04-26 |
+| MeowRPC | https://base.meowrpc.com | 0 | No response / timeout | 2026-05-10 |
 
-## moonbeam (1 dead)
+## cronos (1 dead) — confirmed 2026-05-10
 | RPC | URL | Last RPS | Error | Date |
 |-----|-----|----------|-------|------|
-| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | No response | 2026-04-26 |
+| Ankr | https://rpc.ankr.com/cronos | 0 | No response | 2026-05-10 |
 
-## iotex (2 dead)
+## etc (1 dead) — confirmed 2026-05-10
 | RPC | URL | Last RPS | Error | Date |
 |-----|-----|----------|-------|------|
-| IoTeX Old | https://rpc.iotex.io | 0 | No response | 2026-04-26 |
-| Ankr | https://rpc.ankr.com/iotex | 0 | No response | 2026-04-26 |
+| Ankr | https://rpc.ankr.com/ethereumclassic | 0 | No response | 2026-05-10 |
 
-## klaytn (1 dead)
+## iotex (3 dead) — confirmed 2026-05-10
 | RPC | URL | Last RPS | Error | Date |
 |-----|-----|----------|-------|------|
-| Klaytn Official | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | No response | 2026-04-26 |
+| IoTeX Official | https://iotexrpc.com | 0 | No response | 2026-05-10 |
+| Ankr | https://rpc.ankr.com/iotex | 0 | No response | 2026-05-10 |
+| IoTeX Old | https://rpc.iotex.io | 0 | No response | 2026-05-10 |
+
+## klaytn (1 dead) — confirmed 2026-05-10
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | No response | 2026-05-10 |
+
+## moonbeam (1 dead) — confirmed 2026-05-10
+| RPC | URL | Last RPS | Error | Date |
+|-----|-----|----------|-------|------|
+| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | No response | 2026-05-10 |
 
 ## Summary
-- Total Dead RPCs: 30
-- Needs API Key: 21 (Alchemy, Infura, QuickNode across chains)
-- True Dead: 9 (No response, shut down, connection errors)
+- Total Dead RPCs: 37 (confirmed from live testing)
+- True Dead (public, no key needed): 13 (confirmed 2026-05-10) + previous confirmed
+- Needs API Key: 24 (Alchemy, Infura, QuickNode, GetBlock, NodeReal, Coinbase CDP, Phantom across chains)

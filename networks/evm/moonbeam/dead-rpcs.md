@@ -1,9 +1,7 @@
-# Dead RPCs - Moonbeam
+# Dead RPCs - moonbeam
 
-Last updated: 2026-05-09
+> Confirmed dead endpoints. Last checked: 2026-05-10
 
-| Name | URL | Last RPS | Error | Date Confirmed Dead |
-| ---- | --- | -------- | ----- | ------------------- |
-| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | Empty response, no data returned | 2026-05-09 |
-
-Total dead: 1
+| Name | URL | Last RPS | Error | Date Confirmed |
+| ---- | --- | -------- | ----- | -------------- |
+| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | 0 | No response | 2026-05-10 |

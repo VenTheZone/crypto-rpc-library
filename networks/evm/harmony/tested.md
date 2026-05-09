@@ -1,6 +1,8 @@
 # Tested RPCs
 
+*Last Updated: 2026-05-10*
+
 | Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
 | ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Harmony | https://api.harmony.one | - | 151 | 2 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/harmony | - | 115 | - | no | **yes** | working |
+| Ankr | https://rpc.ankr.com/harmony | - | 199 | - | no | **yes** | working |
+| Harmony | https://api.harmony.one | - | 92 | 20 | no | **yes** | working |

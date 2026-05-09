@@ -1,9 +1,7 @@
-# Dead RPCs - Klaytn
+# Dead RPCs - klaytn
 
-Last updated: 2026-05-09
+> Confirmed dead endpoints. Last checked: 2026-05-10
 
-| Name | URL | Last RPS | Error | Date Confirmed Dead |
-| ---- | --- | -------- | ----- | ------------------- |
-| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | DNS resolution failure | 2026-05-09 |
-
-Total dead: 1
+| Name | URL | Last RPS | Error | Date Confirmed |
+| ---- | --- | -------- | ----- | -------------- |
+| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | 0 | No response | 2026-05-10 |
