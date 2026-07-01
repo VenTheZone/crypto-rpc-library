@@ -237,5 +237,34 @@ crypto-rpc-library/
 | Ethereum | — | `node scripts/intercept-evm-rpcs.js ethereum 1` |
 | Optimism | — | `node scripts/intercept-evm-rpcs.js optimism 10` |
 | BSC | — | `node scripts/intercept-evm-rpcs.js bsc 56` |
+| **Gnosis** | — | `node scripts/intercept-evm-rpcs.js gnosis 100` |
 
-Add more chains by using the appropriate chain ID.
+**Gnosis tested:** [networks/evm/gnosis/tested.md](networks/evm/gnosis/tested.md)  
+Top picks: `rpc.ankr.com/gnosis` (34ms), `gnosis.drpc.org` (59ms), `gnosis-rpc.publicnode.com` (120ms).
+
+---
+
+## Light Chain RPC Nodes (No Staking)
+
+Deploy local RPC nodes on server (16GB RAM, 4 cores, 304GB free, 15GB swap). No staking required — just RPC.
+
+### Resource Requirements
+
+| Chain | Min RAM | Min Disk | Sync Mode | MEV |
+|-------|---------|----------|-----------|-----|
+| **Berachain** | 16GB | ~140GB | reth + beacond | Medium |
+| **Gnosis** | 4GB | ~30GB | Erigon | Low |
+| **BSC** | 4-8GB | ~100GB | geth snap | Very high |
+| **Celo** | 4-8GB | ~50GB | op-geth | Low |
+| **opBNB** | 4-8GB | ~50GB | op-geth | Medium |
+| **Polygon PoS** | 8GB | ~100GB | bor snap | High |
+| **Base** | 8-16GB | ~100GB | reth | Growing fast |
+| **Arbitrum** | 8-16GB | ~200GB | nitro | High |
+
+### Notes
+
+- **BSC** has the heaviest MEV activity (Jaredfromsubway, sandwich bots). geth snap sync ~4-8GB RAM acceptable.
+- **Gnosis** is lightest — runs on 4GB RAM. Good for testing.
+- **Arbitrum/Base** need disk but growing ecosystems.
+- **Polygon PoS** uses bor (modified geth) + heimdall consensus — slightly heavier than pure geth.
+- Server disk left: 304GB — fits 1-2 light chains alongside Berachain.
