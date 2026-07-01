@@ -1,12 +1,28 @@
-# Tested RPCs
+# Polygon (Matic) — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 137
+RPC: EVM (geth-compatible)
+Native token: MATIC
+Block time: ~2.3s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Blast | https://polygon-mainnet.public.blastapi.io | - | 170 | - | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/polygon | - | 159 | - | no | **yes** | working |
-| DRPC | https://polygon.drpc.org | - | 139 | 69 | no | **yes** | working |
-| Alchemy | https://polygon-mainnet.g.alchemy.com/v2/demo | - | - | - | no | **yes** | needs-key |
-| Infura | https://polygon-mainnet.infura.io/v3/ | - | - | - | no | **yes** | needs-key |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | needs-key |
+## Working Endpoints
+
+| Name | URL | Latency | Mempool |
+|------|-----|---------|:-------:|
+| dRPC | https://polygon.drpc.org | **59ms** | ❌ |
+| Tenderly Gateway | https://gateway.tenderly.co/public/polygon | 388ms | ❌ |
+| 1RPC | https://1rpc.io/matic | 355ms | ❌ |
+
+## Failed / Rate-Limited
+
+- polygon-rpc.com — rate-limited from this IP
+- polygon-mainnet.publicnode.com — rate-limited
+- rpc.ankr.com/polygon — needs auth
+- polygon.llamarpc.com — not found
+- rpc-mainnet.maticvigil.com — rate-limited
+
+## Notes
+
+Polygon has aggressive rate-limiting for direct curl RPC requests.
+dRPC is best option at 59ms with no auth needed.
+No public RPC here exposes mempool.
