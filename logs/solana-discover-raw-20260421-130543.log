@@ -1,5 +1,0 @@
-Discovering solana DEXes...
-Found 7 domains for solana
-Warning: subfinder failed: exec: "subfinder": executable file not found in $PATH
-
-Discovered 0 RPCs, written to data/solana-discovered-raw.md

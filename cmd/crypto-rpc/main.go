@@ -4,14 +4,22 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kytusdevenn/crypto-rpc/internal/version"
 	"github.com/spf13/cobra"
 )
+
+var (
+	version   = "dev"
+	gitCommit = "unknown"
+)
+
+func versionStr() string {
+	return version + " (" + gitCommit + ")"
+}
 
 var rootCmd = &cobra.Command{
 	Use:     "crypto-rpc",
 	Short:   "Discover and test cryptocurrency RPC endpoints",
-	Version: version.Get(),
+	Version: versionStr(),
 }
 
 func main() {

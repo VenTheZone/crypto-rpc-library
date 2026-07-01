@@ -1,6 +1,0 @@
-Testing Avalanche Official... RPS=66 TPS=5 Mempool=false SafeTX=true
-Testing 1rpc.io... RPS=63 TPS=16 Mempool=false SafeTX=true
-Testing DRPC... RPS=180 TPS=12 Mempool=true SafeTX=false
-Testing PublicNode... RPS=119 TPS=30 Mempool=false SafeTX=true
-
-Results written to networks/evm/avalanche/tested.md

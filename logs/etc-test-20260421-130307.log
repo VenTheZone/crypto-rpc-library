@@ -1,4 +1,0 @@
-Testing Ethereum Classic... RPS=35 TPS=0 Mempool=true SafeTX=false
-Testing Ankr... RPS=0 TPS=0 Mempool=false SafeTX=true
-
-Results written to networks/evm/etc/tested.md

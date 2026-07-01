@@ -1,3 +1,0 @@
-  File "/home/kytusdevenn/.picord/workspace/crypto-rpc-library/scripts/monitor-rpcs.py", line 2
-    if 'source' in entry:
-IndentationError: unexpected indent

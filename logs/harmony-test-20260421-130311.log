@@ -1,4 +1,0 @@
-Testing Harmony... RPS=134 TPS=20 Mempool=false SafeTX=true
-Testing Ankr... RPS=160 TPS=0 Mempool=false SafeTX=true
-
-Results written to networks/evm/harmony/tested.md

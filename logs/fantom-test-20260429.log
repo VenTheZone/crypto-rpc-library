@@ -1,7 +1,0 @@
-Testing DRPC... RPS=91 TPS=0 Mempool=false SafeTX=true
-Testing Ankr... RPS=92 TPS=0 Mempool=false SafeTX=true
-Testing 1rpc.io/ftm... RPS=20 TPS=1 Mempool=true SafeTX=false
-Testing Fantom RPC2... RPS=26 TPS=0 Mempool=true SafeTX=false
-Testing Fantom Official... RPS=27 TPS=0 Mempool=true SafeTX=false
-
-Results written to networks/evm/fantom/tested.md

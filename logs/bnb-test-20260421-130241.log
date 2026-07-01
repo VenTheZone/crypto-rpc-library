@@ -1,8 +1,0 @@
-Testing PancakeSwap... RPS=80 TPS=202 Mempool=false SafeTX=true
-Testing PancakeSwap Alpha... RPS=58 TPS=186 Mempool=false SafeTX=true
-Testing PublicNode... RPS=113 TPS=185 Mempool=true SafeTX=false
-Testing Binance... RPS=146 TPS=191 Mempool=false SafeTX=true
-Testing 1rpc.io/bnb... RPS=42 TPS=247 Mempool=true SafeTX=false
-Testing Ankr... RPS=132 TPS=0 Mempool=false SafeTX=true
-
-Results written to networks/evm/bnb/tested.md

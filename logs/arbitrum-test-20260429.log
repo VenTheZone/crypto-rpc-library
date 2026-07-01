@@ -1,8 +1,0 @@
-Testing QuickNode... RPS=152 TPS=17 Mempool=false SafeTX=true
-Testing DRPC... RPS=182 TPS=17 Mempool=false SafeTX=true
-Testing PublicNode... RPS=116 TPS=8 Mempool=false SafeTX=true
-Testing Arbitrum Official... RPS=147 TPS=12 Mempool=false SafeTX=true
-Testing BlastAPI... RPS=150 TPS=8 Mempool=false SafeTX=true
-Testing Nova Official... RPS=152 TPS=0 Mempool=false SafeTX=true
-
-Results written to networks/evm/arbitrum/tested.md
