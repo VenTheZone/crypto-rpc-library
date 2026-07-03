@@ -246,25 +246,33 @@ Top picks: `rpc.ankr.com/gnosis` (34ms), `gnosis.drpc.org` (59ms), `gnosis-rpc.p
 
 ## Light Chain RPC Nodes (No Staking)
 
-Deploy local RPC nodes on server (16GB RAM, 4 cores, 304GB free, 15GB swap). No staking required — just RPC.
+Deploy local RPC nodes on server (16GB RAM, 4 cores, 389GB free, 16GB swap). No staking required — just RPC.
 
-### Resource Requirements
+### Chains with Public Mempool (MEV-capable)
 
-| Chain | Min RAM | Min Disk | Sync Mode | MEV |
-|-------|---------|----------|-----------|-----|
-| **Berachain** | 16GB | ~140GB | reth + beacond | Medium |
-| **Gnosis** | 4GB | ~30GB | Erigon | Low |
-| **BSC** | 4-8GB | ~100GB | geth snap | Very high |
-| **Celo** | 4-8GB | ~50GB | op-geth | Low |
-| **opBNB** | 4-8GB | ~50GB | op-geth | Medium |
-| **Polygon PoS** | 8GB | ~100GB | bor snap | High |
-| **Base** | 8-16GB | ~100GB | reth | Growing fast |
-| **Arbitrum** | 8-16GB | ~200GB | nitro | High |
+| Chain | Min RAM | Min Disk | Client | Mempool | MEV Volume |
+|-------|---------|----------|--------|---------|------------|
+| **Ethereum** | 16GB | ~224GB | reth `--minimal` | ✅ 171K pending | Very high |
+| **Berachain** | 16GB | ~140GB | reth + beacond | ✅ 46 pending | Growing |
+| **Gnosis** | 4GB | ~30GB | Erigon | ✅ 16 pending | Very low |
+
+### Chains WITHOUT Public Mempool (No sandwich MEV)
+
+| Chain | Min RAM | Min Disk | Client | Why no mempool |
+|-------|---------|----------|--------|----------------|
+| **Base** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
+| **Optimism** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
+| **Mantle** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
+| **Blast** | 8-16GB | ~100GB | op-geth | OP Stack centralized sequencer |
+| **Polygon PoS** | 8GB | ~100GB | bor snap | Bor + Heimdall, no public txpool |
+| **BSC** | 4-8GB | ~3TB+ | geth | Too heavy, no pruned option |
+| **Arbitrum** | 8-16GB | ~200GB | nitro | Sequencer-based |
 
 ### Notes
 
-- **BSC** has the heaviest MEV activity (Jaredfromsubway, sandwich bots). geth snap sync ~4-8GB RAM acceptable.
-- **Gnosis** is lightest — runs on 4GB RAM. Good for testing.
-- **Arbitrum/Base** need disk but growing ecosystems.
-- **Polygon PoS** uses bor (modified geth) + heimdall consensus — slightly heavier than pure geth.
-- Server disk left: 304GB — fits 1-2 light chains alongside Berachain.
+- **Only 3 chains have public mempools**: Ethereum, Berachain, Gnosis
+- **OP Stack chains (Base, Optimism, Mantle, Blast) have NO public mempool** — centralized sequencer picks txs directly
+- **BSC** needs 3TB+ even pruned — won't fit on 492GB disk
+- **Gnosis** is lightest (30GB) but very low MEV volume
+- **Ethereum** is best for MEV: 171K pending txs, most liquid
+- Server disk left: 389GB — fits Ethereum (224GB) + Gnosis (30GB) easily

@@ -5,14 +5,28 @@ RPC: EVM (OP Stack)
 Native token: ETH
 Block time: ~2s
 
-## Working Endpoints
+## Mempool: ❌ NONE (Centralized Sequencer)
 
-| Name | URL | Latency | Mempool |
-|------|-----|---------|:-------:|
-| dRPC | https://base.drpc.org | **75ms** | ✅ |
-| PublicNode | https://base-rpc.publicnode.com | 161ms | ✅ |
-| Mainnet Base | https://mainnet.base.org | 307ms | ❌ |
-| 1RPC | https://1rpc.io/base | 298ms | ❌ |
+Base is an OP Stack chain with a centralized sequencer (Coinbase).
+**No public mempool.** txpool_status returns 0 pending, 0 queued.
+No sandwich MEV possible via mempool monitoring.
+Sequencer picks transactions directly — no decentralized tx pool.
+
+## HTTP Endpoints
+
+| Name | URL | Latency | Mempool | WSS |
+|------|-----|---------|:-------:|:---:|
+| dRPC | https://base.drpc.org | **75ms** | ❌ | ❌ Rate limited |
+| PublicNode | https://base-rpc.publicnode.com | 161ms | ❌ | ✅ wss://ethereum-rpc.publicnode.com |
+| Mainnet Base | https://mainnet.base.org | 307ms | ❌ | ❌ |
+| 1RPC | https://1rpc.io/base | 298ms | ❌ | ❌ |
+
+## WebSocket Endpoints
+
+| Name | URL | Subscribe (pending txs) | RPS |
+|------|-----|:-----------------------:|----:|
+| dRPC | wss://base.drpc.org | ❌ Rate limited | — |
+| PublicNode | wss://ethereum-rpc.publicnode.com | ✅ | 14 |
 
 ## Failed / Rate-Limited
 
@@ -20,6 +34,7 @@ Block time: ~2s
 
 ## Notes
 
-Base dRPC has mempool access (75ms best latency). Good for MEV.
-PublicNode also exposes mempool (161ms).
-Publicnode needs origin spoofing for some methods.
+- OP Stack = centralized sequencer = NO public mempool
+- WSS subscribe works on PublicNode but RPS is low (14)
+- dRPC blocks WSS under load
+- Tested 2026-07-03: txpool_content returns pending:{}, queued:{} on all RPCs
