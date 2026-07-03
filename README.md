@@ -250,29 +250,28 @@ Deploy local RPC nodes on server (16GB RAM, 4 cores, 389GB free, 16GB swap). No 
 
 ### Chains with Public Mempool (MEV-capable)
 
-| Chain | Min RAM | Min Disk | Client | Mempool | MEV Volume |
-|-------|---------|----------|--------|---------|------------|
-| **Ethereum** | 16GB | ~224GB | reth `--minimal` | ✅ 171K pending | Very high |
-| **Berachain** | 16GB | ~140GB | reth + beacond | ✅ 46 pending | Growing |
-| **Gnosis** | 4GB | ~30GB | Erigon | ✅ 16 pending | Very low |
+| Chain | Min RAM | Min Disk | Client | Mempool | Fits 492GB? |
+|-------|---------|----------|--------|---------|:-----------:|
+| **Ethereum** | 16GB | ~224GB | reth `--minimal` | ✅ 171K pending | ✅ |
+| **Taiko** | 16GB | ~2TB | taiko-geth | ✅ 3.8K pending | ❌ |
+| **Berachain** | 16GB | ~140GB | reth + beacond | ✅ 210 pending | ✅ |
+| **BNB** | 16GB | ~3TB+ | geth (bsc) | ✅ 40 pending | ❌ |
+| **RSK** | 8GB | ~300GB est. | rskj (Java) | ✅ 11 pending | ⚠️ Unknown |
+| **Gnosis** | 4GB | ~30GB | Erigon/Geth | ✅ 16 pending | ✅ |
 
-### Chains WITHOUT Public Mempool (No sandwich MEV)
+### Chains WITHOUT Public Mempool (No sandwich MEV) — 34 chains
 
-| Chain | Min RAM | Min Disk | Client | Why no mempool |
-|-------|---------|----------|--------|----------------|
-| **Base** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
-| **Optimism** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
-| **Mantle** | 8-16GB | ~100GB | op-reth | OP Stack centralized sequencer |
-| **Blast** | 8-16GB | ~100GB | op-geth | OP Stack centralized sequencer |
-| **Polygon PoS** | 8GB | ~100GB | bor snap | Bor + Heimdall, no public txpool |
-| **BSC** | 4-8GB | ~3TB+ | geth | Too heavy, no pruned option |
-| **Arbitrum** | 8-16GB | ~200GB | nitro | Sequencer-based |
+| Category | Chains |
+|----------|--------|
+| **OP Stack sequencer** | Base, Optimism, Mantle, Blast |
+| **Sequencer-based L2** | Arbitrum, Linea, Scroll, zkSync, Taiko L2 |
+| **No txpool endpoint** | Polygon, Fantom, Avalanche, Cronos, Celo, Harmony, Aurora, Klaytn, ETC, Lightlink, Ronin, TomoChain, KCC, Karura, IoTeX, Huobi, Velas, Syscoin, Fuse, BTT, Callisto, Astar, Metagov, Godwoken, Moonbeam, Moonriver, Oasis |
 
 ### Notes
 
-- **Only 3 chains have public mempools**: Ethereum, Berachain, Gnosis
-- **OP Stack chains (Base, Optimism, Mantle, Blast) have NO public mempool** — centralized sequencer picks txs directly
-- **BSC** needs 3TB+ even pruned — won't fit on 492GB disk
-- **Gnosis** is lightest (30GB) but very low MEV volume
+- **6 chains have public mempools** (verified 2026-07-03 via `txpool_status`)
+- **3 fit on 492GB**: Ethereum (224GB), Berachain (140GB), Gnosis (30GB)
+- **3 too large**: Taiko (2TB), BNB (3TB+), RSK (~300GB unverified)
+- **OP Stack chains** have centralized sequencer — no public mempool possible
 - **Ethereum** is best for MEV: 171K pending txs, most liquid
-- Server disk left: 389GB — fits Ethereum (224GB) + Gnosis (30GB) easily
+- **Gnosis** is lightest (30GB) but very low MEV volume
