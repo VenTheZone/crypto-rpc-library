@@ -1,10 +1,24 @@
-# Tested RPCs
+# IoTeX — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 4689
+RPC: EVM (geth-compatible)
+Native token: IOTX
+Block time: ~5s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| OnFinality | https://iotex.api.onfinality.io/public | - | 162 | - | no | **yes** | working |
-| IoTeX Official | https://iotexrpc.com | - | - | - | no | **yes** | dead |
-| ~~Ankr~~ | ~~https://rpc.ankr.com/iotex~~ | - | - | - | no | **yes** | dead |
-| ~~IoTeX Old~~ | ~~https://rpc.iotex.io~~ | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://iotex-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://babel-api.mainnet.iotex.io` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

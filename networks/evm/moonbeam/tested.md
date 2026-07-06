@@ -1,9 +1,24 @@
-# Tested RPCs
+# Moonbeam — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 1284
+RPC: EVM (geth-compatible)
+Native token: GLMR
+Block time: ~3s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/moonbeam | - | 121 | - | no | **yes** | working |
-| Moonbeam | https://rpc.api.moonbeam.network | - | 104 | 10 | no | **yes** | working |
-| BlockPi | https://moonbeam.blockpi.network/v1/rpc/public | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://moonbeam-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://rpc.api.moonbeam.network` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

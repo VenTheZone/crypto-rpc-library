@@ -1,10 +1,26 @@
-# Tested RPCs
+# Linea — RPC Endpoints
 
-> Last Updated: 2026-05-08
+Chain ID: 59144
+RPC: EVM (geth-compatible)
+Native token: ETH
+Block time: ~2s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Blast | https://linea-mainnet.public.blastapi.io | - | 161 | - | no | **yes** | working |
-| Linea | https://rpc.linea.build | - | 117 | - | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/linea | - | - | - | no | **yes** | dead |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO (sequencer-based L2)
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://linea-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://linea.drpc.org` | — | ❌ | No | working |
+| Official | `https://rpc.linea.build` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- Sequencer-based L2 — no public mempool
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

@@ -1,8 +1,24 @@
-# Tested RPCs
+# Harmony — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 1666600000
+RPC: EVM (geth-compatible)
+Native token: ONE
+Block time: ~2s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/harmony | - | 199 | - | no | **yes** | working |
-| Harmony | https://api.harmony.one | - | 92 | 20 | no | **yes** | working |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://harmony-0-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://api.harmony.one` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

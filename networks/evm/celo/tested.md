@@ -1,9 +1,28 @@
-# Tested RPCs
+# Celo — RPC Endpoints
 
-> Last Updated: 2026-05-08
+Chain ID: 42220
+RPC: EVM (geth-compatible)
+Native token: CELO
+Block time: ~5s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/celo | - | 84 | 11 | no | **yes** | working |
-| Celo | https://forno.celo.org | - | 60 | - | no | **yes** | working |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://celo-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://celo.drpc.org` | — | ❌ | No | working |
+| Official | `https://forno.celo.org` | — | ❌ | No | working |
+| QuikNode (Uniswap) | `https://maximum-sly-dew.celo-mainnet.quiknode.pro/7752451997e54dc2fd84f08a768cbe037e2d9cc9` | — | ❌ | No | working |
+
+## API Keys
+
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `7752451997e54dc2fd84f08a768cbe037e2d9cc9` | Uniswap | ❌ |
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

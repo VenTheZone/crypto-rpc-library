@@ -1,6 +1,24 @@
-# Tested RPCs
+# Syscoin — RPC Endpoints
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/syscoin | - | 162 | - | no | **yes** | working |
-| Syscoin | https://rpc.syscoin.org | - | 33 | - | no | no | working |
+Chain ID: 57
+RPC: EVM (geth-compatible)
+Native token: SYS
+Block time: ~2.5s
+
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://syscoin-evm-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://rpc.syscoin.org` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

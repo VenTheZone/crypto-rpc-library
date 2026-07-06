@@ -1,10 +1,28 @@
-# Tested RPCs
+# Avalanche — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 43114
+RPC: EVM (geth-compatible)
+Native token: AVAX
+Block time: ~2s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| DRPC | https://avalanche.drpc.org | - | 136 | 21 | no | no | working |
-| PublicNode | https://avalanche-evm.publicnode.com | - | 116 | 36 | no | no | working |
-| Avalanche Official | https://api.avax.network/ext/bc/C/rpc | - | 58 | 13 | no | **yes** | working |
-| 1rpc.io | https://1rpc.io/avax/c | - | 56 | 31 | no | **yes** | working |
+## Mempool: ✅ YES (36 pending — tested 2026-07-06)
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://avalanche-c-chain.publicnode.com` | 139ms | ✅ 36 (status) | No | working |
+| 1RPC | `https://1rpc.io/avax/c` | — | ❌ | No | working |
+| QuikNode (Uniswap) | `https://sleek-still-patina.avalanche-mainnet.quiknode.pro/d5190f99f23c05fab0604cf98fe636e96497565a/ext/bc/C/rpc/` | — | ❌ | No | working |
+
+## API Keys
+
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `d5190f99f23c05fab0604cf98fe636e96497565a` | Uniswap | ❌ |
+
+## Notes
+
+- PublicNode is best: 36 pending, 139ms latency
+- QuikNode key has no mempool (txpool_status returns 0x0)
+- No Origin headers required for any endpoint

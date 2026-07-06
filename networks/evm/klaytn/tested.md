@@ -1,8 +1,24 @@
-# Tested RPCs
+# Klaytn — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 8217
+RPC: EVM (geth-compatible)
+Native token: KLAY
+Block time: ~1s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/klaytn | - | 39 | 60 | no | **yes** | working |
-| Klaytn | https://klaytn.blockchainapi.or.kr/mainnet/klaytn | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://klaytn-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://public-en-cypress.klaytn.net` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

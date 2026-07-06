@@ -248,30 +248,39 @@ Top picks: `rpc.ankr.com/gnosis` (34ms), `gnosis.drpc.org` (59ms), `gnosis-rpc.p
 
 Deploy local RPC nodes on server (16GB RAM, 4 cores, 389GB free, 16GB swap). No staking required — just RPC.
 
-### Chains with Public Mempool (MEV-capable)
+### Chains with Public Mempool (MEV-capable) — 7 chains
 
-| Chain | Min RAM | Min Disk | Client | Mempool | Fits 492GB? |
-|-------|---------|----------|--------|---------|:-----------:|
-| **Ethereum** | 16GB | ~224GB | reth `--minimal` | ✅ 171K pending | ✅ |
-| **Taiko** | 16GB | ~2TB | taiko-geth | ✅ 3.8K pending | ❌ |
-| **Berachain** | 16GB | ~140GB | reth + beacond | ✅ 210 pending | ✅ |
-| **BNB** | 16GB | ~3TB+ | geth (bsc) | ✅ 40 pending | ❌ |
-| **RSK** | 8GB | ~300GB est. | rskj (Java) | ✅ 11 pending | ⚠️ Unknown |
-| **Gnosis** | 4GB | ~30GB | Erigon/Geth | ✅ 16 pending | ✅ |
+| Chain | Mempool RPCs | Pending | Latency |
+|-------|--------------|---------|---------|
+| **Ethereum** | PublicNode, 1rpc | 55,149 | 146ms |
+| **BSC** | PublicNode, Binance, QuikNode | 6,003 | 250ms |
+| **Taiko** | Official | 2,626 | 395ms |
+| **Polygon** | PublicNode, QuikNode (Sushi) | 65,722 | 144ms |
+| **Avalanche** | PublicNode | 36 | 139ms |
+| **Berachain** | Official | 34 | 738ms |
+| **Gnosis** | PublicNode | 9 | 134ms |
 
-### Chains WITHOUT Public Mempool (No sandwich MEV) — 34 chains
+### New API Keys Found (2026-07-06)
+
+| Chain | Source | Key | Pending |
+|-------|--------|-----|---------|
+| **Polygon** | Sushi | `50060fe02eaca407606719d97f4f204f28da43ed` | 65,722 |
+| **Polygon** | Uniswap | `9d224a0c49ee6cd1b4d88e7a2897a057385e6b40` | 9,178 |
+| **BSC** | Uniswap | `31c09f2ad734e43f4fece25a5db045a9322ce119` | 30 |
+| **BSC** | Sushi | `a0d86563bc5d99e49d7d72ca422da0e761b4e257` | 9 |
+
+### Chains WITHOUT Public Mempool (No sandwich MEV) — 32 chains
 
 | Category | Chains |
 |----------|--------|
 | **OP Stack sequencer** | Base, Optimism, Mantle, Blast |
 | **Sequencer-based L2** | Arbitrum, Linea, Scroll, zkSync, Taiko L2 |
-| **No txpool endpoint** | Polygon, Fantom, Avalanche, Cronos, Celo, Harmony, Aurora, Klaytn, ETC, Lightlink, Ronin, TomoChain, KCC, Karura, IoTeX, Huobi, Velas, Syscoin, Fuse, BTT, Callisto, Astar, Metagov, Godwoken, Moonbeam, Moonriver, Oasis |
+| **No txpool endpoint** | Fantom, RSK, Cronos, Celo, Harmony, Aurora, Klaytn, ETC, Lightlink, Ronin, TomoChain, KCC, Karura, IoTeX, Huobi, Velas, Syscoin, Fuse, BTT, Callisto, Astar, Metagov, Godwoken, Moonbeam, Moonriver, Oasis |
 
 ### Notes
 
-- **6 chains have public mempools** (verified 2026-07-03 via `txpool_status`)
-- **3 fit on 492GB**: Ethereum (224GB), Berachain (140GB), Gnosis (30GB)
-- **3 too large**: Taiko (2TB), BNB (3TB+), RSK (~300GB unverified)
-- **OP Stack chains** have centralized sequencer — no public mempool possible
-- **Ethereum** is best for MEV: 171K pending txs, most liquid
-- **Gnosis** is lightest (30GB) but very low MEV volume
+- **7 chains have public mempools** (verified 2026-07-06 via `txpool_content`/`txpool_status`)
+- **Best for MEV**: Ethereum (55K pending), BSC (6K pending), Taiko (2.6K pending)
+- **Lowest latency**: Avalanche (139ms), Gnosis (134ms), Polygon (144ms)
+- **No Origin headers** required for any public RPC
+- **PublicNode** is most reliable across all chains

@@ -1,40 +1,31 @@
 # Base — RPC Endpoints
 
 Chain ID: 8453
-RPC: EVM (OP Stack)
+RPC: EVM (geth-compatible)
 Native token: ETH
 Block time: ~2s
 
-## Mempool: ❌ NONE (Centralized Sequencer)
+## Mempool: ❌ NO (0 pending — tested 2026-07-06)
 
-Base is an OP Stack chain with a centralized sequencer (Coinbase).
-**No public mempool.** txpool_status returns 0 pending, 0 queued.
-No sandwich MEV possible via mempool monitoring.
-Sequencer picks transactions directly — no decentralized tx pool.
+## Working Endpoints
 
-## HTTP Endpoints
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://base-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://base.drpc.org` | — | ❌ | No | working |
+| Official | `https://mainnet.base.org` | — | ❌ | No | working |
+| QuikNode (Uniswap) | `https://wandering-serene-patron.base-mainnet.quiknode.pro/cab818b8d9cfa00a7a07cd42520ae78417394e58` | — | ❌ | No | working |
+| QuikNode (Sushi) | `https://thrumming-thrumming-pool.base-mainnet.quiknode.pro/afc8a0038cd744f30fd210e6f8c6b59ed5817bd7` | — | ❌ | No | working |
 
-| Name | URL | Latency | Mempool | WSS |
-|------|-----|---------|:-------:|:---:|
-| dRPC | https://base.drpc.org | **75ms** | ❌ | ❌ Rate limited |
-| PublicNode | https://base-rpc.publicnode.com | 161ms | ❌ | ✅ wss://ethereum-rpc.publicnode.com |
-| Mainnet Base | https://mainnet.base.org | 307ms | ❌ | ❌ |
-| 1RPC | https://1rpc.io/base | 298ms | ❌ | ❌ |
+## API Keys
 
-## WebSocket Endpoints
-
-| Name | URL | Subscribe (pending txs) | RPS |
-|------|-----|:-----------------------:|----:|
-| dRPC | wss://base.drpc.org | ❌ Rate limited | — |
-| PublicNode | wss://ethereum-rpc.publicnode.com | ✅ | 14 |
-
-## Failed / Rate-Limited
-
-- rpc.ankr.com/base — needs auth
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `cab818b8d9cfa00a7a07cd42520ae78417394e58` | Uniswap | ❌ |
+| QuikNode | `afc8a0038cd744f30fd210e6f8c6b59ed5817bd7` | Sushi | ❌ |
 
 ## Notes
 
-- OP Stack = centralized sequencer = NO public mempool
-- WSS subscribe works on PublicNode but RPS is low (14)
-- dRPC blocks WSS under load
-- Tested 2026-07-03: txpool_content returns pending:{}, queued:{} on all RPCs
+- OP Stack sequencer — no public mempool
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

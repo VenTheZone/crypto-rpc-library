@@ -1,10 +1,26 @@
-# Tested RPCs
+# Mantle — RPC Endpoints
 
-> Last Updated: 2026-05-08
+Chain ID: 5000
+RPC: EVM (geth-compatible)
+Native token: MNT
+Block time: ~2s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| BlockPi | https://mantle.blockpi.network/v1/rpc/public | - | 85 | - | no | **yes** | working |
-| Mantle | https://rpc.mantle.xyz | - | 31 | 1 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/mantle | - | - | - | no | **yes** | dead |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO (OP Stack sequencer)
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://mantle-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://mantle.drpc.org` | — | ❌ | No | working |
+| Official | `https://rpc.mantle.xyz` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- OP Stack sequencer — no public mempool
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

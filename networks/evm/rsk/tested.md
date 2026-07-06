@@ -1,27 +1,24 @@
-# Tested RPCs
+# RSK (Rootstock) — RPC Endpoints
 
-*Last Updated: 2026-07-03*
+Chain ID: 30
+RPC: EVM (geth-compatible)
+Native token: RBTC
+Block time: ~30s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| RSK | https://public-node.rsk.co | - | 66 | 2 | **yes** | no | working |
+## Mempool: ❌ NO (0 pending — tested 2026-07-06)
 
-## Mempool Status
+## Working Endpoints
 
-**✅ YES — Public mempool confirmed (tested 2026-07-03)**
-- Pending: 11 | Queued: 0
-- Method: `txpool_status`
-- Client: rskj (Java implementation)
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://rootstock-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://public-node.rsk.co` | — | ❌ | No | working |
 
-## Node Requirements
+## API Keys
 
-- Client: rskj (Java) — rsksmart/rskj
-- Storage: ~300GB estimated (unverified — RSK docs return 404)
-- RAM: 8 GB minimum (Java)
-- Merged-mined with Bitcoin
-- Low throughput: ~1 TPS, 30s block time
-- ⚠️ Disk requirements NOT officially documented (dev.rootstock.io pages return 404)
+No new keys found. Public endpoints sufficient.
 
 ## Notes
 
-RSK is a Bitcoin sidechain with EVM compatibility. Very low transaction volume (2 TPS). The mempool is small (11 pending) reflecting low usage. RSK docs have been restructured — all node-operators URLs return 404.
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

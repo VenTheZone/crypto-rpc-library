@@ -1,8 +1,24 @@
-# Tested RPCs
+# Ethereum Classic (ETC) — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 61
+RPC: EVM (geth-compatible)
+Native token: ETC
+Block time: ~13s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ethereum Classic | https://etc.rivet.link | - | 165 | 0 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/ethereumclassic | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://ethereum-classic-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://www.ethercluster.com/etc` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

@@ -1,10 +1,26 @@
-# Tested RPCs
+# Scroll — RPC Endpoints
 
-> Last Updated: 2026-05-08
+Chain ID: 534352
+RPC: EVM (geth-compatible)
+Native token: ETH
+Block time: ~3s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| BlockPi | https://scroll.blockpi.network/v1/rpc/public | - | 128 | - | no | **yes** | working |
-| Scroll | https://rpc.scroll.io | - | 98 | - | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/scroll | - | - | - | no | **yes** | dead |
-| QuickNode | https://*.quiknode.pro/ | - | - | - | no | **yes** | dead |
+## Mempool: ❌ NO (sequencer-based L2)
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://scroll-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://scroll.drpc.org` | — | ❌ | No | working |
+| Official | `https://rpc.scroll.io` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- Sequencer-based L2 — no public mempool
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

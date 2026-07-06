@@ -1,6 +1,24 @@
-# Tested RPCs
+# BitTorrent Chain (BTT) — RPC Endpoints
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Bittorrent | https://rpc.bittorrentchain.io | - | 69 | 20 | no | **yes** | working |
-| Ankr | https://rpc.ankr.com/bittorrent | - | - | - | no | **yes** | working |
+Chain ID: 199
+RPC: EVM (geth-compatible)
+Native token: BTT
+Block time: ~3s
+
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://bittorrent-chain-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://rpc.bittorrentchain.io` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

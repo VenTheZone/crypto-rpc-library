@@ -1,34 +1,38 @@
-# Tested RPCs
+# BSC (Binance Smart Chain) — RPC Endpoints
 
-*Last Updated: 2026-07-03*
+Chain ID: 56
+RPC: EVM (geth-compatible)
+Native token: BNB
+Block time: ~3s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| 1rpc.io/bnb | https://1rpc.io/bnb | - | 144 | 253 | **yes** | no | working |
-| Ankr | https://rpc.ankr.com/bsc | `Authorization: Bearer ***` | 132 | - | no | **yes** | working |
-| OnFinality | https://bnb.api.onfinality.io/public | - | 130 | - | no | **yes** | working |
-| Binance | https://bsc-dataseed.binance.org | - | 129 | 121 | **yes** | no | working |
-| PublicNode | https://bsc-rpc.publicnode.com | - | 123 | 96 | **yes** | no | working |
-| PancakeSwap | https://bscrpc.pancakeswap.finance | - | 95 | 125 | no | **yes** | working |
-| PancakeSwap Alpha | https://bscrpc-alpha.pancakeswap.finance | - | 87 | 99 | no | **yes** | working |
-| LlamaRPC | https://bsc.llamarpc.com | - | 31 | 73 | **yes** | no | working |
+## Mempool: ✅ YES (6,003 pending — tested 2026-07-06)
 
-## Mempool Status
+## Working Endpoints
 
-**✅ YES — Public mempool confirmed (tested 2026-07-03)**
-- Pending: 40 | Queued: 3,707
-- Method: `txpool_status`
-- Client: Geth (BSC fork)
-- Multiple RPCs expose mempool
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://bsc-rpc.publicnode.com` | 250ms | ✅ 6,003 | No | working |
+| Binance | `https://bsc-dataseed.binance.org` | 329ms | ✅ 38 | No | working |
+| QuikNode (Uniswap) | `https://palpable-summer-choice.bsc.quiknode.pro/31c09f2ad734e43f4fece25a5db045a9322ce119` | — | ✅ 30 | No | working |
+| QuikNode (Sushi) | `https://quiet-burned-dust.bsc.quiknode.pro/a0d86563bc5d99e49d7d72ca422da0e761b4e257` | — | ✅ 9 | No | working |
+| 1RPC | `https://1rpc.io/bnb` | 144ms | ❌ | No | working |
 
-## Node Requirements
+## WebSocket Endpoints
 
-- Client: Geth (BSC fork) — bnb-chain/bsc
-- **Minimum storage: 3 TB+** (Geth snap sync, pruned)
-- RAM: 16 GB minimum
-- No reth client exists for BSC
-- ⚠️ Does NOT fit on 492GB disk
+| Name | URL | Pending | Origin |
+|------|-----|---------|--------|
+| QuikNode (Uniswap) | `wss://palpable-summer-choice.bsc.quiknode.pro/31c09f2ad734e43f4fece25a5db045a9322ce119` | ✅ | No |
+| QuikNode (Sushi) | `wss://quiet-burned-dust.bsc.quiknode.pro/a0d86563bc5d99e49d7d72ca422da0e761b4e257` | ✅ | No |
+
+## API Keys
+
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `31c09f2ad734e43f4fece25a5db045a9322ce119` | Uniswap | ✅ |
+| QuikNode | `a0d86563bc5d99e49d7d72ca422da0e761b4e257` | Sushi | ✅ |
 
 ## Notes
 
-BSC has high throughput (128 blocks/day). Geth snap sync requires ~3TB even in pruned mode. The mempool has large queued backlog (3,707) due to high chain activity.
+- PublicNode is fastest public endpoint (250ms)
+- QuikNode keys have lower pending but still work
+- No Origin headers required for any endpoint

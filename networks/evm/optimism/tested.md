@@ -1,24 +1,29 @@
-# Tested RPCs
+# Optimism — RPC Endpoints
 
-*Last Updated: 2026-07-03*
+Chain ID: 10
+RPC: EVM (geth-compatible)
+Native token: ETH
+Block time: ~2s
 
-## Mempool: ❌ NONE (Centralized Sequencer)
+## Mempool: ❌ NO (0 pending — tested 2026-07-06)
 
-Optimism is an OP Stack chain with a centralized sequencer.
-**No public mempool.** No sandwich MEV possible via mempool monitoring.
+## Working Endpoints
 
-| Name | URL | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ---: | ---: | ------- | ------- | ------ |
-| Ankr | https://rpc.ankr.com/optimism | 158 | - | ❌ | **yes** | working |
-| DRPC | https://optimism.drpc.org | 155 | - | ❌ | **yes** | working |
-| PublicNode | https://optimism-rpc.publicnode.com | 128 | 14 | ❌ | **yes** | working |
-| Blast | https://optimism-mainnet.public.blastapi.io | 99 | - | ❌ | **yes** | working |
-| Optimism | https://mainnet.optimism.io | 90 | 23 | ❌ | **yes** | working |
-| Alchemy | https://optimism-mainnet.g.alchemy.com/v2/demo | - | - | ❌ | **yes** | needs-key |
-| QuickNode | https://*.quiknode.pro/ | - | - | ❌ | **yes** | needs-key |
-| Infura | https://optimism-mainnet.infura.io/v3/ | - | - | ❌ | **yes** | needs-key |
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://optimism-rpc.publicnode.com` | — | ❌ | No | working |
+| dRPC | `https://optimism.drpc.org` | — | ❌ | No | working |
+| Official | `https://mainnet.optimism.io` | — | ❌ | No | working |
+| QuikNode (Uniswap) | `https://thrumming-tame-leaf.optimism.quiknode.pro/1da322086e67b0922a98f95694761ec8c5c7ce7c` | — | ❌ | No | working |
+
+## API Keys
+
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `1da322086e67b0922a98f95694761ec8c5c7ce7c` | Uniswap | ❌ |
 
 ## Notes
 
-- OP Stack = centralized sequencer = NO public mempool
-- All RPCs marked "no" for mempool — confirmed 2026-07-03
+- OP Stack sequencer — no public mempool
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

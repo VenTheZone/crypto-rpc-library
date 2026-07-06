@@ -1,28 +1,25 @@
-# Tested RPCs
+# Berachain — RPC Endpoints
 
-*Last Updated: 2026-07-03*
+Chain ID: 80094
+RPC: EVM (geth-compatible)
+Native token: BERA
+Block time: ~2s
 
-## Mempool: ✅ YES (46 pending, 131 queued — tested 2026-07-03)
+## Mempool: ✅ YES (34 pending — tested 2026-07-06)
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | ---: | --: | ------- | ------- | ------ |
-| dRPC | https://berachain.drpc.org | - | 149 | 5 | yes | no | working |
-| Berachain Official | https://rpc.berachain.com | - | 101 | 5 | yes | no | working |
-| Thirdweb | https://bera.rpc.thirdweb.com | - | 65 | - | no | **yes** | working |
-| Kodiak | https://rpc.kodiak.finance | - | 25 | - | no | **yes** | slow |
-| PublicNode | https://berachain-evm-rpc.publicnode.com | - | - | - | no | **yes** | dead |
+## Working Endpoints
 
-## Node Requirements
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| Official | `https://rpc.berachain.com` | 738ms | ✅ 34 | No | working |
+| dRPC | `https://berachain.drpc.org` | — | ❌ | No | working |
 
-- Client: reth + beacond (consensus)
-- Disk: ~140GB pruned (reth ~50GB snapshot + beacond)
-- RAM: 16GB+
-- Official reth support: ✅
-- DEXs: BEX (Balancer V2), Kodiak (Uni V2+V3)
-- Flashloans: BeraBorrow (Bend fork)
+## API Keys
+
+No new keys found. Public endpoints sufficient.
 
 ## Notes
 
-- txpool_status: pending=0x2e (46), queued=0x83 (131)
-- Low mempool activity but growing DeFi ecosystem
-- Low competition for MEV compared to ETH
+- Official endpoint is only one with mempool
+- Low pending count (34) but growing ecosystem
+- No Origin headers required for any endpoint

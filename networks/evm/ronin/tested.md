@@ -1,7 +1,24 @@
-# Tested RPCs
+# Ronin — RPC Endpoints
 
-*Last Updated: 2026-05-10*
+Chain ID: 2020
+RPC: EVM (geth-compatible)
+Native token: RON
+Block time: ~3s
 
-| Name | URL | Auth Header | RPS | TPS | Mempool | Safe TX | Status |
-| ---- | --- | ----------- | --- | --- | ------- | ------- | ------ |
-| Ronin | https://api.roninchain.com/rpc | - | 137 | 3 | no | **yes** | working |
+## Mempool: ❌ NO
+
+## Working Endpoints
+
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| PublicNode | `https://ronin-rpc.publicnode.com` | — | ❌ | No | working |
+| Official | `https://api.roninchain.com/rpc` | — | ❌ | No | working |
+
+## API Keys
+
+No new keys found. Public endpoints sufficient.
+
+## Notes
+
+- All RPCs return 0 pending txs
+- No Origin headers required for any endpoint

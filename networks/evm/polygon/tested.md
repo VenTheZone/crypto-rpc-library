@@ -5,24 +5,34 @@ RPC: EVM (geth-compatible)
 Native token: MATIC
 Block time: ~2.3s
 
+## Mempool: ✅ YES (65,722 pending — tested 2026-07-06)
+
 ## Working Endpoints
 
-| Name | URL | Latency | Mempool |
-|------|-----|---------|:-------:|
-| dRPC | https://polygon.drpc.org | **59ms** | ❌ |
-| Tenderly Gateway | https://gateway.tenderly.co/public/polygon | 388ms | ❌ |
-| 1RPC | https://1rpc.io/matic | 355ms | ❌ |
+| Name | URL | Latency | Mempool | Origin | Status |
+|------|-----|---------|---------|--------|--------|
+| QuikNode (Sushi) | `https://crimson-wider-silence.quiknode.pro/50060fe02eaca407606719d97f4f204f28da43ed` | — | ✅ 65,722 | No | working |
+| QuikNode (Uniswap) | `https://late-alpha-diagram.matic.quiknode.pro/9d224a0c49ee6cd1b4d88e7a2897a057385e6b40` | — | ✅ 9,178 | No | working |
+| PublicNode | `https://polygon-bor.publicnode.com` | 144ms | ✅ 1,750 | No | working |
+| dRPC | `https://polygon.drpc.org` | 59ms | ❌ | No | working |
+| 1RPC | `https://1rpc.io/matic` | 355ms | ❌ | No | working |
 
-## Failed / Rate-Limited
+## WebSocket Endpoints
 
-- polygon-rpc.com — rate-limited from this IP
-- polygon-mainnet.publicnode.com — rate-limited
-- rpc.ankr.com/polygon — needs auth
-- polygon.llamarpc.com — not found
-- rpc-mainnet.maticvigil.com — rate-limited
+| Name | URL | Pending | Origin |
+|------|-----|---------|--------|
+| QuikNode (Sushi) | `wss://crimson-wider-silence.quiknode.pro/50060fe02eaca407606719d97f4f204f28da43ed` | ✅ | No |
+| QuikNode (Uniswap) | `wss://late-alpha-diagram.matic.quiknode.pro/9d224a0c49ee6cd1b4d88e7a2897a057385e6b40` | ✅ | No |
+
+## API Keys
+
+| Provider | Key | Source | Mempool |
+|----------|-----|--------|---------|
+| QuikNode | `50060fe02eaca407606719d97f4f204f28da43ed` | Sushi | ✅ |
+| QuikNode | `9d224a0c49ee6cd1b4d88e7a2897a057385e6b40` | Uniswap | ✅ |
 
 ## Notes
 
-Polygon has aggressive rate-limiting for direct curl RPC requests.
-dRPC is best option at 59ms with no auth needed.
-No public RPC here exposes mempool.
+- QuikNode keys from DEX discovery have highest pending counts
+- PublicNode is most reliable public endpoint
+- No Origin headers required for any endpoint
