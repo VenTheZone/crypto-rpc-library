@@ -1,9 +1,6 @@
-const { chromium } = require('playwright-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
-
-chromium.use(StealthPlugin());
 
 // ============================================
 // GENERIC EVM RPC INTERCEPTOR
@@ -276,7 +273,11 @@ async function scan() {
   console.log(`Chain ID: ${CHAIN_ID}`);
   console.log(`Scanning ${DEX_SITES.length} DEXs...\n`);
   
-  let browser = await chromium.launch({ headless: true });
+  let browser = await chromium.launch({ 
+    headless: true, 
+    channel: 'chrome',
+    args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']
+  });
   const allRpcs = new Map();
   
   for (const dex of DEX_SITES) {
@@ -285,12 +286,21 @@ async function scan() {
     let context, page;
     try {
       context = await browser.newContext();
+      await context.addInitScript(() => {
+        Object.defineProperty(navigator, 'webdriver', { get: () => false });
+      });
       page = await context.newPage();
     } catch (e) {
       // Browser crashed - recreate
       try { await browser.close().catch(() => {}); } catch (e) {}
-      browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+      browser = await chromium.launch({ 
+        headless: true, channel: 'chrome',
+        args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox'] 
+      });
       context = await browser.newContext();
+      await context.addInitScript(() => {
+        Object.defineProperty(navigator, 'webdriver', { get: () => false });
+      });
       page = await context.newPage();
     }
     
@@ -363,7 +373,10 @@ async function scan() {
     } catch (e) {
       console.log('  Browser crashed, restarting...');
       try { await browser.close().catch(() => {}); } catch (e) {}
-      browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+      browser = await chromium.launch({ 
+        headless: true, channel: 'chrome',
+        args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox'] 
+      });
     }
   }
   
