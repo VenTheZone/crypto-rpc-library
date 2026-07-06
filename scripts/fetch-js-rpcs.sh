@@ -41,7 +41,7 @@ test_rpc() {
     rps_end=$(date +%s%N)
     local rps_elapsed=$(( (rps_end - rps_start) / 1000000 ))
     if [ "$rps_elapsed" -gt 0 ]; then
-      rps=$(echo "scale=1; $TESTS * 1000 / $rps_elapsed" | bc 2>/dev/null || echo "?")
+      rps=$(awk "BEGIN {printf \"%.1f\", $TESTS * 1000 / $rps_elapsed}")
     else
       rps="?"
     fi
@@ -191,11 +191,7 @@ sort -u "$OUTPUT" | while IFS='|' read -r src rpc; do
   rpc=$(echo "$rpc" | tr -d ' \t')
   base=$(echo "$rpc" | sed 's|/$||')
   
-  # Test without origin
-  result=$(test_rpc "$rpc" "" "none")
-  no_origin=$(echo "$result" | awk -F'|' '{print $2"|"$3}')
-  
-  # Test with origin (DEX domain)
+  # Origin mapping
   case "$src" in
     Uniswap) origin="https://app.uniswap.org" ;;
     1inch) origin="https://app.1inch.io" ;;
@@ -215,11 +211,36 @@ sort -u "$OUTPUT" | while IFS='|' read -r src rpc; do
     *) origin="" ;;
   esac
   
-  if [ -n "$origin" ]; then
-    origin_result=$(test_rpc "$rpc" "$origin" "$origin")
-    origin_info=$(echo "$origin_result" | awk -F'|' '{print $2"|"$3}')
+  # Test without origin
+  resp=$(curl -s --max-time 5 -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$rpc" 2>/dev/null)
+  if echo "$resp" | grep -q '"result"'; then
+    no_latency=$(curl -s -o /dev/null -w "%{time_total}" --max-time 5 -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$rpc" 2>/dev/null)
+    no_ms=$(awk "BEGIN {printf \"%.0f\", $no_latency * 1000}")
+    # RPS: 5 sequential
+    rps_start=$(date +%s%N)
+    for i in $(seq 2 $TESTS); do
+      curl -s --max-time 5 -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$rpc" >/dev/null 2>&1
+    done
+    rps_end=$(date +%s%N)
+    rps_elapsed=$(( (rps_end - rps_start) / 1000000 ))
+    rps=$(awk "BEGIN {printf \"%.1f\", $TESTS * 1000 / ($rps_elapsed + 1)}")
+    no_origin="$no_ms|$rps"
   else
-    origin_info="-|-"
+    no_origin="FAIL|-"
+  fi
+  
+  # Test with origin
+  if [ -n "$origin" ]; then
+    resp2=$(curl -s --max-time 5 -X POST -H "Content-Type: application/json" -H "Origin: $origin" -d "$PAYLOAD" "$rpc" 2>/dev/null)
+    if echo "$resp2" | grep -q '"result"'; then
+      o_latency=$(curl -s -o /dev/null -w "%{time_total}" --max-time 5 -X POST -H "Content-Type: application/json" -H "Origin: $origin" -d "$PAYLOAD" "$rpc" 2>/dev/null)
+      o_ms=$(awk "BEGIN {printf \"%.0f\", $o_latency * 1000}")
+      origin_info="$o_ms"
+    else
+      origin_info="BLOCKED"
+    fi
+  else
+    origin_info="-"
   fi
   
   echo "| $src | \`$rpc\` | $no_origin | $origin_info |" >> "$RESULTS"
