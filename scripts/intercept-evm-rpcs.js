@@ -31,6 +31,41 @@ const DEX_BY_CHAIN = {
     { name: 'DexScreener', url: 'https://dexscreener.com/ethereum' },
     { name: 'Lido', url: 'https://lido.fi' },
     { name: 'Aave', url: 'https://app.aave.com' },
+    { name: 'Matcha', url: 'https://matcha.xyz' },
+    { name: 'KyberSwap', url: 'https://kyberswap.com/swap/ethereum' },
+    { name: 'Clipper', url: 'https://clipper.exchange' },
+    { name: 'DODO', url: 'https://dodoex.io' },
+    { name: 'Bancor', url: 'https://app.bancor.network' },
+    { name: 'THORChain', url: 'https://app.thorchain.org' },
+    { name: 'Firebird', url: 'https://firebird.finance' },
+    { name: 'Li.Fi', url: 'https://li.fi' },
+    { name: 'Socket', url: 'https://socket.tech' },
+    { name: 'WOOFi', url: 'https://woo.org' },
+    { name: 'Plasma Finance', url: 'https://plasma.finance' },
+    { name: 'Morpho', url: 'https://morpho.org' },
+    { name: 'Yearn', url: 'https://yearn.fi' },
+    { name: 'Pendle', url: 'https://pendle.finance' },
+    { name: 'Frax', url: 'https://app.frax.finance' },
+    { name: 'Badger', url: 'https://app.badger.com' },
+    { name: 'StakeDAO', url: 'https://stakedao.org' },
+    { name: 'Aura', url: 'https://aura.finance' },
+    { name: 'Connext', url: 'https://connext.network' },
+    { name: 'Synapse', url: 'https://synapseprotocol.com' },
+    { name: 'Hop', url: 'https://hop.exchange' },
+    { name: 'Across', url: 'https://across.to' },
+    { name: 'Stargate', url: 'https://stargate.finance' },
+    { name: 'Celer', url: 'https://cbridge.celer.network' },
+    { name: 'Swapper', url: 'https://swapper.chainsafe.io' },
+    { name: 'Symbiosis', url: 'https://symbiosis.finance' },
+    { name: 'Wombat', url: 'https://wombat.exchange' },
+    { name: 'Solidly', url: 'https://solidly.exchange' },
+    { name: 'Swerve', url: 'https://swerve.fi' },
+    { name: 'mStable', url: 'https://mstable.app' },
+    { name: 'DeFi Saver', url: 'https://app.defisaver.com' },
+    { name: 'Oasis', url: 'https://oasis.app' },
+    { name: 'Instadapp', url: 'https://app.instadapp.io' },
+    { name: 'Zapper', url: 'https://zapper.fi' },
+    { name: 'Zerion', url: 'https://app.zerion.io' },
   ],
   arbitrum: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=arbitrum' },
@@ -92,55 +127,56 @@ async function scan() {
   for (const dex of DEX_SITES) {
     console.log(`\n## ${dex.name}: ${dex.url}`);
     
-    const context = await browser.newContext();
-    const page = await context.newPage();
-    
-    const rpcRequests = [];
-    
-    // Intercept ALL requests
-    page.on('request', request => {
-      const url = request.url();
-      const postData = request.postData();
+    let context, page;
+    try {
+      context = await browser.newContext();
+      page = await context.newPage();
       
-      // Check for JSON-RPC calls
-      if (postData && (postData.includes('eth_') || postData.includes('net_') || postData.includes('web3_'))) {
-        try {
-          const json = JSON.parse(postData);
-          rpcRequests.push({ url, method: json.method });
-          if (!allRpcs.has(url)) {
-            allRpcs.set(url, { dex: dex.name, methods: [], source: 'network' });
-          }
-          allRpcs.get(url).methods.push(json.method);
-        } catch (e) {}
-      }
-    });
-    
-    // Intercept responses to find RPC URLs in JS bundles
-    page.on('response', async response => {
-      const url = response.url();
+      const rpcRequests = [];
       
-      if (url.endsWith('.js') || url.includes('.js?')) {
-        try {
-          const body = await response.text();
-          
-          for (const pattern of RPC_PATTERNS) {
-            const matches = body.match(pattern) || [];
-            for (const match of matches) {
-              const cleanUrl = match.replace(/['"\\]/g, '').split(',')[0];
-              if (cleanUrl.length > 15 && cleanUrl.includes('http')) {
-                if (!allRpcs.has(cleanUrl)) {
-                  allRpcs.set(cleanUrl, { dex: dex.name, methods: ['found_in_js'], source: url });
+      // Intercept ALL requests
+      page.on('request', request => {
+        const url = request.url();
+        const postData = request.postData();
+        
+        // Check for JSON-RPC calls
+        if (postData && (postData.includes('eth_') || postData.includes('net_') || postData.includes('web3_'))) {
+          try {
+            const json = JSON.parse(postData);
+            rpcRequests.push({ url, method: json.method });
+            if (!allRpcs.has(url)) {
+              allRpcs.set(url, { dex: dex.name, methods: [], source: 'network' });
+            }
+            allRpcs.get(url).methods.push(json.method);
+          } catch (e) {}
+        }
+      });
+      
+      // Intercept responses to find RPC URLs in JS bundles
+      page.on('response', async response => {
+        const url = response.url();
+        
+        if (url.endsWith('.js') || url.includes('.js?')) {
+          try {
+            const body = await response.text();
+            
+            for (const pattern of RPC_PATTERNS) {
+              const matches = body.match(pattern) || [];
+              for (const match of matches) {
+                const cleanUrl = match.replace(/['"\\\\]/g, '').split(',')[0];
+                if (cleanUrl.length > 15 && cleanUrl.includes('http')) {
+                  if (!allRpcs.has(cleanUrl)) {
+                    allRpcs.set(cleanUrl, { dex: dex.name, methods: ['found_in_js'], source: url });
+                  }
                 }
               }
             }
-          }
-        } catch (e) {}
-      }
-    });
-    
-    try {
+          } catch (e) {}
+        }
+      });
+      
       console.log('  Loading...');
-      await page.goto(dex.url, { timeout: 45000, waitUntil: 'networkidle' });
+      await page.goto(dex.url, { timeout: 30000, waitUntil: 'networkidle' });
       await page.waitForTimeout(2000);
       
       // Trigger more RPC calls
@@ -150,11 +186,13 @@ async function scan() {
       console.log(`  Found ${rpcRequests.length} RPC requests`);
       
     } catch (e) {
-      console.log(`  Error: ${e.message}`);
+      console.log(`  Error: ${e.message.split('\n')[0]}`);
     }
     
-    await page.close();
-    await context.close();
+    try {
+      if (page) await page.close().catch(() => {});
+      if (context) await context.close().catch(() => {});
+    } catch (e) {}
   }
   
   await browser.close();
