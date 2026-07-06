@@ -348,8 +348,8 @@ async function scan() {
       });
       
       console.log('  Loading...');
-      await page.goto(dex.url, { timeout: 30000, waitUntil: 'networkidle' });
-      await page.waitForTimeout(2000);
+      await page.goto(dex.url, { timeout: 10000, waitUntil: 'domcontentloaded' });
+      await page.waitForTimeout(3000);
       
       // Trigger more RPC calls
       await page.mouse.move(500, 300);
