@@ -189,7 +189,7 @@ echo "|--------|---------|---------|-----|---------------|"
 # Dedup by URL base
 sort -u "$OUTPUT" | while IFS='|' read -r src rpc; do
   rpc=$(echo "$rpc" | tr -d ' \t')
-  base=$(echo "$rpc" | sed 's|/$||')
+  src=$(echo "$src" | tr -d ' \t')  # ponytail: trim leading spaces
   
   # Origin mapping
   case "$src" in
