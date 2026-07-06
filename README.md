@@ -269,12 +269,12 @@ Deploy local RPC nodes on server (16GB RAM, 4 cores, 389GB free, 16GB swap). No 
 | **BSC** | Uniswap | `31c09f2ad734e43f4fece25a5db045a9322ce119` | 30 |
 | **BSC** | Sushi | `a0d86563bc5d99e49d7d72ca422da0e761b4e257` | 9 |
 
-### Chains WITHOUT Public Mempool (No sandwich MEV) — 32 chains
+### Chains WITHOUT Public Mempool (No sandwich MEV) — 31 chains
 
 | Category | Chains |
 |----------|--------|
 | **OP Stack sequencer** | Base, Optimism, Mantle, Blast |
-| **Sequencer-based L2** | Arbitrum, Linea, Scroll, zkSync, Taiko L2 |
+| **Sequencer-based L2** | Arbitrum, Linea, Scroll, zkSync |
 | **No txpool endpoint** | Fantom, RSK, Cronos, Celo, Harmony, Aurora, Klaytn, ETC, Lightlink, Ronin, TomoChain, KCC, Karura, IoTeX, Huobi, Velas, Syscoin, Fuse, BTT, Callisto, Astar, Metagov, Godwoken, Moonbeam, Moonriver, Oasis |
 
 ### Notes
