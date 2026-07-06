@@ -275,7 +275,6 @@ async function scan() {
   
   let browser = await chromium.launch({ 
     headless: true, 
-    channel: 'chrome',
     args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox']
   });
   const allRpcs = new Map();
@@ -294,7 +293,7 @@ async function scan() {
       // Browser crashed - recreate
       try { await browser.close().catch(() => {}); } catch (e) {}
       browser = await chromium.launch({ 
-        headless: true, channel: 'chrome',
+        headless: true,
         args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox'] 
       });
       context = await browser.newContext();
@@ -374,7 +373,7 @@ async function scan() {
       console.log('  Browser crashed, restarting...');
       try { await browser.close().catch(() => {}); } catch (e) {}
       browser = await chromium.launch({ 
-        headless: true, channel: 'chrome',
+        headless: true,
         args: ['--disable-blink-features=AutomationControlled', '--no-sandbox', '--disable-setuid-sandbox'] 
       });
     }
