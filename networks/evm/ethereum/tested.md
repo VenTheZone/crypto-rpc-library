@@ -1,12 +1,13 @@
 # Ethereum — Tested RPC Endpoints
 
-> **Last tested:** 2026-07-06
+> **Last tested:** 2026-07-06  
+> **DEXs scanned:** Uniswap, 1inch, CowSwap, Curve, Sushi, Balancer, Paraswap, DexScreener, Lido, Aave
 
 ## Mempool Status
 
 | Chain | Mempool | Pending | RPC |
 |-------|---------|---------|-----|
-| **Ethereum** | ✅ yes | 55,029 | PublicNode |
+| **Ethereum** | ✅ yes | 54,940 | PublicNode |
 
 ## Working Endpoints
 
@@ -17,7 +18,9 @@
 | Ankr | `https://rpc.ankr.com/eth` | - | - | 18.0 | 75ms | ❌ |
 | Alchemy | `https://eth-mainnet.g.alchemy.com/v2/iSJh-3-MlrW4nPlMH6AnpLkLKujMmqE3` | - | API key | 16.2 | 86ms | ❌ |
 | dRPC (Sushi key) | `https://lb.drpc.live/ogrpc?network=ethereum&dkey=Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh` | - | API key | 9.0 | 94ms | ❌ |
-| WalletConnect | `https://rpc.walletconnect.org/v1/json-rpc` | - | - | 1.1 | 766ms | ❌ |
+| Infura | `https://mainnet.infura.io/v3/` | - | - | 1.4 | 746ms | ❌ |
+| Zerion | `https://rpc.zerion.io/v1/zero` | - | - | 1.7 | 417ms | ❌ |
+| WalletConnect | `https://rpc.walletconnect.org/v1/json-rpc` | - | - | 1.1 | 1040ms | ❌ |
 
 ## Discovered API Keys
 
@@ -25,6 +28,21 @@
 |----------|-----|--------|--------|
 | Alchemy | `iSJh-3-MlrW4nPlMH6AnpLkLKujMmqE3` | CowSwap | Needs Origin whitelist (useless for mempool) |
 | dRPC | `Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh` | Sushi | No mempool |
+
+## DEX Interception Sources
+
+| DEX | New RPCs Found | Notes |
+|-----|----------------|-------|
+| Uniswap | Nodesmith, Alchemy, dRPC | Most RPCs |
+| 1inch | PublicNode, dRPC | Clean endpoints |
+| CowSwap | Alchemy key, Zerion | Alchemy needs Origin |
+| Curve | PublicNode | Duplicate |
+| Sushi | dRPC key | Already known |
+| Balancer | 0 | No new RPCs |
+| Paraswap | 0 | No new RPCs |
+| DexScreener | timeout | Too heavy |
+| Lido | 0 | No RPCs found |
+| Aave | Nodesmith | Already known |
 
 ## Notes
 
