@@ -27,3 +27,12 @@ Block time: ~0.25s
 - Sequencer-based L2 — no public mempool
 - All RPCs return 0 pending txs
 - No Origin headers required for any endpoint
+
+## Discovered (JS Bundles, 2026-07-06)
+
+| Source | RPC URL |
+|--------|--------|
+| Arb-KyberSwap | `https://arbitrum-rpc.kyberswap.com` |
+| Arb-Nova | `https://nova.arbitrum.io/rpc` |
+| Arb-PublicNode | `https://arbitrum-one-rpc.publicnode.com` |
+| Arb-dRPC | `https://arbitrum.drpc.org` |

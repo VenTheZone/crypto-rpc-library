@@ -27,3 +27,12 @@ Block time: ~2s
 - OP Stack sequencer — no public mempool
 - All RPCs return 0 pending txs
 - No Origin headers required for any endpoint
+
+## Discovered (JS Bundles, 2026-07-06)
+
+| Source | RPC URL |
+|--------|--------|
+| OP-BlockPI | `https://optimism.public.blockpi.network/v1/rpc/public` |
+| OP-KyberSwap | `https://optimism-rpc.kyberswap.com` |
+| OP-PublicNode | `https://optimism-rpc.publicnode.com` |
+| OP-dRPC | `https://optimism.drpc.org` |

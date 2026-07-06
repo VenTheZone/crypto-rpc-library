@@ -36,3 +36,11 @@ Block time: ~2.3s
 - QuikNode keys from DEX discovery have highest pending counts
 - PublicNode is most reliable public endpoint
 - No Origin headers required for any endpoint
+
+## Discovered (JS Bundles, 2026-07-06)
+
+| Source | RPC URL |
+|--------|--------|
+| Polygon-Bor-PublicNode | `https://polygon-bor.publicnode.com` |
+| Polygon-RPC.com | `https://polygon-rpc.com` |
+| Polygon-dRPC | `https://polygon.drpc.org` |

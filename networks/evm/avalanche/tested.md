@@ -26,3 +26,11 @@ Block time: ~2s
 - PublicNode is best: 36 pending, 139ms latency
 - QuikNode key has no mempool (txpool_status returns 0x0)
 - No Origin headers required for any endpoint
+
+## Discovered (JS Bundles, 2026-07-06)
+
+| Source | RPC URL |
+|--------|--------|
+| AVAX-KyberSwap | `https://avalanche-rpc.kyberswap.com` |
+| AVAX-PublicNode | `https://avalanche-c-chain-rpc.publicnode.com` |
+| AVAX-Sentio | `https://avalanche.rpc.sentio.xyz` |

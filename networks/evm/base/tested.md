@@ -29,3 +29,17 @@ Block time: ~2s
 - OP Stack sequencer — no public mempool
 - All RPCs return 0 pending txs
 - No Origin headers required for any endpoint
+
+## Discovered (JS Bundles, 2026-07-06)
+
+| Source | RPC URL |
+|--------|--------|
+| Base-Coinbase | `https://rpc.wallet.coinbase.com` |
+| Base-MeowRPC | `https://base.meowrpc.com` |
+| Base-Privy | `https://base-mainnet.rpc.privy.systems` |
+| Frax | `https://rpc.frax.com` |
+| InkOnChain-Gelato | `https://rpc-gel.inkonchain.com` |
+| InkOnChain-QND | `https://rpc-qnd.inkonchain.com` |
+| Metall2 | `https://rpc.metall2.com` |
+| PancakeSwap-BSC | `https://bscrpc.pancakeswap.finance` |
+| Soneium | `https://rpc.soneium.org` |
