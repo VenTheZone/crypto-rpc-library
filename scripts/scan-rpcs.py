@@ -131,6 +131,71 @@ DEXS = {
     ],
 }
 
+# Known public RPCs per chain (fallback when JS bundles only find multi-chain endpoints)
+KNOWN_RPCS = {
+    "ethereum": [
+        ("PublicNode", "https://ethereum-rpc.publicnode.com"),
+        ("1RPC", "https://1rpc.io/eth"),
+        ("Ankr", "https://rpc.ankr.com/eth"),
+        ("drpc", "https://eth.drpc.org"),
+        ("LLamaRPC", "https://eth.llamarpc.com"),
+        ("Blast", "https://rpc.blastapi.io"),
+        ("QuickNode", "https://polygon-mainnet.g.alchemy.com/v2/demo"),
+        ("Chainstack", "https://ethereum-mainnet.chainstacklabs.com"),
+        ("GetBlock", "https://go.getblock.io/aefd0e3c03674309932ef937e6d0068e"),
+        ("NodeReal", "https://eth-mainnet.nodereal.io/v1/0737db9f90ea41e2947b647e6f535319"),
+    ],
+    "base": [
+        ("PublicNode", "https://base-rpc.publicnode.com"),
+        ("drpc", "https://base.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/base"),
+        ("1RPC", "https://1rpc.io/base"),
+        ("Blast", "https://base-mainnet.blastapi.io"),
+        ("LLamaRPC", "https://base.llamarpc.com"),
+    ],
+    "arbitrum": [
+        ("PublicNode", "https://arbitrum-one-rpc.publicnode.com"),
+        ("drpc", "https://arbitrum.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/arbitrum"),
+        ("1RPC", "https://1rpc.io/arb"),
+        ("Arb1", "https://arb1.arbitrum.io/rpc"),
+        ("LLamaRPC", "https://arb1.llamarpc.com"),
+        ("Blast", "https://arbitrum-mainnet.blastapi.io"),
+    ],
+    "polygon": [
+        ("PublicNode", "https://polygon-bor-rpc.publicnode.com"),
+        ("drpc", "https://polygon.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/polygon"),
+        ("1RPC", "https://1rpc.io/matic"),
+        ("Chainstack", "https://polygon-mainnet.chainstacklabs.com"),
+        ("LLamaRPC", "https://polygon.llamarpc.com"),
+    ],
+    "optimism": [
+        ("PublicNode", "https://optimism-rpc.publicnode.com"),
+        ("drpc", "https://optimism.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/optimism"),
+        ("1RPC", "https://1rpc.io/op"),
+        ("LLamaRPC", "https://optimism.llamarpc.com"),
+        ("Blast", "https://optimism-mainnet.blastapi.io"),
+    ],
+    "bsc": [
+        ("PublicNode", "https://bsc-rpc.publicnode.com"),
+        ("drpc", "https://bsc.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/bsc"),
+        ("1RPC", "https://1rpc.io/bnb"),
+        ("Chainstack", "https://bsc-dataseed1.binance.org"),
+        ("LLamaRPC", "https://bsc.llamarpc.com"),
+    ],
+    "avalanche": [
+        ("PublicNode", "https://avalanche-c-chain-rpc.publicnode.com"),
+        ("drpc", "https://avalanche.drpc.org"),
+        ("Ankr", "https://rpc.ankr.com/avalanche"),
+        ("1RPC", "https://1rpc.io/avax/c"),
+        ("LLamaRPC", "https://avax.llamarpc.com"),
+        ("Blast", "https://avalanche-mainnet.blastapi.io"),
+    ],
+}
+
 # Chain-specific RPC patterns for filtering
 CHAIN_PATTERNS = {
     "ethereum": ["eth", "mainnet"],
@@ -213,9 +278,10 @@ async def discover_rpcs(session, chain):
     return all_rpcs
 
 
-async def test_rpc(session, url, origin=None):
-    """Test a single RPC: latency + RPS."""
+async def test_rpc(session, url, origin=None, expected_chain_id=None):
+    """Test a single RPC: latency + RPS + chain ID match."""
     payload = json.dumps({"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 1})
+    payload_chain = json.dumps({"jsonrpc": "2.0", "method": "eth_chainId", "params": [], "id": 1})
     headers = {"Content-Type": "application/json"}
     if origin:
         headers["Origin"] = origin
@@ -230,6 +296,15 @@ async def test_rpc(session, url, origin=None):
             latency = int((time.monotonic() - t0) * 1000)
             if "result" not in body:
                 return None, None, f"NO_RESULT:{body.get('error',{}).get('message','')}"
+
+        # Chain ID check
+        if expected_chain_id is not None:
+            async with session.post(url, data=payload_chain, headers=headers,
+                                    timeout=aiohttp.ClientTimeout(total=TIMEOUT_SECS)) as resp:
+                chain_body = await resp.json(content_type=None)
+                actual_id = int(chain_body.get("result", "0x0"), 16)
+                if actual_id != expected_chain_id:
+                    return None, None, f"WRONG_CHAIN:{actual_id}"
 
         # RPS (5 requests)
         t0 = time.monotonic()
@@ -256,7 +331,12 @@ async def test_all(session, rpcs, chain, limit):
         "bsc": "https://pancakeswap.finance",
         "avalanche": "https://traderjoexyz.com",
     }
+    chain_id_map = {
+        "ethereum": 1, "base": 8453, "arbitrum": 42161,
+        "polygon": 137, "optimism": 10, "bsc": 56, "avalanche": 43114,
+    }
     origin = origin_map.get(chain)
+    expected_id = chain_id_map.get(chain)
 
     # Test first `limit` RPCs
     rpc_list = list(rpcs.items())[:limit]  # ponytail: dict.items() = (url, source)
@@ -265,7 +345,7 @@ async def test_all(session, rpcs, chain, limit):
 
     async def limited_test(url, source):
         async with sem:
-            lat, rps, status = await test_rpc(session, url, origin)
+            lat, rps, status = await test_rpc(session, url, origin, expected_id)
             results.append((source, url, lat, rps, status))
 
     await asyncio.gather(*[limited_test(url, src) for url, src in rpc_list])
@@ -284,9 +364,18 @@ async def main():
 
     async with aiohttp.ClientSession() as session:
         # Discover
+        # Discover from JS bundles
         print("Discovering RPCs from JS bundles...")
         rpcs = await discover_rpcs(session, chain)
-        print(f"Found {len(rpcs)} unique RPCs")
+        
+        # Merge known RPCs (put first so they're tested before JS bundle discoveries)
+        known = KNOWN_RPCS.get(chain, [])
+        known_rpcs = {}
+        for name, url in known:
+            known_rpcs[url] = name
+        rpcs = {**known_rpcs, **rpcs}  # known first, then JS bundle discoveries
+        
+        print(f"Found {len(rpcs)} unique RPCs ({len(known)} known + {len(rpcs)-len(known)} from JS)")
 
         # Test
         print(f"Testing top {min(limit, len(rpcs))} RPCs (concurrent={CONCURRENT})...")
