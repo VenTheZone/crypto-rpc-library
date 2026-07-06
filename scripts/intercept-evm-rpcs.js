@@ -30,6 +30,8 @@ const DEX_BY_CHAIN = {
     { name: 'WarpSpeed', url: 'https://warpspeed.finance' },
     { name: 'BaseScan', url: 'https://basescan.org' },
     { name: 'Blockscout', url: 'https://base.blockscout.com' },
+    { name: 'PancakeSwap Infinity', url: 'https://pancakeswap.finance/swap?chain=base' },
+    { name: 'Fluid DEX', url: 'https://fluid.deposit' },
   ],
   ethereum: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap' },
@@ -79,6 +81,8 @@ const DEX_BY_CHAIN = {
     { name: 'Zerion', url: 'https://app.zerion.io' },
     { name: 'Etherscan', url: 'https://etherscan.io' },
     { name: 'Blockscout', url: 'https://eth.blockscout.com' },
+    { name: 'Fluid DEX', url: 'https://fluid.deposit' },
+    { name: 'PancakeSwap', url: 'https://pancakeswap.finance/swap?chain=ethereum' },
   ],
   arbitrum: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=arbitrum' },
@@ -165,6 +169,8 @@ const DEX_BY_CHAIN = {
     { name: 'ParaSwap', url: 'https://paraswap.io' },
     { name: 'PolygonScan', url: 'https://polygonscan.com' },
     { name: 'Blockscout', url: 'https://polygon.blockscout.com' },
+    { name: 'Ramses', url: 'https://app.ramses.exchange' },
+    { name: 'Swaap', url: 'https://app.swaap.finance' },
   ],
   avalanche: [
     { name: 'Trader Joe', url: 'https://traderjoexyz.com' },
@@ -182,6 +188,7 @@ const DEX_BY_CHAIN = {
     { name: 'ParaSwap', url: 'https://paraswap.io' },
     { name: 'Snowtrace', url: 'https://snowtrace.io' },
     { name: 'Blockscout', url: 'https://avalanche.blockscout.com' },
+    { name: 'Pharaoh', url: 'https://pharaoh.exchange' },
   ],
   fantom: [
     { name: 'SpookySwap', url: 'https://spooky.fi' },
@@ -196,6 +203,9 @@ const DEX_BY_CHAIN = {
     { name: 'Synapse', url: 'https://synapseprotocol.com' },
     { name: 'FTMScan', url: 'https://ftmscan.com' },
     { name: 'Blockscout', url: 'https://ftm.blockscout.com' },
+    { name: 'EmpireDEX', url: 'https://empiredex.io' },
+    { name: 'WAGMI', url: 'https://wagmi.com' },
+    { name: 'KnightSwap', url: 'https://knightswap.finance' },
   ],
   gnosis: [
     { name: 'Curve', url: 'https://gnosis.curve.fi' },
@@ -215,6 +225,10 @@ const DEX_BY_CHAIN = {
     { name: 'DexScreener', url: 'https://dexscreener.com/berachain' },
     { name: 'BeraScan', url: 'https://berascan.com' },
     { name: 'Blockscout', url: 'https://berachain.blockscout.com' },
+    { name: 'BrownFi', url: 'https://brownfi.xyz' },
+    { name: 'BurrBear', url: 'https://burrbear.com' },
+    { name: 'Holdstation', url: 'https://holdstation.xyz' },
+    { name: 'Bulla Exchange', url: 'https://bulla.exchange' },
   ],
   taiko: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=taiko' },
