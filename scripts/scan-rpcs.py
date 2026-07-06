@@ -117,7 +117,6 @@ DEXS = {
         ("BiSwap", "https://biswap.org"),
         ("MDEX", "https://mdex.com"),
         ("ApeSwap", "https://apeswap.finance"),
-        ("Biswap", "https://biswap.org"),
         ("BabySwap", "https://babyswap.finance"),
         ("Wault", "https://wault.finance"),
         ("Autofarm", "https://autofarm.network"),

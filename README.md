@@ -45,7 +45,7 @@ Per chain: `networks/evm/<chain>/working.md` and `dead.md`
 | Arbitrum | 42161 | 17 | Radiant | 388.8 |
 | Polygon | 137 | 11 | drpc.org | 59.7 |
 | Optimism | 10 | 10 | drpc.org | 10.7 |
-| BSC | 56 | 13 | Chainstack | 13.8 |
+| BSC | 56 | 12 | Chainstack | 13.8 |
 | Avalanche | 43114 | 8 | drpc.org | 56.4 |
 | Solana | — | 20 | Solana Official | 80.1 |
 
