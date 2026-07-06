@@ -28,6 +28,8 @@ const DEX_BY_CHAIN = {
     { name: 'Stargate', url: 'https://stargate.finance' },
     { name: 'Across', url: 'https://across.to' },
     { name: 'WarpSpeed', url: 'https://warpspeed.finance' },
+    { name: 'BaseScan', url: 'https://basescan.org' },
+    { name: 'Blockscout', url: 'https://base.blockscout.com' },
   ],
   ethereum: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap' },
@@ -75,6 +77,8 @@ const DEX_BY_CHAIN = {
     { name: 'Instadapp', url: 'https://app.instadapp.io' },
     { name: 'Zapper', url: 'https://zapper.fi' },
     { name: 'Zerion', url: 'https://app.zerion.io' },
+    { name: 'Etherscan', url: 'https://etherscan.io' },
+    { name: 'Blockscout', url: 'https://eth.blockscout.com' },
   ],
   arbitrum: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=arbitrum' },
@@ -97,6 +101,8 @@ const DEX_BY_CHAIN = {
     { name: 'Wombat', url: 'https://wombat.exchange' },
     { name: 'Zebra', url: 'https://zebra.xyz' },
     { name: 'WarpSpeed', url: 'https://warpspeed.finance' },
+    { name: 'Arbiscan', url: 'https://arbiscan.io' },
+    { name: 'Blockscout', url: 'https://arbitrum.blockscout.com' },
   ],
   optimism: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=optimism' },
@@ -114,6 +120,8 @@ const DEX_BY_CHAIN = {
     { name: 'Hop', url: 'https://hop.exchange' },
     { name: 'Li.Fi', url: 'https://li.fi' },
     { name: 'DexScreener', url: 'https://dexscreener.com/optimism' },
+    { name: 'Optimistic Etherscan', url: 'https://optimistic.etherscan.io' },
+    { name: 'Blockscout', url: 'https://optimism.blockscout.com' },
   ],
   bsc: [
     { name: 'PancakeSwap', url: 'https://pancakeswap.finance/swap' },
@@ -135,6 +143,8 @@ const DEX_BY_CHAIN = {
     { name: 'Synapse', url: 'https://synapseprotocol.com' },
     { name: 'WOOFi', url: 'https://woo.org' },
     { name: 'ParaSwap', url: 'https://paraswap.io' },
+    { name: 'BscScan', url: 'https://bscscan.com' },
+    { name: 'Blockscout', url: 'https://bsc.blockscout.com' },
   ],
   polygon: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=polygon' },
@@ -153,6 +163,8 @@ const DEX_BY_CHAIN = {
     { name: 'Stargate', url: 'https://stargate.finance' },
     { name: 'Across', url: 'https://across.to' },
     { name: 'ParaSwap', url: 'https://paraswap.io' },
+    { name: 'PolygonScan', url: 'https://polygonscan.com' },
+    { name: 'Blockscout', url: 'https://polygon.blockscout.com' },
   ],
   avalanche: [
     { name: 'Trader Joe', url: 'https://traderjoexyz.com' },
@@ -168,6 +180,8 @@ const DEX_BY_CHAIN = {
     { name: 'Stargate', url: 'https://stargate.finance' },
     { name: 'Synapse', url: 'https://synapseprotocol.com' },
     { name: 'ParaSwap', url: 'https://paraswap.io' },
+    { name: 'Snowtrace', url: 'https://snowtrace.io' },
+    { name: 'Blockscout', url: 'https://avalanche.blockscout.com' },
   ],
   fantom: [
     { name: 'SpookySwap', url: 'https://spooky.fi' },
@@ -180,6 +194,8 @@ const DEX_BY_CHAIN = {
     { name: 'DexScreener', url: 'https://dexscreener.com/fantom' },
     { name: 'Stargate', url: 'https://stargate.finance' },
     { name: 'Synapse', url: 'https://synapseprotocol.com' },
+    { name: 'FTMScan', url: 'https://ftmscan.com' },
+    { name: 'Blockscout', url: 'https://ftm.blockscout.com' },
   ],
   gnosis: [
     { name: 'Curve', url: 'https://gnosis.curve.fi' },
@@ -189,16 +205,22 @@ const DEX_BY_CHAIN = {
     { name: '1inch', url: 'https://app.1inch.io/swap?chain=gnosis' },
     { name: 'DexScreener', url: 'https://dexscreener.com/gnosis' },
     { name: 'Stargate', url: 'https://stargate.finance' },
+    { name: 'GnosisScan', url: 'https://gnosisscan.io' },
+    { name: 'Blockscout', url: 'https://gnosis.blockscout.com' },
   ],
   berachain: [
     { name: 'BEX', url: 'https://bex.berachain.com' },
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=berachain' },
     { name: 'Kodiak', url: 'https://kodiak.berachain.com' },
     { name: 'DexScreener', url: 'https://dexscreener.com/berachain' },
+    { name: 'BeraScan', url: 'https://berascan.com' },
+    { name: 'Blockscout', url: 'https://berachain.blockscout.com' },
   ],
   taiko: [
     { name: 'Uniswap', url: 'https://app.uniswap.org/swap?chain=taiko' },
     { name: 'DexScreener', url: 'https://dexscreener.com/taiko' },
+    { name: 'TaikoScan', url: 'https://taikoscan.io' },
+    { name: 'Blockscout', url: 'https://taiko.blockscout.com' },
   ],
 };
 
@@ -220,6 +242,15 @@ const RPC_PATTERNS = [
   /https?:\/\/[^"'\s]*ankr\.com[^"'\s]*/gi,
   /https?:\/\/[^"'\s]*blastapi\.io[^"'\s]*/gi,
   /https?:\/\/[^"'\s]*nodies\.app[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*etherscan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*bscscan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*polygonscan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*arbiscan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*ftmscan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*snowtrace\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*basescan\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*blockscout\.[^"'\s]*/gi,
+  /https?:\/\/[^"'\s]*blockpi\.network[^"'\s]*/gi,
 ];
 
 async function scan() {
