@@ -38,6 +38,7 @@
 | Alchemy | `L5u_Kc9lmh0RgUQia7m_wvYdOQ6I0nDs` | Badger | No | ✅ Works |
 | Alchemy | `demo` | Multiple | No | ✅ Works |
 | Alchemy | `iSJh-3-MlrW4nPlMH6AnpLkLKujMmqE3` | CowSwap | Yes (Origin whitelist) | ⚠️ Useless |
+| Infura | `786ade30f36244469480aa5c2bf0743b` | Bancor | No | ✅ Works |
 | dRPC | `Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh` | Sushi | No | No mempool |
 | Etherscan | `XCHQUWNJ3NNUKYRKKFEBFNTZDFV87AFPZJ` | StakeDAO | No | ✅ V2 API (gas, ABI, tokens) |
 
