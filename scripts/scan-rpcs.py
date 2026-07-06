@@ -62,6 +62,8 @@ DEXS = {
         ("Beets", "https://beets.fi"),
         ("Zora", "https://zora.co"),
         ("Velodrome", "https://velodrome.finance"),
+        ("Thruster", "https://thruster.io"),
+        ("Ambient", "https://ambient.finance"),
     ],
     "arbitrum": [
         ("Uniswap", "https://app.uniswap.org/swap/arbitrum"),
@@ -79,6 +81,8 @@ DEXS = {
         ("GMX", "https://gmx.io"),
         ("Gains", "https://gainsnetwork.io"),
         ("Dopex", "https://dopex.io"),
+        ("Pendle", "https://pendle.finance"),
+        ("Silo", "https://silo.finance"),
     ],
     "polygon": [
         ("Uniswap", "https://app.uniswap.org/swap/polygon"),
@@ -118,6 +122,7 @@ DEXS = {
         ("Wault", "https://wault.finance"),
         ("Autofarm", "https://autofarm.network"),
         ["Beefy", "https://beefy.finance"],
+        ("Thena", "https://thena.fi"),
     ],
     "avalanche": [
         ("TraderJoe", "https://traderjoexyz.com"),
