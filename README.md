@@ -38,15 +38,16 @@ Per chain: `networks/evm/<chain>/working.md` and `dead.md`
 
 ## Chains Supported
 
-| Chain | Chain ID | Best RPC | RPS |
-|-------|----------|----------|-----|
-| Ethereum | 1 | drpc.org | 62.9 |
-| Base | 8453 | drpc.org | 53.5 |
-| Arbitrum | 42161 | Radiant | 388.8 |
-| Polygon | 137 | drpc.org | 59.7 |
-| Optimism | 10 | drpc.org | 10.7 |
-| BSC | 56 | Chainstack | 13.8 |
-| Avalanche | 43114 | drpc.org | 56.4 |
+| Chain | Chain ID | DEXs | Best RPC | RPS |
+|-------|----------|------|----------|-----|
+| Ethereum | 1 | 36 | drpc.org | 62.9 |
+| Base | 8453 | 13 | drpc.org | 53.5 |
+| Arbitrum | 42161 | 17 | Radiant | 388.8 |
+| Polygon | 137 | 11 | drpc.org | 59.7 |
+| Optimism | 10 | 10 | drpc.org | 10.7 |
+| BSC | 56 | 13 | Chainstack | 13.8 |
+| Avalanche | 43114 | 8 | drpc.org | 56.4 |
+| Solana | — | 20 | Solana Official | 80.1 |
 
 ## Project Structure
 
