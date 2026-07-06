@@ -1,5 +1,6 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
 
 // ============================================
 // GENERIC EVM RPC INTERCEPTOR
@@ -386,6 +387,28 @@ async function scan() {
   const outputPath = `${OUTPUT_DIR}/${CHAIN}-discovered-raw.json`;
   fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
   console.log(`\nRaw output saved to ${outputPath}`);
+  
+  // Append to tested.md
+  const testedPath = path.join(OUTPUT_DIR, '..', 'networks', 'evm', CHAIN, 'tested.md');
+  if (fs.existsSync(testedPath)) {
+    let tested = fs.readFileSync(testedPath, 'utf8');
+    // Skip if already has this scan's DEXs
+    const scanDate = new Date().toISOString().split('T')[0];
+    if (!tested.includes(`Scanned: ${scanDate}`)) {
+      const newRpcs = chainRpcs.filter(r => !tested.includes(r.url));
+      if (newRpcs.length > 0) {
+        let section = `\n## Discovered (${scanDate})\n\n| Source | RPC URL |\n|--------|--------|\n`;
+        for (const rpc of newRpcs) {
+          section += `| ${rpc.dex} | \`${rpc.url}\` |\n`;
+        }
+        tested += section;
+        fs.writeFileSync(testedPath, tested);
+        console.log(`Appended ${newRpcs.length} new RPCs to ${CHAIN}/tested.md`);
+      } else {
+        console.log(`No new RPCs for ${CHAIN}/tested.md`);
+      }
+    }
+  }
   
   return chainRpcs;
 }
