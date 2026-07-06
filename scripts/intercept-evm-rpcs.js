@@ -1,6 +1,9 @@
-const { chromium } = require('playwright');
+const { chromium } = require('playwright-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
+
+chromium.use(StealthPlugin());
 
 // ============================================
 // GENERIC EVM RPC INTERCEPTOR
@@ -273,7 +276,7 @@ async function scan() {
   console.log(`Chain ID: ${CHAIN_ID}`);
   console.log(`Scanning ${DEX_SITES.length} DEXs...\n`);
   
-  const browser = await chromium.launch({ headless: true });
+  let browser = await chromium.launch({ headless: true });
   const allRpcs = new Map();
   
   for (const dex of DEX_SITES) {
@@ -283,7 +286,15 @@ async function scan() {
     try {
       context = await browser.newContext();
       page = await context.newPage();
-      
+    } catch (e) {
+      // Browser crashed - recreate
+      try { await browser.close().catch(() => {}); } catch (e) {}
+      browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+      context = await browser.newContext();
+      page = await context.newPage();
+    }
+    
+    try {
       const rpcRequests = [];
       
       // Intercept ALL requests
@@ -345,20 +356,62 @@ async function scan() {
       if (page) await page.close().catch(() => {});
       if (context) await context.close().catch(() => {});
     } catch (e) {}
+    
+    // Recreate browser if it crashed
+    try {
+      await browser.version();
+    } catch (e) {
+      console.log('  Browser crashed, restarting...');
+      try { await browser.close().catch(() => {}); } catch (e) {}
+      browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    }
   }
   
   await browser.close();
   
-  // Filter for chain-specific RPCs
+  // Filter for chain-specific RPCs (strict)
   const chainRpcs = [];
+  const CHAIN_ALIASES = {
+    ethereum: ['eth', 'ethereum', 'mainnet'],
+    base: ['base'],
+    arbitrum: ['arb', 'arbitrum'],
+    optimism: ['opt', 'optimism'],
+    bsc: ['bsc', 'bnb'],
+    polygon: ['polygon', 'matic'],
+    avalanche: ['avax', 'avalanche'],
+    fantom: ['ftm', 'fantom'],
+    gnosis: ['gnosis', 'xdai'],
+    berachain: ['bera', 'berachain'],
+  };
+  const aliases = CHAIN_ALIASES[CHAIN] || [CHAIN];
+  
   for (const [url, info] of allRpcs) {
-    if (url.includes(CHAIN) || 
-        url.includes(CHAIN_ID) ||
-        url.includes('quiknode') ||
-        url.includes('drpc') ||
-        url.includes('ankr') ||
-        url.includes('infura') ||
-        url.includes('alchemy')) {
+    const lower = url.toLowerCase();
+    // Must be an actual RPC endpoint (not template, not API, not image)
+    if (lower.includes('${') || lower.includes('`') || lower.includes('.png') ||
+        lower.includes('.jpg') || lower.includes('.svg') || lower.includes('sentry') ||
+        lower.includes('googleapis.com') || lower.includes('discord.com') ||
+        lower.includes('coingecko') || lower.includes('moonpay') || lower.includes('onramper') ||
+        lower.includes('safe.global') || lower.includes('webflow.com') || lower.includes('firebase') ||
+        lower.includes('statsig') || lower.includes('ledger.com') || lower.includes('localhost') ||
+        lower.includes('127.0.0.1') || lower.includes('testnet') || lower.includes('goerli') ||
+        lower.includes('sepolia') || lower.includes('holesky') || lower.includes('mumbai') ||
+        lower.includes('fuji') || lower.includes('.api.') || lower.includes('api/v1') ||
+        lower.includes('api/v2') || lower.includes('graphql') || lower.includes('quote') ||
+        lower.includes('swap?') || lower.includes('block/') || lower.includes('/tx/') ||
+        lower.includes('/address/') || lower.includes('/token/') || lower.includes('gas-price') ||
+        lower.includes('frontend-rpc') || lower.includes('walletconnect.com/v1?chainId')) continue;
+    
+    // Must match this chain
+    const matchesChain = aliases.some(a => lower.includes(a)) || lower.includes(CHAIN_ID);
+    // Must look like an RPC
+    const isRpc = lower.includes('rpc') || lower.includes('/v2/') || lower.includes('/v1/') ||
+                  lower.includes('quiknode') || lower.includes('drpc') || lower.includes('ankr') ||
+                  lower.includes('infura') || lower.includes('alchemy') || lower.includes('publicnode') ||
+                  lower.includes('nodies') || lower.includes('blockpi') || lower.includes('blastapi') ||
+                  lower.includes('nodesmith') || lower.includes('therpc') || lower.includes('llamarpc');
+    
+    if (matchesChain && isRpc) {
       chainRpcs.push({ url, ...info });
     }
   }
@@ -374,9 +427,17 @@ async function scan() {
     console.log(`| ${rpc.dex} | ${rpc.url} |`);
   }
   
-  // Test headers for each RPC
+  // Test headers for each RPC (max 10 unique)
   console.log('\nTesting headers...');
-  for (const rpc of chainRpcs) {
+  const seen = new Set();
+  const uniqueRpcs = chainRpcs.filter(r => {
+    const key = r.url.replace(/\/v2\/.*/, '/v2/').replace(/\?.*/, '');
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 10);
+  
+  for (const rpc of uniqueRpcs) {
     rpc.headers = {};
     const headers = [null, { 'Origin': 'https://app.uniswap.org' }, { 'User-Agent': 'Mozilla/5.0' }, { 'Referer': 'https://app.uniswap.org' }];
     const results = [];
