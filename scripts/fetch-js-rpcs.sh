@@ -1,9 +1,57 @@
 #!/bin/bash
-# Fetch JS bundles from DEX frontends, grep for RPC URLs
+# Fetch JS bundles from DEX frontends, grep for RPC URLs, test RPS + origin headers
 # Usage: ./fetch-js-rpcs.sh <chain> <chainId>
 CHAIN="${1:-ethereum}"
 CHAIN_ID="${2:-1}"
 OUTPUT="/tmp/${CHAIN}_js_rpcs.txt"
+RESULTS="/tmp/${CHAIN}_js_results.txt"
+
+# ponytail: payload reused across tests
+PAYLOAD='{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+TESTS=5
+
+echo "# $CHAIN JS Bundle RPC Discovery + Test"
+echo "Chain ID: $CHAIN_ID"
+echo ""
+
+test_rpc() {
+  local url="$1"
+  local origin="$2"
+  local label="${3:-none}"
+  local start end elapsed rps latency
+  
+  start=$(date +%s%N)
+  local resp
+  if [ -n "$origin" ]; then
+    resp=$(curl -s --max-time 5 -X POST -H "Content-Type: application/json" -H "Origin: $origin" -d "$PAYLOAD" "$url" 2>/dev/null)
+  else
+    resp=$(curl -s --max-time 5 -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$url" 2>/dev/null)
+  fi
+  end=$(date +%s%N)
+  elapsed=$(( (end - start) / 1000000 ))
+  
+  if echo "$resp" | grep -q '"result"'; then
+    latency="$elapsed"
+    # RPS: 5 sequential requests
+    local rps_start rps_end
+    rps_start=$(date +%s%N)
+    for i in $(seq 2 $TESTS); do
+      curl -s --max-time 5 -X POST -H "Content-Type: application/json" ${origin:+-H "Origin: $origin"} -d "$PAYLOAD" "$url" >/dev/null 2>&1
+    done
+    rps_end=$(date +%s%N)
+    local rps_elapsed=$(( (rps_end - rps_start) / 1000000 ))
+    if [ "$rps_elapsed" -gt 0 ]; then
+      rps=$(echo "scale=1; $TESTS * 1000 / $rps_elapsed" | bc 2>/dev/null || echo "?")
+    else
+      rps="?"
+    fi
+    echo "$label | $latency | $rps"
+    return 0
+  else
+    echo "$label | FAIL | -"
+    return 1
+  fi
+}
 
 echo "# $CHAIN JS Bundle RPC Discovery"
 echo "Chain ID: $CHAIN_ID"
@@ -130,11 +178,51 @@ done
 
 echo ""
 echo "# ========================================"
-echo "# DISCOVERED $CHAIN RPCs (JS bundles)"
+echo "# DISCOVERED + TESTED $CHAIN RPCs"
 echo "# ========================================"
 echo ""
-echo "| Source | RPC URL |"
-echo "|--------|---------|"
+echo "| Source | RPC URL | Latency | RPS | Origin Tested |"
+echo "|--------|---------|---------|-----|---------------|"
+
+> "$RESULTS"
+
+# Dedup by URL base
 sort -u "$OUTPUT" | while IFS='|' read -r src rpc; do
-  echo "| $src | $rpc |"
+  rpc=$(echo "$rpc" | tr -d ' \t')
+  base=$(echo "$rpc" | sed 's|/$||')
+  
+  # Test without origin
+  result=$(test_rpc "$rpc" "" "none")
+  no_origin=$(echo "$result" | awk -F'|' '{print $2"|"$3}')
+  
+  # Test with origin (DEX domain)
+  case "$src" in
+    Uniswap) origin="https://app.uniswap.org" ;;
+    1inch) origin="https://app.1inch.io" ;;
+    CowSwap) origin="https://cowswap.exchange" ;;
+    Curve) origin="https://curve.fi" ;;
+    Sushi) origin="https://www.sushi.com" ;;
+    Aave) origin="https://app.aave.com" ;;
+    KyberSwap) origin="https://kyberswap.com" ;;
+    Clipper) origin="https://clipper.exchange" ;;
+    DODO) origin="https://dodoex.io" ;;
+    Bancor) origin="https://app.bancor.network" ;;
+    Frax) origin="https://app.frax.finance" ;;
+    Badger) origin="https://app.badger.com" ;;
+    Yearn) origin="https://yearn.fi" ;;
+    PancakeSwap) origin="https://pancakeswap.finance" ;;
+    Aerodrome) origin="https://aerodrome.finance" ;;
+    *) origin="" ;;
+  esac
+  
+  if [ -n "$origin" ]; then
+    origin_result=$(test_rpc "$rpc" "$origin" "$origin")
+    origin_info=$(echo "$origin_result" | awk -F'|' '{print $2"|"$3}')
+  else
+    origin_info="-|-"
+  fi
+  
+  echo "| $src | \`$rpc\` | $no_origin | $origin_info |" >> "$RESULTS"
 done
+
+cat "$RESULTS"
