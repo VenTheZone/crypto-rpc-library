@@ -1,4 +1,4 @@
-# crypto-rpc
+# crypto-rpc-library
 
 Discover and test RPC endpoints across EVM chains.
 
