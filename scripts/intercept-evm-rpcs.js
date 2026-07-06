@@ -374,6 +374,36 @@ async function scan() {
     console.log(`| ${rpc.dex} | ${rpc.url} |`);
   }
   
+  // Test headers for each RPC
+  console.log('\nTesting headers...');
+  for (const rpc of chainRpcs) {
+    rpc.headers = {};
+    const headers = [null, { 'Origin': 'https://app.uniswap.org' }, { 'User-Agent': 'Mozilla/5.0' }, { 'Referer': 'https://app.uniswap.org' }];
+    const results = [];
+    for (const h of headers) {
+      try {
+        const start = Date.now();
+        await fetch(rpc.url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', ...h },
+          body: JSON.stringify({ jsonrpc: '2.0', method: 'eth_blockNumber', params: [], id: 1 }),
+          signal: AbortSignal.timeout(3000),
+        });
+        results.push({ headers: h, latency: Date.now() - start });
+      } catch (e) {
+        results.push({ headers: h, error: true });
+      }
+    }
+    // Find best performing header
+    const valid = results.filter(r => !r.error);
+    if (valid.length > 0) {
+      const best = valid.reduce((a, b) => a.latency < b.latency ? a : b);
+      rpc.bestHeaders = best.headers;
+      rpc.bestLatency = best.latency;
+      rpc.headerResults = results;
+    }
+  }
+  
   // Save raw output
   const output = {
     chain: CHAIN,
@@ -397,9 +427,12 @@ async function scan() {
     if (!tested.includes(`Scanned: ${scanDate}`)) {
       const newRpcs = chainRpcs.filter(r => !tested.includes(r.url));
       if (newRpcs.length > 0) {
-        let section = `\n## Discovered (${scanDate})\n\n| Source | RPC URL |\n|--------|--------|\n`;
+        let section = `\n## Discovered (${scanDate})\n\n| Source | RPC URL | Best Latency | Header |`;
+        section += `\n|--------|--------|-------------|--------|\n`;
         for (const rpc of newRpcs) {
-          section += `| ${rpc.dex} | \`${rpc.url}\` |\n`;
+          const latency = rpc.bestLatency ? `${rpc.bestLatency}ms` : '?';
+          const header = rpc.bestHeaders ? JSON.stringify(rpc.bestHeaders).replace(/[{}"]/g, '').replace(/:/, ': ') : 'none';
+          section += `| ${rpc.dex} | \`${rpc.url}\` | ${latency} | ${header} |\n`;
         }
         tested += section;
         fs.writeFileSync(testedPath, tested);
