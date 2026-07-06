@@ -129,6 +129,28 @@ DEXS = {
         ("Lydia", "https://lydia.finance"),
         ("Wombat", "https://wombat.exchange"),
     ],
+    "solana": [
+        ("Jupiter", "https://jup.ag"),
+        ("Raydium", "https://raydium.io"),
+        ("Meteora", "https://meteora.ag"),
+        ("Orca", "https://orca.so"),
+        ("Phoenix", "https://phoenix.fi"),
+        ("Lifinity", "https://lifinity.io"),
+        ("Pump.fun", "https://pump.fun"),
+        ("Drift", "https://drift.trade"),
+        ("Marginfi", "https://marginfi.com"),
+        ("Kamino", "https://kamino.finance"),
+        ("Jito", "https://jito.wtf"),
+        ("Solend", "https://solend.fi"),
+        ("Marinade", "https://marinade.finance"),
+        ("Saber", "https://saber.so"),
+        ("Atrix", "https://atrix.finance"),
+        ("GooseFX", "https://goosefx.io"),
+        ("Saros", "https://saros.finance"),
+        ("STEP", "https://step.finance"),
+        ("Tulip", "https://tulipprotocol.com"),
+        ("Port", "https://port.finance"),
+    ],
 }
 
 # Known public RPCs per chain (fallback when JS bundles only find multi-chain endpoints)
@@ -193,6 +215,19 @@ KNOWN_RPCS = {
         ("1RPC", "https://1rpc.io/avax/c"),
         ("LLamaRPC", "https://avax.llamarpc.com"),
         ("Blast", "https://avalanche-mainnet.blastapi.io"),
+    ],
+    "solana": [
+        ("Solana Official", "https://api.mainnet-beta.solana.com"),
+        ("Helius", "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767"),
+        ("QuickNode", "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767"),
+        ("Triton", "https://triton.mainnet.rpcpool.com"),
+        ("RPC Pool Jupiter", "https://jupiter-frontend.rpcpool.com/"),
+        ("RPC Pool Solend", "https://solendf-solendf-67c7.rpcpool.com/"),
+        ("RPC Pool Kamino", "https://kamino.mainnet.rpcpool.com/"),
+        ("Ironforge", "https://rpc.ironforge.network/mainnet"),
+        ("BlockPi", "https://solana.blockpi.network/v1/rpc/public"),
+        ("PublicNode", "https://solana-rpc.publicnode.com"),
+        ("drpc", "https://solana.drpc.org"),
     ],
 }
 
@@ -278,10 +313,14 @@ async def discover_rpcs(session, chain):
     return all_rpcs
 
 
-async def test_rpc(session, url, origin=None, expected_chain_id=None):
+async def test_rpc(session, url, origin=None, expected_chain_id=None, chain="ethereum"):
     """Test a single RPC: latency + RPS + chain ID match."""
-    payload = json.dumps({"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 1})
-    payload_chain = json.dumps({"jsonrpc": "2.0", "method": "eth_chainId", "params": [], "id": 1})
+    is_solana = chain == "solana"
+    if is_solana:
+        payload = json.dumps({"jsonrpc": "2.0", "method": "getHealth", "params": [], "id": 1})
+    else:
+        payload = json.dumps({"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 1})
+        payload_chain = json.dumps({"jsonrpc": "2.0", "method": "eth_chainId", "params": [], "id": 1})
     headers = {"Content-Type": "application/json"}
     if origin:
         headers["Origin"] = origin
@@ -297,8 +336,8 @@ async def test_rpc(session, url, origin=None, expected_chain_id=None):
             if "result" not in body:
                 return None, None, f"NO_RESULT:{body.get('error',{}).get('message','')}"
 
-        # Chain ID check
-        if expected_chain_id is not None:
+        # Chain ID check (EVM only)
+        if expected_chain_id is not None and not is_solana:
             async with session.post(url, data=payload_chain, headers=headers,
                                     timeout=aiohttp.ClientTimeout(total=TIMEOUT_SECS)) as resp:
                 chain_body = await resp.json(content_type=None)
@@ -345,7 +384,7 @@ async def test_all(session, rpcs, chain, limit):
 
     async def limited_test(url, source):
         async with sem:
-            lat, rps, status = await test_rpc(session, url, origin, expected_id)
+            lat, rps, status = await test_rpc(session, url, origin, expected_id, chain=chain)
             results.append((source, url, lat, rps, status))
 
     await asyncio.gather(*[limited_test(url, src) for url, src in rpc_list])
