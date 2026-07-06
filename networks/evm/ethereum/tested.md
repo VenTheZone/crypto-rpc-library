@@ -39,6 +39,7 @@
 | Alchemy | `demo` | Multiple | No | ✅ Works |
 | Alchemy | `iSJh-3-MlrW4nPlMH6AnpLkLKujMmqE3` | CowSwap | Yes (Origin whitelist) | ⚠️ Useless |
 | dRPC | `Ak765fp4zUm6uVwKu4annC-7Wt2ExFIR7p71FjlcW9mh` | Sushi | No | No mempool |
+| Etherscan | `XCHQUWNJ3NNUKYRKKFEBFNTZDFV87AFPZJ` | StakeDAO | No | ✅ V2 API (gas, ABI, tokens) |
 
 ## Header Testing Results
 
